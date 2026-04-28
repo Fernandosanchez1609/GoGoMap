@@ -1,24 +1,43 @@
-# Compiled class file
+# =========================
+# 1. Secretos y Entornos (CRÍTICO)
+# =========================
+.env
+backend/.env
+frontend/.env
+
+# =========================
+# 2. Frontend (Node / React)
+# =========================
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-error.log*
+
+# =========================
+# 3. Backend (Java / Spring Boot)
+# =========================
+backend/target/
 *.class
-
-# Log file
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
-*.nar
 *.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# =========================
+# 4. Archivos Comprimidos
+# =========================
 *.zip
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# =========================
+# 5. IDEs y Sistema Operativo
+# =========================
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
