@@ -1,73 +1,40 @@
-# React + TypeScript + Vite
+# 🌍 ECOMAP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Mapa interactivo de Objetivos de Desarrollo Sostenible · Málaga
 
-Currently, two official plugins are available:
+ECOMAP es una aplicación web progresiva (PWA) que permite explorar puntos de interés vinculados a los **Objetivos de Desarrollo Sostenible (ODS)** de la ONU en la ciudad de Málaga. Los datos provienen de fuentes oficiales del Ayuntamiento de Málaga y se visualizan sobre un mapa interactivo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+El proyecto arranca con el **ODS 7 — Energía Asequible y No Contaminante**, mostrando los puntos de carga para vehículos eléctricos de la ciudad desde el primer día, y está diseñado para escalar al resto de ODS con el mismo mecanismo.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ¿Qué hace ECOMAP?
 
-## Expanding the ESLint configuration
+- Muestra en un mapa los puntos ODS oficiales de Málaga (cargadores eléctricos, zonas verdes, puntos de reciclaje…)
+- Permite a los usuarios explorar, visitar y verificar esos puntos
+- Recompensa la participación con un sistema de **karma** (puntos por visitar, confirmar o reportar)
+- Registra el progreso de cada usuario por ODS completado
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologías
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Capa | Stack |
+|---|---|
+| Backend | Java · Spring Boot · PostgreSQL · Flyway · JWT |
+| Frontend | React · Vite · Tailwind CSS · Leaflet |
+| Base de datos | PostgreSQL en Neon.tech |
+| Despliegue | Railway / Render (backend) · Vercel / Netlify (frontend) |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Estructura del repositorio
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+ecomap/
+├── backend/    ← API REST con Spring Boot
+└── frontend/   ← SPA con React + Vite
 ```
+## Datos ODS
+
+Los puntos del mapa se importan desde los datasets en abierto del [Portal de Datos Abiertos del Ayuntamiento de Málaga](https://datosabiertos.malaga.eu). El piloto usa el dataset de **puntos de recarga para vehículos eléctricos** en formato GeoJSON.
+
+## Licencia
+
+MIT
