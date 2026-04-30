@@ -2,9 +2,9 @@
 
 > Mapa interactivo de Objetivos de Desarrollo Sostenible · Málaga
 
-ECOMAP es una aplicación web progresiva (PWA) que permite explorar puntos de interés vinculados a los **Objetivos de Desarrollo Sostenible (ODS)** de la ONU en la ciudad de Málaga. Los datos provienen de fuentes oficiales del Ayuntamiento de Málaga y se visualizan sobre un mapa interactivo.
+ECOMAP será una aplicación web progresiva (PWA) que permite explorar puntos de interés vinculados a los **Objetivos de Desarrollo Sostenible (ODS)** de la ONU en la ciudad de Málaga. Los datos provienen de fuentes oficiales del Ayuntamiento de Málaga y se visualizan sobre un mapa interactivo.
 
-El proyecto arranca con el **ODS 7 — Energía Asequible y No Contaminante**, mostrando los puntos de carga para vehículos eléctricos de la ciudad desde el primer día, y está diseñado para escalar al resto de ODS con el mismo mecanismo.
+El proyecto arrancará con el **ODS 7 — Energía Asequible y No Contaminante**, mostrando los puntos de carga para vehículos eléctricos de la ciudad, y está diseñado para escalar al resto de ODS con el mismo mecanismo.
 
 ---
 
@@ -13,7 +13,6 @@ El proyecto arranca con el **ODS 7 — Energía Asequible y No Contaminante**, m
 - Muestra en un mapa los puntos ODS oficiales de Málaga (cargadores eléctricos, zonas verdes, puntos de reciclaje…)
 - Permite a los usuarios explorar, visitar y verificar esos puntos
 - Recompensa la participación con un sistema de **karma** (puntos por visitar, confirmar o reportar)
-- Registra el progreso de cada usuario por ODS completado
 
 ## Tecnologías
 
