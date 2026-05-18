@@ -1,13 +1,13 @@
-package com.esplai.backend_ecomap;
+package com.esplai.backend_GoGoMap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BackendEcomapApplication {
+public class BackendGoGoMapApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BackendEcomapApplication.class, args);
+		SpringApplication.run(BackendGoGoMapApplication.class, args);
 	}
 
 }

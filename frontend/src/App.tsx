@@ -1,17 +1,17 @@
 import { useState } from "react"
-import EcomapOnboarding from "@/components/onboarding/EcomapOnboarding"
+import GoGoMapOnboarding from "@/components/onboarding/GoGoMapOnboarding"
 
 function App() {
   const [onboardingDone, setOnboardingDone] = useState(false)
 
   if(!onboardingDone) {
     return (
-      <EcomapOnboarding onEnter={() => setOnboardingDone(true)}/>
+      <GoGoMapOnboarding onEnter={() => setOnboardingDone(true)}/>
     )
   }
   return (
     <main>
-      <h1>Bienvenido a Ecomap</h1>
+      <h1>Bienvenido a GoGoMap</h1>
     </main>
   )
 }
