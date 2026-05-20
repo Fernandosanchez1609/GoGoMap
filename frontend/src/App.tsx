@@ -1,13 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState } from "react"
+import GoGoMapOnboarding from "@/components/onboarding/GoGoMapOnboarding"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [onboardingDone, setOnboardingDone] = useState(false)
 
+  if(!onboardingDone) {
+    return (
+      <GoGoMapOnboarding onEnter={() => setOnboardingDone(true)}/>
+    )
+  }
   return (
+<<<<<<< HEAD
     <>
       <section id="center">
         <div className="hero">
@@ -117,6 +120,11 @@ function App() {
       <div className="ticks"></div>
       <section id="spacer"></section>
     </>
+=======
+    <main>
+      <h1>Bienvenido a GoGoMap</h1>
+    </main>
+>>>>>>> 2b9798049a4eee39fa0a16eddfdf20cfaee9d0be
   )
 }
 
