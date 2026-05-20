@@ -62,3 +62,19 @@ const SLIDES: Slide[] = [
 const N = SLIDES.length  // Número de slides
 const SPEED = 0.5  // pixeles por frame que avanza el carusel
 const SNAP_DURATION = 280  // milisegundos que dura la animación
+
+// Helpers
+function esaseInOut(t: number): number {
+  return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t
+}
+
+function generateParticles(count: number) {
+  return Array.from({ length: count }, (_ , i) => ({
+    id: i,
+    size: 2 + Math.random() * 3,
+    left: Math.random() * 100,
+    top: 55 + Math.random() * 45,
+    duration: 4 + Math.random() * 5,
+    delay: Math.random() * 5,
+  }))
+}
