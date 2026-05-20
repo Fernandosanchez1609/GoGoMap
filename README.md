@@ -1,39 +1,405 @@
-# 🌍 ECOMAP
+# 🌿 GoGoMap — Frontend
 
-> Mapa interactivo de Objetivos de Desarrollo Sostenible · Málaga
-
-ECOMAP será una aplicación web progresiva (PWA) que permite explorar puntos de interés vinculados a los **Objetivos de Desarrollo Sostenible (ODS)** de la ONU en la ciudad de Málaga. Los datos provienen de fuentes oficiales del Ayuntamiento de Málaga y se visualizan sobre un mapa interactivo.
-
-El proyecto arrancará con el **ODS 7 — Energía Asequible y No Contaminante**, mostrando los puntos de carga para vehículos eléctricos de la ciudad, y está diseñado para escalar al resto de ODS con el mismo mecanismo.
+> **No. 1 in Spain for passing karma** 🌍  
+> Aplicación web y móvil para localizar puntos relacionados con los Objetivos de Desarrollo Sostenible (ODS) en la ciudad de Málaga.
 
 ---
 
-## ¿Qué hace ECOMAP?
+## 📋 Índice
 
-- Muestra en un mapa los puntos ODS oficiales de Málaga (cargadores eléctricos, zonas verdes, puntos de reciclaje…)
-- Permite a los usuarios explorar, visitar y verificar esos puntos
-- Recompensa la participación con un sistema de **karma** (puntos por visitar, confirmar o reportar)
+- [Descripción](#descripción)
+- [Pantallas](#pantallas)
+- [Design System](#design-system)
+- [API Endpoints](#api-endpoints)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Instalación](#instalación)
+- [Tecnologías](#tecnologías)
+- [Contribución](#contribución)
+- [Licencia](#licencia)
+
+---
+
+## Descripción
+
+GoGoMap permite a los ciudadanos de Málaga descubrir puntos de interés vinculados a los 17 ODS de Naciones Unidas. A partir de la geolocalización del usuario, la app muestra los puntos más cercanos según el ODS seleccionado y genera una ruta para llegar a ellos.
+
+**Funcionalidades principales:**
+
+- Geolocalización del usuario en tiempo real
+- Mapa interactivo con puntos ODS categorizados
+- Filtrado por tipo de ODS
+- Detalle de cada punto con distancia y estado
+- Generación de ruta hasta el punto seleccionado
+- Sistema de favoritos
+- Perfil de usuario con Karma Points (gamificación)
+- Registro e inicio de sesión
+
+---
+
+## Pantallas
+
+El proyecto cuenta con las siguientes vistas implementadas:
+
+### 🔐 Login (`/login`)
+Pantalla de bienvenida con formulario de acceso. Incluye campos de usuario y contraseña, enlace a registro y acceso al soporte.
+
+### 🗺️ Mapa principal (`/map`)
+Vista central de la aplicación. Muestra el mapa de Málaga con los puntos ODS geolocalizados. Incluye:
+- Barra superior con logo, iconos de búsqueda y perfil
+- Filtros rápidos de ODS en fila horizontal (con iconos por objetivo)
+- Panel inferior con la lista de **"Puntos cercanos"**
+- Navegación inferior: Mapa / Favoritos / Perfil
+
+### 📍 Detalle de punto (`/point/:id`)
+Modal o vista de detalle al seleccionar un punto ODS. Ejemplo:
+- Nombre y categoría ODS (ej. *ODS 1 — Cargador de coche*)
+- Dirección (ej. *Avda. Andalucía, 5*)
+- Estado: **Funcionando** / No disponible
+- Distancia en metros
+- Botones de acción: **Reportar** y **Ruta**
+
+### 📝 Registro (`/register`)
+Formulario de creación de cuenta con los campos: nombre, apellidos, nombre de usuario, email, contraseña y confirmación de contraseña. Botón de **Enviar** y enlace de vuelta al login. Branding GoGoMap en cabecera.
+
+### 👤 Perfil de usuario (`/profile`)
+Vista del perfil del usuario autenticado. Incluye:
+- Avatar con inicial del nombre
+- Nombre completo y fecha de registro (ej. *Miembro desde Enero 2024*)
+- Contador de **Karma Points** con impacto total (ej. *50 Karma Points*)
+- Nombre completo y email
+- Botón de **Cerrar Sesión**
+
+### ⭐ Favoritos (`/favorites`)
+Lista de puntos guardados por el usuario, con pestañas de filtrado (ej. *Todos / Puntos Agua / ...*). Cada item muestra imagen en miniatura, nombre del punto, dirección y categoría ODS.
+
+### ❌ Error 404 (`/*`)
+Página de error para rutas no encontradas. Mensaje: **"¡UPS! PÁGINA NO ENCONTRADA — Parece que este punto no está en el mapa."** con botón de **Volver al mapa**.
+
+### ⚠️ Error general (`/error`)
+Página de error genérico. Mensaje: **"¡HUBO UN ERROR! — Parece que algo salió mal. Inténtalo de nuevo."** con botones de **Reintentar** y **Volver**.
+
+---
+
+## Design System
+
+### Paleta de colores
+
+| Token | Valor | Uso |
+|---|---|---|
+| `primary` | `#2B5E2B` (verde oscuro) | Color principal, botones CTA, énfasis |
+| `secondary` | `#1F1F2E` (negro/gris oscuro) | Fondos oscuros, texto sobre claro |
+| `body` | `#F5F5F5` (blanco roto) | Fondo general de la app |
+| `accent` | `#C4185C` (magenta/rosa) | Acciones secundarias, alertas, Eco Points |
+| `neutral` | `#2D2D2D` (gris oscuro) | Texto principal, iconos |
+
+### Tipografía
+
+El proyecto utiliza una única familia tipográfica sans-serif en tres pesos:
+
+| Peso | Uso |
+|---|---|
+| **Regular** | Texto de cuerpo, etiquetas, descripciones |
+| **Medium** | Subtítulos, nombres de puntos, metadatos |
+| **Bold** | Títulos, botones, contadores, valores destacados |
+
+El tamaño base es de **16px** con escala modular para headings.
+
+### Componentes principales
+
+#### Botones
+
+```
+[Primary]   Fondo verde oscuro (#2B5E2B), texto blanco, border-radius redondeado
+[Secondary] Borde verde oscuro, fondo transparente, texto verde
+[Danger]    Fondo magenta/rosa (#C4185C), texto blanco — usado en Cerrar Sesión
+[Ghost]     Sin borde ni fondo, solo texto — usado en acciones terciarias
+```
+
+#### Iconos de ODS
+
+Cada ODS se representa con su icono oficial de Naciones Unidas en español. Los iconos se muestran en la barra de filtros del mapa y en las tarjetas de detalle.
+
+Para descargar los iconos oficiales en español:
+👉 [https://www.un.org/sustainabledevelopment/es/news/communications-material/](https://www.un.org/sustainabledevelopment/es/news/communications-material/)
+
+> ⚠️ El uso de los iconos ODS requiere incluir el siguiente texto en la app:  
+> *"El contenido de esta publicación no ha sido aprobado por las Naciones Unidas y no refleja las opiniones de las Naciones Unidas ni de sus funcionarios o Estados Miembros"*
+
+#### Tarjeta de punto ODS
+
+```
+┌─────────────────────────────┐
+│  [Imagen]  Nombre del punto │
+│            ODS · Dirección  │
+│            Estado · Distancia│
+└─────────────────────────────┘
+```
+
+#### Badge de Eco Points
+
+Componente de gamificación que muestra el impacto acumulado del usuario. Fondo verde oscuro, texto blanco, con icono de hoja.
+
+```
+┌──────────────────────────┐
+│  TOTAL IMPACTO           │
+│  🌿 50 Karma Points     │
+└──────────────────────────┘
+```
+
+#### Navegación inferior (móvil)
+
+Barra fija en la parte inferior con tres secciones:
+
+```
+[🗺️ Mapa]   [❤️ Favoritos]   [👤 Perfil]
+```
+
+---
+
+## API Endpoints
+
+Base URL: `https://api.gogomap.es/api/v1`
+
+> ⚠️ La **Landing Page** (1) es actualmente estática. Se conectará a un endpoint dinámico en una versión futura.
+
+---
+
+### 🔐 Autenticación
+
+#### Registro de usuario
+```
+POST /api/v1/auth/register
+```
+
+**Request DTO**
+```json
+{
+  "username": "string",
+  "email": "string",
+  "password": "string"
+}
+```
+
+**Response DTO**
+```json
+{
+  "userId": "string",
+  "username": "string"
+}
+```
+
+---
+
+#### Login
+```
+POST /api/v1/auth/login
+```
+
+**Request DTO**
+```json
+{
+  "email": "string",
+  "password": "string"
+}
+```
+
+**Response DTO**
+```json
+{
+  "token": "string"
+}
+```
+
+> El token recibido debe incluirse en las cabeceras de las peticiones autenticadas como `Authorization: Bearer <token>`.
+
+---
+
+### 🗺️ Mapa
+
+#### Cargar mapa principal con filtros ODS
+```
+GET /api/v1/map
+```
+Devuelve los datos necesarios para renderizar el mapa principal con los botones de filtrado por ODS.
+
+---
+
+### 📍 Puntos ODS
+
+#### Detalle de un punto
+```
+GET /api/v1/points/{id}
+```
+Devuelve toda la información completa del punto seleccionado (nombre, categoría ODS, dirección, estado, imágenes, distancia, etc.).
+
+---
+
+### 👤 Perfil de usuario
+
+#### Datos del usuario activo
+```
+GET /api/v1/users/me/
+```
+Devuelve todos los datos y estadísticas del usuario autenticado (nombre, email, Eco Points, fecha de registro, etc.).
+
+---
+
+### ⭐ Favoritos
+
+#### Listar favoritos del usuario
+```
+GET /api/v1/users/me/favorites
+```
+Devuelve la lista de puntos ODS guardados por el usuario, con información mínima de cada uno.
+
+---
+
+#### Añadir punto a favoritos
+```
+POST /api/v1/points/{id}/favorite
+```
+Vincula un punto ODS al perfil del usuario.
+Devuelve `201 CREATED`.
+
+---
+
+#### Eliminar punto de favoritos
+```
+DELETE /api/v1/points/{id}/favorite
+```
+Elimina la vinculación entre el punto y el usuario.
+Devuelve `204 No Content`.
+
+---
+
+### 📋 Resumen de endpoints
+
+| Método | Endpoint | Vista | Auth |
+|--------|----------|-------|------|
+| `POST` | `/api/v1/auth/register` | Registro | ❌ |
+| `POST` | `/api/v1/auth/login` | Login | ❌ |
+| `GET` | `/api/v1/map` | Mapa principal | ✅ |
+| `GET` | `/api/v1/points/{id}` | Detalle de punto | ✅ |
+| `GET` | `/api/v1/users/me/` | Perfil | ✅ |
+| `GET` | `/api/v1/users/me/favorites` | Favoritos | ✅ |
+| `POST` | `/api/v1/points/{id}/favorite` | Favoritos | ✅ |
+| `DELETE` | `/api/v1/points/{id}/favorite` | Favoritos | ✅ |
+
+---
+
+## Estructura del proyecto
+
+```
+gogomap-frontend/
+│
+├── public/
+│   ├── assets/
+│   │   ├── icons/           # Iconos ODS oficiales en español (SVG)
+│   │   └── images/          # Imágenes estáticas y logo
+│   └── index.html
+│
+├── src/
+│   ├── components/          # Componentes reutilizables
+│   │   ├── Map/             # Componente de mapa interactivo
+│   │   ├── ODSFilter/       # Barra de filtros por ODS
+│   │   ├── PointCard/       # Tarjeta de punto ODS
+│   │   ├── PointDetail/     # Modal de detalle de punto
+│   │   ├── EcoPoints/       # Badge de gamificación
+│   │   ├── Navbar/          # Navegación inferior
+│   │   └── ui/              # Botones, inputs, badges genéricos
+│   │
+│   ├── pages/               # Vistas principales
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── Map.jsx
+│   │   ├── Favorites.jsx
+│   │   ├── Profile.jsx
+│   │   ├── Error404.jsx
+│   │   └── ErrorGeneral.jsx
+│   │
+│   ├── hooks/               # Custom hooks
+│   │   ├── useGeolocation.js
+│   │   └── useNearbyPoints.js
+│   │
+│   ├── services/            # Llamadas a API
+│   │   ├── api.js           # Configuración base (Axios / Fetch)
+│   │   ├── auth.js          # Login, registro, sesión
+│   │   └── points.js        # Puntos ODS, favoritos, rutas
+│   │
+│   ├── store/               # Estado global
+│   ├── styles/              # Variables CSS / Tailwind config
+│   │   └── tokens.css       # Design tokens (colores, tipografía)
+│   └── main.jsx
+│
+├── .env.example
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+---
+
+## Instalación
+
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/tu-org/gogomap-frontend.git
+cd gogomap-frontend
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Configurar variables de entorno
+cp .env.example .env
+# Editar .env con las claves de API del mapa y del backend
+
+# 4. Arrancar en modo desarrollo
+npm run dev
+```
+
+### Variables de entorno necesarias
+
+```env
+VITE_API_BASE_URL=https://api.gogomap.es
+VITE_MAP_API_KEY=tu_clave_de_mapa
+VITE_AYUNTAMIENTO_API_URL=https://datosabiertos.malaga.eu/api
+```
+
+---
 
 ## Tecnologías
 
-| Capa | Stack |
+| Capa | Tecnología |
 |---|---|
-| Backend | Java · Spring Boot · PostgreSQL · Flyway · JWT |
-| Frontend | React · Vite · Tailwind CSS · Leaflet |
-| Base de datos | PostgreSQL en Neon.tech |
-| Despliegue | Railway / Render (backend) · Vercel / Netlify (frontend) |
+| Framework | React / Vue (por definir) |
+| Estilos | Tailwind CSS o CSS Modules |
+| Mapa | Leaflet.js / Mapbox GL / Google Maps API |
+| Rutas | React Router v6 |
+| Estado global | Zustand / Pinia |
+| HTTP | Axios |
+| Geolocalización | Web Geolocation API |
+| Iconos | Iconos ODS oficiales ONU (español) |
 
-## Estructura del repositorio
+---
 
-```
-ecomap/
-├── backend/    ← API REST con Spring Boot
-└── frontend/   ← SPA con React + Vite
-```
-## Datos ODS
+## Contribución
 
-Los puntos del mapa se importan desde los datasets en abierto del [Portal de Datos Abiertos del Ayuntamiento de Málaga](https://datosabiertos.malaga.eu). El piloto usa el dataset de **puntos de recarga para vehículos eléctricos** en formato GeoJSON.
+1. Haz un fork del repositorio
+2. Crea tu rama: `git checkout -b feature/nombre-de-la-feature`
+3. Haz commit de tus cambios: `git commit -m 'feat: descripción del cambio'`
+4. Sube la rama: `git push origin feature/nombre-de-la-feature`
+5. Abre un Pull Request hacia `main`
+
+Seguimos la convención de commits [Conventional Commits](https://www.conventionalcommits.org/es/).
+
+---
 
 ## Licencia
 
-MIT
+© 2026 GoGoMap · Environmental Responsibility  
+Proyecto académico desarrollado en la ciudad de Málaga.
+
+---
+
+> *El contenido de esta aplicación no ha sido aprobado por las Naciones Unidas y no refleja las opiniones de las Naciones Unidas ni de sus funcionarios o Estados Miembros.*  
+> Iconos ODS: [Naciones Unidas — Materiales de comunicación](https://www.un.org/sustainabledevelopment/es/news/communications-material/)
