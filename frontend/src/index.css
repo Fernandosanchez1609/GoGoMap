@@ -1,4 +1,4 @@
-@import url("tailwindcss");
+@import "tailwindcss";
 
 body {
   margin: 0;

@@ -4,7 +4,6 @@ export interface Slide {
     gradient: string
     title: string
     desc: string
-    tag: string
 }
 
 // Component
@@ -28,16 +27,35 @@ export default function SlideCard({ slide, isActive }: SlideCardProps) {
           ? "bg-white/[0.11] border-emerald-400/40 scale-105 shadow-2xl"
           : "bg-white/[0.06] border-emerald-400/15",
       ].join(" ")}
-    ></div>)}
+    >
 
     <div
     className={[
-        "relative flex item-center justify-center flex-shrink-0",
+        "relative flex items-center justify-center flex-shrink-0",
         "w-[13vw] max-w-[66px] min-w-[52px]",
-        "aspect-square rounded-2xl mb-3",
-        `bg-gradient-to-br ${slide.gradient}`,
+        "aspect-square rounded-2x1 mb-3",
+        //`bg-gradient-to-br ${slide.gradient}`,
     ].join(" ")}
     style={{ fontSize: "clamp(26px, 6.5vw, 34px)"}}
     >
-        <span role="img" aria-hidden="true">{slide.emoji</span>
-    </div className>
+        <span role="img" aria-hidden="true">{slide.emoji}</span>
+    </div >
+
+    <h3
+        className="font-bold text-white leading-snug mb-2"
+        style={{ fontSize: "clamp(14px, 3.8vw, 17px)" }}
+      >
+        {slide.title}
+      </h3>
+
+      {/* Descripción */}
+      <p
+        className="font-light text-white/65 leading-relaxed"
+        style={{ fontSize: "clamp(11.5px, 2.8vw, 13px)" }}
+      >
+        {slide.desc}
+      </p>
+
+    </div>
+  )
+}
