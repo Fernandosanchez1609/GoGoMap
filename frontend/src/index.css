@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -127,6 +128,9 @@
   flex-direction: column;
   box-sizing: border-box;
 }
+=======
+@import url("tailwindcss");
+>>>>>>> SlideCards
 
 body {
   margin: 0;
