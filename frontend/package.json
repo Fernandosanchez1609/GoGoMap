@@ -16,7 +16,11 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+<<<<<<< HEAD
+    "@tailwindcss/vite": "^4.2.4",
+=======
     "@tailwindcss/vite": "^4.3.0",
+>>>>>>> 2b9798049a4eee39fa0a16eddfdf20cfaee9d0be
     "@types/node": "^24.12.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
@@ -25,7 +29,11 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.5.0",
+<<<<<<< HEAD
+    "tailwindcss": "^4.2.4",
+=======
     "tailwindcss": "^4.3.0",
+>>>>>>> 2b9798049a4eee39fa0a16eddfdf20cfaee9d0be
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.58.2",
     "vite": "^8.0.10"
