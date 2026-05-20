@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-<<<<<<< HEAD
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -65,8 +64,5 @@
 }
 
 body {
-=======
-body{
->>>>>>> 2b9798049a4eee39fa0a16eddfdf20cfaee9d0be
   margin: 0;
 }
