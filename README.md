@@ -10,6 +10,7 @@
 - [Descripción](#descripción)
 - [Pantallas](#pantallas)
 - [Design System](#design-system)
+- [API Endpoints](#api-endpoints)
 - [Estructura del proyecto](#estructura-del-proyecto)
 - [Instalación](#instalación)
 - [Tecnologías](#tecnologías)
@@ -27,20 +28,20 @@ GoGoMap permite a los ciudadanos de Málaga descubrir puntos de interés vincula
 - Geolocalización del usuario en tiempo real
 - Mapa interactivo con puntos ODS categorizados
 - Filtrado por tipo de ODS
-- Detalle de cada punto con distancia, estado y galería de imágenes
+- Detalle de cada punto con distancia y estado
 - Generación de ruta hasta el punto seleccionado
 - Sistema de favoritos
-- Perfil de usuario con Eco Points (gamificación)
+- Perfil de usuario con Karma Points (gamificación)
 - Registro e inicio de sesión
 
 ---
-![alt text](<Captura de pantalla 2026-05-18 190001.png>)
+
 ## Pantallas
 
 El proyecto cuenta con las siguientes vistas implementadas:
 
 ### 🔐 Login (`/login`)
-Pantalla de bienvenida con formulario de acceso. Incluye campos de usuario y contraseña, enlace a registro y acceso al soporte. El tagline principal es **"No. 1 in Spain for passing karma :)"**.
+Pantalla de bienvenida con formulario de acceso. Incluye campos de usuario y contraseña, enlace a registro y acceso al soporte.
 
 ### 🗺️ Mapa principal (`/map`)
 Vista central de la aplicación. Muestra el mapa de Málaga con los puntos ODS geolocalizados. Incluye:
@@ -50,12 +51,11 @@ Vista central de la aplicación. Muestra el mapa de Málaga con los puntos ODS g
 - Navegación inferior: Mapa / Favoritos / Perfil
 
 ### 📍 Detalle de punto (`/point/:id`)
-Modal o vista de detalle al seleccionar un punto ODS. Muestra:
+Modal o vista de detalle al seleccionar un punto ODS. Ejemplo:
 - Nombre y categoría ODS (ej. *ODS 1 — Cargador de coche*)
 - Dirección (ej. *Avda. Andalucía, 5*)
 - Estado: **Funcionando** / No disponible
 - Distancia en metros
-- Galería de imágenes del punto
 - Botones de acción: **Reportar** y **Ruta**
 
 ### 📝 Registro (`/register`)
@@ -65,7 +65,7 @@ Formulario de creación de cuenta con los campos: nombre, apellidos, nombre de u
 Vista del perfil del usuario autenticado. Incluye:
 - Avatar con inicial del nombre
 - Nombre completo y fecha de registro (ej. *Miembro desde Enero 2024*)
-- Contador de **Eco Points** con impacto total (ej. *50 Eco Points*)
+- Contador de **Karma Points** con impacto total (ej. *50 Karma Points*)
 - Nombre completo y email
 - Botón de **Cerrar Sesión**
 
@@ -142,7 +142,7 @@ Componente de gamificación que muestra el impacto acumulado del usuario. Fondo 
 ```
 ┌──────────────────────────┐
 │  TOTAL IMPACTO           │
-│  🌿 50 Eco Points        │
+│  🌿 50 Karma Points     │
 └──────────────────────────┘
 ```
 
@@ -153,6 +153,137 @@ Barra fija en la parte inferior con tres secciones:
 ```
 [🗺️ Mapa]   [❤️ Favoritos]   [👤 Perfil]
 ```
+
+---
+
+## API Endpoints
+
+Base URL: `https://api.gogomap.es/api/v1`
+
+> ⚠️ La **Landing Page** (1) es actualmente estática. Se conectará a un endpoint dinámico en una versión futura.
+
+---
+
+### 🔐 Autenticación
+
+#### Registro de usuario
+```
+POST /api/v1/auth/register
+```
+
+**Request DTO**
+```json
+{
+  "username": "string",
+  "email": "string",
+  "password": "string"
+}
+```
+
+**Response DTO**
+```json
+{
+  "userId": "string",
+  "username": "string"
+}
+```
+
+---
+
+#### Login
+```
+POST /api/v1/auth/login
+```
+
+**Request DTO**
+```json
+{
+  "email": "string",
+  "password": "string"
+}
+```
+
+**Response DTO**
+```json
+{
+  "token": "string"
+}
+```
+
+> El token recibido debe incluirse en las cabeceras de las peticiones autenticadas como `Authorization: Bearer <token>`.
+
+---
+
+### 🗺️ Mapa
+
+#### Cargar mapa principal con filtros ODS
+```
+GET /api/v1/map
+```
+Devuelve los datos necesarios para renderizar el mapa principal con los botones de filtrado por ODS.
+
+---
+
+### 📍 Puntos ODS
+
+#### Detalle de un punto
+```
+GET /api/v1/points/{id}
+```
+Devuelve toda la información completa del punto seleccionado (nombre, categoría ODS, dirección, estado, imágenes, distancia, etc.).
+
+---
+
+### 👤 Perfil de usuario
+
+#### Datos del usuario activo
+```
+GET /api/v1/users/me/
+```
+Devuelve todos los datos y estadísticas del usuario autenticado (nombre, email, Eco Points, fecha de registro, etc.).
+
+---
+
+### ⭐ Favoritos
+
+#### Listar favoritos del usuario
+```
+GET /api/v1/users/me/favorites
+```
+Devuelve la lista de puntos ODS guardados por el usuario, con información mínima de cada uno.
+
+---
+
+#### Añadir punto a favoritos
+```
+POST /api/v1/points/{id}/favorite
+```
+Vincula un punto ODS al perfil del usuario.
+Devuelve `201 CREATED`.
+
+---
+
+#### Eliminar punto de favoritos
+```
+DELETE /api/v1/points/{id}/favorite
+```
+Elimina la vinculación entre el punto y el usuario.
+Devuelve `204 No Content`.
+
+---
+
+### 📋 Resumen de endpoints
+
+| Método | Endpoint | Vista | Auth |
+|--------|----------|-------|------|
+| `POST` | `/api/v1/auth/register` | Registro | ❌ |
+| `POST` | `/api/v1/auth/login` | Login | ❌ |
+| `GET` | `/api/v1/map` | Mapa principal | ✅ |
+| `GET` | `/api/v1/points/{id}` | Detalle de punto | ✅ |
+| `GET` | `/api/v1/users/me/` | Perfil | ✅ |
+| `GET` | `/api/v1/users/me/favorites` | Favoritos | ✅ |
+| `POST` | `/api/v1/points/{id}/favorite` | Favoritos | ✅ |
+| `DELETE` | `/api/v1/points/{id}/favorite` | Favoritos | ✅ |
 
 ---
 
@@ -265,7 +396,7 @@ Seguimos la convención de commits [Conventional Commits](https://www.convention
 
 ## Licencia
 
-© 2024 GoGoMap · Environmental Responsibility  
+© 2026 GoGoMap · Environmental Responsibility  
 Proyecto académico desarrollado en la ciudad de Málaga.
 
 ---
