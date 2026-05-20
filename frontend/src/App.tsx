@@ -1,18 +1,16 @@
-import { useState } from "react"
-import GoGoMapOnboarding from "@/components/onboarding/GoGoMapOnboarding"
-
+//import { useState } from "react"
+//import GoGoMapOnboarding from "@/components/onboarding/GoGoMapOnboarding"
+import AppRouter from "@/routes/AppRouter"
 function App() {
-  const [onboardingDone, setOnboardingDone] = useState(false)
+  //const [onboardingDone, setOnboardingDone] = useState(false)
 
-  if(!onboardingDone) {
+  /*if(!onboardingDone) {
     return (
-      <GoGoMapOnboarding onEnter={() => setOnboardingDone(true)}/>
+       <GoGoMapOnboarding onEnter={() => setOnboardingDone(true)}/>
     )
-  }
+  }*/
   return (
-    <main>
-      <h1>Bienvenido a GoGoMap</h1>
-    </main>
+      <AppRouter />
   )
 }
 
