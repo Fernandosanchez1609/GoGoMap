@@ -127,7 +127,7 @@
   flex-direction: column;
   box-sizing: border-box;
 }
-@import url("tailwindcss");
+
 @import "tailwindcss";
 
 body {

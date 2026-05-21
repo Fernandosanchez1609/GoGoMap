@@ -1,4 +1,4 @@
-package com.esplai.backend_GoGoMap;
+package com.esplai.backendgogomap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
