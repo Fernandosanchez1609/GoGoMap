@@ -244,6 +244,40 @@ return (
       </div>
       {/* ── Fin Partículas ── */}
 
+      {/* ── Logo ── */}
+      <div className="flex-shrink-0 flex flex-col items-center pb-2 animate-[fadeDown_.7s_cubic-bezier(.22,1,.36,1)_both]">
+        
+        {/* Icono */}
+        <div
+          className="flex items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-300 to-emerald-600 mb-2 shadow-[0_6px_22px_rgba(64,145,108,.5)]"
+          style={{
+            width: "clamp(44px,11vw,60px)",
+            height: "clamp(44px,11vw,60px)",
+            fontSize: "clamp(22px,5.5vw,30px)",
+          }}
+        >
+          🗺️
+        </div>
+
+        {/* Nombre */}
+        <span
+          className="font-black tracking-tight bg-gradient-to-r from-emerald-200 to-white bg-clip-text text-transparent"
+          style={{ fontSize: "clamp(20px,5.5vw,26px)" }}
+        >
+          GoGoMap
+        </span>
+
+        {/* Subtítulo */}
+        <span
+          className="font-mono text-emerald-300 uppercase tracking-widest mt-1"
+          style={{ fontSize: "clamp(8.5px,2vw,10.5px)" }}
+        >
+          Málaga · ODS · Karma
+        </span>
+
+      </div>
+      {/* ── Fin Logo ── */}
+
     </div>
   )
 }
