@@ -2,9 +2,8 @@ package com.esplai.backendgogomap.controllers;
 
 
 import com.esplai.backendgogomap.mappers.MapPointMapper;
-import com.esplai.backendgogomap.models.dto.response.MapPointDetailResponseDTO;
-import com.esplai.backendgogomap.models.dto.response.MapPointResponseDTO;
-import com.esplai.backendgogomap.models.entities.MapPoint;
+import com.esplai.backendgogomap.models.dtos.response.MapPointDetailResponseDTO;
+import com.esplai.backendgogomap.models.dtos.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.services.MapPointService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
