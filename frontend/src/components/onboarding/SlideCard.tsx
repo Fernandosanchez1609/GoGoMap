@@ -9,7 +9,6 @@ export interface Slide {
 // Component
 interface SlideCardProps {
     slide: Slide
-    isActive: boolean
 }
 
 export default function SlideCard({ slide, isActive }: SlideCardProps) {
@@ -23,9 +22,7 @@ export default function SlideCard({ slide, isActive }: SlideCardProps) {
         "rounded-3xl border backdrop-blur-md",
         "transition-all duration-300 ease-out",
         "w-[68vw] max-w-[272px] p-5",
-        isActive
-          ? "bg-white/[0.11] border-emerald-400/40 scale-105 shadow-2xl"
-          : "bg-white/[0.06] border-emerald-400/15",
+        "bg-emerald-900/80 border-emerald-400/40 scale-100 shadow-2xl",
       ].join(" ")}
     >
 

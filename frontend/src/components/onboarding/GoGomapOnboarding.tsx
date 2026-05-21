@@ -9,7 +9,7 @@ const SLIDES: Slide[] = [
     emoji: "🗺️",
     gradient: "from-emerald-900 to-emerald-700",
     title: "Mapa interactivo de GoGoMap",
-    desc: "Explora en tiempo real todos los puntos sostenibles de la ciudad de Málaga. Recicla, cuida el entorno y conoce tu barrio.",
+    desc: "Explora en tiempo real todos los puntos sostenibles de la ciudad de Málaga. Cuida el entorno y conoce tu barrio.",
   },
   {
     emoji: "🎯",
@@ -85,7 +85,7 @@ export default function GoGomapOnBoarding({
   // Estado
   const [activeReal, setActiveReal] = useState<number>(0)
   const [visible, setVisible] = useState<boolean>(true)
-  const [particles] = useState(() => generateParticles(12))
+  const [particles] = useState(() => generateParticles(50))
 
 
 
@@ -189,9 +189,9 @@ const handlerEnter = () => {
 }
 
 // JSX
-const allSlides = [...SLIDES, ...SLIDES, ...SLIDES]
+  const allSlides = [...SLIDES, ...SLIDES, ...SLIDES]
 
-return (
+  return (
     <div
       className={[
         "relative w-full h-dvh flex flex-col items-center overflow-hidden",
@@ -205,19 +205,19 @@ return (
     >
 
       {/* ── Fondo ── */}
-      <div className="fixed inset-0 -z-10 bg-gradient-to-br from-[#1B6D24] via-[#6DBD6A] to-[#A3F69C]">
+      <div className="fixed inset-0 -z-10 bg-gradient-to-tr from-[#1B6D24] via-[#6DBD6A] to-[#A3F69C]">
 
         {/* Blobs */}
-        <div className="absolute -top-[14vw] -left-[14vw] w-[55vw] h-[55vw] rounded-full bg-emerald-300/30 blur-[55px] animate-pulse" />
-        <div className="absolute -bottom-[10vw] -right-[10vw] w-[44vw] h-[44vw] rounded-full bg-cyan-300/25 blur-[55px] animate-pulse [animation-delay:2.5s]" />
-        <div className="absolute top-[38%] left-[56%] w-[28vw] h-[28vw] rounded-full bg-amber-300/20 blur-[50px] animate-pulse [animation-delay:4.5s]" />
+        <div className="absolute -top-[14vw] -left-[14vw] w-[55vw] h-[55vw] rounded-full bg-emerald-300/50 blur-[55px] animate-pulse" />
+        <div className="absolute -bottom-[10vw] -right-[10vw] w-[44vw] h-[44vw] rounded-full bg-cyan-300/45 blur-[55px] animate-pulse [animation-delay:4.5s]" />
+        <div className="absolute top-[38%] left-[56%] w-[28vw] h-[28vw] rounded-full bg-amber-300/60 blur-[50px] animate-pulse [animation-delay:4.5s]" />
 
         {/* Grid */}
         <div
           className="absolute inset-0"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(116,198,157,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(116,198,157,.05) 1px,transparent 1px)",
+              "linear-gradient(rgba(255,255,255,.20) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.20) 1px,transparent 1px)",
             backgroundSize: "34px 34px",
           }}
         />
@@ -230,7 +230,7 @@ return (
         {particles.map((p) => (
           <div
             key={p.id}
-            className="absolute rounded-full bg-emerald-300"
+            className="absolute rounded-full bg-white"
             style={{
               width: p.size,
               height: p.size,
@@ -245,20 +245,20 @@ return (
       {/* ── Fin Partículas ── */}
 
       {/* ── Logo ── */}
-      <div className="flex-shrink-0 flex flex-col items-center pb-2 animate-[fadeDown_.7s_cubic-bezier(.22,1,.36,1)_both]">
-        
-        <div className="rounded-3xl bg-[#A8ADA3]/50 backdrop-blur-md px-6 py-4">
+      <div className="flex-shrink-0 flex flex-col items-center pb-2 animate-[fadeDown_3.7s_cubic-bezier(.22,1,.36,1)_both]">
+
+        <div className="rounded-3xl bg-[#A8ADA3]/0 backdrop-blur-md px-6 py-4">
           <img
             src="/assets/Logo.png"
             alt="GoGoMap"
-            style={{ height: "clamp(80px, 20vw, 120px)" }}
+            style={{ height: "clamp(150px, 25vw, 150px)" }}
           />
         </div>
 
         {/* Subtítulo */}
         <span
-          className="font-mono text-emerald-300 uppercase tracking-widest mt-1"
-          style={{ fontSize: "clamp(8.5px,2vw,10.5px)" }}
+          className="font-mono text-white uppercase tracking-widest -mt-4 drop-shadow-xl"
+          style={{ fontSize: "clamp(12px,3vw,16px)" }}
         >
           Málaga · ODS · Karma
         </span>
@@ -266,6 +266,70 @@ return (
       </div>
       {/* ── Fin Logo ── */}
 
+      {/* ── Carousel ── */}
+      <div
+        ref={wrapperRef}
+        role="region"
+        aria-label="Características de GoGoMap"
+        className="flex-1 w-full overflow-hidden flex items-center min-h-0 -mt-40"
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
+        <div
+          ref={trackRef}
+          className="flex items-center will-change-transform"
+          style={{ gap: "clamp(10px, 2.8vw, 18px)", padding: "0 clamp(10px, 5vw, 28px)" }}
+        >
+          {allSlides.map((slide, i) => (
+            <SlideCard
+              key={i}
+              slide={slide}
+            />
+          ))}
+        </div>
+        {/* ── Fin trackRef ── */}
       </div>
-  )
+      {/* ── Fin Carousel ── */}
+
+      {/* ── Keyframes ── */}
+      <style>{`
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes particleFly {
+      0%   { opacity: 0; transform: translateY(0) scale(0); }
+      10%  { opacity: .45; transform: translateY(-6px) scale(1); }
+      90%  { opacity: .2; }
+      100% { opacity: 0; transform: translateY(-80px) scale(.4); }
+    }
+  `}</style>
+
+  {/* ── Botón ── */}
+      <div className="flex-shrink-0 w-full px-[18px] py-4 animate-[fadeUp_.7s_.5s_cubic-bezier(.22,1,.36,1)_both]">
+        <button
+          onClick={handlerEnter}
+          className={[
+            "w-full rounded-full font-bold relative overflow-hidden",
+            "bg-emerald-900 text-white",
+            "shadow-[0_6px_20px_rgba(64,145,108,.48)]",
+            "active:scale-95 transition-transform duration-150",
+          ].join(" ")}
+          style={{ height: "clamp(44px,10.5vw,52px)", fontSize: "clamp(13px,3.5vw,15px)" }}
+        >
+          <span className="relative z-10">Entrar en GoGoMap</span>
+          
+        </button>
+      </div>
+      {/* ── Fin Botón ── */}
+
+    </div>
+    )
 }
+    
+                                                                                                                 
