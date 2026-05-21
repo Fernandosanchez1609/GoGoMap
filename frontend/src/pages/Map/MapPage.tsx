@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-
-// Fix default marker icons (common Leaflet + bundler issue)
+import Footer from "@/components/Footer/Footer";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
@@ -15,7 +14,6 @@ L.Icon.Default.mergeOptions({
   shadowUrl: markerShadow,
 });
 
-// Icono azul para el usuario
 const userIcon = new L.Icon({
   iconUrl:
     "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png",
@@ -26,94 +24,118 @@ const userIcon = new L.Icon({
   shadowSize: [41, 41],
 });
 
-// Límites geográficos de la provincia de Málaga
 const MALAGA_BOUNDS = L.latLngBounds(
-  L.latLng(36.4, -5.1), // suroeste
-  L.latLng(37.2, -3.8)  // noreste
+  L.latLng(36.4, -5.1),
+  L.latLng(37.2, -3.8),
 );
 
 const points = [
   { id: 1, lat: 36.7213, lng: -4.4214, label: "Punto 1" },
-  { id: 2, lat: 36.725,  lng: -4.42,   label: "Punto 2" },
+  { id: 2, lat: 36.725, lng: -4.42, label: "Punto 2" },
 ];
 
-// Componente auxiliar para centrar el mapa en el usuario al cargar
 function FlyToUser({ position }: { position: [number, number] | null }) {
   const map = useMap();
+  const isFirst = useRef(true);
+
   useEffect(() => {
-    if (position) {
+    if (!position) return;
+    if (isFirst.current) {
       map.flyTo(position, 15, { duration: 1.5 });
+      isFirst.current = false;
+    } else {
+      map.panTo(position, { animate: true, duration: 0.5 });
     }
   }, [position]);
+
   return null;
 }
 
 export default function Map() {
-  const [userPosition, setUserPosition] = useState<[number, number] | null>(null);
+  const [userPosition, setUserPosition] = useState<[number, number] | null>(
+    null,
+  );
   const [geoError, setGeoError] = useState<string | null>(null);
+  const mapRef = useRef<L.Map | null>(null);
 
- useEffect(() => {
-  if (!navigator.geolocation) {
-    setGeoError("Tu navegador no soporta geolocalización.");
-    return;
+  useEffect(() => {
+    if (!navigator.geolocation) {
+      setGeoError("Tu navegador no soporta geolocalización.");
+      return;
+    }
+    const watchId = navigator.geolocation.watchPosition(
+      (pos) => {
+        setUserPosition([pos.coords.latitude, pos.coords.longitude]);
+        setGeoError(null);
+      },
+      (err) => {
+        setGeoError(`No se pudo obtener tu ubicación: ${err.message}`);
+      },
+      { enableHighAccuracy: true, maximumAge: 0, timeout: 10000 },
+    );
+    return () => navigator.geolocation.clearWatch(watchId);
+  }, []);
+
+  function centerOnUser() {
+    if (mapRef.current && userPosition) {
+      mapRef.current.flyTo(userPosition, 16, { duration: 1.2 });
+    }
   }
 
-  // watchPosition en lugar de getCurrentPosition
-  const watchId = navigator.geolocation.watchPosition(
-    (pos) => {
-      setUserPosition([pos.coords.latitude, pos.coords.longitude]);
-      setGeoError(null);
-    },
-    (err) => {
-      setGeoError(`No se pudo obtener tu ubicación: ${err.message}`);
-    },
-    {
-      enableHighAccuracy: true,  // GPS en lugar de WiFi/IP
-      maximumAge: 0,             // no usar posición cacheada
-      timeout: 10000,
-    }
-  );
-
-  // Limpiar el watcher al desmontar el componente
-  return () => navigator.geolocation.clearWatch(watchId);
-}, []);
-
   return (
-    <>
-      {geoError && (
-        <div style={{ background: "#fee", padding: "8px", fontSize: "13px" }}>
-          ⚠️ {geoError}
-        </div>
-      )}
-
-      <MapContainer
-        center={[36.7213, -4.4214]}
-        zoom={13}
-        minZoom={10}
-        maxZoom={18}
-        maxBounds={MALAGA_BOUNDS}
-        maxBoundsViscosity={1.0}   // ← impide salir de los límites (1 = rígido)
-        style={{ height: "100vh", width: "100%" }}
-      >
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-
-        {/* Puntos estáticos */}
-        {points.map((p) => (
-          <Marker key={p.id} position={[p.lat, p.lng]}>
-            <Popup>{p.label}</Popup>
-          </Marker>
-        ))}
-
-        {/* Ubicación del usuario */}
-        {userPosition && (
-          <>
-            <Marker position={userPosition} icon={userIcon}>
-              <Popup>📍 Estás aquí</Popup>
-            </Marker>
-            <FlyToUser position={userPosition} />
-          </>
+    <div className="flex flex-col h-screen">
+      {/* MAPA */}
+      <div className="relative flex-1">
+        {geoError && (
+          <div className="bg-red-50 border border-red-200 text-red-700 text-sm px-3 py-2">
+            ⚠️ {geoError}
+          </div>
         )}
-      </MapContainer>
-    </>
+
+        <button
+          onClick={centerOnUser}
+          disabled={!userPosition}
+          className="absolute bottom-6 right-3 z-[1000] bg-white border-2 border-gray-300 rounded-lg px-4 py-2 text-xl shadow-md transition-colors
+          enabled:hover:bg-gray-50 enabled:cursor-pointer
+          disabled:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-60"
+          title="Centrar en mi ubicación"
+        >
+          📍
+        </button>
+
+        <MapContainer
+          ref={mapRef}
+          center={[36.7213, -4.4214]}
+          zoom={13}
+          minZoom={10}
+          maxZoom={18}
+          maxBounds={MALAGA_BOUNDS}
+          maxBoundsViscosity={1.0}
+          className="w-full h-full"
+        >
+          <TileLayer
+            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+            attribution='&copy; <a href="https://carto.com/">CARTO</a>'
+          />
+
+          {points.map((p) => (
+            <Marker key={p.id} position={[p.lat, p.lng]}>
+              <Popup>{p.label}</Popup>
+            </Marker>
+          ))}
+
+          {userPosition && (
+            <>
+              <Marker position={userPosition} icon={userIcon}>
+                <Popup>📍 Estás aquí</Popup>
+              </Marker>
+              <FlyToUser position={userPosition} />
+            </>
+          )}
+        </MapContainer>
+      </div>
+
+      <Footer />
+    </div>
   );
 }
