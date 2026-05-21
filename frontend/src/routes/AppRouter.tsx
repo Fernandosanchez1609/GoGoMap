@@ -1,14 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import MapPage from "@/pages/Map/MapPage";
-import GoGomapOnboarding from "@/components/onboarding/GoGomapOnboarding";
+//import GoGomapOnboarding from "@/components/onboarding/GoGomapOnboarding";
 import Login from "@/components/Login/Login";
+import Register from "@/components/Register/Register";
 
 export default function AppRouter() {
   return (
     <Routes>
-      <Route path="/" element={<GoGomapOnboarding />} />
+      <Route path="/" element={<h1>Hola</h1>} />
       <Route path="/map" element={<MapPage />} />
       <Route path="/login" element={<Login/>} />
+      <Route path="/register" element={<Register/>} />
     </Routes>
   )
 }
