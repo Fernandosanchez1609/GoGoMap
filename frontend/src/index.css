@@ -127,12 +127,8 @@
   flex-direction: column;
   box-sizing: border-box;
 }
-=======
-@import url("tailwindcss");
->>>>>>> SlideCards
-=======
+
 @import "tailwindcss";
->>>>>>> SlideCards
 
 body {
   margin: 0;
