@@ -11,6 +11,7 @@ export default function AppRouter() {
       <Route path="/map" element={<MapPage />} />
       <Route path="/login" element={<Login/>} />
       <Route path="/register" element={<Register/>} />
+
     </Routes>
   )
 }

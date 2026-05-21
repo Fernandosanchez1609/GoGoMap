@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef, useCallback } from "react"
 import SlideCard from "@/components/onboarding/SlideCard"
 import type { Slide } from "@/components/onboarding/SlideCard"
+import { useNavigate } from "react-router-dom"
 
 // Datos
 const SLIDES: Slide[] = [
@@ -81,6 +82,8 @@ export default function GoGomapOnBoarding({
   const touchStartX = useRef<number>(0) // posición X al iniciar el touch
   const touchStartOffset = useRef<number>(0) // offset al inicial el touch
   const isDragging = useRef<boolean>(false) // si el usuario está arrastrando
+
+  const navigate = useNavigate()
   
   // Estado
   const [activeReal, setActiveReal] = useState<number>(0)
@@ -185,7 +188,7 @@ const onTouchEnd = () => {
 // Botón
 const handlerEnter = () => {
   setVisible(false)
-  setTimeout(() => onEnter?.(), 450)
+  setTimeout(() => navigate("/login"), 450)
 }
 
 // JSX
