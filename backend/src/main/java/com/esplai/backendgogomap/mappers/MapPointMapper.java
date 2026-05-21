@@ -1,8 +1,8 @@
 package com.esplai.backendgogomap.mappers;
 
 
-import com.esplai.backendgogomap.models.dto.response.MapPointDetailResponseDTO;
-import com.esplai.backendgogomap.models.dto.response.MapPointResponseDTO;
+import com.esplai.backendgogomap.models.dtos.response.MapPointDetailResponseDTO;
+import com.esplai.backendgogomap.models.dtos.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.models.entities.MapPoint;
 import org.springframework.stereotype.Component;
 
