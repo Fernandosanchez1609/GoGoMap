@@ -6,6 +6,7 @@ import Footer from "@/components/Footer/Footer";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
+import Filter from "@/components/Map/Filter";
 
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -84,6 +85,7 @@ export default function Map() {
 
   return (
     <div className="flex flex-col h-screen">
+      <Filter />
       {/* MAPA */}
       <div className="relative flex-1">
         {geoError && (
