@@ -1,6 +1,8 @@
 package com.esplai.backendgogomap.controllers;
 
 
+import com.esplai.backendgogomap.mappers.MapPointMapper;
+import com.esplai.backendgogomap.models.dto.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.models.entities.MapPoint;
 import com.esplai.backendgogomap.services.MapPointService;
 import lombok.RequiredArgsConstructor;
@@ -16,11 +18,13 @@ import java.util.List;
 public class MapPointController {
 
     private final MapPointService mapPointService;
+    private final MapPointMapper mapPointMapper;
 
 
     @GetMapping
-    public ResponseEntity<List<MapPoint>> getAllPoints() {
-        return ResponseEntity.ok(mapPointService.getAllPointsForMap());
+    public ResponseEntity<List<MapPointResponseDTO>> getAllPoints() {
+        List<MapPointResponseDTO> responseList= mapPointMapper.toResponseList(mapPointService.getAllPointsForMap());
+        return ResponseEntity.ok(responseList);
     }
 
 
