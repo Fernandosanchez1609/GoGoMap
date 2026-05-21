@@ -205,7 +205,7 @@ return (
     >
 
       {/* ── Fondo ── */}
-      <div className="fixed inset-0 -z-10 bg-gradient-to-br from-[#0D1F17] via-[#1B4332] to-[#2D6A4F]">
+      <div className="fixed inset-0 -z-10 bg-gradient-to-br from-[#1B6D24] via-[#6DBD6A] to-[#A3F69C]">
 
         {/* Blobs */}
         <div className="absolute -top-[14vw] -left-[14vw] w-[55vw] h-[55vw] rounded-full bg-emerald-300/30 blur-[55px] animate-pulse" />
@@ -247,25 +247,13 @@ return (
       {/* ── Logo ── */}
       <div className="flex-shrink-0 flex flex-col items-center pb-2 animate-[fadeDown_.7s_cubic-bezier(.22,1,.36,1)_both]">
         
-        {/* Icono */}
-        <div
-          className="flex items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-300 to-emerald-600 mb-2 shadow-[0_6px_22px_rgba(64,145,108,.5)]"
-          style={{
-            width: "clamp(44px,11vw,60px)",
-            height: "clamp(44px,11vw,60px)",
-            fontSize: "clamp(22px,5.5vw,30px)",
-          }}
-        >
-          🗺️
+        <div className="rounded-3xl bg-[#A8ADA3]/50 backdrop-blur-md px-6 py-4">
+          <img
+            src="/assets/Logo.png"
+            alt="GoGoMap"
+            style={{ height: "clamp(80px, 20vw, 120px)" }}
+          />
         </div>
-
-        {/* Nombre */}
-        <span
-          className="font-black tracking-tight bg-gradient-to-r from-emerald-200 to-white bg-clip-text text-transparent"
-          style={{ fontSize: "clamp(20px,5.5vw,26px)" }}
-        >
-          GoGoMap
-        </span>
 
         {/* Subtítulo */}
         <span
@@ -278,6 +266,6 @@ return (
       </div>
       {/* ── Fin Logo ── */}
 
-    </div>
+      </div>
   )
 }
