@@ -1,6 +1,7 @@
 package com.esplai.backendgogomap.mappers;
 
 
+import com.esplai.backendgogomap.models.dto.response.MapPointDetailResponseDTO;
 import com.esplai.backendgogomap.models.dto.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.models.entities.MapPoint;
 import org.springframework.stereotype.Component;
@@ -26,5 +27,18 @@ public class MapPointMapper {
         return points.stream()
                 .map(this::toResponse)
                 .collect(Collectors.toList());
+    }
+
+    public MapPointDetailResponseDTO toDetailResponse (MapPoint point) {
+        return new MapPointDetailResponseDTO(
+                point.getId(),
+                point.getTitle(),
+                point.getDescription(),
+                point.getAddress(),
+                point.getStatus(),
+                point.getOdsId(),
+                point.getReportedBy()
+
+        );
     }
 }

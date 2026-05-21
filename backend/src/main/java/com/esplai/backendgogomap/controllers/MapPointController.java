@@ -2,6 +2,7 @@ package com.esplai.backendgogomap.controllers;
 
 
 import com.esplai.backendgogomap.mappers.MapPointMapper;
+import com.esplai.backendgogomap.models.dto.response.MapPointDetailResponseDTO;
 import com.esplai.backendgogomap.models.dto.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.models.entities.MapPoint;
 import com.esplai.backendgogomap.services.MapPointService;
@@ -29,8 +30,9 @@ public class MapPointController {
 
 
     @GetMapping("/{id}")
-    public ResponseEntity<MapPoint> getPointById(@PathVariable Long id) {
+    public ResponseEntity<MapPointDetailResponseDTO> getPointById(@PathVariable Long id) {
         return mapPointService.getPointById(id)
+                .map(mapPointMapper::toDetailResponse)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
