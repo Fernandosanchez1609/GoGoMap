@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="display flex   justify-between p-4 bg-white border-t">
-      <button>Botón 1</button>
-      <button>Botón 2</button>
-      <button>Botón 3</button>
+    <footer className="display flex   justify-around p-4 bg-white border-t">
+      <img src="/assets/icons/mapa.svg" alt="Logo" className="h-10" />
+      <img src="/assets/icons/favoritos.svg" alt="favoritos" className="h-10" />
+      <img src="/assets/icons/perfil.svg" alt="perfil" className="h-10" />
     </footer>
   );
 }
