@@ -1,13 +1,14 @@
 import { Button } from "../ui/button"
 import { Input } from "../ui/input"
 import { Label } from "../ui/label"
-
+import { useNavigate } from "react-router-dom"
 import {
   Card,
   CardContent,
 } from "../ui/card"
 
 export default function Login() {
+  const Navigate = useNavigate();
   return (
      <div className="min-h-screen bg-[#F5F5EE] flex justify-center items-center px-6">
 
@@ -21,10 +22,10 @@ export default function Login() {
             <img
               src="/assets/Logo.png"
               alt="GoGoMap"
-              className="w-54"
+              className="w-64"
             />
 
-            <p className="text-sm text-gray-500 mt-2 text-center">
+            <p className="text-sm text-gray-500 mt-6 text-center">
               No. 1 in Spain for passing karmas :)
             </p>
 
@@ -33,7 +34,7 @@ export default function Login() {
           {/* TITLE */}
           <div className="text-center">
 
-            <h1 className="text-3xl font-bold text-gray-800">
+            <h1 className="text-3xl font-bold text-gray-800 mt-6">
               Bienvenidos
             </h1>
 
@@ -46,12 +47,12 @@ export default function Login() {
             <div className="flex flex-col gap-2">
 
               <Label className="text-gray-600">
-                User
+                Usuario
               </Label>
 
               <Input
                 type="text"
-                placeholder="User"
+                placeholder="Usuario"
                 className="
                   h-14
                   rounded-xl
@@ -66,12 +67,12 @@ export default function Login() {
             <div className="flex flex-col gap-2">
 
               <Label className="text-gray-600">
-                Password
+                Contraseña
               </Label>
 
               <Input
                 type="password"
-                placeholder="Password"
+                placeholder="Contraseña"
                 className="
                   h-14
                   rounded-xl
@@ -84,13 +85,6 @@ export default function Login() {
 
             {/* FORGOT PASSWORD */}
             <div className="text-right">
-
-              {/* <a
-                href="#"
-                className="text-sm text-green-700 font-semibold"
-              >
-                Did you forget your password?
-              </a> */}
 
             </div>
 
@@ -106,7 +100,11 @@ export default function Login() {
                 shadow-lg
               "
             >
+              {<a 
+              onClick={() => {Navigate("/map")}}
+            >
               Login
+              </a>}
             </Button>
 
           </form>
@@ -114,21 +112,14 @@ export default function Login() {
           {/* REGISTER */}
           <div className="text-center">
 
-            {/* <a
-              href="#"
+            {<a 
+              onClick={() => {Navigate("/register")}}
               className="text-green-700 font-semibold"
             >
               Regístrate aquí
-            </a> */}
+            </a>}
 
           </div>
-
-          {/* FOOTER */}
-          {/* <div className="pt-6 text-center text-sm text-gray-500">
-
-            Need help? Contact customer service
-
-          </div> */}
 
         </CardContent>
 

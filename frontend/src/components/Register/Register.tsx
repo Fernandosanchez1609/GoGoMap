@@ -1,13 +1,15 @@
 import { Button } from "../ui/button"
 import { Input } from "../ui/input"
 import { Label } from "../ui/label"
-
+import { useNavigate } from "react-router-dom"
 import {
   Card,
   CardContent,
 } from "../ui/card"
 
 export default function Register() {
+  const Navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-[#F5F5EE] flex flex-col justify-center items-center px-6">
 		{/* LOGO */}
@@ -16,16 +18,12 @@ export default function Register() {
             <img
               src="/assets/Logo.png"
               alt="GoGoMap"
-              className="w-54"
+              className="w-64"
             />
-
-            <h1 className="text-sm text-gray-500 mt-2 text-center">
-              Registro
-            </h1>
 
           </div>
       {/* CARD */}
-      <Card className="w-full max-w-sm bg-white border-none shadow-xl rounded-3xl">
+      <Card className="w-full max-w-sm mt-6">
 
         <CardContent className="flex flex-col gap-6 pt-10 pb-8">
 
@@ -96,7 +94,7 @@ export default function Register() {
 
               <Input
                 type="email"
-                placeholder="@"
+                placeholder="ejemplo@correo.com"
                 className="
                   h-14
                   rounded-xl
@@ -114,7 +112,7 @@ export default function Register() {
 
               <Input
                 type="password"
-                placeholder="Enter your password"
+                placeholder=""
                 className="
                   h-14
                   rounded-xl
@@ -156,7 +154,10 @@ export default function Register() {
                 mt-4
               "
             >
-              Enviar
+              <a 
+              onClick={() => {Navigate("/login")}}>
+              Registrarse
+              </a>
             </Button>
 
           </form>
@@ -173,7 +174,7 @@ export default function Register() {
         </span>
 
         <a
-          href="/login"
+          onClick={() => {Navigate("/login")}}
           className="ml-2 text-green-700 font-bold hover:underline"
         >
           Inicia sesión
