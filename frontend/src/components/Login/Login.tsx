@@ -17,7 +17,7 @@ export default function Login() {
         <CardContent className="flex flex-col gap-6 pt-10">
 
           {/* LOGO */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center ">
 
             <img
               src="/assets/Logo.png"
@@ -89,7 +89,7 @@ export default function Login() {
             </div>
 
             {/* BUTTON */}
-            <Button
+            <Button onClick={() => {Navigate("/map")}}
               className="
                 h-14
                 rounded-full
@@ -100,11 +100,7 @@ export default function Login() {
                 shadow-lg
               "
             >
-              {<a 
-              onClick={() => {Navigate("/map")}}
-            >
               Login
-              </a>}
             </Button>
 
           </form>
