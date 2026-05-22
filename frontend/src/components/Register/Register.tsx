@@ -142,7 +142,7 @@ export default function Register() {
             </div>
 
             {/* BUTTON */}
-            <Button
+            <Button onClick={() => {Navigate("/login")}}
               className="
                 h-14
                 rounded-xl
@@ -154,10 +154,7 @@ export default function Register() {
                 mt-4
               "
             >
-              <a 
-              onClick={() => {Navigate("/login")}}>
               Registrarse
-              </a>
             </Button>
 
           </form>
