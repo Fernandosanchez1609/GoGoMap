@@ -1,19 +1,20 @@
 package com.esplai.backendgogomap.models.dtos.geojson;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RawPropertiesDTO {
 
-    @JsonProperty("NOMBRE")
+
+    @JsonAlias({"NOMBRE", "nombre", "title"})
     private String nombre;
 
-    @JsonProperty("DESCRIPCION")
+    @JsonAlias({"DESCRIPCION", "descripcion", "description"})
     private String descripcion;
 
-    @JsonProperty("DIRECCION")
+    @JsonAlias({"DIRECCION", "direccion", "address"})
     private String direccion;
 }

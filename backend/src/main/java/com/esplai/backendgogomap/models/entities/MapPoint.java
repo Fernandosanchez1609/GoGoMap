@@ -22,7 +22,7 @@ public class MapPoint {
     @Column(nullable = false)
     private String title;
 
-    @Column(length = 300)
+    @Column(columnDefinition = "TEXT")
     private String description;
 
     private String address;
