@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Puerto de Málaga",
+        "description": "Puerto comercial, pesquero y de cruceros. Punto clave ODS 14.",
+        "address": "Muelle Uno, Puerto de Málaga",
+        "status": "active",
+        "odsId": 14
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.415, 36.715]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "IEO-CSIC Málaga",
+        "description": "Instituto Español de Oceanografía. Investigación marina y ecosistemas.",
+        "address": "Puerto de Málaga, Muelle de San Andrés",
+        "status": "active",
+        "odsId": 14
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4235, 36.7128]
+      }
+    }
+  ]
+}

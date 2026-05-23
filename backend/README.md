@@ -16,12 +16,14 @@ Para ejecutar este proyecto en local, asegúrate de tener configurado:
 2.  **MySQL Server** en ejecución con una base de datos creada para el proyecto.
 3.  **Maven** (integrado en el IDE o instalado localmente).
 
-### 🚀 Inicialización de Datos (Data Seeding)
+### 🚀 Inicialización de Datos Masiva (Data Seeding)
 
-El proyecto cuenta con un sistema de carga automática para poblar la base de datos en el primer arranque, evitando inserciones manuales.
+El proyecto cuenta con un sistema avanzado y resiliente de carga automática de datos geográficos (Open Data) para poblar la base de datos al arrancar, evitando inserciones manuales.
 
-* **GeoJsonDataLoader:** El backend incluye un componente `CommandLineRunner` que se ejecuta al iniciar la aplicación. Este servicio localiza los archivos de datos en crudo (como `cargadores_malaga_4326.geojson`) ubicados en la carpeta `src/main/resources/data/`.
-* **Comportamiento:** Si la tabla `map_points` está vacía, el sistema parsea el archivo GeoJSON utilizando Jackson y transforma las coordenadas y propiedades en entidades, guardándolas automáticamente en MySQL. Si la tabla ya contiene datos, la ingesta se omite de forma segura.
+* **GeoJsonDataLoader:** El backend incluye un componente `CommandLineRunner` que escanea automáticamente la carpeta `src/main/resources/data/` en busca de múltiples archivos `ods*.geojson` en el arranque de la aplicación.
+* **Extracción Inteligente:** El sistema detecta el número de ODS directamente desde el nombre del archivo mediante expresiones regulares y mapea propiedades con nombres inconsistentes de forma segura (gracias a anotaciones como `@JsonAlias`).
+* **Actualización Condicional (Prevención de pérdida de datos):** El cargador crea una "huella digital" única combinando las coordenadas y el identificador ODS (`Latitud_Longitud_OdsId`). Compara los archivos físicos con la base de datos e **inserta únicamente los puntos nuevos**. Esto garantiza que no se sobrescriban ni se pierdan los datos históricos o modificaciones hechas previamente por los usuarios (ej. cambios de estado o autores de reportes).
+* **Resiliencia y Tolerancia a Fallos:** El proceso cuenta con manejo de excepciones aislado por archivo. Si un documento está corrupto (ej. páginas de error camufladas como JSON), el sistema notifica el error por consola pero continúa procesando el resto de ODS con normalidad. También asigna títulos genéricos automáticamente a aquellos puntos de interés que no lo posean.
 
 ### 🌐 Endpoints de la API (MapPoints)
 
@@ -32,4 +34,4 @@ La comunicación con el frontend se realiza mediante DTOs para optimizar la carg
     * **Respuesta:** Retorna un array de `MapPointResponseDTO` optimizado (exclusivamente `id`, `title`, `latitude` y `longitude`).
 * **`GET /api/v1/points/{id}`**
     * **Uso:** Vista de detalle al hacer clic en un pin del mapa.
-    * **Respuesta:** Retorna un `MapPointDetailResponseDTO` con toda la información completa del punto (dirección, estado, identificador del ODS y autor del reporte).
+    * **Respuesta:** Retorna un `MapPointDetailResponseDTO` con toda la información completa del punto (dirección, descripción, estado, identificador del ODS y autor del reporte).
