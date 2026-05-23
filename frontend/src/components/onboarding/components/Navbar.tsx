@@ -1,43 +1,40 @@
 import { useEffect, useState } from "react"
+import Button from "./Button"
+
+// Header
+const headerBase = "fixed top-0 left-0 w-full z-50 transition-all duration-300"
+const headerScrolled = `${headerBase} bg-white/10 backdrop-blur-xl border-b border-white/10`
+const headerTop = `${headerBase} bg-transparent`
+
+// Inner
+const innerBase = "flex justify-between items-center px-6 py-1 max-w-[1440px] mx-auto"
+
+// Logo
+const logoBase = "flex items-center gap-2 text-primary font-bold text-xl"
+const logoImg = "h-15 w-auto"
 
 export default function Navbar() {
-    const [scrolled, setScrolled] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
-    useEffect(() => {
-        const handleScroll = () => setScrolled(window.scrollY > 60)
-        window.addEventListener('scroll', hendleScroll)
-        return () => window.removeEventListener('scroll', handleScroll)
-    }, [])
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 60)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
-    return (
-        <header
-            className={`
-                fixed top-0 left-0 w-full z-50
-                backdrop-blur-xl border-b border-white/10
-                transition-all duration-300
-                ${scrolled ? 'bg-surface/95' : 'bg-surface/80'}
-            `}
-        >
-            <div className="flex justify-between items-center px-6 py-4 max-w-[1440px] mx-auto">
-                {/* Logo */}
-                <div className="flex items-center gap-2 text-primary font-bold text-xl">
-                    <img src="assets/Logo.png" alt="Logo GoGoMap" />
-                </div>
+  return (
+    <header className={scrolled ? headerScrolled : headerTop}>
+      <div className={innerBase}>
 
-                {/* Links */}
-                <nav className="hidden md:flex gap-8">
-                    <a href="#features" className="text-on-surface-variant hover:text-primary transition-colors">Funciones</a>
-                    <a href="#ods" className="text-on-surface-variant hover:text-primary transition-colors">ODS</a>
-                    <a href="#karma" className="text-on-surface-variant hover:text-primary transition-colors">Karma</a>
-                </nav>
+        {/* Logo */}
+        <div className={logoBase}>
+          <img src="assets/Logo.png" alt="Logo GoGoMap" className={logoImg} />
+        </div>
 
-                {/* CTA */}
-                href="/login"
-                className="border border-primary/40 text-primary px-4 py-2 rounded-full text-sm font-semibold hover:bg-primary/10 transition-all"
-            
-                Entrar a la App
-                
-            </div>
-        </header>
-    )
+        {/* CTA */}
+        <Button label="Entrar en la App" href="/login" variant="primary" />
+
+      </div>
+    </header>
+  )
 }

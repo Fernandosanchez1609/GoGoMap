@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import MapPage from "@/pages/Map/MapPage";
-import GoGomapOnboarding from "@/components/onboarding/GoGomapOnboardingOldLegacy";
+import GoGomapOnboarding from "@/components/onboarding/GoGomapOnboarding";
 import Login from "@/components/Login/Login";
 import Register from "@/components/Register/Register";
 
