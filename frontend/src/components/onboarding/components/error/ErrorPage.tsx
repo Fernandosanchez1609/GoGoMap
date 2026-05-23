@@ -2,6 +2,7 @@ import ErrorHeader from "./ErrorHeader"
 import ErrorImage from "./ErrorImage"
 import ErrorText from "./ErrorText"
 import ErrorActions from "./ErrorActions"
+import ErrorFooter from "./ErrorFooter"
 
 export default function ErrorPage() {
     return (
@@ -10,7 +11,7 @@ export default function ErrorPage() {
             <ErrorImage />
             <ErrorText />
             <ErrorActions />
-            {/* Aquí irá el Footer */}
+            <ErrorFooter />
         </div>
     )
 }
