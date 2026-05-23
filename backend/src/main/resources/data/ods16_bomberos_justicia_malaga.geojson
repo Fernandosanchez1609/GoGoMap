@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "name": "ODS16_Seguridad_Justicia_Malaga",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Parque de Bomberos Central",
+        "description": "Sede principal del Real Cuerpo de Bomberos de Málaga",
+        "category": "bomberos",
+        "odsId": 16,
+        "address": "Paseo de Martiricos 12, Málaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.42693, 36.73599]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Parque de Bomberos Carretera de Cádiz",
+        "description": "Parque operativo zona oeste de la ciudad",
+        "category": "bomberos",
+        "odsId": 16,
+        "address": "Camino del Pato 46, Málaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.45350, 36.70760]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Parque de Bomberos Teatinos",
+        "description": "Parque en zona universitaria y Ciudad de la Justicia",
+        "category": "bomberos",
+        "odsId": 16,
+        "address": "C/ Isolda 11, Málaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.45640, 36.72170]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Parque de Bomberos Churriana",
+        "description": "Cobertura zona aeropuerto y oeste metropolitano",
+        "category": "bomberos",
+        "odsId": 16,
+        "address": "C/ Escritor Carmen Bravo-Villasante 1, Málaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.49910, 36.66520]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ciudad de la Justicia de Málaga",
+        "description": "Complejo judicial principal de la provincia de Málaga",
+        "category": "justicia",
+        "odsId": 16,
+        "address": "Av. de las Aurora, 4, Málaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.45790, 36.71320]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Juzgados de lo Penal (Centro Histórico)",
+        "description": "Sede judicial en el centro de Málaga",
+        "category": "justicia",
+        "odsId": 16,
+        "address": "C/ Tomás de Heredia, Málaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.42080, 36.72110]
+      }
+    }
+  ]
+}

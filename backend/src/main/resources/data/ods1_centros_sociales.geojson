@@ -1,0 +1,339 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "da_centrosServicioSocial.fid--3b3f458b_19e4d82df9e_-2f41",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43779472,
+          36.70248012,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 4171,
+        "NOMBRE": "CENTRO DE SERVICIOS SOCIALES COMUNITARIOS HUELIN",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE EMILIO DE LA CERDA, 24 ",
+        "URL": "http://derechossociales.malaga.eu/",
+        "EMAIL": "ccs12@malaga.eu",
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "ACCESOPMR": "No",
+        "TLFCONTACTO": "951926185",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_centrosServicioSocial.fid--3b3f458b_19e4d82df9e_-2f40",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.35826807,
+          36.71953111,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 4164,
+        "NOMBRE": "CENTRO DE SERVICIOS SOCIALES COMUNITARIOS DISTRITO ESTE",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DÁNVILA Y COLLADO, 4 ",
+        "URL": "http://derechossociales.malaga.eu/",
+        "EMAIL": "css2@malaga.eu",
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "ACCESOPMR": "No",
+        "TLFCONTACTO": "951926072",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_centrosServicioSocial.fid--3b3f458b_19e4d82df9e_-2f3f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41798413,
+          36.7443039,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 4163,
+        "NOMBRE": "CENTRO DE SERVICIOS SOCIALES COMUNITARIOS CIUDAD JARDIN",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE LAS MORERAS, 6 ",
+        "URL": "http://derechossociales.malaga.eu/",
+        "EMAIL": "css3@malaga.eu",
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "ACCESOPMR": "No",
+        "TLFCONTACTO": "951926073",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_centrosServicioSocial.fid--3b3f458b_19e4d82df9e_-2f3e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42610087,
+          36.72116858,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 4166,
+        "NOMBRE": "CENTRO DE SERVICIOS SOCIALES COMUNITARIOS CENTRO-CAÑAVERAL",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE PADRE JORGE LAMOTHE, 2 ",
+        "URL": "http://derechossociales.malaga.eu/",
+        "EMAIL": "css1@malaga.eu",
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "ACCESOPMR": "No",
+        "TLFCONTACTO": "951926071",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_centrosServicioSocial.fid--3b3f458b_19e4d82df9e_-2f3d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43739282,
+          36.72851701,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 4165,
+        "NOMBRE": "CENTRO DE SERVICIOS SOCIALES COMUNITARIOS BAILEN-MIRAFLORES",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE TEJARES, 50 ",
+        "URL": "http://derechossociales.malaga.eu",
+        "EMAIL": "css4@malaga.eu",
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "ACCESOPMR": "No",
+        "TLFCONTACTO": "951926074",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_centrosServicioSocial.fid--3b3f458b_19e4d82df9e_-2f3c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.536534,
+          36.72345291,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 240,
+        "NOMBRE": "CENTRO DE SERVICIOS SOCIALES COMUNITARIOS CAMPANILLAS",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CRISTOBALINA FERNÁNDEZ, 2 ",
+        "URL": "http://derechossociales.malaga.eu/",
+        "EMAIL": "css9@malaga.eu",
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "ACCESOPMR": "No",
+        "TLFCONTACTO": "951926079",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_centrosServicioSocial.fid--3b3f458b_19e4d82df9e_-2f3b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45642634,
+          36.69521673,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 4162,
+        "NOMBRE": "CENTRO DE SERVICIOS SOCIALES COMUNITARIOS CARRETERA DE CADIZ",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE ISAAC PERAL, 23 ",
+        "URL": "http://derechossociales.malaga.eu/",
+        "EMAIL": "css7@malaga.eu",
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "ACCESOPMR": "No",
+        "TLFCONTACTO": null,
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_centrosServicioSocial.fid--3b3f458b_19e4d82df9e_-2f3a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42762728,
+          36.74271575,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 4169,
+        "NOMBRE": "CENTRO DE SERVICIOS SOCIALES COMUNITARIOS DISTRITO PALMA-PALMILLA",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ALONSO CRUZADO, 4 ",
+        "URL": "http://derechossociales.malaga.eu/",
+        "EMAIL": "css5@malaga.eu",
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "ACCESOPMR": "No",
+        "TLFCONTACTO": "951926075",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_centrosServicioSocial.fid--3b3f458b_19e4d82df9e_-2f39",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50378099,
+          36.66233492,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 408,
+        "NOMBRE": "CENTRO DE SERVICIOS SOCIALES COMUNITARIOS CHURRIANA",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE MAESTRO USANDIZAGA, 13 ",
+        "URL": "http://derechossociales.malaga.eu/",
+        "EMAIL": "css8@malaga.eu",
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "ACCESOPMR": "No",
+        "TLFCONTACTO": "951926078",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_centrosServicioSocial.fid--3b3f458b_19e4d82df9e_-2f38",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44090522,
+          36.7136093,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 4168,
+        "NOMBRE": "CENTRO DE SERVICIOS SOCIALES COMUNITARIOS CRUZ DE  HUMILLADERO",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE FERNÁNDEZ FERMINA, 7 ",
+        "URL": "http://derechossociales.malaga.eu/",
+        "EMAIL": "css6@malaga.eu",
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "ACCESOPMR": "No",
+        "TLFCONTACTO": "951926076",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_centrosServicioSocial.fid--3b3f458b_19e4d82df9e_-2f37",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46512886,
+          36.72323332,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 4170,
+        "NOMBRE": "CENTRO DE SERVICIOS SOCIALES COMUNITARIOS TEATINOS-UNIVERSIDAD",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DEL DOCTOR MIGUEL DÍAZ RECIO, 24 ",
+        "URL": "http://derechossociales.malaga.eu/",
+        "EMAIL": "css11@malaga.eu",
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "ACCESOPMR": "No",
+        "TLFCONTACTO": "951926171",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_centrosServicioSocial.fid--3b3f458b_19e4d82df9e_-2f36",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.48351703,
+          36.73325476,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 4167,
+        "NOMBRE": "CENTRO DE SERVICIOS SOCIALES COMUNITARIOS PUERTO DE LA TORRE",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE LARA CASTAÑEDA, 61 ",
+        "URL": "http://derechossociales.malaga.eu",
+        "EMAIL": "css10@malaga.eu",
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "ACCESOPMR": "No",
+        "TLFCONTACTO": "951926070",
+        "INFOESP": null
+      }
+    }
+  ],
+  "totalFeatures": 12,
+  "numberMatched": 12,
+  "numberReturned": 12,
+  "timeStamp": "2026-05-22T02:30:21.684Z",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::4326"
+    }
+  }
+}

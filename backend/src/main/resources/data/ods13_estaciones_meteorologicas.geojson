@@ -1,0 +1,239 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "da_zbe_cabinas.fid--3b3f458b_19e4d82df9e_-194d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.418944,
+          36.73319404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 13804,
+        "NOMBRE": "CABINA03",
+        "DESCRIPCION": "Junto al Cementerio de San Miguel",
+        "DIRECCION": "PLAZA DEL PATROCINIO, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_zbe_cabinas.fid--3b3f458b_19e4d82df9e_-194c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43025,
+          36.71663903,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 13809,
+        "NOMBRE": "CABINA07",
+        "DESCRIPCION": "En Avenida de Andalucía, junto a Kiosco, esquina con calle Decano Félix Navarrete.",
+        "DIRECCION": "AVENIDA DE ANDALUCÍA, 7 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_zbe_cabinas.fid--3b3f458b_19e4d82df9e_-194b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.426861,
+          36.72813904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 13810,
+        "NOMBRE": "CABINA02",
+        "DESCRIPCION": "En Paseo de Martiricos, junto al Parque de Bomberos.",
+        "DIRECCION": "PASEO MARTIRICOS, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_zbe_cabinas.fid--3b3f458b_19e4d82df9e_-194a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.432333,
+          36.71455604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 13808,
+        "NOMBRE": "CABINA08",
+        "DESCRIPCION": "En Plaza de la Solidaridad frente a Centro Comercial Larios",
+        "DIRECCION": "PLAZA DE LA SOLIDARIDAD, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_zbe_cabinas.fid--3b3f458b_19e4d82df9e_-1949",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.386611,
+          36.72152003,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 13784,
+        "NOMBRE": "CABINA01",
+        "DESCRIPCION": "Junto al parque de ejercicios del Paseo Marítimo.",
+        "DIRECCION": "PASEO MARÍTIMO PABLO RUIZ PICASSO, 72 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_zbe_cabinas.fid--3b3f458b_19e4d82df9e_-1948",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.443611,
+          36.68777804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 13805,
+        "NOMBRE": "CABINA05",
+        "DESCRIPCION": "En parking interior junto a caseta Ormazabal.",
+        "DIRECCION": "CALLE PACÍFICO, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_zbe_cabinas.fid--3b3f458b_19e4d82df9e_-1947",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41499999,
+          36.71958303,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 13807,
+        "NOMBRE": "CABINA04",
+        "DESCRIPCION": "A la altura del Ayuntamiento de Málaga, acceso tras parada de Bus 1123.",
+        "DIRECCION": "PASEO DEL PARQUE, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_zbe_cabinas.fid--3b3f458b_19e4d82df9e_-1946",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.410194,
+          36.71811104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 13806,
+        "NOMBRE": "CABINA06",
+        "DESCRIPCION": "Junto a monumento a Reding.",
+        "DIRECCION": "PLAZA DE LA MALAGUETA, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    }
+  ],
+  "totalFeatures": 8,
+  "numberMatched": 8,
+  "numberReturned": 8,
+  "timeStamp": "2026-05-22T02:31:00.486Z",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::4326"
+    }
+  }
+}
