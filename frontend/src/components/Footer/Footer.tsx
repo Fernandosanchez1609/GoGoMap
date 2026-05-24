@@ -1,3 +1,4 @@
+
 export default function Footer() {
   return (
     <footer className="display flex   justify-around p-4 bg-white border-t">
