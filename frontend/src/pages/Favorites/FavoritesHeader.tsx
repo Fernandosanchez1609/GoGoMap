@@ -1,7 +1,7 @@
 // Estilos
 const header  = "bg-white px-4 pt-5 pb-3 flex items-center justify-between w-full"
 //const title   = "text-2xl font-bold text-green-700"
-const icon    = "h-7 w-7 text-gray-400"
+//const icon    = "h-7 w-7 text-gray-400"
 
 // Logo
 const logoBase = "flex items-center gap-2 text-primary font-bold text-xl"
