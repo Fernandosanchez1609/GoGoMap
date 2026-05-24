@@ -1,4 +1,4 @@
-package com.esplai.backendgogomap.auth.authDto;
+package com.esplai.backendgogomap.auth.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
