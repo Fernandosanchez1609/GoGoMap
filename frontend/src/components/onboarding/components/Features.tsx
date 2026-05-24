@@ -13,7 +13,7 @@ const grid = "w-full max-w-sm flex flex-col gap-4"
 
 // Tarjeta
 const card = "flex flex-col gap-4 p-6 rounded-2xl border border-white/10 bg-primary/50 backdrop-blur-md"
-const cardIcon = "w-10 h-10 rounded-xl flex items-center justify-center"
+const cardIcon = "w-10 h-10 rounded-xl flex items-center justify-center self-center"
 const cardTitle = "text-white font-bold text-lg"
 const cardDesc = "text-white/70 text-sm leading-relaxed"
 

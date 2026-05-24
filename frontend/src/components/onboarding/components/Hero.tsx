@@ -43,7 +43,7 @@ export default function Hero() {
 
       {/* Subtítulo */}
       <p className={subtitle}>
-        Localiza puntos ODS cerca de ti, gana Eco Points por tus acciones positivas y mejora tu huella en la ciudad.
+        Localiza puntos ODS cerca de ti, gana Karma Points por tus acciones positivas y mejora tu huella en la ciudad.
       </p>
 
       {/* Botones */}

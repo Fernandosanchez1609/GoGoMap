@@ -7,7 +7,7 @@ const title = "text-3xl font-extrabold text-white leading-tight tracking-tight"
 const subtitle = "text-white/70 text-sm leading-relaxed max-w-sm"
 
 // Grid
-const grid = "flex gap-3 overflow-x-auto pb-2 w-full max-w-sm"
+const grid = "flex gap-3 overflow-x-auto pb-2 w-full max-w-sm scrollbar-hide"
 
 // Chip
 const chip = "flex-shrink-0 w-20 h-20 rounded-2xl overflow-hidden shadow-lg transition-transform duration-200 hover:-translate-y-1 cursor-default"

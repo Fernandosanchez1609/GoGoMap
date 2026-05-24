@@ -75,7 +75,7 @@ export default function GoGomapOnboarding() {
 
             <Navbar />
             <main className='pt-10'>
-                 <Hero />
+                <Hero />
                 <Features />
                 <OdsShowcase />
                 <HowItWorks />

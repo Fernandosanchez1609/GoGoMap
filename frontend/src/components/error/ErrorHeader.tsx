@@ -1,5 +1,5 @@
 // Estilos
-const header = "w-full flex items-center justify-center py-4 border-b border-gray-200"
+const header = "w-full flex items-center justify-center py-1 border-b border-gray-200"
 const logo = "h-15"
 
 export default function ErrorHeader() {
