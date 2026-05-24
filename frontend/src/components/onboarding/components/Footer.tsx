@@ -1,7 +1,7 @@
 
 
 // Footer
-const footer = "relative px-6 py-10 border-t border-white/10 bg-black/20 backdrop-blur-md"
+const footer = "relative px-6 py-10 border-t border-white/10 bg-black/10 backdrop-blur-md"
 
 // Inner
 const inner = "flex flex-col items-center gap-6 max-w-sm mx-auto text-center"
@@ -24,7 +24,7 @@ export default function Footer() {
 
         {/* Logo */}
         <div className={logoBase}>
-          <img src="assets/Logo.png" alt="Logo GoGoMap" className={logoImg} />
+          <img src="assets/Logo.svg" alt="Logo GoGoMap" className={logoImg} />
         </div>
 
         {/* Links */}

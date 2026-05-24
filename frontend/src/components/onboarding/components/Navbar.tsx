@@ -11,7 +11,8 @@ const innerBase = "flex justify-between items-center px-6 py-1 max-w-[1440px] mx
 
 // Logo
 const logoBase = "flex items-center gap-2 text-primary font-bold text-xl"
-const logoImg = "h-15 w-auto"
+const logoImg = "h-15"
+const texto = "h-5"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -28,7 +29,8 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className={logoBase}>
-          <img src="assets/Logo.png" alt="Logo GoGoMap" className={logoImg} />
+          <img src="/assets/SoloLogo-removebg.svg" alt="Logo GoGoMap" className={logoImg} />
+          <img src="/assets/SoloLetras-removebg.svg" alt="Logo GoGoMap" className={texto} />          
         </div>
 
         {/* CTA */}
