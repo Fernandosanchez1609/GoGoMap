@@ -3,7 +3,6 @@ package com.esplai.backendgogomap.auth.service;
 import com.esplai.backendgogomap.auth.dto.AuthResponse;
 import com.esplai.backendgogomap.auth.dto.LoginRequest;
 import com.esplai.backendgogomap.auth.dto.RegisterRequest;
-import com.esplai.backendgogomap.service.JwtService; // El servicio de tokens que creaste antes
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -20,17 +19,23 @@ public class AuthService {
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
-    // TODO: Inyectar UserMapper (con MapStruct) cuando esté creado para mapear la entidad al DTO
-    // private final UserMapper userMapper;
+
 
     public AuthResponse register(RegisterRequest request) {
-        // TODO: 1. Comprobar si el email ya existe en BD (repository.existsByEmail)
-        // TODO: 2. Crear la entidad User (encriptando la contraseña: passwordEncoder.encode(request.getPassword()))
-        // TODO: 3. Guardar el User en BD (repository.save)
-        // TODO: 4. Generar el token (jwtService.generarToken(user))
-        // TODO: 5. Devolver el AuthResponse
+//
+//        if (userRepository.existsByEmailIgnoreCase(request.getEmail())) {
+//            throw new IllegalArgumentException("El email ya está registrado");
+//
+//            // TODO: Crear la entidad User (encriptando la contraseña: passwordEncoder.encode(request.getPassword()))
+//            User user = new User();
+//            user.setPassword(passwordEncoder.encode(request.getPassword()));
+//            // ... setear resto de campos .
+//            userRepository.save(user);
+//            String token = jwtService.generarToken(user);
+//            return new AuthResponse(token, "Bearer");
 
-        return new AuthResponse("token-simulado-registro", "Bearer");
+        // TODO: Borrar cuando este User creado
+        return new AuthResponse("token-simulado", "Bearer");
     }
 
     public AuthResponse login(LoginRequest request) {
@@ -42,9 +47,14 @@ public class AuthService {
                 )
         );
 
-        // TODO: 2. Buscar el User en la BD (repository.findByEmail)
-        // TODO: 3. Generar el token (jwtService.generarToken(user))
-        // TODO: 4. Devolver el AuthResponse
+        // TODO: 3. Descomentar cuando exista UserRepository y User
+        /*
+        User user = userRepository.findByEmailIgnoreCase(request.getEmail())
+                .orElseThrow(() -> new IllegalArgumentException("Email o contraseña incorrectos"));
+
+        String token = jwtService.generarToken(user);
+        return new AuthResponse(token, "Bearer");
+        */
 
         return new AuthResponse("token-simulado-login", "Bearer");
     }
