@@ -6,6 +6,7 @@ import Register from "@/components/Register/Register";
 import ErrorPage from "@/components/error/ErrorPage";
 import ErrorPage404 from "@/components/error404/ErrorPage404";
 import FavoritesPage from "@/pages/Favorites/FavoritesPage";
+import UserPage from "@/pages/User/UserPage";
 
 export default function AppRouter() {
   return (
@@ -17,6 +18,7 @@ export default function AppRouter() {
       <Route path="/errorpage" element={<ErrorPage/>} />
       <Route path="/errorpage404" element={<ErrorPage404/>} />
       <Route path="/favorites" element={<FavoritesPage/>} />
+      <Route path="/user" element={<UserPage/>} />
 
     </Routes>
   )
