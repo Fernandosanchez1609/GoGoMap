@@ -8,6 +8,8 @@
 ## 📋 Índice
 
 - [Descripción](#descripción)
+- [Landing Page](#landing-page)
+- [Páginas de error](#páginas-de-error)
 - [Pantallas](#pantallas)
 - [Design System](#design-system)
 - [API Endpoints](#api-endpoints)
@@ -33,6 +35,181 @@ GoGoMap permite a los ciudadanos de Málaga descubrir puntos de interés vincula
 - Sistema de favoritos
 - Perfil de usuario con Karma Points (gamificación)
 - Registro e inicio de sesión
+
+---
+
+## Landing Page
+
+La landing page es la pantalla de presentación de GoGoMap. Es lo primero que ve el usuario al acceder a la aplicación (`/landing`) y tiene como objetivo explicar las funcionalidades de la app y dirigir al usuario hacia el acceso.
+
+### Ruta
+
+```
+/landing → GoGomapOnboarding
+```
+
+### Estructura de componentes
+
+```
+src/components/onboarding/
+  GoGomapOnboarding.tsx     ← Componente raíz, ensambla todos los bloques
+  components/
+    Navbar.tsx              ← Barra de navegación fija con scroll effect
+    Hero.tsx                ← Sección principal con CTA
+    Features.tsx            ← 4 tarjetas de funcionalidades
+    OdsShowcase.tsx         ← Chips con iconos oficiales ODS
+    HowItWorks.tsx          ← 3 pasos de uso con CTA
+    KarmaCallout.tsx        ← Sección de gamificación con CTA
+    Footer.tsx              ← Pie de página con links
+    Button.tsx              ← Componente de botón reutilizable
+```
+
+### Secciones
+
+| Sección | Componente | Descripción |
+|---|---|---|
+| Navbar | `Navbar.tsx` | Fija en la parte superior, transparente al cargar y semiopaca al hacer scroll. Incluye logo y botón de acceso |
+| Hero | `Hero.tsx` | Titular, subtítulo, badge con tagline, dos botones CTA y foto de Málaga con halo verde |
+| Funcionalidades | `Features.tsx` | Cuatro tarjetas glassmorphism explicando las funciones principales de la app |
+| ODS | `OdsShowcase.tsx` | Fila horizontal con los iconos oficiales de los 6 ODS más relevantes para Málaga |
+| Cómo funciona | `HowItWorks.tsx` | Tres pasos conectados por una línea vertical explicando el flujo de uso |
+| Karma | `KarmaCallout.tsx` | Tarjeta destacada con ejemplo de perfil de usuario, barra de progreso y Eco Points |
+| Footer | `Footer.tsx` | Links de navegación interna y copyright |
+
+### Diseño
+
+- **Fondo:** degradado verde animado `from-[#1B6D24] via-[#6DBD6A] to-[#A3F69C]` con blobs, rejilla y partículas flotantes
+- **Estilo de tarjetas:** glassmorphism (`bg-white/10 backdrop-blur-md border border-white/10`)
+- **Botón primario:** glow verde (`bg-emerald-600` con `shadow` verde exterior)
+- **Botón secundario:** glassmorphism (`bg-white/10 backdrop-blur-md border border-white/20`)
+- **Iconos:** Lucide React
+- **Tipografía:** Inter
+
+### Componente Button
+
+El componente `Button.tsx` es reutilizable en toda la landing. Acepta las siguientes props:
+
+```tsx
+interface ButtonProps {
+  label: string
+  href?: string
+  onClick?: () => void
+  variant?: 'primary' | 'secondary'
+  icon?: ReactNode
+}
+```
+
+Uso:
+```tsx
+<Button label="Entrar a la App" href="/login" variant="primary" icon={<Leaf className="w-4 h-4" />} />
+<Button label="¿Cómo funciona?" href="#how-it-works" variant="secondary" />
+```
+
+### Convención de estilos
+
+La landing aplica un patrón de **extracción de clases** fuera del JSX, denominado **extraTailwind**. Todas las clases de Tailwind se definen como constantes con nombres descriptivos antes del componente, manteniendo el JSX limpio y legible:
+
+```tsx
+// ✅ Correcto
+const section = "relative px-6 py-8 flex flex-col items-center gap-8"
+
+export default function MiComponente() {
+  return <section className={section}>...</section>
+}
+
+// ❌ Incorrecto
+export default function MiComponente() {
+  return <section className="relative px-6 py-8 flex flex-col items-center gap-8">...</section>
+}
+```
+
+> ⚠️ Este patrón **extraTailwind** se aplica en todos los componentes del proyecto, no solo en la landing.
+
+### Iconos ODS
+
+Los iconos se cargan dinámicamente desde `public/assets/ods/` usando el formato oficial de Naciones Unidas:
+
+```
+S-WEB-Goal-01.png
+S-WEB-Goal-06.png
+...
+```
+
+La función helper `odsImg` construye la ruta automáticamente:
+
+```tsx
+function odsImg(num: number): string {
+  const padded = String(num).padStart(2, '0')
+  return `/assets/ods/S-WEB-Goal-${padded}.png`
+}
+```
+
+---
+
+## Páginas de error
+
+El proyecto cuenta con dos páginas de error independientes que comparten el mismo estilo visual que el resto de la app (fondo `#F5F5EE`, colores verdes, tipografía oscura sobre fondo claro).
+
+### Rutas
+
+| Ruta | Componente raíz | Descripción |
+|---|---|---|
+| `/error` | `ErrorPage.tsx` | Error genérico con botones Reintentar y Volver |
+| `/*` | `Error404Page.tsx` | Error 404 con botón Volver al Mapa |
+
+### Estructura de componentes
+
+```
+src/components/error/
+  ErrorPage.tsx           ← Componente raíz de error general, ensambla todos los bloques
+  ErrorHeader.tsx         ← Cabecera con logo centrado, compartida entre ambas páginas
+  ErrorImage.tsx          ← Imagen ilustrativa del error general
+  ErrorImage404.tsx       ← Imagen ilustrativa del error 404
+  ErrorText.tsx           ← Título en mayúsculas y subtítulo descriptivo
+  ErrorActions.tsx        ← Botones Reintentar (recarga la página) y Volver (navigate(-1))
+  ErrorActions404.tsx     ← Botón Volver al Mapa con icono SVG propio
+  ErrorFooter.tsx         ← Footer simplificado, solo texto GoGoMap y copyright
+```
+
+### Imágenes
+
+Las imágenes ilustrativas de cada página de error se encuentran en:
+
+```
+public/assets/errorImages/
+  errorGeneral.png        ← Imagen para la página de error general
+```
+
+### Diseño
+
+- **Fondo:** `#F5F5EE` — crema claro, consistente con `Register.tsx` y `Login.tsx`
+- **Botones:** fondo `green-800`, texto blanco, `rounded-full` — consistente con el resto de la app
+- **Enlace Volver:** texto `green-700` con subrayado
+- **Header:** logo centrado con altura `py-1`, igual que el Navbar de la landing
+- **Footer:** borde superior `gray-300`, texto GoGoMap en `green-800` y copyright en `gray-400`
+
+### Iconos
+
+- **Reintentar:** icono `RefreshCw` de Lucide React
+- **Volver al Mapa:** icono SVG propio `/assets/icons/mapa.svg` con filtro CSS `invert` para mostrarlo en blanco sobre el botón verde
+
+### Convención de estilos
+
+Igual que en el resto del proyecto, todas las páginas de error aplican el patrón **extraTailwind**:
+
+```tsx
+// Estilos
+const container = "w-full mt-8 flex flex-col items-center text-center gap-3"
+const title = "text-3xl font-black text-gray-900"
+
+export default function ErrorText() {
+  return (
+    <div className={container}>
+      <h1 className={title}>¡HUBO UN ERROR!</h1>
+    </div>
+  )
+}
+```
 
 ---
 
@@ -70,13 +247,107 @@ Vista del perfil del usuario autenticado. Incluye:
 - Botón de **Cerrar Sesión**
 
 ### ⭐ Favoritos (`/favorites`)
-Lista de puntos guardados por el usuario, con pestañas de filtrado (ej. *Todos / Puntos Agua / ...*). Cada item muestra imagen en miniatura, nombre del punto, dirección y categoría ODS.
+Lista de puntos ODS guardados por el usuario, filtrable por ODS. Cada tarjeta muestra el icono oficial del ODS correspondiente, nombre del punto, dirección, estado y distancia. Incluye barra de filtrado horizontal con los 17 chips ODS, reutilizada desde el componente del mapa.
 
 ### ❌ Error 404 (`/*`)
 Página de error para rutas no encontradas. Mensaje: **"¡UPS! PÁGINA NO ENCONTRADA — Parece que este punto no está en el mapa."** con botón de **Volver al mapa**.
 
 ### ⚠️ Error general (`/error`)
 Página de error genérico. Mensaje: **"¡HUBO UN ERROR! — Parece que algo salió mal. Inténtalo de nuevo."** con botones de **Reintentar** y **Volver**.
+
+---
+
+## ⭐ Pantalla de Favoritos
+
+### Ruta
+
+```
+/favorites → FavoritesPage
+```
+
+### Estructura de componentes
+
+```
+src/pages/Favorites/
+  FavoritesPage.tsx                   ← Componente raíz, gestiona el estado del filtro
+  data/
+    favorites.mock.ts                 ← Datos mock hasta integración con API real
+  components/
+    FavoritesHeader.tsx               ← Cabecera con logo e icono de ajustes
+    FavoritesTitle.tsx                ← Título "Favoritos" independiente
+    FavoritesList.tsx                 ← Lista filtrada de tarjetas
+    FavoriteCard.tsx                  ← Tarjeta individual de cada favorito
+```
+
+### Componentes reutilizados
+
+| Componente | Ruta original | Uso en Favoritos |
+|---|---|---|
+| `Filter` | `src/components/Maps/Filter.tsx` | Filtrado de tarjetas por ODS (mismo componente que el mapa) |
+| `Footer` | `src/components/Footer/Footer.tsx` | Barra de navegación inferior fija |
+
+### Estructura de datos
+
+El tipo `FavoritePlace` define la forma de cada favorito:
+
+```ts
+export interface FavoritePlace {
+  id: number
+  name: string
+  address: string
+  status: "Abierto" | "Cerrado" | "Gratis"
+  distance: string
+  ods: number        // número de ODS (1–17)
+  odsName: string    // nombre oficial del ODS
+}
+```
+
+### Flujo de datos
+
+```
+FavoritesPage (estado: selectedOds)
+  ├── Filter         ← recibe selected y onSelect
+  ├── FavoritesTitle
+  └── FavoritesList  ← recibe selectedOds, filtra FAVORITES_MOCK internamente
+        └── FavoriteCard × n
+```
+
+El estado `selectedOds` vive en `FavoritesPage` y se pasa hacia abajo a `Filter` y `FavoritesList`. Esto sigue el patrón **props down**: el padre coordina, los hijos solo reciben y renderizan.
+
+### Diseño
+
+- **Fondo:** `#F5F5EE` — crema claro, consistente con el resto de la app
+- **Tarjetas:** fondo blanco, `rounded-2xl`, `shadow-sm`
+- **Icono ODS:** imagen oficial de Naciones Unidas (`S-WEB-Goal-XX.png`), tamaño `80×80px`
+- **Nombre del ODS:** texto `green-600`, peso `semibold`
+- **Estado Abierto:** badge `bg-green-100 text-green-700`
+- **Estado Cerrado:** badge `bg-gray-200 text-gray-500`
+- **Estado Gratis:** badge `bg-gray-100 text-gray-600`
+- **Estrella de favorito:** `★` en `text-yellow-400`, esquina superior derecha de cada tarjeta
+- **Footer fijo:** envuelto en `fixed bottom-0` para que no se desplace con el scroll
+
+### Notas de implementación
+
+**Ocultación del logo en el Filter:**  
+El componente `Filter` incluye internamente el logo de GoGoMap. Para ocultarlo en Favoritos sin modificar el código original, se envuelve en un contenedor con `overflow-hidden` y un margen negativo que desplaza el componente hacia arriba, dejando el logo fuera del área visible:
+
+```tsx
+const filterWrapper = "w-full overflow-hidden"
+const filterOffset  = "-mt-[84px]"
+```
+
+**Footer fijo:**  
+El `Footer` original no tiene posicionamiento fijo. Se soluciona envolviéndolo sin tocar su código:
+
+```tsx
+const footerWrapper = "fixed bottom-0 left-0 w-full z-50"
+```
+
+### Pendiente
+
+- Sustituir `FAVORITES_MOCK` por llamada real a `GET /api/v1/users/me/favorites`
+- Implementar acción de la estrella para llamar a `DELETE /api/v1/points/{id}/favorite`
+- Añadir navegación al `Footer` mediante `useNavigate` (pendiente de implementación por el equipo)
 
 ---
 
@@ -294,41 +565,69 @@ gogomap-frontend/
 │
 ├── public/
 │   ├── assets/
-│   │   ├── icons/           # Iconos ODS oficiales en español (SVG)
-│   │   └── images/          # Imágenes estáticas y logo
+│   │   ├── ods/                  # Iconos ODS oficiales en español (PNG)
+│   │   ├── fotos/                # Fotografías de Málaga
+│   │   ├── errorImages/          # Imágenes ilustrativas de páginas de error
+│   │   │   └── errorGeneral.png
+│   │   ├── icons/                # Iconos SVG propios de la app
+│   │   │   └── mapa.svg
+│   │   └── Logo.png              # Logo oficial de GoGoMap
 │   └── index.html
 │
 ├── src/
-│   ├── components/          # Componentes reutilizables
-│   │   ├── Map/             # Componente de mapa interactivo
-│   │   ├── ODSFilter/       # Barra de filtros por ODS
-│   │   ├── PointCard/       # Tarjeta de punto ODS
-│   │   ├── PointDetail/     # Modal de detalle de punto
-│   │   ├── EcoPoints/       # Badge de gamificación
-│   │   ├── Navbar/          # Navegación inferior
-│   │   └── ui/              # Botones, inputs, badges genéricos
+│   ├── components/
+│   │   ├── onboarding/           # Landing page
+│   │   │   ├── GoGomapOnboarding.tsx
+│   │   │   └── components/
+│   │   │       ├── Navbar.tsx
+│   │   │       ├── Hero.tsx
+│   │   │       ├── Features.tsx
+│   │   │       ├── OdsShowcase.tsx
+│   │   │       ├── HowItWorks.tsx
+│   │   │       ├── KarmaCallout.tsx
+│   │   │       ├── Footer.tsx
+│   │   │       └── Button.tsx
+│   │   ├── error/                # Páginas de error
+│   │   │   ├── ErrorPage.tsx
+│   │   │   ├── ErrorHeader.tsx
+│   │   │   ├── ErrorImage.tsx
+│   │   │   ├── ErrorImage404.tsx
+│   │   │   ├── ErrorText.tsx
+│   │   │   ├── ErrorActions.tsx
+│   │   │   ├── ErrorActions404.tsx
+│   │   │   └── ErrorFooter.tsx
+│   │   ├── Maps/                 # Componentes del mapa
+│   │   │   └── Filter.tsx        ← Filtro de chips ODS (reutilizado en Favoritos)
+│   │   ├── Footer/
+│   │   │   └── Footer.tsx        ← Barra de navegación inferior (reutilizada en Favoritos)
+│   │   └── ui/                   # Botones, inputs, badges genéricos
 │   │
-│   ├── pages/               # Vistas principales
-│   │   ├── Login.jsx
-│   │   ├── Register.jsx
-│   │   ├── Map.jsx
-│   │   ├── Favorites.jsx
-│   │   ├── Profile.jsx
-│   │   ├── Error404.jsx
-│   │   └── ErrorGeneral.jsx
+│   ├── pages/
+│   │   ├── Map/
+│   │   │   └── MapPage.tsx
+│   │   ├── Favorites/
+│   │   │   ├── FavoritesPage.tsx           ← Componente raíz
+│   │   │   ├── data/
+│   │   │   │   └── favorites.mock.ts       ← Datos mock (pendiente integración API)
+│   │   │   └── components/
+│   │   │       ├── FavoritesHeader.tsx     ← Cabecera con logo e icono ajustes
+│   │   │       ├── FavoritesTitle.tsx      ← Título de sección
+│   │   │       ├── FavoritesList.tsx       ← Lista con filtrado por ODS
+│   │   │       └── FavoriteCard.tsx        ← Tarjeta individual de favorito
+│   │   └── ...
 │   │
-│   ├── hooks/               # Custom hooks
+│   ├── hooks/
 │   │   ├── useGeolocation.js
 │   │   └── useNearbyPoints.js
 │   │
-│   ├── services/            # Llamadas a API
-│   │   ├── api.js           # Configuración base (Axios / Fetch)
-│   │   ├── auth.js          # Login, registro, sesión
-│   │   └── points.js        # Puntos ODS, favoritos, rutas
+│   ├── services/
+│   │   ├── api.js
+│   │   ├── auth.js
+│   │   └── points.js
 │   │
-│   ├── store/               # Estado global
-│   ├── styles/              # Variables CSS / Tailwind config
-│   │   └── tokens.css       # Design tokens (colores, tipografía)
+│   ├── store/
+│   ├── styles/
+│   │   └── tokens.css
 │   └── main.jsx
 │
 ├── .env.example
@@ -371,14 +670,15 @@ VITE_AYUNTAMIENTO_API_URL=https://datosabiertos.malaga.eu/api
 
 | Capa | Tecnología |
 |---|---|
-| Framework | React / Vue (por definir) |
-| Estilos | Tailwind CSS o CSS Modules |
+| Framework | React + TypeScript |
+| Estilos | Tailwind CSS |
+| Iconos | Lucide React |
 | Mapa | Leaflet.js / Mapbox GL / Google Maps API |
 | Rutas | React Router v6 |
-| Estado global | Zustand / Pinia |
+| Estado global | Zustand |
 | HTTP | Axios |
 | Geolocalización | Web Geolocation API |
-| Iconos | Iconos ODS oficiales ONU (español) |
+| Iconos ODS | Naciones Unidas (español) |
 
 ---
 
