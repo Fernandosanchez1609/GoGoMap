@@ -1,5 +1,6 @@
 package com.esplai.backendgogomap.models.dtos.response;
 
+import com.esplai.backendgogomap.models.enums.Ods;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,6 @@ public class MapPointDetailResponseDTO {
     private String description;
     private String address;
     private String status;
-    private Long odsId;
+    private Ods ods;
     private Long reportedBy;
 }

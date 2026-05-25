@@ -36,7 +36,7 @@ public class MapPointMapper {
                 point.getDescription(),
                 point.getAddress(),
                 point.getStatus(),
-                point.getOdsId(),
+                point.getOds(),
                 point.getReportedBy()
 
         );

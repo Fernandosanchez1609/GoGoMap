@@ -1,5 +1,6 @@
 package com.esplai.backendgogomap.models.entities;
 
+import com.esplai.backendgogomap.models.enums.Ods;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -44,8 +45,9 @@ public class MapPoint {
     @Column(name="last_verified_at")
     private LocalDateTime lastVerifiedAt;
 
-    @Column(nullable = false,name="ods_id")
-    private Long odsId;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, name = "ods")
+    private Ods ods;
 
     @Column(name="reported_by")
     private Long reportedBy;
