@@ -132,6 +132,9 @@
 
 body {
   margin: 0;
+  background-color: transparent;
+  color: #dee4d9;
+  overflow-x: hidden;
 }
 
 @theme inline {
@@ -218,3 +221,17 @@ body {
     @apply bg-background text-foreground;}
   html {
     @apply font-sans;}}
+
+@keyframes particleFromLeft {
+  0%   { opacity: 0; transform: translate(0, 0) scale(0); }
+  10%  { opacity: 0.45; transform: translate(10px, -6px) scale(1); }
+  90%  { opacity: 0.2; }
+  100% { opacity: 0; transform: translate(120px, -80px) scale(0.4); }
+}
+
+@keyframes particleFromRight {
+  0%   { opacity: 0; transform: translate(0, 0) scale(0); }
+  10%  { opacity: 0.45; transform: translate(-10px, -6px) scale(1); }
+  90%  { opacity: 0.2; }
+  100% { opacity: 0; transform: translate(-120px, -80px) scale(0.4); }
+}    
