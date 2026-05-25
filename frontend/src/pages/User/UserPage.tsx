@@ -1,8 +1,11 @@
 import Footer from "@/components/Footer/Footer";
-import { LogOut, Mail, User } from "lucide-react";
+import { Gift, LogOut, Mail, User } from "lucide-react";
 import {NavLink} from "react-router-dom";
+import { useState } from "react";
+import Weal from "@/components/Points/Weal";
 
 export default function UserPage() {
+  const [showWeal, setShowWeal] = useState(false);
   const userData = {
     name: "John Doe",
     email: "john.doe@example.com",
@@ -18,8 +21,8 @@ export default function UserPage() {
   const initial = userData.name.charAt(0).toUpperCase();
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#f0f4ec]">
-      <div className="flex-1 flex flex-col items-center px-6 pt-8 pb-4 gap-5">
+    <div className="flex flex-col h-screen bg-[#f0f4ec]">
+      <div className="flex-1 flex flex-col items-center px-6 pt-8 pb-4 gap-5 overflow-y-auto">
 
         {/* Avatar + Name */}
         <div className="flex flex-col items-center gap-2">
@@ -68,6 +71,14 @@ export default function UserPage() {
           </div>
         </div>
 
+        <button
+          onClick={() => setShowWeal(true)}
+          className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-[#f5a623] text-white font-semibold text-base shadow-lg shadow-orange-400/25 hover:bg-[#e09510] active:scale-95 transition-all duration-200"
+        >
+          <Gift size={18} />
+          Girar la ruleta
+        </button>
+
         {/* Logout */}
         <NavLink to="/login">
           <button className="w-full flex items-center justify-center gap-2 py-4 rounded-full border-2 border-[#d64040] text-[#d64040] font-semibold text-base hover:bg-[#d64040] hover:text-white transition-all duration-200 mt-1">
@@ -79,6 +90,8 @@ export default function UserPage() {
       </div>
 
       <Footer />
+
+      {showWeal && <Weal onClose={() => setShowWeal(false)} />}
     </div>
   );
 }
