@@ -29,6 +29,4 @@ public class AuthController {
         return ResponseEntity.ok(authService.login(request));
     }
 
-    // TODO: Implementar @GetMapping("/me") en el futuro si queremos devolver
-    // los datos del usuario que está logueado actualmente.
 }

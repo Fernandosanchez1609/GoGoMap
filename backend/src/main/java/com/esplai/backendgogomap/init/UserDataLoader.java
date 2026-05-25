@@ -5,7 +5,6 @@ import com.esplai.backendgogomap.models.enums.Role;
 import com.esplai.backendgogomap.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
@@ -17,14 +16,12 @@ import java.util.Set;
 public class UserDataLoader implements CommandLineRunner {
 
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder; // ¡Spring inyecta esto automáticamente gracias a @RequiredArgsConstructor!
 
     @Override
     public void run(String... args) throws Exception {
         // Comprobamos si ya hay usuarios para no duplicarlos cada vez que arranca el servidor
         if (userRepository.count() == 0) {
-
-            // Instanciamos el encriptador manualmente para esta rama
-            PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
             User admin = User.builder()
                     .nombre("Admin")

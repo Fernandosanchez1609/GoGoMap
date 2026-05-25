@@ -51,8 +51,7 @@ public class SecurityConfig {
 
                         .requestMatchers("/api/auth/**", "/error").permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/v1/points/**").permitAll()
-                        // TODO MODO DESARROLLO cambiar a .authenticated() en produccion
-                        .anyRequest().permitAll()
+                        .anyRequest().authenticated()
                 )
                 // Le decimos a Spring que acepte tokens y use nuestro conversor de roles
                 .oauth2ResourceServer(oauth2 -> oauth2

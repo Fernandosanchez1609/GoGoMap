@@ -11,5 +11,4 @@ public class AuthResponse {
     private String token;
     private String tokenType = "Bearer";
 
-    // TODO UsuarioResponseDTO cuando este creado
 }

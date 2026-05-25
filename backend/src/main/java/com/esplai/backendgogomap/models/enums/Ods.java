@@ -30,7 +30,7 @@ public enum Ods {
         this.odsName = odsName;
     }
 
-    // Método de ayuda para buscar un ODS por su número (útil para el DataLoader)
+    // Metodo de ayuda para buscar un ODS por su número (útil para el DataLoader)
     public static Ods fromNumber(int odsNumber) {
         for (Ods ods : values()) {
             if (ods.getOdsNumber() == odsNumber) {

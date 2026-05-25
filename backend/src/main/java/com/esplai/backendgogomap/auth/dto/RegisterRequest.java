@@ -13,7 +13,6 @@ public class RegisterRequest {
     @NotBlank(message = "El nombre no puede estar vacío")
     private String nombre;
 
-    //TODO Comprobar si es un apellido o dos apellidos
     @NotBlank(message = "Los apellidos no pueden estar vacíos")
     private String apellidos;
 
