@@ -3,6 +3,7 @@ package com.esplai.backendgogomap.init;
 import com.esplai.backendgogomap.models.dtos.geojson.RawFeatureCollectionDTO;
 import com.esplai.backendgogomap.models.dtos.geojson.RawFeatureDTO;
 import com.esplai.backendgogomap.models.entities.MapPoint;
+import com.esplai.backendgogomap.models.enums.Ods;
 import com.esplai.backendgogomap.repositories.MapPointRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
@@ -37,7 +38,7 @@ public class GeoJsonDataLoader implements CommandLineRunner {
 
             List<MapPoint> existingPoints = mapPointRepository.findAll();
             Set<String> existingCoordinates = existingPoints.stream()
-                    .map(p -> p.getLatitude() + "_" + p.getLongitude() + "_" + p.getOdsId())
+                    .map(p -> p.getLatitude() + "_" + p.getLongitude() + "_" + p.getOds().getOdsNumber())
                     .collect(Collectors.toSet());
 
             log.info("Puntos actuales en la base de datos: {}", existingPoints.size());
@@ -49,9 +50,17 @@ public class GeoJsonDataLoader implements CommandLineRunner {
 
             for (Resource resource : resources) {
                 String filename = resource.getFilename();
-                Long odsId = extraerNumeroOds(filename);
+                Integer odsNumber = extraerNumeroOds(filename);
 
-                if (odsId == null) {
+                if (odsNumber == null) {
+                    continue;
+                }
+
+                Ods odsEnum;
+                try {
+                    odsEnum = Ods.fromNumber(odsNumber);
+                } catch (IllegalArgumentException e) {
+                    log.warn("Número ODS {} no reconocido en el archivo {}. Saltando...", odsNumber, filename);
                     continue;
                 }
 
@@ -68,8 +77,8 @@ public class GeoJsonDataLoader implements CommandLineRunner {
                         Double lon = rawFeature.getGeometry().getCoordinates().get(0);
                         Double lat = rawFeature.getGeometry().getCoordinates().get(1);
 
-                        // Añadimos el odsId a la clave para permitir mismos puntos del mapapero con distinto ODS
-                        String uniqueKey = lat + "_" + lon + "_" + odsId;
+                        // Añadimos el número de ODS a la clave para permitir mismos puntos del mapa pero con distinto ODS
+                        String uniqueKey = lat + "_" + lon + "_" + odsEnum.getOdsNumber();
 
                         // 2. Si la huella digital exacta ya existe en la BD, la saltamos
                         if (existingCoordinates.contains(uniqueKey)) {
@@ -82,7 +91,7 @@ public class GeoJsonDataLoader implements CommandLineRunner {
                         // Comprobamos que el título no esté vacío
                         String titulo = rawFeature.getProperties().getNombre();
                         if (titulo == null || titulo.trim().isEmpty()) {
-                            titulo = "Punto de interés (ODS " + odsId + ")";
+                            titulo = "Punto de interés (ODS " + odsEnum.getOdsNumber() + ")";
                         }
 
                         point.setTitle(titulo);
@@ -91,7 +100,7 @@ public class GeoJsonDataLoader implements CommandLineRunner {
                         point.setLongitude(lon);
                         point.setLatitude(lat);
                         point.setStatus("Activo");
-                        point.setOdsId(odsId);
+                        point.setOds(odsEnum);
 
                         newPointsToSave.add(point);
                     }
@@ -113,13 +122,13 @@ public class GeoJsonDataLoader implements CommandLineRunner {
         }
     }
 
-    // Metodo auxiliar para sacar el númerodel nombre del archivo (ej: "ods16_bomberos.geojson" -> 16L)
-    private Long extraerNumeroOds(String filename) {
+    // Metodo auxiliar para sacar el número del nombre del archivo (ej: "ods16_bomberos.geojson" -> 16)
+    private Integer extraerNumeroOds(String filename) {
         if (filename == null) return null;
         Pattern pattern = Pattern.compile("ods0*(\\d+)_"); // Busca "ods", ignora ceros a la izquierda y captura el número
         Matcher matcher = pattern.matcher(filename);
         if (matcher.find()) {
-            return Long.parseLong(matcher.group(1));
+            return Integer.parseInt(matcher.group(1));
         }
         return null;
     }

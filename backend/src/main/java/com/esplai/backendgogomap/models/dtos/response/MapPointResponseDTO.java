@@ -1,5 +1,6 @@
 package com.esplai.backendgogomap.models.dtos.response;
 
+import com.esplai.backendgogomap.models.enums.Ods;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,4 +14,7 @@ public class MapPointResponseDTO {
     private String title;
     private Double latitude;
     private Double longitude;
+    private Ods ods;
+    private int odsNumber;
+
 }

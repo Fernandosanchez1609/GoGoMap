@@ -1,37 +1,62 @@
-## 🛠️ Stack Tecnológico (Backend)
+🌍 GoGoMap - Backend API
+API RESTful desarrollada para el proyecto GoGoMap, encargada de gestionar los puntos de interés geolocalizados (ODS) y la autenticación de usuarios. Diseñada bajo principios de Clean Code, separación por capas (DTOs) y alta resiliencia en la ingesta de datos.
 
-Este proyecto utiliza las siguientes tecnologías y herramientas para el desarrollo del backend:
+🛠️ Stack Tecnológico
+Lenguaje: Java 21
 
-* **Lenguaje:** Java 21
-* **Framework Principal:** Spring Boot (Starter Web, Validation)
-* **Base de Datos:** MySQL
-* **ORM y Acceso a Datos:** Spring Data JPA (Hibernate)
-* **Seguridad:** Spring Security
-* **Utilidades:** Lombok (para reducir el código repetitivo o *boilerplate*)
-* **Herramientas de Desarrollo:** Spring Boot DevTools
+Framework Core: Spring Boot 3
 
-### ⚙️ Requisitos previos del entorno
-Para ejecutar este proyecto en local, asegúrate de tener configurado:
-1.  **JDK 21** instalado en tu sistema y configurado en tu IDE (ej. IntelliJ IDEA con *Language Level* y *Target bytecode* en 21).
-2.  **MySQL Server** en ejecución con una base de datos creada para el proyecto.
-3.  **Maven** (integrado en el IDE o instalado localmente).
+Base de Datos: MySQL & Spring Data JPA (Hibernate)
 
-### 🚀 Inicialización de Datos Masiva (Data Seeding)
+Seguridad: Spring Security + OAuth2 Resource Server (JWT)
 
-El proyecto cuenta con un sistema avanzado y resiliente de carga automática de datos geográficos (Open Data) para poblar la base de datos al arrancar, evitando inserciones manuales.
+Mapeo de Objetos: MapStruct
 
-* **GeoJsonDataLoader:** El backend incluye un componente `CommandLineRunner` que escanea automáticamente la carpeta `src/main/resources/data/` en busca de múltiples archivos `ods*.geojson` en el arranque de la aplicación.
-* **Extracción Inteligente:** El sistema detecta el número de ODS directamente desde el nombre del archivo mediante expresiones regulares y mapea propiedades con nombres inconsistentes de forma segura (gracias a anotaciones como `@JsonAlias`).
-* **Actualización Condicional (Prevención de pérdida de datos):** El cargador crea una "huella digital" única combinando las coordenadas y el identificador ODS (`Latitud_Longitud_OdsId`). Compara los archivos físicos con la base de datos e **inserta únicamente los puntos nuevos**. Esto garantiza que no se sobrescriban ni se pierdan los datos históricos o modificaciones hechas previamente por los usuarios (ej. cambios de estado o autores de reportes).
-* **Resiliencia y Tolerancia a Fallos:** El proceso cuenta con manejo de excepciones aislado por archivo. Si un documento está corrupto (ej. páginas de error camufladas como JSON), el sistema notifica el error por consola pero continúa procesando el resto de ODS con normalidad. También asigna títulos genéricos automáticamente a aquellos puntos de interés que no lo posean.
+Utilidades: Lombok, Spring Boot DevTools
 
-### 🌐 Endpoints de la API (MapPoints)
+🛡️ Seguridad y Arquitectura
+Autenticación Stateless: Gestión de sesiones mediante JWT (HS256).
 
-La comunicación con el frontend se realiza mediante DTOs para optimizar la carga de red y ocultar datos sensibles de auditoría.
+Protección de Credenciales: Encriptación robusta mediante BCrypt con inyección gestionada por Spring.
 
-* **`GET /api/v1/points`**
-    * **Uso:** Carga inicial del mapa principal.
-    * **Respuesta:** Retorna un array de `MapPointResponseDTO` optimizado (exclusivamente `id`, `title`, `latitude` y `longitude`).
-* **`GET /api/v1/points/{id}`**
-    * **Uso:** Vista de detalle al hacer clic en un pin del mapa.
-    * **Respuesta:** Retorna un `MapPointDetailResponseDTO` con toda la información completa del punto (dirección, descripción, estado, identificador del ODS y autor del reporte).
+Aislamiento de Dominio: Uso estricto de DTOs para evitar la exposición de entidades y asegurar la integridad de la API.
+
+CORS Optimizado: Configuración granular para integración segura con entornos de frontend (Vite/React/Angular), incluyendo soporte para cabeceras de autorización y caché pre-flight (maxAge).
+
+Seguridad Basada en Roles: Protección de endpoints mediante SecurityFilterChain y JwtAuthenticationConverter para la gestión dinámica de permisos.
+
+⚙️ Configuración
+Asegúrate de configurar src/main/resources/application.properties con las siguientes claves:
+
+Properties
+# Base de datos
+spring.datasource.url=jdbc:mysql://localhost:3306/gogomap_db
+spring.datasource.username=tu_usuario
+spring.datasource.password=tu_password
+spring.jpa.hibernate.ddl-auto=update
+
+# Seguridad JWT
+JWT_SECRET=tu_clave_secreta_de_al_menos_32_caracteres
+JWT_EXPIRATION_MINUTES=1440
+🌐 Endpoints Principales
+Autenticación (/api/auth)
+POST /api/auth/register (Público): Registro de usuario con encriptación.
+
+POST /api/auth/login (Público): Autenticación y generación de token JWT.
+
+Usuarios (/api/v1/users)
+GET /api/v1/users/me (Protegido): Perfil del usuario autenticado vía JWT.
+
+Puntos del Mapa (/api/v1/points)
+GET /api/v1/points (Público): Listado optimizado. Incluye ods (nombre) y odsNumber (ID numérico) para filtrado eficiente en el frontend.
+
+GET /api/v1/points/{id} (Público): Detalle completo del punto.
+
+🌱 Inicialización de Datos (Data Seeding)
+Sistema resiliente de carga masiva de GeoJSON:
+
+Mapeo ODS: Integración avanzada en el Enum Ods con conversión bidireccional (fromNumber) para facilitar la carga desde datos externos.
+
+Safe-Insert: Identificación única por coordenada para evitar duplicados.
+
+Tolerancia a fallos: Procesamiento aislado por archivo para garantizar la integridad de la base de datos.

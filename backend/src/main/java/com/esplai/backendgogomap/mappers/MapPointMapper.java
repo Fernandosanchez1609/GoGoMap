@@ -18,7 +18,9 @@ public class MapPointMapper {
                 point.getId(),
                 point.getTitle(),
                 point.getLatitude(),
-                point.getLongitude()
+                point.getLongitude(),
+                point.getOds(),
+                point.getOds() != null ? point.getOds().getOdsNumber() : 0
         );
     }
 
@@ -36,7 +38,7 @@ public class MapPointMapper {
                 point.getDescription(),
                 point.getAddress(),
                 point.getStatus(),
-                point.getOdsId(),
+                point.getOds(),
                 point.getReportedBy()
 
         );
