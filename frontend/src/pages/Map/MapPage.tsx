@@ -8,6 +8,8 @@ import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import Filter from "@/components/Map/Filter";
 import { createOdsIcon } from "@/utils/OdsColors";
+import pointService from "@/api/services/pointService";
+import type { Point } from "@/api/types/index";
 
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -31,30 +33,6 @@ const MALAGA_BOUNDS = L.latLngBounds(
   L.latLng(37.2, -3.8),
 );
 
-//puntos genericos para los 17 ODS bien separados
-const points = [
-  { id: 1, ods: 1, lat: 36.76, lng: -4.45, label: "Punto 1" },
-  { id: 2, ods: 2, lat: 36.78, lng: -4.48, label: "Punto 2" },
-  { id: 3, ods: 3, lat: 36.74, lng: -4.52, label: "Punto 3" },
-  { id: 4, ods: 4, lat: 36.80, lng: -4.44, label: "Punto 4" },
-  { id: 5, ods: 5, lat: 36.77, lng: -4.39, label: "Punto 5" },
-  { id: 6, ods: 6, lat: 36.79, lng: -4.50, label: "Punto 6" },
-  { id: 7, ods: 7, lat: 36.75, lng: -4.47, label: "Punto 7" },
-  { id: 8, ods: 8, lat: 36.81, lng: -4.46, label: "Punto 8" },
-  { id: 9, ods: 9, lat: 36.74, lng: -4.41, label: "Punto 9" },
-  { id: 10, ods: 10, lat: 36.82, lng: -4.43, label: "Punto 10" },
-  { id: 11, ods: 11, lat: 36.76, lng: -4.53, label: "Punto 11" },
-  { id: 12, ods: 12, lat: 36.78, lng: -4.41, label: "Punto 12" },
-  { id: 13, ods: 13, lat: 36.75, lng: -4.55, label: "Punto 13" },
-  { id: 14, ods: 14, lat: 36.80, lng: -4.50, label: "Punto 14" },
-  { id: 15, ods: 15, lat: 36.77, lng: -4.42, label: "Punto 15" },
-  { id: 16, ods: 16, lat: 36.79, lng: -4.45, label: "Punto 16" },
-  { id: 17, ods: 17, lat: 36.74, lng: -4.47, label: "Punto 17" },
-  { id: 18, ods: 1, lat: 36.73, lng: -4.44, label: "Punto 18" },
-  { id: 19, ods: 2, lat: 36.76, lng: -4.48, label: "Punto 19" },
-  { id: 20, ods: 3, lat: 36.78, lng: -4.52, label: "Punto 20" },
-];
-
 function FlyToUser({ position }: { position: [number, number] | null }) {
   const map = useMap();
   const isFirst = useRef(true);
@@ -76,10 +54,30 @@ export default function Map() {
   const [userPosition, setUserPosition] = useState<[number, number] | null>(
     null,
   );
-   const [selectedOds, setSelectedOds] = useState<number | null>(null);
+  const [selectedOds, setSelectedOds] = useState<number | null>(null);
   const [geoError, setGeoError] = useState<string | null>(null);
+  const [points, setPoints] = useState<Point[]>([]); // <-- datos de la API
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
   const mapRef = useRef<L.Map | null>(null);
 
+  // Fetch de los puntos
+  useEffect(() => {
+    const fetchPoints = async () => {
+      try {
+        setLoading(true);
+        const response = await pointService.getAll();
+        setPoints(response.data);
+      } catch (err) {
+        setError("Error al cargar los puntos del mapa");
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchPoints();
+  }, []);
+
+  // Geolocalización
   useEffect(() => {
     if (!navigator.geolocation) {
       setGeoError("Tu navegador no soporta geolocalización.");
@@ -104,18 +102,29 @@ export default function Map() {
     }
   }
 
-   const visiblePoints = selectedOds
+  // Ten en cuenta que tu API devuelve latitude/longitude en vez de lat/lng
+  const visiblePoints = selectedOds
     ? points.filter((p) => p.ods === selectedOds)
     : points;
 
   return (
     <div className="flex flex-col h-screen">
       <Filter selected={selectedOds} onSelect={setSelectedOds} />
-      {/* MAPA */}
+
       <div className="relative flex-1">
         {geoError && (
           <div className="bg-red-50 border border-red-200 text-red-700 text-sm px-3 py-2">
             ⚠️ {geoError}
+          </div>
+        )}
+        {error && (
+          <div className="bg-red-50 border border-red-200 text-red-700 text-sm px-3 py-2">
+            ⚠️ {error}
+          </div>
+        )}
+        {loading && (
+          <div className="absolute top-2 left-1/2 -translate-x-1/2 z-1000 bg-white px-4 py-2 rounded shadow text-sm">
+            Cargando puntos...
           </div>
         )}
 
@@ -146,8 +155,12 @@ export default function Map() {
           />
 
           {visiblePoints.map((p) => (
-            <Marker key={p.id} position={[p.lat, p.lng]} icon={createOdsIcon(p.ods)}>
-              <Popup>{p.label}</Popup>
+            <Marker
+              key={p.id}
+              position={[p.latitude, p.longitude]} // <-- latitude/longitude en vez de lat/lng
+              icon={createOdsIcon(p.ods)}
+            >
+              <Popup>{p.title}</Popup> {/* <-- title en vez de label */}
             </Marker>
           ))}
 
