@@ -1,0 +1,70 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "",
+        "description": "Centro de innovación y apoyo al emprendimiento impulsado por el Ayuntamiento de Málaga",
+        "address": "Málaga TechPark / Málaga, España",
+        "odsId": 17
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.553, 36.735]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "",
+        "description": "Incubadora de empresas y parque tecnológico orientado a startups y empresas innovadoras",
+        "address": "Parque Tecnológico de Andalucía (PTA), Málaga",
+        "odsId": 17
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.559, 36.739]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "",
+        "description": "Espacio de coworking y emprendimiento digital en el centro de Málaga",
+        "address": "Málaga Centro",
+        "odsId": 17
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4214, 36.7213]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "",
+        "description": "Hub de startups y comunidad emprendedora internacional en Málaga",
+        "address": "Málaga Centro",
+        "odsId": 17
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4169, 36.7211]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "",
+        "description": "Espacio de aceleración de startups impulsado por Telefónica y la Junta de Andalucía",
+        "address": "Parque Tecnológico de Andalucía (PTA)",
+        "odsId": 17
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.5598, 36.7402]
+      }
+    }
+  ]
+}

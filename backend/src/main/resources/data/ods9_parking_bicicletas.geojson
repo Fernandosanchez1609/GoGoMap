@@ -1,0 +1,6830 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2761",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4021306,
+          36.72566364,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65998,
+        "NOMBRE": "APARCABICIS_217",
+        "DESCRIPCION": "Frente a Carril de los Niños.",
+        "DIRECCION": "CARRIL DE CASTELL, 23 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2760",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.421604,
+          36.73118604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66088,
+        "NOMBRE": "APARCABICIS_298",
+        "DESCRIPCION": "Esq. Cl. Peinado",
+        "DIRECCION": "CALLE EDUARDO DOMÍNGUEZ ÁVILA, 19 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-275f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.359309,
+          36.71950604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65996,
+        "NOMBRE": "APARCABICIS_186",
+        "DESCRIPCION": "Esquina c/ Mar.",
+        "DIRECCION": "PLAZA NIÑO DE LAS MORAS, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-275e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.358914,
+          36.72150904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66061,
+        "NOMBRE": "APARCABICIS_268",
+        "DESCRIPCION": "A la altura del número 18",
+        "DIRECCION": "CALLE REAL, 18 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-275d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.362181,
+          36.72120304,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65999,
+        "NOMBRE": "APARCABICIS_229",
+        "DESCRIPCION": "Frente a Colegio San Estanislao de Kostka.",
+        "DIRECCION": "AVENIDA DE JUAN SEBASTIÁN ELCANO, 170 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-275c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41377358,
+          36.72921834,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66123,
+        "NOMBRE": "APARCABICIS_325",
+        "DESCRIPCION": "Esq. Plaza Cristo del Amor",
+        "DIRECCION": "CALLE FERNANDO EL CATÓLICO, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-275b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.37104,
+          36.72862004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65974,
+        "NOMBRE": "APARCABICIS_051",
+        "DESCRIPCION": "A la altura del Polideportivo la Mosca",
+        "DIRECCION": "CALLE EUCALIPTUS, 18 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-275a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42277191,
+          36.71579821,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65885,
+        "NOMBRE": "APARCABICIS_338",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE BARROSO, 7 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2759",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.424559,
+          36.74992604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66005,
+        "NOMBRE": "APARCABICIS_233",
+        "DESCRIPCION": "Puerta del Conservatorio de Música Manuel Carra.",
+        "DIRECCION": "AVENIDA DE JACINTO BENAVENTE, 13 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2758",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.414342,
+          36.71355904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66049,
+        "NOMBRE": "APARCABICIS_257",
+        "DESCRIPCION": "A la altura del Paseo de Levante",
+        "DIRECCION": "PASEO DE LA FAROLA, 21 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2757",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41680541,
+          36.7495161,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 78125,
+        "NOMBRE": "APARCABICIS_345",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ALCALDE JOAQUÍN QUILES, 31 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2756",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.420364,
+          36.71747504,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65988,
+        "NOMBRE": "APARCABICIS_206",
+        "DESCRIPCION": "Junto a Oficina de Turismo.",
+        "DIRECCION": "PLAZA DE LA MARINA, 11 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "16",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2755",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44796,
+          36.72640804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66019,
+        "NOMBRE": "APARCABICIS_203",
+        "DESCRIPCION": "Puerta del Colegio Manolo Garvayo",
+        "DIRECCION": "CALLE ENCARNACIÓN FONTIVEROS, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2754",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.435822,
+          36.70015304,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66037,
+        "NOMBRE": "APARCABICIS_216",
+        "DESCRIPCION": "Glorieta Antonio Molina",
+        "DIRECCION": "GLORIETA ANTONIO MOLINA, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2753",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.435701,
+          36.70028404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66036,
+        "NOMBRE": "APARCABICIS_215",
+        "DESCRIPCION": "Junto aparatos de gimnasia",
+        "DIRECCION": "GLORIETA ANTONIO MOLINA, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2752",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43595529,
+          36.69995221,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65911,
+        "NOMBRE": "APARCABICIS_135",
+        "DESCRIPCION": "Esquina con Gta. Antonio Molina",
+        "DIRECCION": "GLORIETA ANTONIO MOLINA, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2751",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43510771,
+          36.72034514,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65907,
+        "NOMBRE": "APARCABICIS_112",
+        "DESCRIPCION": "Frente al C.E.P Pablo Ruiz Picasso",
+        "DIRECCION": "CALLE HONDURAS, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2750",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44564985,
+          36.72360591,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66023,
+        "NOMBRE": "APARCABICIS_220",
+        "DESCRIPCION": "Junto al Campo de Fútbol",
+        "DIRECCION": "CALLE LA ARGENTINITA, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-274f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.468355,
+          36.72357004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66074,
+        "NOMBRE": "APARCABICIS_284",
+        "DESCRIPCION": "Esquina con Cl. Miguel Carrera",
+        "DIRECCION": "CALLE MIGUEL CARRERA, 30 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-274e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.460662,
+          36.71563804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66041,
+        "NOMBRE": "APARCABICIS_221",
+        "DESCRIPCION": "Frente a la Ciudad de la Justicia",
+        "DIRECCION": "CALLE FISCAL LUIS PORTERO GARCÍA, 11 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-274d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.438764,
+          36.72215004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66021,
+        "NOMBRE": "APARCABICIS_213",
+        "DESCRIPCION": "Esq. con Cl. O'donnell",
+        "DIRECCION": "CALLE JUAN FERNÁNDEZ SÚRIA, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-274c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.431579,
+          36.72474204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66008,
+        "NOMBRE": "APARCABICIS_185",
+        "DESCRIPCION": "Esquina Avenida Barcelona.",
+        "DIRECCION": "CALLE CALZADA DE LA TRINIDAD, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-274b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.416113,
+          36.74632004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66000,
+        "NOMBRE": "APARCABICIS_072",
+        "DESCRIPCION": "Esquina c/ Quiteria.",
+        "DIRECCION": "CALLE LÁGRIMA, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-274a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.434362,
+          36.72197204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66085,
+        "NOMBRE": "APARCABICIS_295",
+        "DESCRIPCION": "Esq. con Cl. Antonio Jiménez Ruiz",
+        "DIRECCION": "CALLE DIEGO DE VERGARA, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2749",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43438888,
+          36.71533987,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65939,
+        "NOMBRE": "APARCABICIS_034",
+        "DESCRIPCION": "Esquina con Walt Whitman junto Edificio negro.",
+        "DIRECCION": "CALLE DEL VOLUNTARIADO MALAGUEÑO, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2748",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41845924,
+          36.72917452,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65920,
+        "NOMBRE": "APARCABICIS_038",
+        "DESCRIPCION": "Esquina con c/ Ejido",
+        "DIRECCION": "PLAZA DEL MAESTRO ARTOLA, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2747",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44510162,
+          36.69303579,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65954,
+        "NOMBRE": "APARCABICIS_131",
+        "DESCRIPCION": "Frente c/ Diamantino García Acosta",
+        "DIRECCION": "CALLE LUIS BARAHONA DE SOTO, 11 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "12",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2746",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42926586,
+          36.71805325,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65924,
+        "NOMBRE": "APARCABICIS_160",
+        "DESCRIPCION": "Esquina con c/ Hilera",
+        "DIRECCION": "CALLE ARMENGUAL DE LA MOTA, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2745",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.429172,
+          36.71806204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66092,
+        "NOMBRE": "APARCABICIS_302",
+        "DESCRIPCION": "Esq. Cl. Armengual de la Mota",
+        "DIRECCION": "CALLE ARMENGUAL DE LA MOTA, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2744",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.420116,
+          36.71847004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65916,
+        "NOMBRE": "APARCABICIS_024",
+        "DESCRIPCION": "Esq. con Molina Larios",
+        "DIRECCION": "PLAZA DE LA MARINA, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2743",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.424337,
+          36.72867204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65976,
+        "NOMBRE": "APARCABICIS_174",
+        "DESCRIPCION": "Esquina con c/ San Jorge.",
+        "DIRECCION": "CALLE DUQUE DE RIVAS, 28 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2742",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43301784,
+          36.72309384,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65876,
+        "NOMBRE": "APARCABICIS_328",
+        "DESCRIPCION": "Esq. C/ Natalia",
+        "DIRECCION": "CALLE CATALUÑA, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2741",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.422108,
+          36.71850804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65975,
+        "NOMBRE": "APARCABICIS_163",
+        "DESCRIPCION": "Esquina con Cl. Antonio Baena Gómez.",
+        "DIRECCION": "CALLE ANTONIO BAENA GÓMEZ, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "20",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2740",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4378382,
+          36.71359397,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65946,
+        "NOMBRE": "APARCABICIS_108",
+        "DESCRIPCION": "A la altura de la Biblioteca Manuel Altolaguirre",
+        "DIRECCION": "CALLE CALATRAVA, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-273f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.439133,
+          36.72466204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65967,
+        "NOMBRE": "APARCABICIS_092",
+        "DESCRIPCION": "Esq. con Cl. Antonio Romero",
+        "DIRECCION": "CALLE FÉLIX CORRALES, 7 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-273e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.438784,
+          36.72650104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66020,
+        "NOMBRE": "APARCABICIS_212",
+        "DESCRIPCION": "Esquina con Cl. Martínez de la Rosa",
+        "DIRECCION": "CALLE MORALES VILLARRUBIA, 26 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-273d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.34764087,
+          36.71669442,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65929,
+        "NOMBRE": "APARCABICIS_064",
+        "DESCRIPCION": "A la altura del Tintero",
+        "DIRECCION": "CALLE PLAYA DEL CHANQUETE, 97 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-273c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42834188,
+          36.71350565,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 74268,
+        "NOMBRE": "APARCABICIS_889",
+        "DESCRIPCION": "Calle cuarteles, 31",
+        "DIRECCION": "CALLE CUARTELES, 31 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-273b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.429621,
+          36.71228504,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65986,
+        "NOMBRE": "APARCABICIS_200",
+        "DESCRIPCION": "Esquina c/ Jacinto Verdaguer.",
+        "DIRECCION": "CALLE CUARTELES, 49 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-273a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44676995,
+          36.69119905,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65953,
+        "NOMBRE": "APARCABICIS_130",
+        "DESCRIPCION": "Frente I.E.S. Emilio Prados",
+        "DIRECCION": "CALLE LUIS BARAHONA DE SOTO, 18 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2739",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.446625,
+          36.69054104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65949,
+        "NOMBRE": "APARCABICIS_125",
+        "DESCRIPCION": "Esquina con Camino de la Térmica",
+        "DIRECCION": "AVENIDA DE LOS GUINDOS, 46 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2738",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.420206,
+          36.72639404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65985,
+        "NOMBRE": "APARCABICIS_199",
+        "DESCRIPCION": "Esquina c/ Dos Aceras.",
+        "DIRECCION": "CALLE REFINO, 28 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2737",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45304096,
+          36.69895866,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65951,
+        "NOMBRE": "APARCABICIS_128",
+        "DESCRIPCION": "Esquina con Cl. Conejito de Málaga",
+        "DIRECCION": "CALLE CONEJITO DE MÁLAGA, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2736",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42323,
+          36.74340404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66006,
+        "NOMBRE": "APARCABICIS_234",
+        "DESCRIPCION": "Esquina Cl. Doctor Peralta Almagro.",
+        "DIRECCION": "AVENIDA DE SANTIAGO RAMÓN Y CAJAL, 41 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2735",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.429331,
+          36.71479804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66068,
+        "NOMBRE": "APARCABICIS_275",
+        "DESCRIPCION": "A la altura del número 7",
+        "DIRECCION": "CALLE MALPICA, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2734",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.423381,
+          36.74245604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66103,
+        "NOMBRE": "APARCABICIS_240",
+        "DESCRIPCION": "Esq. con Cl. Alcalde Madorel Perea",
+        "DIRECCION": "AVENIDA DE SANTIAGO RAMÓN Y CAJAL, 33 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2733",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.440451,
+          36.71794004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66063,
+        "NOMBRE": "APARCABICIS_270",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE PALESTINA, 7 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2732",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.423583,
+          36.73874404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66053,
+        "NOMBRE": "APARCABICIS_263",
+        "DESCRIPCION": "A la altura del número 14",
+        "DIRECCION": "AVENIDA DE SANTIAGO RAMÓN Y CAJAL, 24 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2731",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42376,
+          36.73996704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66102,
+        "NOMBRE": "APARCABICIS_239",
+        "DESCRIPCION": "Esq. con Pasaje Alcalde Peña Rodríguez",
+        "DIRECCION": "AVENIDA DE SANTIAGO RAMÓN Y CAJAL, 11 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "12",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2730",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42375312,
+          36.7400803,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 78124,
+        "NOMBRE": "APARCABICIS_344",
+        "DESCRIPCION": "Esq. Concejal Eduardo Heredia",
+        "DIRECCION": "AVENIDA DE SANTIAGO RAMÓN Y CAJAL, 11 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "12",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-272f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.423867,
+          36.73944704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66104,
+        "NOMBRE": "APARCABICIS_309",
+        "DESCRIPCION": "Esq. Pasaje Francisco Blanca Mora",
+        "DIRECCION": "AVENIDA DE SANTIAGO RAMÓN Y CAJAL, 7 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-272e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.35076136,
+          36.71849312,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66009,
+        "NOMBRE": "APARCABICIS_188",
+        "DESCRIPCION": "Junto al Colegio.",
+        "DIRECCION": "CALLE PLAYA VIRGINIA, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-272d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50112492,
+          36.66783377,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65905,
+        "NOMBRE": "APARCABICIS_148",
+        "DESCRIPCION": "Esquina con c/ Toril",
+        "DIRECCION": "CALLE DE LA VEGA, 33 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-272c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.422896,
+          36.74571704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66007,
+        "NOMBRE": "APARCABICIS_237",
+        "DESCRIPCION": "Frente a nº 91.",
+        "DIRECCION": "AVENIDA DE SANTIAGO RAMÓN Y CAJAL, 91 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-272b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.35822,
+          36.71949704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66066,
+        "NOMBRE": "APARCABICIS_272",
+        "DESCRIPCION": "A la altura del número 4",
+        "DIRECCION": "CALLE DÁNVILA Y COLLADO, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-272a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.366689,
+          36.71899604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65973,
+        "NOMBRE": "APARCABICIS_047",
+        "DESCRIPCION": "Frente a calle Ateneo, nº 106",
+        "DIRECCION": "PASEO MARÍTIMO EL PEDREGAL, 106 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2729",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.355027,
+          36.71930604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65994,
+        "NOMBRE": "APARCABICIS_165",
+        "DESCRIPCION": "Esquina con Cl. Pintor Dámaso Ruano.",
+        "DIRECCION": "CALLE PRACTICANTE FERNÁNDEZ ALCOLEA, 90 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2728",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.35586452,
+          36.71937765,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65901,
+        "NOMBRE": "APARCABICIS_059",
+        "DESCRIPCION": "Esquina con Cl. Padre Lerchundi",
+        "DIRECCION": "CALLE PRACTICANTE FERNÁNDEZ ALCOLEA, 72 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2727",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.359082,
+          36.72000704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65995,
+        "NOMBRE": "APARCABICIS_176",
+        "DESCRIPCION": "Esquina c/ Practicante Fernández Alcolea.",
+        "DIRECCION": "CALLE MAR, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2726",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42111731,
+          36.72335503,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65919,
+        "NOMBRE": "APARCABICIS_032",
+        "DESCRIPCION": "Esquina con Plaza del Teatro",
+        "DIRECCION": "PLAZA DEL TEATRO, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2725",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44427237,
+          36.76438612,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65878,
+        "NOMBRE": "APARCABICIS_330",
+        "DESCRIPCION": null,
+        "DIRECCION": "CAMINO DEL CORCEL, 20 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "5",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2724",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.347615,
+          36.72215004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65972,
+        "NOMBRE": "APARCABICIS_045",
+        "DESCRIPCION": "Esquina con Camino Viejo de Vélez",
+        "DIRECCION": "CARRETERA DE OLÍAS, 60 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2723",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.35340226,
+          36.7218802,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65926,
+        "NOMBRE": "APARCABICIS_054",
+        "DESCRIPCION": "A la altura del I.E.S. Mediterráneo",
+        "DIRECCION": "CALLE IDUMEA, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2722",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.571261,
+          36.73233004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66040,
+        "NOMBRE": "APARCABICIS_204",
+        "DESCRIPCION": "Junto al CEIP Cayetano Bolívar",
+        "DIRECCION": "CALLE DEL ROMERO, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2721",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.423872,
+          36.74991204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66001,
+        "NOMBRE": "APARCABICIS_080",
+        "DESCRIPCION": "Esquina Av. Jacinto Benavente.",
+        "DIRECCION": "GLORIETA JOSÉ GASPAR ANAYA MUÑOZ, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2720",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.383776,
+          36.72346404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65971,
+        "NOMBRE": "APARCABICIS_044",
+        "DESCRIPCION": "A la altura de OMAU",
+        "DIRECCION": "CAMINO DE LA DESVIACIÓN, 18 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-271f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.419421,
+          36.72797304,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65970,
+        "NOMBRE": "APARCABICIS_037",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA EJIDO, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-271e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44884062,
+          36.72137711,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65942,
+        "NOMBRE": "APARCABICIS_104",
+        "DESCRIPCION": "A la altura del Complejo Deportivo de Carranque",
+        "DIRECCION": "AVENIDA DE SANTA ROSA DE LIMA, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-271d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45347707,
+          36.71927532,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 78128,
+        "NOMBRE": "APARCABICIS_348",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CÓMPETA, 29 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-271c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.427311,
+          36.71125904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66050,
+        "NOMBRE": "APARCABICIS_256",
+        "DESCRIPCION": "Esquina con Cl. Canales",
+        "DIRECCION": "CALLE CANALES, 10 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-271b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44854558,
+          36.69972425,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65950,
+        "NOMBRE": "APARCABICIS_126",
+        "DESCRIPCION": "En el parque.",
+        "DIRECCION": "CALLE NIÑO DEL MUSEO, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-271a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46244417,
+          36.7007931,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 79054,
+        "NOMBRE": "APARCABICIS_890",
+        "DESCRIPCION": "Recinto ferial entre C/ Paquiro y Avenida las Malagueñas",
+        "DIRECCION": "CALLE PAQUIRO, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2719",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.453104,
+          36.69610604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66076,
+        "NOMBRE": "APARCABICIS_278",
+        "DESCRIPCION": "A la altura del número 1",
+        "DIRECCION": "PLAZA DE LA LUZ, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2718",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43120241,
+          36.71221356,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65937,
+        "NOMBRE": "APARCABICIS_015",
+        "DESCRIPCION": "Frente salida estación.",
+        "DIRECCION": "CALLE EXPLANADA DE LA ESTACIÓN, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "12",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2717",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.436457,
+          36.72953304,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66065,
+        "NOMBRE": "APARCABICIS_273",
+        "DESCRIPCION": "Esquina Plaza Eduardo Dato",
+        "DIRECCION": "CALLE JOSÉ CANALEJAS, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2716",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43690059,
+          36.7299997,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66119,
+        "NOMBRE": "APARCABICIS_321",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE MORENO NIETO, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2715",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50175524,
+          36.66571243,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65969,
+        "NOMBRE": "APARCABICIS_173",
+        "DESCRIPCION": "Esq. con Cl. Árbol Blanco (Biblioteca)",
+        "DIRECCION": "CALLE ÁRBOL BLANCO, 19 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2714",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.417693,
+          36.74430604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66054,
+        "NOMBRE": "APARCABICIS_261",
+        "DESCRIPCION": "A la altura del número 31",
+        "DIRECCION": "CALLE LAS MORERAS, 31 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2713",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.448898,
+          36.70034704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66078,
+        "NOMBRE": "APARCABICIS_280",
+        "DESCRIPCION": "Esquina c/ Niño del Museo",
+        "DIRECCION": "CALLE NIÑO DEL MUSEO, 14 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2712",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41455126,
+          36.72019894,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65891,
+        "NOMBRE": "APARCABICIS_010",
+        "DESCRIPCION": "Esquina con Av.de Cervantes. ",
+        "DIRECCION": "CALLE ROMA, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2711",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.422965,
+          36.72591704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66084,
+        "NOMBRE": "APARCABICIS_294",
+        "DESCRIPCION": "Pl. Pepe Mena",
+        "DIRECCION": "CALLE OLLERÍAS, 55 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2710",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.356082,
+          36.72099604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66015,
+        "NOMBRE": "APARCABICIS_056",
+        "DESCRIPCION": "Nº 34.",
+        "DIRECCION": "CALLE MARTÍNEZ FALERO, 34 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-270f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42714155,
+          36.72341952,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65900,
+        "NOMBRE": "APARCABICIS_022",
+        "DESCRIPCION": "A la altura del Polideportivo Trinidad",
+        "DIRECCION": "CALLE MALASAÑA, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-270e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.411288,
+          36.72982704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66090,
+        "NOMBRE": "APARCABICIS_301",
+        "DESCRIPCION": "Esq. Cl. San Lucas Mayor",
+        "DIRECCION": "CALLE AMARGURA, 58 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-270d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.536638,
+          36.72304204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66080,
+        "NOMBRE": "APARCABICIS_282",
+        "DESCRIPCION": "A la altura del número 4",
+        "DIRECCION": "CALLE CRISTOBALINA FERNÁNDEZ, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-270c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43578147,
+          36.70432934,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65889,
+        "NOMBRE": "APARCABICIS_341",
+        "DESCRIPCION": "Puerta I.E.S Huelin",
+        "DIRECCION": "CALLE TOMÁS ECHEVERRÍA, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-270b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44043,
+          36.71125604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66097,
+        "NOMBRE": "APARCABICIS_307",
+        "DESCRIPCION": "Junto a estación de Metro",
+        "DIRECCION": "CALLE SANTA MARTA, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-270a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.454707,
+          36.71033404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66096,
+        "NOMBRE": "APARCABICIS_306",
+        "DESCRIPCION": "Esq. Benjamín Franklin",
+        "DIRECCION": "CALLE DE CRISTÓBAL DE VILLALÓN, 11 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2709",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.467131,
+          36.69913204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66059,
+        "NOMBRE": "APARCABICIS_267",
+        "DESCRIPCION": "A la altura del número 26",
+        "DIRECCION": "CALLE PAQUIRO, 26 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2708",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43465169,
+          36.70377507,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65894,
+        "NOMBRE": "APARCABICIS_136",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE TOMÁS ECHEVERRÍA, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2707",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.442642,
+          36.71416004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66024,
+        "NOMBRE": "APARCABICIS_110",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CONDE DE GUADALHORCE, 17 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2706",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.477697,
+          36.72078604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66012,
+        "NOMBRE": "APARCABICIS_168",
+        "DESCRIPCION": "Frente a los jardines",
+        "DIRECCION": "CALLE DE TESEO, 14 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "14",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2705",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.458033,
+          36.68253904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65898,
+        "NOMBRE": "APARCABICIS_121",
+        "DESCRIPCION": "A la altura del Estadio de Atletismo.",
+        "DIRECCION": "AVENIDA ALICIA DE LARROCHA, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2704",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.442585,
+          36.72556604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66087,
+        "NOMBRE": "APARCABICIS_297",
+        "DESCRIPCION": "Esq. Cl Maestro Pablo Luna",
+        "DIRECCION": "CALLE SONDALEZAS, 20 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2703",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.464677,
+          36.69957404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66060,
+        "NOMBRE": "APARCABICIS_266",
+        "DESCRIPCION": "A la altura del número 14",
+        "DIRECCION": "CALLE PAQUIRO, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2702",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.481441,
+          36.73722204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66071,
+        "NOMBRE": "APARCABICIS_287",
+        "DESCRIPCION": "A la altura del número 1",
+        "DIRECCION": "CALLE VÍCTOR HUGO, 10 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2701",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42155954,
+          36.7180572,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65880,
+        "NOMBRE": "APARCABICIS_332",
+        "DESCRIPCION": null,
+        "DIRECCION": "ALAMEDA PRINCIPAL, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "5",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2700",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42150357,
+          36.71805787,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65879,
+        "NOMBRE": "APARCABICIS_331",
+        "DESCRIPCION": null,
+        "DIRECCION": "ALAMEDA PRINCIPAL, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "5",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26ff",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.457246,
+          36.71708804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66042,
+        "NOMBRE": "APARCABICIS_241",
+        "DESCRIPCION": "Esquina con c/ Prosper Mérimée.",
+        "DIRECCION": "CALLE DE SAINT-EXUPÉRY, 22 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "12",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26fe",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4482424,
+          36.71452022,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 79687,
+        "NOMBRE": "APARCABICIS_891",
+        "DESCRIPCION": "frente a la Comisaria Provincial de Málaga",
+        "DIRECCION": "PLAZA DE MANUEL AZAÑA, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26fd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44825053,
+          36.71461743,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65945,
+        "NOMBRE": "APARCABICIS_107",
+        "DESCRIPCION": "A la altura de la Comisaría de Policía",
+        "DIRECCION": "PLAZA DE MANUEL AZAÑA, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26fc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.441369,
+          36.72223104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66056,
+        "NOMBRE": "APARCABICIS_262",
+        "DESCRIPCION": "Esquina calle Doctor Jiménez Ruiz",
+        "DIRECCION": "PASAJE SONDALEZAS, 12 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26fb",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.435386,
+          36.71091604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66069,
+        "NOMBRE": "APARCABICIS_276",
+        "DESCRIPCION": "A la altura del número 3",
+        "DIRECCION": "CALLE POETA MUÑOZ ROJAS, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26fa",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.419174,
+          36.72689204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66095,
+        "NOMBRE": "APARCABICIS_305",
+        "DESCRIPCION": "Esq. con Cl. Carrión",
+        "DIRECCION": "PLAZUELA CRISTO DE LA CRUCIFIXIÓN, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26f9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44033678,
+          36.70381886,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 78126,
+        "NOMBRE": "APARCABICIS_346",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CARPIO, 52 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26f8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43991717,
+          36.69831448,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 74290,
+        "NOMBRE": "APARCABICIS_1876",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CONCEJAL MUÑOZ CERVÁN, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26f7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.440725,
+          36.72227804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66099,
+        "NOMBRE": "APARCABICIS_314",
+        "DESCRIPCION": "Esq. con Cl. Sondalezas",
+        "DIRECCION": "PASAJE SONDALEZAS, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26f6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42497455,
+          36.71684453,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65881,
+        "NOMBRE": "APARCABICIS_333",
+        "DESCRIPCION": null,
+        "DIRECCION": "ALAMEDA PRINCIPAL, 51 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "5",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26f5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.496755,
+          36.74226104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66048,
+        "NOMBRE": "APARCABICIS_255",
+        "DESCRIPCION": "A la altura del número 23",
+        "DIRECCION": "CALLE ZARZAMORA, 22 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26f4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41044874,
+          36.71988907,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 78859,
+        "NOMBRE": "APARCABICIS_349",
+        "DESCRIPCION": "C/ MAESTRANZA ,9",
+        "DIRECCION": "CALLE MAESTRANZA, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26f3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45495605,
+          36.68043151,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65955,
+        "NOMBRE": "APARCABICIS_133",
+        "DESCRIPCION": "Inacua.",
+        "DIRECCION": "CALLE MARILYN MONROE, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "12",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26f2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.433362,
+          36.71816104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66108,
+        "NOMBRE": "APARCABICIS_245",
+        "DESCRIPCION": "Junto a edificio de Consejería de Hacienda",
+        "DIRECCION": "PLAZA DE SAN JUAN DE LA CRUZ, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26f1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.423449,
+          36.72680904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65992,
+        "NOMBRE": "APARCABICIS_230",
+        "DESCRIPCION": "Esquina c/ Rosario.",
+        "DIRECCION": "CALLE CRUZ DEL MOLINILLO, 15 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26f0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5130193,
+          36.66889685,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66116,
+        "NOMBRE": "APARCABICIS_317",
+        "DESCRIPCION": "Junto a instalaciones deportivas",
+        "DIRECCION": "CALLE DECANO EDUARDO PALANCA, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26ef",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43361104,
+          36.72957652,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65936,
+        "NOMBRE": "APARCABICIS_083",
+        "DESCRIPCION": "Junto a  Hospital Materno Infantil.",
+        "DIRECCION": "AVENIDA DEL ARROYO DE LOS ÁNGELES, 58 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26ee",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.408363,
+          36.72090104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66057,
+        "NOMBRE": "APARCABICIS_254",
+        "DESCRIPCION": "Intersección Paseo de Reding",
+        "DIRECCION": "PASEO DE REDING, 45 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26ed",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.3614167,
+          36.72061173,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65925,
+        "NOMBRE": "APARCABICIS_043",
+        "DESCRIPCION": "A la altura de la Escuela de Español para extranjeros de la UMA.",
+        "DIRECCION": "AVENIDA DE LA ESTACIÓN DE EL PALO, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26ec",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.356129,
+          36.72063104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66058,
+        "NOMBRE": "APARCABICIS_265",
+        "DESCRIPCION": "A la altura de los números 43- 45",
+        "DIRECCION": "CALLE ALMERÍA, 47 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26eb",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42464168,
+          36.7351921,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65883,
+        "NOMBRE": "APARCABICIS_550",
+        "DESCRIPCION": "Av. Jorge Silvela frente C/ Fernando Loring",
+        "DIRECCION": "AVENIDA DE JORGE SILVELA, 68 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "3",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26ea",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41533,
+          36.72647204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66086,
+        "NOMBRE": "APARCABICIS_296",
+        "DESCRIPCION": "Esq. Cl. Poeta Concha Mendez",
+        "DIRECCION": "CALLE SAN CAYETANO, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "12",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26e9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.439088,
+          36.69796604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66109,
+        "NOMBRE": "APARCABICIS_127",
+        "DESCRIPCION": "Junto a oficinas municipales",
+        "DIRECCION": "CALLE CONCEJAL MUÑOZ CERVÁN, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "32",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26e8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5067817,
+          36.67331542,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65961,
+        "NOMBRE": "APARCABICIS_146",
+        "DESCRIPCION": "Frente a c/ Josefa Morales",
+        "DIRECCION": "CAMINO HUERTECILLA, 39 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "12",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26e7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4547009,
+          36.70170658,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 78127,
+        "NOMBRE": "APARCABICIS_347",
+        "DESCRIPCION": "Esq. Mahler",
+        "DIRECCION": "BULEVAR ADOLFO SUÁREZ, 93 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26e6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.544685,
+          36.70640204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66091,
+        "NOMBRE": "APARCABICIS_300",
+        "DESCRIPCION": "A la altura del CP Cupiana",
+        "DIRECCION": "CALLE PORTALES DE LA VICTORIA, 22 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26e5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47455227,
+          36.72676035,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65964,
+        "NOMBRE": "APARCABICIS_157",
+        "DESCRIPCION": "Esquina con Av. Editor Ángel Caffarena",
+        "DIRECCION": "CALLE ROSA GARCÍA ASCOT, 28 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "16",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26e4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45273708,
+          36.68208423,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65886,
+        "NOMBRE": "APARCABICIS_337",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA IMPERIO ARGENTINA, 21 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "5",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26e3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.439821,
+          36.72215404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65934,
+        "NOMBRE": "APARCABICIS_090",
+        "DESCRIPCION": "Frente al Colegio de Gamarra",
+        "DIRECCION": "CALLE DOCTOR ESCASSI, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26e2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.432983,
+          36.70376504,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66110,
+        "NOMBRE": "APARCABICIS_246",
+        "DESCRIPCION": "Esq. con Paseo Antonio Machado",
+        "DIRECCION": "PASEO DE ANTONIO MACHADO, 56 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26e1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43371296,
+          36.72934005,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65931,
+        "NOMBRE": "APARCABICIS_082",
+        "DESCRIPCION": "Esquina con c/ Blas de Lezo",
+        "DIRECCION": "AVENIDA DEL ARROYO DE LOS ÁNGELES, 43 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26e0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43139017,
+          36.72846296,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65930,
+        "NOMBRE": "APARCABICIS_081",
+        "DESCRIPCION": "Frente al Cuartel de la Guardia Civil",
+        "DIRECCION": "AVENIDA DEL ARROYO DE LOS ÁNGELES, 27 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26df",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.425772,
+          36.71446404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65892,
+        "NOMBRE": "APARCABICIS_013",
+        "DESCRIPCION": "Av. COmandante Benítez esquina Puente del Pechel.",
+        "DIRECCION": "AVENIDA DEL COMANDANTE BENÍTEZ, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26de",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.417969,
+          36.72781404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65914,
+        "NOMBRE": "APARCABICIS_014",
+        "DESCRIPCION": "A la altura de la Facultad de económicas",
+        "DIRECCION": "CALLE EJIDO, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26dd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.437662,
+          36.70149804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66083,
+        "NOMBRE": "APARCABICIS_293",
+        "DESCRIPCION": "A la altura del números 6-8",
+        "DIRECCION": "CALLE GUADALETE, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26dc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.456443,
+          36.69529104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66079,
+        "NOMBRE": "APARCABICIS_281",
+        "DESCRIPCION": "Esquina c/ Virgen de Belen",
+        "DIRECCION": "AVENIDA DE ISAAC PERAL, 21 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26db",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42391739,
+          36.71355804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65874,
+        "NOMBRE": "APARCABICIS_326",
+        "DESCRIPCION": "Esq. Av. Manuel Agustín Heredia",
+        "DIRECCION": "AVENIDA DE MANUEL AGUSTÍN HEREDIA, 26 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "5",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26da",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.437486,
+          36.72871004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66055,
+        "NOMBRE": "APARCABICIS_264",
+        "DESCRIPCION": "Esquina calle Segismundo Moret",
+        "DIRECCION": "CALLE MARQUÉS DE OVIECO, 12 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26d9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.364537,
+          36.72152104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65997,
+        "NOMBRE": "APARCABICIS_201",
+        "DESCRIPCION": "Junto a Colegio.",
+        "DIRECCION": "CALLE ESCULTOR MARÍN HIGUERO, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26d8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.420527,
+          36.72552504,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65981,
+        "NOMBRE": "APARCABICIS_194",
+        "DESCRIPCION": "Esquina con c/ Montaño.",
+        "DIRECCION": "PLAZA DE MONTAÑO, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26d7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.360939,
+          36.72070004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66010,
+        "NOMBRE": "APARCABICIS_190",
+        "DESCRIPCION": "Frente a c/ Miguel Moya.",
+        "DIRECCION": "CALLE ALONSO CARRILLO DE ALBORNOZ, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26d6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.37061667,
+          36.7251523,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65928,
+        "NOMBRE": "APARCABICIS_055",
+        "DESCRIPCION": "Frente a c/ Pintor Martínez Cubells.",
+        "DIRECCION": "CALLE MANUEL DE PALACIO, 14 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26d5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43913639,
+          36.72509641,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65935,
+        "NOMBRE": "APARCABICIS_091",
+        "DESCRIPCION": "A la altura del Colegio de Gamarra",
+        "DIRECCION": "CALLE JOSÉ MARÍA COOPELLO, 30 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26d4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.435344,
+          36.70586704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66035,
+        "NOMBRE": "APARCABICIS_211",
+        "DESCRIPCION": "c/ Capulino Jaúregui",
+        "DIRECCION": "PLAZA DE MURILLO CARRERA, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26d3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43698525,
+          36.7316402,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65933,
+        "NOMBRE": "APARCABICIS_089",
+        "DESCRIPCION": "Esquina con c/ Nuestra Señora de los Clarines",
+        "DIRECCION": "AVENIDA DEL ARROYO DE LOS ÁNGELES, 95 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26d2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.452611,
+          36.71150904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66064,
+        "NOMBRE": "APARCABICIS_271",
+        "DESCRIPCION": "A la altura del número 3",
+        "DIRECCION": "CALLE CORREGIDOR PEDRO ZAPATA, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26d1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42750633,
+          36.70992573,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65923,
+        "NOMBRE": "APARCABICIS_142",
+        "DESCRIPCION": "Esquina con Cl. Ingeniero José Mª Garnica",
+        "DIRECCION": "PASEO DE ANTONIO MACHADO, 12 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "20",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26d0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.429167,
+          36.70827304,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66033,
+        "NOMBRE": "APARCABICIS_195",
+        "DESCRIPCION": "Esq. con Cl. Gongora",
+        "DIRECCION": "PASEO DE ANTONIO MACHADO, 36 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26cf",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.447904,
+          36.71368404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66026,
+        "NOMBRE": "APARCABICIS_205",
+        "DESCRIPCION": "Esq. con Cl. Virgen de la Cabeza",
+        "DIRECCION": "CALLE CORREGIDOR FRANCISCO DE MOLINA, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26ce",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.424977,
+          36.71584804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65912,
+        "NOMBRE": "APARCABICIS_004",
+        "DESCRIPCION": "Esquina con c/ Linaje",
+        "DIRECCION": "ALAMEDA DE COLÓN, 7 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26cd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.430753,
+          36.71175104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66122,
+        "NOMBRE": "APARCABICIS_247",
+        "DESCRIPCION": "Frente Estación María Zambrano",
+        "DIRECCION": "CALLE HÉROE DE SOSTOA, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "34",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26cc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.450333,
+          36.72254804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66107,
+        "NOMBRE": "APARCABICIS_244",
+        "DESCRIPCION": "Esq. con Av. Carlos Haya",
+        "DIRECCION": "CALLE PEDRO ESPINOSA, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26cb",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43422794,
+          36.72974849,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65932,
+        "NOMBRE": "APARCABICIS_087",
+        "DESCRIPCION": "Esquina con c/ Blas de Lezo",
+        "DIRECCION": "AVENIDA DEL ARROYO DE LOS ÁNGELES, 47 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26ca",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.445712,
+          36.69444904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66111,
+        "NOMBRE": "APARCABICIS_277",
+        "DESCRIPCION": "Junto a la Agencia Municipal de Asociaciones y del Voluntariado",
+        "DIRECCION": "CALLE FRANCISCO JIMÉNEZ LOMAS, 11 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26c9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.444828,
+          36.70294404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66011,
+        "NOMBRE": "APARCABICIS_166",
+        "DESCRIPCION": "Biblioteca",
+        "DIRECCION": "AVENIDA DE EUROPA, 28 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "12",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26c8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44325626,
+          36.71844455,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65947,
+        "NOMBRE": "APARCABICIS_115",
+        "DESCRIPCION": "Esquina con c/ Virgen de las Flores",
+        "DIRECCION": "CALLE VIRGEN DE FLORES, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26c7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.359677,
+          36.71945004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66043,
+        "NOMBRE": "APARCABICIS_253",
+        "DESCRIPCION": "Frente al nº 76",
+        "DIRECCION": "AVENIDA DE SALVADOR ALLENDE, 49 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26c6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43060887,
+          36.73175966,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65875,
+        "NOMBRE": "APARCABICIS_327",
+        "DESCRIPCION": "Esq. Cl. Poeta Narciso Franquelo Martínez",
+        "DIRECCION": "CALLE POETA BERNARDO DE LA TORRE, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26c5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43873405,
+          36.71985925,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65943,
+        "NOMBRE": "APARCABICIS_105",
+        "DESCRIPCION": "Esquina con c/ Simeón Jiménez Reyna",
+        "DIRECCION": "CALLE INGENIERO DE LA TORRE ACOSTA, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26c4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.425332,
+          36.72347204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65987,
+        "NOMBRE": "APARCABICIS_202",
+        "DESCRIPCION": "Esquina con Cl. San Rafael.",
+        "DIRECCION": "CALLE SAN RAFAEL, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26c3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.427958,
+          36.71706104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66094,
+        "NOMBRE": "APARCABICIS_304",
+        "DESCRIPCION": "Esq. Cl. Nazareno del Paso",
+        "DIRECCION": "CALLE NAZARENO DEL PASO, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "12",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26c2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50376,
+          36.66233804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66082,
+        "NOMBRE": "APARCABICIS_292",
+        "DESCRIPCION": "A la altura del número 17",
+        "DIRECCION": "CALLE MAESTRO USANDIZAGA, 15 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26c1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43770409,
+          36.71675892,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65893,
+        "NOMBRE": "APARCABICIS_002",
+        "DESCRIPCION": "Esquina con Cl. Escultor Palma Burgos",
+        "DIRECCION": "CALLE ESCULTOR PALMA BURGOS, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26c0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4395709,
+          36.72098153,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65940,
+        "NOMBRE": "APARCABICIS_096",
+        "DESCRIPCION": "A la altura de la Plaza Aparejador Federico Bermudez",
+        "DIRECCION": "CALLE INGENIERO DE LA TORRE ACOSTA, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26bf",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46030974,
+          36.66917625,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65960,
+        "NOMBRE": "APARCABICIS_145",
+        "DESCRIPCION": "Esquina con c/ Conde Lucanor",
+        "DIRECCION": "CALLE WILKINSON, 46 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26be",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42880759,
+          36.71642867,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 79859,
+        "NOMBRE": "APARCABICIS_3044",
+        "DESCRIPCION": "Plaza Enrique Navarro, N.º 5",
+        "DIRECCION": "PLAZA DE ENRIQUE NAVARRO, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "3",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26bd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.443112,
+          36.72046904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65968,
+        "NOMBRE": "APARCABICIS_119",
+        "DESCRIPCION": "Junto a Colegio San José.",
+        "DIRECCION": "CALLE VIRGEN DE FLORES, 23 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26bc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4430828,
+          36.70924384,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65890,
+        "NOMBRE": "APARCABICIS_342",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE LA UNIÓN, 68 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26bb",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4606638,
+          36.69554779,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65956,
+        "NOMBRE": "APARCABICIS_137",
+        "DESCRIPCION": "I.E.S. Sata Bárbara",
+        "DIRECCION": "AVENIDA DE EUROPA, 153 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26ba",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45339988,
+          36.71491433,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65882,
+        "NOMBRE": "APARCABICIS_336",
+        "DESCRIPCION": "C/ CORREGIDOR NICOLAS ISIDRO - ESQ. ALMOGIA",
+        "DIRECCION": "CALLE CORREGIDOR NICOLÁS ISIDRO, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "5",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26b9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.455305,
+          36.68639404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65906,
+        "NOMBRE": "APARCABICIS_140",
+        "DESCRIPCION": "Esq. con Cl. Villanueva de Tapia.",
+        "DIRECCION": "CALLE VILLANUEVA DE ALGAIDAS, 14 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26b8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.411973,
+          36.72810604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65983,
+        "NOMBRE": "APARCABICIS_197",
+        "DESCRIPCION": "Esquina Plaza Francisco Silvela.",
+        "DIRECCION": "CALLE HURTADO DE MENDOZA, 19 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26b7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.437114,
+          36.71836715,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65944,
+        "NOMBRE": "APARCABICIS_106",
+        "DESCRIPCION": "Esquina con c/ Obispo Ángel Herrera Oria",
+        "DIRECCION": "CALLE INGENIERO DE LA TORRE ACOSTA, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26b6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.486795,
+          36.72272804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66013,
+        "NOMBRE": "APARCABICIS_170",
+        "DESCRIPCION": "Esquina Cl. Navarro Ledesma",
+        "DIRECCION": "CALLE ALICIA ALONSO, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26b5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45964456,
+          36.68221258,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65897,
+        "NOMBRE": "APARCABICIS_134",
+        "DESCRIPCION": "Palacio de Deportes José Mª Martín Carpena",
+        "DIRECCION": "CALLE MIGUEL DE MÉRIDA NICOLICH, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26b4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41,
+          36.71870004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66120,
+        "NOMBRE": "APARCABICIS_322",
+        "DESCRIPCION": "Esq. Calle Cervantes con Plaza de la Malagueta",
+        "DIRECCION": "CALLE CERVANTES, 15 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26b3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42252088,
+          36.71493586,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65984,
+        "NOMBRE": "APARCABICIS_198",
+        "DESCRIPCION": "Esquina Av. Manuel Agustín Heredia.",
+        "DIRECCION": "CALLE TOMÁS HEREDIA, 25 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26b2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.430954,
+          36.72135904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65991,
+        "NOMBRE": "APARCABICIS_222",
+        "DESCRIPCION": "Esquina c/ Mármoles.",
+        "DIRECCION": "CALLE PESO DE LA HARINA, 25 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26b1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.415095,
+          36.75017904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66002,
+        "NOMBRE": "APARCABICIS_169",
+        "DESCRIPCION": "Junto a Colegio Rafael Alberti.",
+        "DIRECCION": "CALLE DEL MARQUÉS DE MANTUA, 17 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26b0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.416167,
+          36.71975304,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66052,
+        "NOMBRE": "APARCABICIS_260",
+        "DESCRIPCION": "Esquina Av. Cervantes",
+        "DIRECCION": "AVENIDA DE CERVANTES, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26af",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.414844,
+          36.72004104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65979,
+        "NOMBRE": "APARCABICIS_191",
+        "DESCRIPCION": "Frente al Ayuntamiento.",
+        "DIRECCION": "AVENIDA DE CERVANTES, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26ae",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.425533,
+          36.72456504,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65990,
+        "NOMBRE": "APARCABICIS_210",
+        "DESCRIPCION": "Avenida de la Rosaleda.",
+        "DIRECCION": "AVENIDA DE LA ROSALEDA, 19 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26ad",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.428037,
+          36.73928604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66067,
+        "NOMBRE": "APARCABICIS_274",
+        "DESCRIPCION": "A la altura del  número 11",
+        "DIRECCION": "CALLE DOCTOR GÁLVEZ MOLL, 11 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26ac",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.410763,
+          36.71773004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65899,
+        "NOMBRE": "APARCABICIS_035",
+        "DESCRIPCION": "Paseo Marítimo frente a nº23",
+        "DIRECCION": "PASEO MARÍTIMO CIUDAD DE MELILLA, 23 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26ab",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.377829,
+          36.72163904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66101,
+        "NOMBRE": "APARCABICIS_258",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE BOLIVIA, 63 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26aa",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.431605,
+          36.72400504,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66014,
+        "NOMBRE": "APARCABICIS_235",
+        "DESCRIPCION": "Esquina con Cl. Barrera de la Trinidad.",
+        "DIRECCION": "PLAZA BAILÉN, 12 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26a9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42441678,
+          36.72241288,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65887,
+        "NOMBRE": "APARCABICIS_339",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CARRETERÍA, 30 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "12",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26a8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44092274,
+          36.71359638,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65903,
+        "NOMBRE": "APARCABICIS_111",
+        "DESCRIPCION": "A la altura del Centro de Servicios Sociales",
+        "DIRECCION": "CALLE FERNÁNDEZ FERMINA, 7 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26a7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43515065,
+          36.71847461,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66031,
+        "NOMBRE": "APARCABICIS_236",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE COMPOSITOR LEHMBERG RUIZ, 21 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26a6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42779159,
+          36.71948954,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66118,
+        "NOMBRE": "APARCABICIS_320",
+        "DESCRIPCION": "Esq. C/ Huerta del Obispo",
+        "DIRECCION": "CALLE HUERTA DEL OBISPO, 10 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26a5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46478367,
+          36.70716862,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65909,
+        "NOMBRE": "APARCABICIS_114",
+        "DESCRIPCION": "Esquina con Av. José Ortega y Gasset",
+        "DIRECCION": "CALLE MAX ESTRELLA, 14 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26a4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.465126,
+          36.72351704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66081,
+        "NOMBRE": "APARCABICIS_289",
+        "DESCRIPCION": "Esquina c/ Charles Dickens",
+        "DIRECCION": "CALLE DEL DOCTOR MIGUEL DÍAZ RECIO, 22 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26a3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.438559,
+          36.72141004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66028,
+        "NOMBRE": "APARCABICIS_224",
+        "DESCRIPCION": "Frente a Biblioteca",
+        "DIRECCION": "CALLE MARTÍNEZ MALDONADO, 71 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26a2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.468084,
+          36.72542404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66114,
+        "NOMBRE": "APARCABICIS_290",
+        "DESCRIPCION": "Esq. con Cl. Corregidor Horacio Coppola",
+        "DIRECCION": "CALLE MANUEL RIVADENEYRA, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26a1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43702817,
+          36.72132552,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65908,
+        "NOMBRE": "APARCABICIS_159",
+        "DESCRIPCION": "Esquina con Cl. Monseñor Carrillo Rubio",
+        "DIRECCION": "CALLE MARTÍNEZ MALDONADO, 63 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-26a0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45010662,
+          36.68740068,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65896,
+        "NOMBRE": "APARCABICIS_139",
+        "DESCRIPCION": "Esquina con c/ La Crónica",
+        "DIRECCION": "CALLE NUESTRA SEÑORA DE LAS CANDELAS, 13 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-269f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.432875,
+          36.71851104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66106,
+        "NOMBRE": "APARCABICIS_243",
+        "DESCRIPCION": "A la altura del Instituto Nacional de la S.S.",
+        "DIRECCION": "CALLE HUÉSCAR, 12 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-269e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42267125,
+          36.72369573,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65888,
+        "NOMBRE": "APARCABICIS_340",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CARRETERÍA, 68 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": "12",
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "12",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-269d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.435493,
+          36.72142104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66029,
+        "NOMBRE": "APARCABICIS_225",
+        "DESCRIPCION": "Esq. con Cl. Santa Elena",
+        "DIRECCION": "CALLE MARTÍNEZ MALDONADO, 49 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-269c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.426427,
+          36.71998604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65913,
+        "NOMBRE": "APARCABICIS_009",
+        "DESCRIPCION": "Esquina con Plaza Religiosa Filipense Dolores Márquez",
+        "DIRECCION": "CALLE CERROJO, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-269b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4545269,
+          36.68377851,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65957,
+        "NOMBRE": "APARCABICIS_138",
+        "DESCRIPCION": "Frente a Cl. Concha Lagos",
+        "DIRECCION": "CALLE CONCHA LAGOS, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "12",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-269a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42923408,
+          36.72765514,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 74269,
+        "NOMBRE": "APARCABICIS_590",
+        "DESCRIPCION": "Calle Alonso Cano esquina con Arroyo de los Angeles",
+        "DIRECCION": "CALLE ALONSO CANO, 15 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "3",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2699",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.435,
+          36.72141104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66030,
+        "NOMBRE": "APARCABICIS_226",
+        "DESCRIPCION": "Esq. con Cl. Luis Braille",
+        "DIRECCION": "CALLE MARTÍNEZ MALDONADO, 43 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2698",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.483426,
+          36.73337404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66072,
+        "NOMBRE": "APARCABICIS_286",
+        "DESCRIPCION": "Esquina con Cl. Ruiseñores",
+        "DIRECCION": "CALLE RUISEÑORES, 19 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2697",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.418963,
+          36.72340404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65982,
+        "NOMBRE": "APARCABICIS_196",
+        "DESCRIPCION": "Esquina Cl. Álamos.",
+        "DIRECCION": "CALLE ÁLAMOS, 30 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2696",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.423492,
+          36.71696104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65980,
+        "NOMBRE": "APARCABICIS_192",
+        "DESCRIPCION": "Esquina con Alameda Principal.",
+        "DIRECCION": "CALLE TOMÁS HEREDIA, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2695",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.439794,
+          36.71506704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66027,
+        "NOMBRE": "APARCABICIS_218",
+        "DESCRIPCION": "Esq. con Cl. Horacio Lengo",
+        "DIRECCION": "AVENIDA DE LA AURORA, 65 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2694",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50331072,
+          36.66192297,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65884,
+        "NOMBRE": "APARCABICIS_334",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE MAESTRO TOMÁS BRETÓN, 31 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2693",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.424198,
+          36.72003504,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66047,
+        "NOMBRE": "APARCABICIS_250",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA ENRIQUE GARCÍA-HERRERA, 7 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2692",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.424435,
+          36.71951604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66046,
+        "NOMBRE": "APARCABICIS_249",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA ENRIQUE GARCÍA-HERRERA, 13 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2691",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.424826,
+          36.71951804,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66045,
+        "NOMBRE": "APARCABICIS_251",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA ENRIQUE GARCÍA-HERRERA, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2690",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46454763,
+          36.71786835,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65977,
+        "NOMBRE": "APARCABICIS_162",
+        "DESCRIPCION": "Esquina Av. Gregorio Prieto. (Estación de metro Ciudad de la Justicia)",
+        "DIRECCION": "BULEVAR LOUIS PASTEUR, 15 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-268f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.545418,
+          36.72781704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66039,
+        "NOMBRE": "APARCABICIS_189",
+        "DESCRIPCION": "Junta de Distrito",
+        "DIRECCION": "CALLE IGNACIO SÁNCHEZ MEJÍAS, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-268e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.441189,
+          36.71481704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66025,
+        "NOMBRE": "APARCABICIS_179",
+        "DESCRIPCION": "Junto al colegio",
+        "DIRECCION": "AVENIDA DE LA AURORA, 77 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-268d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.482346,
+          36.73821604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66075,
+        "NOMBRE": "APARCABICIS_285",
+        "DESCRIPCION": "Esquina calle Platino",
+        "DIRECCION": "CALLE ESCRITORA MATILDE DEL NIDO, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-268c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.461538,
+          36.66939904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66089,
+        "NOMBRE": "APARCABICIS_299",
+        "DESCRIPCION": "A la altura del Colegio Julio Caro Baroja",
+        "DIRECCION": "CALLE CONDE LUCANOR, 13 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-268b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45642591,
+          36.66398692,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65904,
+        "NOMBRE": "APARCABICIS_144",
+        "DESCRIPCION": "Esquina con Cl. Acacias de Guadalmar",
+        "DIRECCION": "CALLE ACACIAS DE GUADALMAR, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-268a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.567985,
+          36.73226204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66073,
+        "NOMBRE": "APARCABICIS_283",
+        "DESCRIPCION": "A la altura de la biblioteca Serafín Estebanez Calderón",
+        "DIRECCION": "CALLE PILAR, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2689",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.461793,
+          36.71580404,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66100,
+        "NOMBRE": "APARCABICIS_313",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE PIRANDELLO, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2688",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45454008,
+          36.69165318,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66121,
+        "NOMBRE": "APARCABICIS_323",
+        "DESCRIPCION": "Esq. Cl. Viñas del Mar",
+        "DIRECCION": "AVENIDA DE GREGORIO DIEGO, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2687",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.445262,
+          36.69048104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66077,
+        "NOMBRE": "APARCABICIS_279",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE SOR TERESA PRAT, 84 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2686",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.449998,
+          36.68907904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66113,
+        "NOMBRE": "APARCABICIS_311",
+        "DESCRIPCION": "Junto al Colegio Los Guindos",
+        "DIRECCION": "AVENIDA DE GREGORIO DIEGO, 41 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2685",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43765044,
+          36.71719323,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65941,
+        "NOMBRE": "APARCABICIS_101",
+        "DESCRIPCION": "Esquina con Cl. Manuel España Lobo",
+        "DIRECCION": "CALLE MANUEL ESPAÑA LOBO, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2684",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43477511,
+          36.7140928,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65938,
+        "NOMBRE": "APARCABICIS_025",
+        "DESCRIPCION": "A la altura de la Delegación de Medio Ambiente de la J.A.",
+        "DIRECCION": "CALLE MAURICIO MORO PARETO, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2683",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44904,
+          36.69345004,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66117,
+        "NOMBRE": "APARCABICIS_319",
+        "DESCRIPCION": "Esq. CMNO de lo Guindos",
+        "DIRECCION": "CALLE REALENGA DE SAN LUIS, 13 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2682",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50495243,
+          36.66380619,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65902,
+        "NOMBRE": "APARCABICIS_147",
+        "DESCRIPCION": "Esquina con c/ Ángeles Rubio Arguelles",
+        "DIRECCION": "CALLE TORREMOLINOS, 78 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2681",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.441744,
+          36.69717704,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66038,
+        "NOMBRE": "APARCABICIS_223",
+        "DESCRIPCION": "Esquina c/ Emilio Prados",
+        "DIRECCION": "AVENIDA DE SOR TERESA PRAT, 50 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2680",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44174886,
+          36.71165021,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65948,
+        "NOMBRE": "APARCABICIS_120",
+        "DESCRIPCION": "Esquina Plaza Cruz de Humilladero",
+        "DIRECCION": "CAMINO DE SAN RAFAEL, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-267f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.427589,
+          36.73379204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66017,
+        "NOMBRE": "APARCABICIS_097",
+        "DESCRIPCION": "Junto al Estadio de la Rosaleda",
+        "DIRECCION": "AVENIDA DE LA PALMILLA, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-267e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43320857,
+          36.75154712,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 74288,
+        "NOMBRE": "APARCABICIS_2119",
+        "DESCRIPCION": "Camino de las Erizas, 3",
+        "DIRECCION": "CAMINO  DE LAS ERIZAS, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "5",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-267d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.404055,
+          36.72158604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65922,
+        "NOMBRE": "APARCABICIS_063",
+        "DESCRIPCION": "Frente Escuela Turismo.",
+        "DIRECCION": "PASEO DE SANCHA, 12 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-267c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.423713,
+          36.74859204,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66016,
+        "NOMBRE": "APARCABICIS_231",
+        "DESCRIPCION": "Esquina Cl. Hermanos Álvarez Quintero",
+        "DIRECCION": "CALLE HERMANOS ÁLVAREZ QUINTERO, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-267b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4260761,
+          36.73948194,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66003,
+        "NOMBRE": "APARCABICIS_219",
+        "DESCRIPCION": "Esquina Pasaje Francisco Blanca Mora.",
+        "DIRECCION": "AVENIDA DE LA PALMILLA, 27 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "6",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-267a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50305343,
+          36.66967537,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65962,
+        "NOMBRE": "APARCABICIS_149",
+        "DESCRIPCION": "Esquina con c/ Vega. (jardines)",
+        "DIRECCION": "PLAZA DE LA INMACULADA, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "4",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2679",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.439582,
+          36.69974504,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66034,
+        "NOMBRE": "APARCABICIS_207",
+        "DESCRIPCION": "Museo del Automóvil",
+        "DIRECCION": "AVENIDA DE SOR TERESA PRAT, 15 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "16",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2678",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43912,
+          36.70184504,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 66032,
+        "NOMBRE": "APARCABICIS_187",
+        "DESCRIPCION": "Esquina Avda.Sor Teresa Prat",
+        "DIRECCION": "AVENIDA DE SOR TERESA PRAT, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "10",
+        "TOTALPLAZAS": 2070
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_aparcamientosBici.fid--3b3f458b_19e4d9445a7_-2677",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.441696,
+          36.69683604,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 65895,
+        "NOMBRE": "APARCABICIS_124",
+        "DESCRIPCION": "Ave María",
+        "DIRECCION": "AVENIDA DE SOR TERESA PRAT, 49 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "NROPLAZAS": "8",
+        "TOTALPLAZAS": 2070
+      }
+    }
+  ],
+  "totalFeatures": 235,
+  "numberMatched": 235,
+  "numberReturned": 235,
+  "timeStamp": "2026-05-22T02:50:46.930Z",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::4326"
+    }
+  }
+}

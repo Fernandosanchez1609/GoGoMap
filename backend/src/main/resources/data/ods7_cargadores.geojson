@@ -1,0 +1,1069 @@
+{
+  "numberReturned": 31,
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::4326"
+    }
+  },
+  "totalFeatures": 31,
+  "numberMatched": 31,
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.38166345,
+          36.72543635,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "PASEO CERRADO DE CALDER\u00d3N, 9 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "4",
+            "Numero_de_puntos_de_recarga": "2",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_06 PASEO CERRADO DE CALDER\u00d3N",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9409
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f45"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41207645,
+          36.71895904,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "PASEO DE LA FAROLA, 3 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_01 PASEO DE LA FAROLA",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 12344
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f46"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41694471,
+          36.74947938,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE ALCALDE JOAQU\u00cdN QUILES, 31 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_10 CALLE ALCALDE JOAQU\u00cdN QUILES",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9394
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f47"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43342591,
+          36.71880021,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE ESPERANTO, 13 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_17 CALLE ESPERANTO",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9402
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f48"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43128145,
+          36.72638455,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE VELARDE, 4 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_12 CALLE VELARDE",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9414
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f49"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.39741144,
+          36.72322052,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "AVENIDA DEL PINTOR JOAQU\u00cdN SOROLLA, 3 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_05 AVENIDA DEL PINTOR JOAQU\u00cdN SOROLLA",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9411
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f4a"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42718163,
+          36.72882103,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "PASEO MARTIRICOS, 11 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida y r\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_14 PASEO MARTIRICOS",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9410
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f4b"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.54828875,
+          36.73634582,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE MAR\u00cdA CURIE, 19 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida y r\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_26 CALLE MAR\u00cdA CURIE",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9407
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f4c"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.55284476,
+          36.73657242,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "AVENIDA DE JUAN L\u00d3PEZ DE PE\u00d1ALVER, 14 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_25 AVENIDA DE JUAN L\u00d3PEZ DE PE\u00d1ALVER",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9396
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f4d"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.48995288,
+          36.74377091,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE LOPE DE RUEDA, 250 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_27 CALLE LOPE DE RUEDA",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9404
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f4e"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43878918,
+          36.69756977,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE CONCEJAL MU\u00d1OZ CERV\u00c1N, 6 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_19 CONCEJAL MU\u00d1OZ CERV\u00c1N",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 11466
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f4f"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42464639,
+          36.73500254,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "AVENIDA DE JORGE SILVELA, 62 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_09 AVENIDA DE JORGE SILVELA",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9403
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f50"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41793483,
+          36.72789888,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE EJIDO, 6 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_04 CALLE EJIDO",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9399
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f51"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43237997,
+          36.72912125,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "AVENIDA DEL ARROYO DE LOS \u00c1NGELES, 56 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_15 AVENIDA ARROYO DE LOS ANGELES",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 11464
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f52"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4231013,
+          36.71441703,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "AVENIDA DE MANUEL AGUST\u00cdN HEREDIA, 20 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "4",
+            "Numero_de_puntos_de_recarga": "2",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_03 AVENIDA DE MANUEL AGUST\u00cdN HEREDIA",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9406
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f53"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47788097,
+          36.72421715,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE NAVARRO LEDESMA, 233 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_29 NAVARRO LEDESMA",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 11468
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f54"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46012718,
+          36.68130228,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE MIGUEL DE M\u00c9RIDA NICOLICH, 7 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida y r\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_31 MIGUEL M\u00c9RIDA NICOLICH",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 12144
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f55"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44797382,
+          36.72239594,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "AVENIDA CARLOS DE HAYA, 76 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_11 AVENIDA CARLOS DE HAYA",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9395
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f56"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.36281006,
+          36.71973964,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "AVENIDA DE SALVADOR ALLENDE, 19 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_07 AVENIDA DE SALVADOR ALLENDE",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9398
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f57"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5013607,
+          36.66555526,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE DEL MAESTRO VERT, 26 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_23 CALLE DEL MAESTRO VERT",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9405
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f58"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43231029,
+          36.71050831,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE H\u00c9ROE DE SOSTOA, 12 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_21 HEROE DE SOSTOA",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 13704
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f59"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44362301,
+          36.68918857,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE PAC\u00cdFICO, 54 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "4",
+            "Numero_de_puntos_de_recarga": "2",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_20 CALLE PAC\u00cdFICO",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9400
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f5a"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42358411,
+          36.75001109,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "PLAZA DE JOHN F. KENNEDY, 3 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_08 PLAZA DE JOHN F. KENNEDY",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9413
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f5b"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44215696,
+          36.71472847,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "AVENIDA DE LA AURORA, 81 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "4",
+            "Numero_de_puntos_de_recarga": "2",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_18 AVENIDA DE LA AURORA",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9415
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f5c"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42528443,
+          36.7228755,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "AVENIDA DE LA ROSALEDA, 8 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_02 AVENIDA DE LA ROSALEDA",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9397
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f5d"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43623849,
+          36.72140561,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE MART\u00cdNEZ MALDONADO, 55 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_13 CALLE MART\u00cdNEZ MALDONADO",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9408
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f5e"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46148668,
+          36.71672655,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE PIRANDELLO, 10 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_28 CALLE PIRANDELLO",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9412
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f5f"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43098597,
+          36.71757299,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE COMPOSITOR LEHMBERG RUIZ, 3 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_16 COMPOSITOR LEHMBERG RUIZ",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 11465
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f60"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47725115,
+          36.71927509,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE DE DEM\u00d3STENES, 21 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_30 DEMOSTENES",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 11469
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f61"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47880001,
+          36.68828003,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CARRETERA AZUCARERA-INTELHORCE, 1 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_22 CARRETERA AZUCARERA-INTELHORCE",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 9401
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f62"
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50565366,
+          36.66248341,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "type": "Feature",
+      "properties": {
+        "TITULARIDAD": "PRIVADA",
+        "URL": null,
+        "PRECIOS": null,
+        "DIRECCION": "CALLE TORREMOLINOS, 75 ",
+        "ACCESOPMR": "No",
+        "INFOESP": [
+          {
+            "Plazas_de_vehiculo_disponibles_para_recarga": "2",
+            "Numero_de_puntos_de_recarga": "1",
+            "Tipologia_de_carga": "Semir\u00e1pida"
+          }
+        ],
+        "TARJETAJOVEN": "No",
+        "NOMBRE": "CVE_24 TORREMOLINOS",
+        "DESCRIPCION": "Infraestructura de estaciones de recarga para veh\u00edculos el\u00e9ctricos bajo concesi\u00f3n demanial",
+        "HORARIOS": null,
+        "CONTACTO": null,
+        "EMAIL": null,
+        "ID": 11467
+      },
+      "id": "da_cve.fid--3b3f458b_19e485619b3_5f63"
+    }
+  ],
+  "timeStamp": "2026-05-21T02:30:40.080Z",
+  "type": "FeatureCollection"
+}

@@ -8,65 +8,119 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.stereotype.Component;
 
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 @Component
 @RequiredArgsConstructor
-@Slf4j // Anotación de Lombok para poder usar 'log.info' e imprimir por consola
+@Slf4j // Utilidad para logs
 public class GeoJsonDataLoader implements CommandLineRunner {
 
     private final MapPointRepository mapPointRepository;
-    private final ObjectMapper objectMapper; // Herramienta de Spring para leer JSON
+    private final ObjectMapper objectMapper; // Para poder trabajar con Json
 
     @Override
     public void run(String... args) throws Exception {
 
-        if (mapPointRepository.count() > 0) {
-            log.info("Los puntos ya están cargados en la base de datos. Saltando ingesta de GeoJSON...");
-            return;
-        }
-
-        log.info("Iniciando la lectura del archivo GeoJSON de cargadores...");
+        log.info("Iniciando escaneo de archivos GeoJSON ODS...");
 
         try {
 
-            InputStream inputStream = new ClassPathResource("data/cargadores_malaga_4326.geojson").getInputStream();
+            List<MapPoint> existingPoints = mapPointRepository.findAll();
+            Set<String> existingCoordinates = existingPoints.stream()
+                    .map(p -> p.getLatitude() + "_" + p.getLongitude() + "_" + p.getOdsId())
+                    .collect(Collectors.toSet());
 
+            log.info("Puntos actuales en la base de datos: {}", existingPoints.size());
 
-            RawFeatureCollectionDTO featureCollection = objectMapper.readValue(inputStream, RawFeatureCollectionDTO.class);
+            PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+            Resource[] resources = resolver.getResources("classpath:data/ods*.geojson");
 
-            List<MapPoint> pointsToSave = new ArrayList<>();
+            List<MapPoint> newPointsToSave = new ArrayList<>();
 
+            for (Resource resource : resources) {
+                String filename = resource.getFilename();
+                Long odsId = extraerNumeroOds(filename);
 
-            for (RawFeatureDTO rawFeature : featureCollection.getFeatures()) {
-                MapPoint point = new MapPoint();
+                if (odsId == null) {
+                    continue;
+                }
 
-                point.setTitle(rawFeature.getProperties().getNombre());
-                point.setDescription(rawFeature.getProperties().getDescripcion());
-                point.setAddress(rawFeature.getProperties().getDireccion());
+                try {
+                    InputStream inputStream = resource.getInputStream();
+                    RawFeatureCollectionDTO featureCollection = objectMapper.readValue(inputStream, RawFeatureCollectionDTO.class);
 
-                // GeoJSON guarda las coordenadas en este orden: [Longitud, Latitud, Altitud]
-                point.setLongitude(rawFeature.getGeometry().getCoordinates().get(0));
-                point.setLatitude(rawFeature.getGeometry().getCoordinates().get(1));
+                    for (RawFeatureDTO rawFeature : featureCollection.getFeatures()) {
+                        if (rawFeature.getProperties() == null || rawFeature.getGeometry() == null || rawFeature.getGeometry().getCoordinates().isEmpty()) {
+                            continue;
+                        }
 
-                // Valores por defecto para esta ingesta inicial
-                point.setStatus("Activo");
-                point.setOdsId(7L); // Asignamos ODS 7 (Energía asequible y no contaminante) a los cargadores
+                        // Extraemos las coordenadas del JSON
+                        Double lon = rawFeature.getGeometry().getCoordinates().get(0);
+                        Double lat = rawFeature.getGeometry().getCoordinates().get(1);
 
-                pointsToSave.add(point);
+                        // Añadimos el odsId a la clave para permitir mismos puntos del mapapero con distinto ODS
+                        String uniqueKey = lat + "_" + lon + "_" + odsId;
+
+                        // 2. Si la huella digital exacta ya existe en la BD, la saltamos
+                        if (existingCoordinates.contains(uniqueKey)) {
+                            continue;
+                        }
+
+                        // Si llegamos aquí, es un punto totalmente nuevo
+                        MapPoint point = new MapPoint();
+
+                        // Comprobamos que el título no esté vacío
+                        String titulo = rawFeature.getProperties().getNombre();
+                        if (titulo == null || titulo.trim().isEmpty()) {
+                            titulo = "Punto de interés (ODS " + odsId + ")";
+                        }
+
+                        point.setTitle(titulo);
+                        point.setDescription(rawFeature.getProperties().getDescripcion());
+                        point.setAddress(rawFeature.getProperties().getDireccion());
+                        point.setLongitude(lon);
+                        point.setLatitude(lat);
+                        point.setStatus("Activo");
+                        point.setOdsId(odsId);
+
+                        newPointsToSave.add(point);
+                    }
+                } catch (Exception e) {
+                    log.error("El archivo {} está corrupto o no es un JSON válido. Saltando...", filename);
+                }
             }
 
-            // Guardamos la lista entera en MySQL
-            mapPointRepository.saveAll(pointsToSave);
-            log.info("¡Éxito! Se han cargado {} puntos en la base de datos.", pointsToSave.size());
+            // 3. Guardamos solo los que sean nuevos
+            if (!newPointsToSave.isEmpty()) {
+                mapPointRepository.saveAll(newPointsToSave);
+                log.info("¡Actualización completada! Se han añadido {} nuevos puntos a la base de datos.", newPointsToSave.size());
+            } else {
+                log.info("La base de datos está 100% sincronizada. No se encontraron puntos nuevos en los archivos.");
+            }
 
         } catch (Exception e) {
-            log.error("Error al procesar el archivo GeoJSON: ", e);
+            log.error("Error crítico al procesar la ingesta masiva: ", e);
         }
+    }
+
+    // Metodo auxiliar para sacar el númerodel nombre del archivo (ej: "ods16_bomberos.geojson" -> 16L)
+    private Long extraerNumeroOds(String filename) {
+        if (filename == null) return null;
+        Pattern pattern = Pattern.compile("ods0*(\\d+)_"); // Busca "ods", ignora ceros a la izquierda y captura el número
+        Matcher matcher = pattern.matcher(filename);
+        if (matcher.find()) {
+            return Long.parseLong(matcher.group(1));
+        }
+        return null;
     }
 }

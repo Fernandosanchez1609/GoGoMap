@@ -1,0 +1,135 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Inclusión, ciudadania, diversidad y educación (INCIDE)",
+        "address": "Málaga",
+        "description": "Inclusión social y diversidad",
+        "odsId": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4211, 36.721]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Centro de referencia para la Orientacion de Málaga",
+        "address": "Málaga",
+        "description": "Orientación laboral y apoyo social",
+        "odsId": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4237, 36.7204]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Fundacion Proyecto Don Bosco",
+        "address": "Málaga",
+        "description": "Apoyo a personas en riesgo de exclusión social",
+        "odsId": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4288, 36.7189]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Málaga Acoge",
+        "address": "Málaga",
+        "description": "Apoyo e integración de población inmigrante",
+        "odsId": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4248, 36.7195]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Cruz Roja",
+        "address": "Málaga",
+        "description": "Ayuda humanitaria e inclusión social",
+        "odsId": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4301, 36.7176]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Fundación Secretariado Gitano",
+        "address": "Málaga",
+        "description": "Inclusión e igualdad social",
+        "odsId": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4259, 36.7231]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Centro de Inserción Social Evaristo Martín Nieto",
+        "address": "Málaga",
+        "description": "Inserción y reintegración social",
+        "odsId": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4415, 36.7355]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Organización Social de Acción Humanitaria",
+        "address": "Málaga",
+        "description": "Apoyo a colectivos vulnerables",
+        "odsId": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4192, 36.7222]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Centro social El Palo",
+        "address": "Málaga",
+        "description": "Centro comunitario y apoyo social",
+        "odsId": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.3548, 36.7201]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Formacion para el Desarrollo e inserción (DEFOIN)",
+        "address": "Málaga",
+        "description": "Inserción sociolaboral",
+        "odsId": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4277, 36.7244]
+      }
+    }
+  ]
+}
