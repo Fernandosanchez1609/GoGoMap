@@ -3,7 +3,9 @@ package com.esplai.backendgogomap.models.entities;
 import com.esplai.backendgogomap.models.enums.Role;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 
+import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -44,4 +46,25 @@ public class User {
     @Column(name = "role")
     @Builder.Default
     private Set<Role> roles = new HashSet<>();
+
+    @Builder.Default
+    @Column(name = "karma_points", nullable = false)
+    private int karmaPoints = 0;
+
+    @CreationTimestamp
+    @Column(name = "created_at", updatable = false)
+    private LocalDateTime createdAt;
+
+    // Relación ManyToMany para los Favoritos
+    @ManyToMany
+    @JoinTable(
+            name = "user_favorite_points",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "map_point_id")
+    )
+    @Builder.Default
+    private Set<MapPoint> favoritos = new HashSet<>();
+
+    @Column(name = "last_login")
+    private LocalDateTime lastLogin;
 }
