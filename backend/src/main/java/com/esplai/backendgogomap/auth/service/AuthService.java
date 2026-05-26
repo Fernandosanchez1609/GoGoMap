@@ -3,6 +3,7 @@ package com.esplai.backendgogomap.auth.service;
 import com.esplai.backendgogomap.auth.dto.AuthResponse;
 import com.esplai.backendgogomap.auth.dto.LoginRequest;
 import com.esplai.backendgogomap.auth.dto.RegisterRequest;
+import com.esplai.backendgogomap.exceptions.UserAlreadyExistsException;
 import com.esplai.backendgogomap.models.entities.User;
 import com.esplai.backendgogomap.models.enums.Role;
 import com.esplai.backendgogomap.repositories.UserRepository;
@@ -29,7 +30,7 @@ public class AuthService {
 
     public AuthResponse register(RegisterRequest request) {
         if (userRepository.existsByEmailIgnoreCase(request.getEmail())) {
-            throw new IllegalArgumentException("El email ya está registrado");
+            throw new UserAlreadyExistsException("El email " + request.getEmail() + " ya está registrado.");
         }
 
         User user = User.builder()
