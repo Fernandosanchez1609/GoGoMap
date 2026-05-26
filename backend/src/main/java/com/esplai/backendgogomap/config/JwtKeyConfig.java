@@ -12,7 +12,7 @@ import java.nio.charset.StandardCharsets;
 public class JwtKeyConfig {
 
     @Bean
-    SecretKey jwtSecretKey(@Value("${JWT_SECRET}") String secret) {
+    SecretKey jwtSecretKey(@Value("${app.jwt.secret}") String secret) {
         byte[] keyBytes = secret.getBytes(StandardCharsets.UTF_8);
         if (keyBytes.length < 32) {
             throw new IllegalArgumentException("La clave JWT debe tener al menos 32 bytes para HS256");
