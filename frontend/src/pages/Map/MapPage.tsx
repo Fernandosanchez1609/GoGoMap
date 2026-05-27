@@ -410,16 +410,16 @@ export default function MapPage() {
           </button>
         )}
 
-        <button
-          onClick={centerOnUser}
-          disabled={!userPosition}
-          className="absolute bottom-6 right-3 z-[1000] bg-white border-2 border-gray-300 rounded-lg px-4 py-2 text-xl shadow-md transition-colors
-          enabled:hover:bg-gray-50 enabled:cursor-pointer
-          disabled:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-60"
-          title="Centrar en mi ubicación"
-        >
-          📍
-        </button>
+       {/* Solo mostramos el botón si userPosition no es null */}
+        {userPosition && (
+          <button
+            onClick={centerOnUser}
+            className="absolute bottom-6 right-3 z-[1000] bg-white border-2 border-gray-300 rounded-lg px-4 py-2 text-xl shadow-md transition-colors hover:bg-gray-50 cursor-pointer"
+            title="Centrar en mi ubicación"
+          >
+            📍
+          </button>
+        )}
 
         <MapContainer
           ref={mapRef}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const header = "bg-white px-4 pt-5 pb-3 flex items-center w-full"
 const logoBase = "flex items-center gap-2 text-primary font-bold text-xl mx-auto"
@@ -9,11 +10,10 @@ export default function Header() {
   return (
     <header className={header}>
 
-      <div className={logoBase}>
+      <Link to="/" className={logoBase}>
         <img src="/assets/SoloLogo-removebg.svg" alt="Logo GoGoMap" className={logoImg} />
         <img src="/assets/SoloLetras-removebg.svg" alt="Logo GoGoMap" className={texto} />  
-      </div>
-
+      </Link>
 
     </header>
 
