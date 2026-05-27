@@ -1,14 +1,5 @@
 import { useEffect, useState, useRef, useMemo, useCallback } from "react";
-import { useLocation } from "react-router-dom";
-import {
-  MapContainer,
-  TileLayer,
-  Marker,
-  Popup,
-  Polyline,
-  useMap,
-} from "react-leaflet";
-import L from "leaflet";
+import type { Map as LeafletMap } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
@@ -180,81 +171,24 @@ export default function MapPage() {
           📍
         </button>
 
-        <MapContainer
-          ref={mapRef}
-          center={[36.7213, -4.4214]}
-          zoom={13}
-          minZoom={10}
-          maxZoom={18}
-          maxBounds={MALAGA_BOUNDS}
-          maxBoundsViscosity={1.0}
-          className="w-full h-full"
-        >
-          <TileLayer
-            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-            attribution='&copy; <a href="https://carto.com/">CARTO</a>'
-          />
+        <MapView
+          points={visiblePoints}
+          userPosition={userPosition}
+          routeCoords={routeCoords}
+          selectedOds={selectedOds}
+          radiusKm={radiusKm}
+          onPointClick={handlePointClick}
+          mapRef={mapRef}
+        />
 
-          <ClusteredMarkers
-            points={visiblePoints}
-            onPointClick={handlePointClick}
-          />
-
-          {userPosition && (
-            <>
-              <Marker position={userPosition} icon={userIcon}>
-                <Popup>📍 Estás aquí</Popup>
-              </Marker>
-              <FlyToUser position={userPosition} />
-            </>
-          )}
-
-          <OdsFlyTo
-            selectedOds={selectedOds}
-            radiusKm={radiusKm}
-            userPosition={userPosition}
-          />
-
-          {routeCoords && (
-            <>
-              <Polyline
-                positions={routeCoords}
-                pathOptions={{ color: "#2563eb", weight: 5, opacity: 0.8 }}
-              />
-              <FitRouteBounds coords={routeCoords} />
-            </>
-          )}
-        </MapContainer>
-
-        {(selectedPoint || loadingDetail) && (
-          <div
-            className="fixed inset-0 z-[2000] flex items-center justify-center bg-black/40"
-            onClick={handleCloseModal}
-          >
-            <div
-              className="bg-white rounded-xl shadow-xl p-6 max-w-md w-full mx-4 relative"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <button
-                onClick={handleCloseModal}
-                className="absolute top-3 right-3 text-gray-400 hover:text-gray-700 text-xl leading-none"
-              >
-                ×
-              </button>
-              {loadingDetail ? (
-                <p className="text-sm text-gray-500">Cargando...</p>
-              ) : selectedPoint && selectedPointCoords ? (
-                <PointModel
-                  point={selectedPoint}
-                  latitude={selectedPointCoords[0]}
-                  longitude={selectedPointCoords[1]}
-                  onRequestRoute={handleRequestRoute}
-                  canRoute={!!userPosition}
-                />
-              ) : null}
-            </div>
-          </div>
-        )}
+        <PointDetailModal
+          selectedPoint={selectedPoint}
+          selectedPointCoords={selectedPointCoords}
+          loadingDetail={loadingDetail}
+          userPosition={userPosition}
+          onRequestRoute={handleRequestRoute}
+          onClose={handleCloseModal}
+        />
       </div>
 
       <Footer />

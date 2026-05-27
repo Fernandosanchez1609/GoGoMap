@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, Polyline, Circle, useMap } from "react-leaflet";
 import type { RefObject } from "react";
 import type { Map as LeafletMap } from "leaflet";
 import L from "leaflet";
@@ -134,6 +134,11 @@ export default function MapView({
 
       {userPosition && (
         <>
+          <Circle
+            center={userPosition}
+            radius={50}
+            pathOptions={{ color: "#2563eb", fillOpacity: 0.12 }}
+          />
           <Marker position={userPosition} icon={userIcon}>
             <Popup>📍 Estás aquí</Popup>
           </Marker>
