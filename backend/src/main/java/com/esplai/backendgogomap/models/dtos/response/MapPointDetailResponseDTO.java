@@ -17,5 +17,6 @@ public class MapPointDetailResponseDTO {
     private String address;
     private String status;
     private Ods ods;
+    private int odsNumber;
     private Long reportedBy;
 }
