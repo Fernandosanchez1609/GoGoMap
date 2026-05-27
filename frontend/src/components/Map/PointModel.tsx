@@ -1,5 +1,8 @@
-import type { PointDetail } from "../../api/types/index.ts";
-import { ODS_COLORS } from "@/utils/OdsColors";
+import { useState, useEffect } from 'react';
+import type { PointDetail } from '../../api/types/index.ts';
+import { ODS_COLORS } from '@/utils/OdsColors';
+import userService from '@/api/services/userService';
+
 
 interface Props {
   point: PointDetail;
@@ -9,16 +12,46 @@ interface Props {
   canRoute: boolean;
 }
 
-export default function PointModel({
-  point,
-  latitude,
-  longitude,
-  onRequestRoute,
-  canRoute,
-}: Props) {
-  const odsColor = point.odsNumber
-    ? (ODS_COLORS[point.odsNumber] ?? "#2d6a2d")
-    : "#2d6a2d";
+export default function PointModel({ point, latitude, longitude, onRequestRoute, canRoute }: Props) {
+  const odsColor = point.odsNumber ? ODS_COLORS[point.odsNumber] ?? '#2d6a2d' : '#2d6a2d';
+
+  const [isFavorite, setIsFavorite] = useState(false);
+  const [isLoadingFav, setIsLoadingFav] = useState(false);
+
+  useEffect(() => {
+    const checkFavoriteStatus = async () => {
+      if (!point.id) return;
+      try {
+        const response = await userService.getFavorites();
+        const favorites = response.data;
+        const isFav = favorites.some((fav: PointDetail) => fav.id === point.id);
+        setIsFavorite(isFav);
+      } catch (error) {
+        console.error("Error al comprobar favoritos:", error);
+      }
+    };
+
+    checkFavoriteStatus();
+  }, [point.id]);
+
+  const handleToggleFavorite = async () => {
+    if (!point.id) return;
+    
+    setIsLoadingFav(true);
+    try {
+      if (isFavorite) {
+        await userService.removeFavorite(point.id);
+        setIsFavorite(false);
+      } else {
+        await userService.addFavorite(point.id);
+        setIsFavorite(true);
+      }
+    } catch (error) {
+      console.error("Error al modificar favoritos:", error);
+    } finally {
+      setIsLoadingFav(false);
+    }
+  };
 
   return (
     <div className="flex flex-col gap-4">
@@ -38,27 +71,51 @@ export default function PointModel({
       </div>
 
       {/* Título y dirección */}
-      <div className="flex flex-col gap-1">
-        <h2 className="text-2xl font-bold text-gray-900">{point.title}</h2>
-        {point.address && (
-          <p className="flex items-center gap-1 text-gray-500 text-sm">
-            <svg
-              className="w-4 h-4 shrink-0"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 21c-4-4.5-6-8-6-11a6 6 0 1 1 12 0c0 3-2 6.5-6 11z"
-              />
-              <circle cx="12" cy="10" r="2" fill="currentColor" stroke="none" />
-            </svg>
-            {point.address}
-          </p>
-        )}
+      <div className="flex justify-between items-start gap-4">
+        <div className="flex flex-col gap-1">
+          <h2 className="text-2xl font-bold text-gray-900">{point.title}</h2>
+          {point.address && (
+            <p className="flex items-center gap-1 text-gray-500 text-sm">
+              <svg
+                className="w-4 h-4 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 21c-4-4.5-6-8-6-11a6 6 0 1 1 12 0c0 3-2 6.5-6 11z"
+                />
+                <circle cx="12" cy="10" r="2" fill="currentColor" stroke="none" />
+              </svg>
+              {point.address}
+            </p>
+          )}
+        </div>
+
+        <button
+          onClick={handleToggleFavorite}
+          disabled={isLoadingFav}
+          className="p-2 rounded-full hover:bg-gray-100 transition-colors disabled:opacity-50 shrink-0"
+          title={isFavorite ? "Quitar de favoritos" : "Añadir a favoritos"}
+        >
+          <svg
+            className={`w-7 h-7 transition-colors duration-300 ${
+              isFavorite ? 'fill-red-500 text-red-500' : 'fill-none text-gray-400 hover:text-red-400'
+            }`}
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+            />
+          </svg>
+        </button>
       </div>
 
       {/* Tabla estado + descripción */}
