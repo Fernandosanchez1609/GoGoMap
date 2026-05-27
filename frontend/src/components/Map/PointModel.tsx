@@ -1,5 +1,5 @@
-import type { PointDetail } from '../../api/types/index.ts';
-import { ODS_COLORS } from '@/utils/OdsColors';
+import type { PointDetail } from "../../api/types/index.ts";
+import { ODS_COLORS } from "@/utils/OdsColors";
 
 interface Props {
   point: PointDetail;
@@ -9,12 +9,19 @@ interface Props {
   canRoute: boolean;
 }
 
-export default function PointModel({ point, latitude, longitude, onRequestRoute, canRoute }: Props) {
-  const odsColor = point.odsNumber ? ODS_COLORS[point.odsNumber] ?? '#2d6a2d' : '#2d6a2d';
+export default function PointModel({
+  point,
+  latitude,
+  longitude,
+  onRequestRoute,
+  canRoute,
+}: Props) {
+  const odsColor = point.odsNumber
+    ? (ODS_COLORS[point.odsNumber] ?? "#2d6a2d")
+    : "#2d6a2d";
 
   return (
     <div className="flex flex-col gap-4">
-
       {/* Header: badge ODS + título */}
       <div className="flex items-center gap-3 pb-3 border-b border-gray-100">
         {point.odsNumber && (
@@ -26,7 +33,7 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
           </span>
         )}
         <span className="text-base font-semibold text-gray-700 tracking-wide uppercase">
-          ODS {point.odsNumber}
+         {point.ods}
         </span>
       </div>
 
@@ -62,15 +69,15 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
           </span>
           <span
             className={`flex items-center gap-1.5 font-semibold ${
-              point.status === 'active' ? 'text-green-600' : 'text-gray-400'
+              point.status === "active" ? "text-green-600" : "text-gray-400"
             }`}
           >
             <span
               className={`w-2 h-2 rounded-full ${
-                point.status === 'active' ? 'bg-green-500' : 'bg-gray-300'
+                point.status === "active" ? "bg-green-500" : "bg-gray-300"
               }`}
             />
-            {point.status === 'active' ? 'Funcionando' : point.status}
+            {point.status === "active" ? "Funcionando" : point.status}
           </span>
         </div>
 
@@ -79,7 +86,9 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
             <span className="text-gray-400 font-semibold uppercase tracking-widest text-xs shrink-0 pt-0.5">
               Descripción
             </span>
-            <span className="text-gray-700 text-right">{point.description}</span>
+            <span className="text-gray-700 text-right max-h-24 sm:max-h-32 md:max-h-40 overflow-y-auto leading-relaxed">
+              {point.description}
+            </span>
           </div>
         )}
       </div>
@@ -104,7 +113,7 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
             d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13V7m0 13 6-3m-6-10 6-3m0 0 5.447 2.724A1 1 0 0 1 21 7.618v10.764a1 1 0 0 1-1.447.894L15 17m0-13v13"
           />
         </svg>
-        {canRoute ? 'Ruta' : 'Activa ubicación para la ruta'}
+        {canRoute ? "Ruta" : "Activa ubicación para la ruta"}
       </button>
     </div>
   );
