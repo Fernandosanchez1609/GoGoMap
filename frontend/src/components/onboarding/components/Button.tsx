@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 // Props
 interface ButtonProps {
@@ -34,9 +34,9 @@ export default function Button({ label, href, onClick, variant = 'primary'}: But
 
     if(href) {
         return (
-            <a href={href} className={styles}>
+            <Link to={href} className={styles}>
                 {label}
-            </a>
+            </Link>
         )
     }
 
