@@ -1,7 +1,7 @@
 import { Button } from "../ui/button"
 import { Input } from "../ui/input"
 import { Label } from "../ui/label"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import {
   Card,
   CardContent,
@@ -170,12 +170,12 @@ export default function Register() {
           ¿Ya tienes una cuenta?
         </span>
 
-        <a
-          onClick={() => {Navigate("/login")}}
-          className="ml-2 text-green-700 font-bold hover:underline"
+       <Link
+          to="/login"
+          className="ml-2 text-green-700 font-bold hover:underline cursor-pointer"
         >
           Inicia sesión
-        </a>
+        </Link>
 
       </div>
 

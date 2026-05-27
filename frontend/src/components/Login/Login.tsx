@@ -1,7 +1,7 @@
 import { Button } from "../ui/button"
 import { Input } from "../ui/input"
 import { Label } from "../ui/label"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import {
   Card,
   CardContent,
@@ -105,15 +105,15 @@ export default function Login() {
 
           </form>
 
-          {/* REGISTER */}
+         {/* REGISTER */}
           <div className="text-center">
 
-            {<a 
-              onClick={() => {Navigate("/register")}}
-              className="text-green-700 font-semibold"
+            <Link 
+              to="/register"
+              className="text-green-700 font-semibold cursor-pointer"
             >
               Regístrate aquí
-            </a>}
+            </Link>
 
           </div>
 
