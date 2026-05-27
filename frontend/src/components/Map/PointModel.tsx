@@ -1,4 +1,4 @@
-import type { PointDetail } from '../../../api/types/index';
+import type { PointDetail } from '../../api/types/index.ts';
 import { ODS_COLORS } from '@/utils/OdsColors';
 
 interface Props {
