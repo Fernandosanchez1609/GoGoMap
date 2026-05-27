@@ -57,22 +57,23 @@ function tokenIsValid(token: string): boolean {
 }
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const [token, setToken] = useState<string | null>(null);
-  const [user, setUser] = useState<UserProfile | null>(null);
-
-  useEffect(() => {
+  const initialAuth = (() => {
     const storedToken = localStorage.getItem(STORAGE_KEY);
-    if (storedToken && tokenIsValid(storedToken)) {
-      setToken(storedToken);
-      setUser(safeDecodeJwt(storedToken));
-      return;
+    if (!storedToken) {
+      return { token: null, user: null };
     }
 
-    localStorage.removeItem(STORAGE_KEY);
-    localStorage.removeItem(REFRESH_STORAGE_KEY);
-    setToken(null);
-    setUser(null);
-  }, []);
+    if (!tokenIsValid(storedToken)) {
+      localStorage.removeItem(STORAGE_KEY);
+      localStorage.removeItem(REFRESH_STORAGE_KEY);
+      return { token: null, user: null };
+    }
+
+    return { token: storedToken, user: safeDecodeJwt(storedToken) };
+  })();
+
+  const [token, setToken] = useState<string | null>(initialAuth.token);
+  const [user, setUser] = useState<UserProfile | null>(initialAuth.user);
 
   const login = (newToken: string, refreshToken?: string) => {
     const decoded = safeDecodeJwt(newToken);
