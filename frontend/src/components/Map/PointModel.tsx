@@ -1,0 +1,111 @@
+import type { PointDetail } from '../../../api/types/index';
+import { ODS_COLORS } from '@/utils/OdsColors';
+
+interface Props {
+  point: PointDetail;
+  latitude: number;
+  longitude: number;
+  onRequestRoute: (lat: number, lng: number) => void;
+  canRoute: boolean;
+}
+
+export default function PointModel({ point, latitude, longitude, onRequestRoute, canRoute }: Props) {
+  const odsColor = point.odsNumber ? ODS_COLORS[point.odsNumber] ?? '#2d6a2d' : '#2d6a2d';
+
+  return (
+    <div className="flex flex-col gap-4">
+
+      {/* Header: badge ODS + título */}
+      <div className="flex items-center gap-3 pb-3 border-b border-gray-100">
+        {point.odsNumber && (
+          <span
+            className="flex items-center justify-center w-9 h-9 rounded-md text-white font-bold text-sm shrink-0"
+            style={{ backgroundColor: odsColor }}
+          >
+            {point.odsNumber}
+          </span>
+        )}
+        <span className="text-base font-semibold text-gray-700 tracking-wide uppercase">
+          ODS {point.odsNumber}
+        </span>
+      </div>
+
+      {/* Título y dirección */}
+      <div className="flex flex-col gap-1">
+        <h2 className="text-2xl font-bold text-gray-900">{point.title}</h2>
+        {point.address && (
+          <p className="flex items-center gap-1 text-gray-500 text-sm">
+            <svg
+              className="w-4 h-4 shrink-0"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 21c-4-4.5-6-8-6-11a6 6 0 1 1 12 0c0 3-2 6.5-6 11z"
+              />
+              <circle cx="12" cy="10" r="2" fill="currentColor" stroke="none" />
+            </svg>
+            {point.address}
+          </p>
+        )}
+      </div>
+
+      {/* Tabla estado + descripción */}
+      <div className="rounded-xl bg-gray-50 border border-gray-100 overflow-hidden text-sm">
+        <div className="flex items-center justify-between px-4 py-3 border-b border-gray-100">
+          <span className="text-gray-400 font-semibold uppercase tracking-widest text-xs">
+            Estado
+          </span>
+          <span
+            className={`flex items-center gap-1.5 font-semibold ${
+              point.status === 'active' ? 'text-green-600' : 'text-gray-400'
+            }`}
+          >
+            <span
+              className={`w-2 h-2 rounded-full ${
+                point.status === 'active' ? 'bg-green-500' : 'bg-gray-300'
+              }`}
+            />
+            {point.status === 'active' ? 'Funcionando' : point.status}
+          </span>
+        </div>
+
+        {point.description && (
+          <div className="flex items-start justify-between px-4 py-3 gap-4">
+            <span className="text-gray-400 font-semibold uppercase tracking-widest text-xs shrink-0 pt-0.5">
+              Descripción
+            </span>
+            <span className="text-gray-700 text-right">{point.description}</span>
+          </div>
+        )}
+      </div>
+
+      {/* Botón Ruta */}
+      <button
+        onClick={() => onRequestRoute(latitude, longitude)}
+        disabled={!canRoute}
+        className="flex items-center justify-center gap-2 w-full py-3 rounded-full text-white font-semibold text-base transition-opacity hover:opacity-90 active:opacity-75 disabled:opacity-40 disabled:cursor-not-allowed"
+        style={{ backgroundColor: odsColor }}
+      >
+        <svg
+          className="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13V7m0 13 6-3m-6-10 6-3m0 0 5.447 2.724A1 1 0 0 1 21 7.618v10.764a1 1 0 0 1-1.447.894L15 17m0-13v13"
+          />
+        </svg>
+        {canRoute ? 'Ruta' : 'Activa ubicación para la ruta'}
+      </button>
+    </div>
+  );
+}

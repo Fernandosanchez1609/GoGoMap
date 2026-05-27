@@ -5,3 +5,13 @@ export interface Point {
   longitude: number;
   odsNumber: number;
 }
+
+export interface PointDetail{
+  id: number;
+  title: string;
+  description: string;
+  address: string;
+  status: string;
+  odsNumber: number;
+  ods: string;
+}

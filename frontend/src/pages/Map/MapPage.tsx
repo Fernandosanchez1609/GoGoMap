@@ -1,5 +1,5 @@
-import { useEffect, useState, useRef, useMemo } from "react";
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { useEffect, useState, useRef, useMemo, useCallback } from "react";
+import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
@@ -12,9 +12,10 @@ import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import Filter from "@/components/Map/Filter";
 import { createOdsIcon, ODS_COLORS } from "@/utils/OdsColors";
 import pointService from "@/api/services/pointService";
-import type { Point } from "@/api/types/index";
+import type { Point, PointDetail } from "@/api/types/index";
 import { getDistanceKm } from "@/utils/Distance";
 import { useDebounce } from "use-debounce";
+import PointModel from "@/components/Map/PointModel";
 
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -47,12 +48,71 @@ function getZoomForRadius(km: number): number {
   return 10;
 }
 
-function ClusteredMarkers({ points }: { points: Point[] }) {
+// Decodifica la polyline encodada que devuelve OSRM
+function decodePolyline(encoded: string): [number, number][] {
+  const coords: [number, number][] = [];
+  let index = 0;
+  let lat = 0;
+  let lng = 0;
+
+  while (index < encoded.length) {
+    let shift = 0;
+    let result = 0;
+    let byte: number;
+    do {
+      byte = encoded.charCodeAt(index++) - 63;
+      result |= (byte & 0x1f) << shift;
+      shift += 5;
+    } while (byte >= 0x20);
+    lat += result & 1 ? ~(result >> 1) : result >> 1;
+
+    shift = 0;
+    result = 0;
+    do {
+      byte = encoded.charCodeAt(index++) - 63;
+      result |= (byte & 0x1f) << shift;
+      shift += 5;
+    } while (byte >= 0x20);
+    lng += result & 1 ? ~(result >> 1) : result >> 1;
+
+    coords.push([lat / 1e5, lng / 1e5]);
+  }
+
+  return coords;
+}
+
+async function fetchOsrmRoute(
+  from: [number, number],
+  to: [number, number],
+): Promise<[number, number][]> {
+  const url = `https://router.project-osrm.org/route/v1/foot/${from[1]},${from[0]};${to[1]},${to[0]}?overview=full&geometries=polyline`;
+  const res = await fetch(url);
+  const data = await res.json();
+  if (data.code !== "Ok" || !data.routes?.length) throw new Error("Sin ruta");
+  return decodePolyline(data.routes[0].geometry);
+}
+
+function FitRouteBounds({ coords }: { coords: [number, number][] }) {
+  const map = useMap();
+  useEffect(() => {
+    if (coords.length) {
+      map.fitBounds(L.latLngBounds(coords), { padding: [40, 40], animate: true });
+    }
+  }, [coords]);
+  return null;
+}
+
+function ClusteredMarkers({
+  points,
+  onPointClick,
+}: {
+  points: Point[];
+  onPointClick: (id: string, lat: number, lng: number) => void;
+}) {
   const map = useMap();
   const clustersRef = useRef<Map<number, L.MarkerClusterGroup>>(new Map());
 
   useEffect(() => {
-    // Inicializar siempre un Map nuevo al montar
     clustersRef.current = new Map();
 
     Object.entries(ODS_COLORS).forEach(([odsKey, color]) => {
@@ -108,11 +168,12 @@ function ClusteredMarkers({ points }: { points: Point[] }) {
 
       const marker = L.marker([p.latitude, p.longitude], {
         icon: createOdsIcon(p.odsNumber),
-      }).bindPopup(`<strong>${p.title}</strong>`);
+      });
 
+      marker.on("click", () => onPointClick(String(p.id), p.latitude, p.longitude));
       cluster.addLayer(marker);
     });
-  }, [points]);
+  }, [points, onPointClick]);
 
   return null;
 }
@@ -166,6 +227,11 @@ export default function MapPage() {
   const [points, setPoints] = useState<Point[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+  const [selectedPoint, setSelectedPoint] = useState<PointDetail | null>(null);
+  const [selectedPointCoords, setSelectedPointCoords] = useState<[number, number] | null>(null);
+  const [loadingDetail, setLoadingDetail] = useState(false);
+  const [routeCoords, setRouteCoords] = useState<[number, number][] | null>(null);
+  const [loadingRoute, setLoadingRoute] = useState(false);
   const mapRef = useRef<L.Map | null>(null);
 
   useEffect(() => {
@@ -205,6 +271,46 @@ export default function MapPage() {
     if (mapRef.current && userPosition) {
       mapRef.current.flyTo(userPosition, 16, { duration: 1.2 });
     }
+  }
+
+  async function handlePointClick(id: string, lat: number, lng: number) {
+    try {
+      setLoadingDetail(true);
+      setSelectedPointCoords([lat, lng]);
+      setRouteCoords(null); // limpia ruta anterior al abrir nuevo punto
+      const response = await pointService.getById(id);
+      setSelectedPoint(response.data);
+    } catch {
+      setError("Error al cargar el detalle del punto");
+    } finally {
+      setLoadingDetail(false);
+    }
+  }
+
+  function handleCloseModal() {
+    setSelectedPoint(null);
+    setSelectedPointCoords(null);
+  }
+
+  const handleRequestRoute = useCallback(async (destLat: number, destLng: number) => {
+    if (!userPosition) {
+      setError("Activa tu ubicación para calcular la ruta.");
+      return;
+    }
+    try {
+      setLoadingRoute(true);
+      handleCloseModal();
+      const coords = await fetchOsrmRoute(userPosition, [destLat, destLng]);
+      setRouteCoords(coords);
+    } catch {
+      setError("No se pudo calcular la ruta.");
+    } finally {
+      setLoadingRoute(false);
+    }
+  }, [userPosition]);
+
+  function handleClearRoute() {
+    setRouteCoords(null);
   }
 
   const visiblePoints = useMemo(() => {
@@ -264,6 +370,21 @@ export default function MapPage() {
             Cargando puntos...
           </div>
         )}
+        {loadingRoute && (
+          <div className="absolute top-2 left-1/2 -translate-x-1/2 z-[1000] bg-white px-4 py-2 rounded shadow text-sm">
+            Calculando ruta...
+          </div>
+        )}
+
+        {/* Botón limpiar ruta */}
+        {routeCoords && (
+          <button
+            onClick={handleClearRoute}
+            className="absolute top-2 left-1/2 -translate-x-1/2 z-[1000] bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm shadow-md hover:bg-gray-50 flex items-center gap-2"
+          >
+            <span>✕</span> Eliminar ruta
+          </button>
+        )}
 
         <button
           onClick={centerOnUser}
@@ -291,7 +412,7 @@ export default function MapPage() {
             attribution='&copy; <a href="https://carto.com/">CARTO</a>'
           />
 
-          <ClusteredMarkers points={visiblePoints} />
+          <ClusteredMarkers points={visiblePoints} onPointClick={handlePointClick} />
 
           {userPosition && (
             <>
@@ -307,7 +428,47 @@ export default function MapPage() {
             radiusKm={radiusKm}
             userPosition={userPosition}
           />
+
+          {routeCoords && (
+            <>
+              <Polyline
+                positions={routeCoords}
+                pathOptions={{ color: "#2563eb", weight: 5, opacity: 0.8 }}
+              />
+              <FitRouteBounds coords={routeCoords} />
+            </>
+          )}
         </MapContainer>
+
+        {(selectedPoint || loadingDetail) && (
+          <div
+            className="fixed inset-0 z-[2000] flex items-center justify-center bg-black/40"
+            onClick={handleCloseModal}
+          >
+            <div
+              className="bg-white rounded-xl shadow-xl p-6 max-w-md w-full mx-4 relative"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={handleCloseModal}
+                className="absolute top-3 right-3 text-gray-400 hover:text-gray-700 text-xl leading-none"
+              >
+                ×
+              </button>
+              {loadingDetail ? (
+                <p className="text-sm text-gray-500">Cargando...</p>
+              ) : selectedPoint && selectedPointCoords ? (
+                <PointModel
+                  point={selectedPoint}
+                  latitude={selectedPointCoords[0]}
+                  longitude={selectedPointCoords[1]}
+                  onRequestRoute={handleRequestRoute}
+                  canRoute={!!userPosition}
+                />
+              ) : null}
+            </div>
+          </div>
+        )}
       </div>
 
       <Footer />
