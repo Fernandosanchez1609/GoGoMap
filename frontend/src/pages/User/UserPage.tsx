@@ -7,13 +7,13 @@ import { useAuth } from "@/context/AuthContext";
 
 export default function UserPage() {
   const navigate = useNavigate();
-  const { logout } = useAuth();
+  const { logout, profile } = useAuth();
   const [showWeal, setShowWeal] = useState(false);
   const userData = {
-    name: "John Doe",
-    email: "john.doe@example.com",
-    createDate: "2024-01-01",
-    karmaPoints: 100,
+    name: profile ? `${profile.nombre} ${profile.apellidos}` : "Cargando...",
+    email: profile ? profile.email : "",
+    createDate: profile ? profile.createdAt : new Date().toISOString(),
+    karmaPoints: profile ? profile.karmaPoints : 0,
   };
 
   const memberSince = new Date(userData.createDate).toLocaleDateString("es-ES", {

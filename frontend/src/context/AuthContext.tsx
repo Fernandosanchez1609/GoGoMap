@@ -1,4 +1,5 @@
-import { createContext, useContext, useMemo, useState } from "react";
+import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import userService, { type User } from "@/api/services/userService";
 
 export interface UserProfile {
   sub: string;
@@ -12,8 +13,9 @@ export interface UserProfile {
 interface AuthContextType {
   token: string | null;
   user: UserProfile | null;
+  profile: User | null;
   isAuth: boolean;
-  login: (token: string, refreshToken?: string) => void;
+  login: (token: string, refreshToken?: string) => Promise<void>;
   logout: () => void;
 }
 
@@ -74,8 +76,24 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const [token, setToken] = useState<string | null>(initialAuth.token);
   const [user, setUser] = useState<UserProfile | null>(initialAuth.user);
+  const [profile, setProfile] = useState<User | null>(null);
 
-  const login = (newToken: string, refreshToken?: string) => {
+  const loadProfile = async () => {
+    try {
+      const response = await userService.getProfile();
+      setProfile(response.data);
+    } catch (error) {
+      console.error("No se pudo cargar el perfil del usuario", error);
+      setProfile(null);
+    }
+  };
+
+  useEffect(() => {
+    if (!token || profile) return;
+    void loadProfile();
+  }, [token, profile]);
+
+  const login = async (newToken: string, refreshToken?: string) => {
     const decoded = safeDecodeJwt(newToken);
     if (!decoded) return;
 
@@ -86,6 +104,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     setToken(newToken);
     setUser(decoded);
+    await loadProfile();
   };
 
   const logout = () => {
@@ -93,17 +112,19 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     localStorage.removeItem(REFRESH_STORAGE_KEY);
     setToken(null);
     setUser(null);
+    setProfile(null);
   };
 
   const value = useMemo(
     () => ({
       token,
       user,
+      profile,
       isAuth: Boolean(token && user),
       login,
       logout,
     }),
-    [token, user]
+    [token, user, profile]
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

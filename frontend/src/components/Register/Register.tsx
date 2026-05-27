@@ -107,7 +107,7 @@ export default function Register() {
         form.email,
         form.password
       );
-      login(response.data.token);
+      await login(response.data.token);
       navigate("/map", { replace: true });
     } catch (error) {
       setApiError("No se pudo crear la cuenta. Comprueba los datos e inténtalo de nuevo.");

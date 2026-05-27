@@ -49,7 +49,7 @@ export default function Login() {
 
     try {
       const response = await authService.login(usuario, password);
-      login(response.data.token);
+      await login(response.data.token);
       navigate(from, { replace: true });
     } catch (error) {
       setApiError("No se ha podido iniciar sesión. Revisa tus credenciales.");
