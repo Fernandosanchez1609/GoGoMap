@@ -14,7 +14,7 @@ export default function Footer() {
               className={`h-8 transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-40"}`}
             />
             <span
-              className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-[#2d6a35]" : "text-gray-400"}`}
+              className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-sdg-13" : "text-gray-400"}`}
             >
               Mapa
             </span>
@@ -33,7 +33,7 @@ export default function Footer() {
               className={`h-8 transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-40"}`}
             />
             <span
-              className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-[#2d6a35]" : "text-gray-400"}`}
+              className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-sdg-13" : "text-gray-400"}`}
             >
               Favoritos
             </span>
@@ -52,7 +52,7 @@ export default function Footer() {
               className={`h-8 transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-40"}`}
             />
             <span
-              className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-[#2d6a35]" : "text-gray-400"}`}
+              className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-sdg-13" : "text-gray-400"}`}
             >
               Perfil
             </span>
