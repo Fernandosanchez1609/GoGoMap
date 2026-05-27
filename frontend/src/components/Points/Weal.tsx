@@ -47,7 +47,7 @@ interface WealProps {
 }
 
 export default function Weal({ onClose }: WealProps) {
-  const { hasSpunWheelToday, markWheelSpinDone } = useAuth();
+  const { hasSpunWheelToday, markWheelSpinDone, refreshProfile } = useAuth();
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
   const [prizeResult, setPrizeResult] = useState<Multiplier | null>(null);
@@ -133,6 +133,8 @@ export default function Weal({ onClose }: WealProps) {
                 setSpinMessage(queuedSpinMessage);
                 setQueuedSpinMessage(null);
               }
+              // Refresh user profile so karmaPoints are updated in the UI
+              void refreshProfile();
             }}
           />
         </div>

@@ -19,6 +19,7 @@ interface AuthContextType {
   login: (token: string, refreshToken?: string) => Promise<void>;
   logout: () => void;
   refreshWheelSpinStatus: () => Promise<void>;
+  refreshProfile: () => Promise<void>;
   markWheelSpinDone: () => void;
 }
 
@@ -145,6 +146,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     await loadWheelSpinStatus();
   };
 
+  const refreshProfile = async () => {
+    await loadProfile();
+  };
+
   const markWheelSpinDone = () => {
     setHasSpunWheelToday(true);
   };
@@ -159,6 +164,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       login,
       logout,
       refreshWheelSpinStatus,
+      refreshProfile,
       markWheelSpinDone,
     }),
     [token, user, profile, hasSpunWheelToday]
