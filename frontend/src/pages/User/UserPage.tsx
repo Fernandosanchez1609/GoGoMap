@@ -24,24 +24,24 @@ export default function UserPage() {
   const initial = userData.name.charAt(0).toUpperCase();
 
   return (
-    <div className="flex flex-col h-screen bg-[#f0f4ec]">
+    <div className="flex flex-col h-screen bg-app-surface-2">
       <div className="flex-1 flex flex-col items-center px-6 pt-8 pb-4 gap-5 overflow-y-auto">
 
         {/* Avatar + Name */}
         <div className="flex flex-col items-center gap-2">
-          <div className="w-24 h-24 rounded-full bg-[#2d6a35] flex items-center justify-center text-white text-4xl font-bold shadow-lg shadow-green-900/30">
+          <div className="w-24 h-24 rounded-full bg-app-green flex items-center justify-center text-white text-4xl font-bold shadow-lg shadow-green-900/30">
             {initial}
           </div>
-          <h1 className="text-2xl font-bold text-[#1a2e1c] tracking-tight">
+          <h1 className="text-2xl font-bold text-app-text-dark tracking-tight">
             {userData.name}
           </h1>
-          <p className="text-sm text-[#7a9a7e]">
+          <p className="text-sm text-app-muted">
             Miembro desde {memberSince}
           </p>
         </div>
 
         {/* Eco Points Card */}
-        <div className="w-full bg-[#2d6a35] rounded-2xl p-5 flex justify-between items-center shadow-lg shadow-green-900/25">
+        <div className="w-full bg-app-green rounded-2xl p-5 flex justify-between items-center shadow-lg shadow-green-900/25">
           <div>
             <p className="text-xs font-semibold text-white/60 uppercase tracking-widest mb-1">
               Total Impacto
@@ -57,7 +57,7 @@ export default function UserPage() {
           <p className="text-xs font-semibold text-primary-container uppercase tracking-widest mb-2">
             Nombre De usuario
           </p>
-          <div className="flex items-center gap-3 #1a2etext-[1c] font-medium">
+          <div className="flex items-center gap-3 text-app-text-dark font-medium">
             <User size={18} className="text-sdg-13 opacity-60" />
             {userData.name}
           </div>
@@ -68,7 +68,7 @@ export default function UserPage() {
           <p className="text-xs font-semibold text-sdg-13 uppercase tracking-widest mb-2">
             Correo Electrónico
           </p>
-          <div className="flex items-center gap-3 text-[#1a2e1c] font-medium">
+          <div className="flex items-center gap-3 text-app-text-dark font-medium">
             <Mail size={18} className="text-sdg-13 opacity-60" />
             {userData.email}
           </div>
@@ -76,7 +76,8 @@ export default function UserPage() {
 
         <button
           onClick={() => setShowWeal(true)}
-          className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-sdg-11 text-white font-semibold text-base shadow-lg shadow-orange-400/25 hover:bg-[#e09510] active:scale-95 transition-all duration-200"
+          className="w-full flex items-center justify-center gap-2 py-4 rounded-full text-white font-semibold text-base shadow-lg transition-all duration-200 active:scale-95"
+          style={{ backgroundColor: "var(--app-orange)" }}
         >
           <Gift size={18} />
           Girar la ruleta
@@ -88,7 +89,7 @@ export default function UserPage() {
             logout();
             navigate("/login", { replace: true });
           }}
-          className="w-full flex items-center justify-center gap-2 py-4 rounded-full border-2 border-sdg-17 text-sdg-17 font-semibold text-base hover:bg-sdg-17 hover:text-white transition-all duration-200 mt-1"
+          className="w-full flex items-center justify-center gap-2 py-4 rounded-full border-2 border-red-500 text-red-500 font-semibold text-base hover:bg-red-500 hover:text-white transition-all duration-200 mt-1"
         >
           <LogOut size={16} />
           Cerrar Sesión

@@ -80,4 +80,16 @@ public class MapPointController {
 
         return ResponseEntity.ok(response);
     }
+
+        @GetMapping("/{id}/actions/status")
+        public ResponseEntity<com.esplai.backendgogomap.models.dtos.response.UserActionStatusResponseDTO> actionStatus(
+                        @AuthenticationPrincipal Jwt jwt,
+                        @PathVariable Long id,
+                        @RequestParam(name = "actionType", required = true) String actionTypeStr
+        ) {
+                String email = jwt.getSubject();
+                com.esplai.backendgogomap.models.enums.ActionType actionType = com.esplai.backendgogomap.models.enums.ActionType.valueOf(actionTypeStr);
+                boolean has = userActionService.hasPerformedAction(email, id, actionType);
+                return ResponseEntity.ok(new com.esplai.backendgogomap.models.dtos.response.UserActionStatusResponseDTO(has));
+        }
 }

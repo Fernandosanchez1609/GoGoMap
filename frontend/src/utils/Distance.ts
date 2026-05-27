@@ -13,3 +13,18 @@ export function getDistanceKm(
     Math.sin(dLng / 2);
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
+
+export function getDistanceMeters(
+  lat1: number, lng1: number,
+  lat2: number, lng2: number
+): number {
+  return getDistanceKm(lat1, lng1, lat2, lng2) * 1000;
+}
+
+export function isWithinMeters(
+  lat1: number, lng1: number,
+  lat2: number, lng2: number,
+  meters: number,
+): boolean {
+  return getDistanceMeters(lat1, lng1, lat2, lng2) <= meters;
+}

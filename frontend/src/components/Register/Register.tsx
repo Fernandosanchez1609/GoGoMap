@@ -115,7 +115,7 @@ export default function Register() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F5F5EE] flex flex-col justify-center items-center px-6">
+    <div className="min-h-screen bg-app-surface-1 flex flex-col justify-center items-center px-6">
 
       {/* LOGO */}
       <div className="flex flex-col items-center">

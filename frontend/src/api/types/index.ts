@@ -15,3 +15,12 @@ export interface PointDetail{
   odsNumber: number;
   ods: string;
 }
+
+export type ActionType = 'VISIT' | 'REPORT';
+
+export interface UserActionResponse {
+  action: ActionType;
+  karmaEarned: number;
+  newTotalKarma: number;
+  message: string;
+}

@@ -38,17 +38,18 @@ export default function PointDetailModal({
           ×
         </button>
 
-        {loadingDetail ? (
-          <p className="text-sm text-gray-500">Cargando...</p>
-        ) : selectedPoint && selectedPointCoords ? (
-          <PointModel
-            point={selectedPoint}
-            latitude={selectedPointCoords[0]}
-            longitude={selectedPointCoords[1]}
-            onRequestRoute={onRequestRoute}
-            canRoute={!!userPosition}
-          />
-        ) : null}
+              {loadingDetail ? (
+                <p className="text-sm text-gray-500">Cargando...</p>
+              ) : selectedPoint && selectedPointCoords ? (
+                <PointModel
+                  point={selectedPoint}
+                  latitude={selectedPointCoords[0]}
+                  longitude={selectedPointCoords[1]}
+                  onRequestRoute={onRequestRoute}
+                  canRoute={!!userPosition}
+                  userPosition={userPosition}
+                />
+              ) : null}
       </div>
     </div>
   );
