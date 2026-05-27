@@ -11,8 +11,22 @@ export interface User {
   createdAt: string;
 }
 
+export interface WheelSpinResponse {
+  slotIndex: number;
+  multiplier: "X1" | "X2" | "X5" | "X10";
+  karmaEarned: number;
+  newTotalKarma: number;
+  message: string;
+}
+
+export interface WheelSpinStatus {
+  hasSpunToday: boolean;
+}
+
 const userService = {
   getProfile: () => api.get<User>("/v1/users/me"),
+  getWheelSpinStatus: () => api.get<WheelSpinStatus>("/v1/users/me/wheel-spin/status"),
+  spinDailyWheel: () => api.post<WheelSpinResponse>("/v1/users/me/wheel-spin"),
 };
 
 export default userService;

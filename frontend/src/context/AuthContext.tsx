@@ -15,8 +15,11 @@ interface AuthContextType {
   user: UserProfile | null;
   profile: User | null;
   isAuth: boolean;
+  hasSpunWheelToday: boolean;
   login: (token: string, refreshToken?: string) => Promise<void>;
   logout: () => void;
+  refreshWheelSpinStatus: () => Promise<void>;
+  markWheelSpinDone: () => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -77,6 +80,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [token, setToken] = useState<string | null>(initialAuth.token);
   const [user, setUser] = useState<UserProfile | null>(initialAuth.user);
   const [profile, setProfile] = useState<User | null>(null);
+  const [hasSpunWheelToday, setHasSpunWheelToday] = useState(false);
 
   const loadProfile = async () => {
     try {
@@ -87,6 +91,26 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setProfile(null);
     }
   };
+
+  const loadWheelSpinStatus = async () => {
+    if (!token) {
+      setHasSpunWheelToday(false);
+      return;
+    }
+
+    try {
+      const response = await userService.getWheelSpinStatus();
+      setHasSpunWheelToday(response.data.hasSpunToday);
+    } catch (error) {
+      console.error("No se pudo comprobar el estado de la ruleta", error);
+      setHasSpunWheelToday(false);
+    }
+  };
+
+  useEffect(() => {
+    if (!token) return;
+    void loadWheelSpinStatus();
+  }, [token]);
 
   useEffect(() => {
     if (!token || profile) return;
@@ -105,6 +129,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     setToken(newToken);
     setUser(decoded);
     await loadProfile();
+    await loadWheelSpinStatus();
   };
 
   const logout = () => {
@@ -113,6 +138,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     setToken(null);
     setUser(null);
     setProfile(null);
+    setHasSpunWheelToday(false);
+  };
+
+  const refreshWheelSpinStatus = async () => {
+    await loadWheelSpinStatus();
+  };
+
+  const markWheelSpinDone = () => {
+    setHasSpunWheelToday(true);
   };
 
   const value = useMemo(
@@ -121,10 +155,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       user,
       profile,
       isAuth: Boolean(token && user),
+      hasSpunWheelToday,
       login,
       logout,
+      refreshWheelSpinStatus,
+      markWheelSpinDone,
     }),
-    [token, user, profile]
+    [token, user, profile, hasSpunWheelToday]
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

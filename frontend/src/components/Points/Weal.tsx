@@ -2,6 +2,9 @@
 import { useState } from "react";
 import { Wheel } from "react-custom-roulette";
 import { X } from "lucide-react";
+import userService from "@/api/services/userService";
+import { useAuth } from "@/context/AuthContext";
+import axios from "axios";
 
 type Multiplier = "X1" | "X2" | "X5" | "X10";
 
@@ -30,20 +33,6 @@ const data: Prize[] = [
   { option: "X10", multiplier: "X10", style: { backgroundColor: "#d64040", textColor: "#ffffff" } },
 ];
 
-const fetchPrizeFromBackend = async (): Promise<number> => {
-  await new Promise((r) => setTimeout(r, 500));
-  const weights = data.map((p) =>
-    p.multiplier === "X1" ? 8 : p.multiplier === "X2" ? 4 : p.multiplier === "X5" ? 3 : 1
-  );
-  const total = weights.reduce((a, b) => a + b, 0);
-  let random = Math.random() * total;
-  for (let i = 0; i < weights.length; i++) {
-    random -= weights[i];
-    if (random <= 0) return i;
-  }
-  return 0;
-};
-
 const multiplierStyles: Record<Multiplier, { label: string; color: string }> = {
   X1:  { label: "Sin multiplicador", color: "#1a2e1c" },
   X2:  { label: "¡Doble puntuación!", color: "#2d6a35" },
@@ -56,19 +45,46 @@ interface WealProps {
 }
 
 export default function Weal({ onClose }: WealProps) {
+  const { hasSpunWheelToday, markWheelSpinDone } = useAuth();
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
   const [prizeResult, setPrizeResult] = useState<Multiplier | null>(null);
   const [loading, setLoading] = useState(false);
+  const [spinMessage, setSpinMessage] = useState<string | null>(null);
+  const [queuedSpinMessage, setQueuedSpinMessage] = useState<string | null>(null);
+
+  const fetchPrizeFromBackend = async (): Promise<{ slotIndex: number; message: string }> => {
+    const response = await userService.spinDailyWheel();
+    const slotIndex = Math.max(0, Math.min(data.length - 1, response.data.slotIndex));
+    setQueuedSpinMessage(response.data.message);
+    return { slotIndex, message: response.data.message };
+  };
 
   const handleSpin = async () => {
-    if (mustSpin || loading) return;
+    if (mustSpin || loading || hasSpunWheelToday) return;
     setPrizeResult(null);
+    setSpinMessage(null);
+    setQueuedSpinMessage(null);
     setLoading(true);
-    const prize = await fetchPrizeFromBackend();
-    setPrizeNumber(prize);
-    setMustSpin(true);
-    setLoading(false);
+
+    try {
+      const prize = await fetchPrizeFromBackend();
+      setPrizeNumber(prize.slotIndex);
+      setMustSpin(true);
+      markWheelSpinDone();
+    } catch (error) {
+      const status = axios.isAxiosError(error) ? error.response?.status : undefined;
+
+      if (status === 429) {
+        setSpinMessage("Ya has girado hoy. Vuelve mañana a las 0:00.");
+        markWheelSpinDone();
+      } else {
+        setSpinMessage("No se pudo girar la ruleta. Intenta de nuevo más tarde.");
+        console.error(error);
+      }
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleClose = () => {
@@ -81,12 +97,12 @@ export default function Weal({ onClose }: WealProps) {
   return (
     // Backdrop
     <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-black/50"
+      className="fixed inset-0 z-50 flex items-end justify-center bg-black/50 p-4 sm:items-center"
       onClick={handleClose}
     >
       {/* Modal — bottom sheet */}
       <div
-        className="w-full max-w-md bg-[#f0f4ec] rounded-t-3xl px-6 pt-5 pb-10 flex flex-col items-center gap-5"
+        className="w-full max-w-md max-h-[92vh] overflow-y-auto bg-[#f0f4ec] rounded-t-3xl px-6 pt-5 pb-10 flex flex-col items-center gap-5"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Handle + close */}
@@ -106,23 +122,41 @@ export default function Weal({ onClose }: WealProps) {
           Gira la ruleta
         </h2>
 
-        <Wheel
-          mustStartSpinning={mustSpin}
-          prizeNumber={prizeNumber}
-          data={data}
-          onStopSpinning={() => {
-            setMustSpin(false);
-            setPrizeResult(data[prizeNumber].multiplier);
-          }}
-        />
+        <div className="w-full flex justify-center">
+          <Wheel
+            mustStartSpinning={mustSpin}
+            prizeNumber={prizeNumber}
+            data={data}
+            onStopSpinning={() => {
+              setMustSpin(false);
+              setPrizeResult(data[prizeNumber].multiplier);
+              if (queuedSpinMessage) {
+                setSpinMessage(queuedSpinMessage);
+                setQueuedSpinMessage(null);
+              }
+            }}
+          />
+        </div>
 
         <button
           onClick={handleSpin}
-          disabled={mustSpin || loading}
+          disabled={mustSpin || loading || hasSpunWheelToday}
           className="w-full py-4 rounded-full bg-[#2d6a35] text-white font-semibold text-base shadow-lg shadow-green-900/25 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 hover:bg-[#245a2b] active:scale-95"
         >
-          {loading ? "Consultando..." : mustSpin ? "Girando..." : "¡Girar!"}
+          {loading
+            ? "Consultando..."
+            : mustSpin
+            ? "Girando..."
+            : hasSpunWheelToday
+            ? "Ya giraste hoy"
+            : "¡Girar!"}
         </button>
+
+        {spinMessage && (
+          <div className="w-full bg-white rounded-2xl px-6 py-4 shadow-sm text-center">
+            <p className="text-sm font-medium text-[#1a2e1c]">{spinMessage}</p>
+          </div>
+        )}
 
         {result && (
           <div className="w-full bg-white rounded-2xl px-6 py-4 shadow-sm text-center">
