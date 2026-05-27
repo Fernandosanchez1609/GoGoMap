@@ -8,7 +8,7 @@ export default function Filter({ selected, onSelect }: FilterProps) {
 
   return (
     <section className="bg-white px-4 pt-4 pb-6 shadow-lg z-10">
-      <img src="/assets/Logo.png" alt="Logo" className="h-15 mb-3" />
+      
       <div className="flex gap-4 overflow-x-auto overflow-y-visible pb-2 pt-2 px-1">
         {ods.map((n) => (
           <button
