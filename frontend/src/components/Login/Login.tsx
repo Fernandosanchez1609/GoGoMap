@@ -1,14 +1,36 @@
-import { Button } from "../ui/button"
-import { Input } from "../ui/input"
-import { Label } from "../ui/label"
-import { useNavigate, Link } from "react-router-dom"
-import {
-  Card,
-  CardContent,
-} from "../ui/card"
+import { useState } from "react";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
+import { useNavigate, Link, useLocation } from "react-router-dom";
+import { Card, CardContent } from "../ui/card";
+import { useAuth } from "@/context/AuthContext";
+import authService from "@/api/services/authService";
 
 export default function Login() {
-  const Navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { login } = useAuth();
+
+  const from = (location.state as { from?: { pathname: string } })?.from?.pathname || "/map";
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setError("");
+
+    try {
+      const response = await authService.login(email, password);
+      const token = response.data.token;
+      login(token);
+      navigate(from, { replace: true });
+    } catch (error) {
+      setError("No se ha podido iniciar sesión. Revisa tus credenciales.");
+    }
+  };
+
   return (
      <div className="min-h-screen bg-[#F5F5EE] flex justify-center items-center px-6">
 
@@ -41,68 +63,37 @@ export default function Login() {
           </div>
 
           {/* FORM */}
-          <form className="flex flex-col gap-5">
-
-            {/* USER */}
+          <form onSubmit={handleSubmit} className="flex flex-col gap-5">
             <div className="flex flex-col gap-2">
-
-              <Label className="text-gray-600">
-                Usuario
-              </Label>
-
+              <Label className="text-gray-600">Correo electrónico</Label>
               <Input
-                type="text"
-                placeholder="Usuario"
-                className="
-                  h-14
-                  rounded-xl
-                  border-gray-300
-                  bg-white
-                "
+                type="email"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                placeholder="ejemplo@correo.com"
+                className="h-14 rounded-xl border-gray-300 bg-white"
               />
-
             </div>
 
-            {/* PASSWORD */}
             <div className="flex flex-col gap-2">
-
-              <Label className="text-gray-600">
-                Contraseña
-              </Label>
-
+              <Label className="text-gray-600">Contraseña</Label>
               <Input
                 type="password"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
                 placeholder="Contraseña"
-                className="
-                  h-14
-                  rounded-xl
-                  border-gray-300
-                  bg-white
-                "
+                className="h-14 rounded-xl border-gray-300 bg-white"
               />
-
             </div>
 
-            {/* FORGOT PASSWORD */}
-            <div className="text-right">
+            {error ? <p className="text-sm text-red-600">{error}</p> : null}
 
-            </div>
-
-            {/* BUTTON */}
-            <Button onClick={() => {Navigate("/map")}}
-              className="
-                h-14
-                rounded-full
-                bg-green-800
-                hover:bg-green-900
-                text-lg
-                font-bold
-                shadow-lg
-              "
+            <Button
+              type="submit"
+              className="h-14 rounded-full bg-green-800 hover:bg-green-900 text-lg font-bold shadow-lg"
             >
               Login
             </Button>
-
           </form>
 
          {/* REGISTER */}
