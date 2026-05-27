@@ -1,10 +1,13 @@
 import Footer from "@/components/Footer/Footer";
 import { Gift, LogOut, Mail, User } from "lucide-react";
-import {NavLink} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Weal from "@/components/Points/Weal";
+import { useAuth } from "@/context/AuthContext";
 
 export default function UserPage() {
+  const navigate = useNavigate();
+  const { logout } = useAuth();
   const [showWeal, setShowWeal] = useState(false);
   const userData = {
     name: "John Doe",
@@ -80,12 +83,16 @@ export default function UserPage() {
         </button>
 
         {/* Logout */}
-        <NavLink to="/login">
-          <button className="w-full flex items-center justify-center gap-2 py-4 rounded-full border-2 border-[#d64040] text-[#d64040] font-semibold text-base hover:bg-[#d64040] hover:text-white transition-all duration-200 mt-1">
-            <LogOut size={16} />
-            Cerrar Sesión
-          </button>
-        </NavLink>
+        <button
+          onClick={() => {
+            logout();
+            navigate("/login", { replace: true });
+          }}
+          className="w-full flex items-center justify-center gap-2 py-4 rounded-full border-2 border-[#d64040] text-[#d64040] font-semibold text-base hover:bg-[#d64040] hover:text-white transition-all duration-200 mt-1"
+        >
+          <LogOut size={16} />
+          Cerrar Sesión
+        </button>
 
       </div>
 
