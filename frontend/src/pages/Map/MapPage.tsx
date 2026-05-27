@@ -23,6 +23,7 @@ import type { Point, PointDetail } from "@/api/types/index";
 import { getDistanceKm } from "@/utils/Distance";
 import { useDebounce } from "use-debounce";
 import PointModel from "@/components/Map/PointModel";
+import Header from "@/components/Header/Header";
 
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -351,6 +352,7 @@ export default function MapPage() {
 
   return (
     <div className="flex flex-col h-screen">
+      <Header />
       <Filter selected={selectedOds} onSelect={setSelectedOds} />
 
       {userPosition && (
