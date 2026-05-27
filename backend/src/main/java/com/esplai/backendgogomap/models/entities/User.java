@@ -65,6 +65,9 @@ public class User {
     @Builder.Default
     private Set<MapPoint> favoritos = new HashSet<>();
 
+    @Column(name = "last_wheel_spin")
+    private LocalDateTime lastWheelSpin;
+
     @Column(name = "last_login")
     private LocalDateTime lastLogin;
 }
