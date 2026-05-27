@@ -70,6 +70,9 @@ export default function Register() {
     if (!form.password.trim()) {
       newErrors.password = "La contraseña es obligatoria"
       isValid = false
+    }else if (form.password.trim().length < 8) {
+      newErrors.password = "La contraseña debe tener al menos 8 caracteres"
+      isValid = false
     }
 
     if (!form.repeatPassword.trim()) {
@@ -77,6 +80,9 @@ export default function Register() {
       isValid = false
     } else if (form.password !== form.repeatPassword) {
       newErrors.repeatPassword = "Las contraseñas no coinciden"
+      isValid = false
+    }else if (form.password.trim().length < 8) {
+      newErrors.password = "La contraseña debe tener al menos 8 caracteres"
       isValid = false
     }
 
