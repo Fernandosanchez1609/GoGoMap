@@ -9,7 +9,7 @@ import { useState } from 'react'
 
 
 // Fondo
-const bgBase = "fixed inset-0 -z-10 bg-gradient-to-tr from-[#1B6D24] via-[#6DBD6A] to-[#A3F69C]"
+const bgBase = "fixed inset-0 -z-10 bg-gradient-to-tr from-sdg-13 via-sdg-15 to-text-muted]"
 
 // Blobs
 const blobBase = "absolute rounded-full blur-[55px] animate-pulse"
