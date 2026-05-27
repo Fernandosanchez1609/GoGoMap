@@ -1,5 +1,12 @@
 import { useEffect, useState, useRef, useMemo, useCallback } from "react";
-import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Popup,
+  Polyline,
+  useMap,
+} from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
@@ -96,7 +103,10 @@ function FitRouteBounds({ coords }: { coords: [number, number][] }) {
   const map = useMap();
   useEffect(() => {
     if (coords.length) {
-      map.fitBounds(L.latLngBounds(coords), { padding: [40, 40], animate: true });
+      map.fitBounds(L.latLngBounds(coords), {
+        padding: [40, 40],
+        animate: true,
+      });
     }
   }, [coords]);
   return null;
@@ -170,7 +180,9 @@ function ClusteredMarkers({
         icon: createOdsIcon(p.odsNumber),
       });
 
-      marker.on("click", () => onPointClick(String(p.id), p.latitude, p.longitude));
+      marker.on("click", () =>
+        onPointClick(String(p.id), p.latitude, p.longitude),
+      );
       cluster.addLayer(marker);
     });
   }, [points, onPointClick]);
@@ -219,7 +231,9 @@ function OdsFlyTo({
 }
 
 export default function MapPage() {
-  const [userPosition, setUserPosition] = useState<[number, number] | null>(null);
+  const [userPosition, setUserPosition] = useState<[number, number] | null>(
+    null,
+  );
   const [selectedOds, setSelectedOds] = useState<number | null>(null);
   const [radiusKm, setRadiusKm] = useState<number>(5);
   const [debouncedRadius] = useDebounce(radiusKm, 150);
@@ -228,9 +242,13 @@ export default function MapPage() {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [selectedPoint, setSelectedPoint] = useState<PointDetail | null>(null);
-  const [selectedPointCoords, setSelectedPointCoords] = useState<[number, number] | null>(null);
+  const [selectedPointCoords, setSelectedPointCoords] = useState<
+    [number, number] | null
+  >(null);
   const [loadingDetail, setLoadingDetail] = useState(false);
-  const [routeCoords, setRouteCoords] = useState<[number, number][] | null>(null);
+  const [routeCoords, setRouteCoords] = useState<[number, number][] | null>(
+    null,
+  );
   const [loadingRoute, setLoadingRoute] = useState(false);
   const mapRef = useRef<L.Map | null>(null);
 
@@ -292,22 +310,25 @@ export default function MapPage() {
     setSelectedPointCoords(null);
   }
 
-  const handleRequestRoute = useCallback(async (destLat: number, destLng: number) => {
-    if (!userPosition) {
-      setError("Activa tu ubicación para calcular la ruta.");
-      return;
-    }
-    try {
-      setLoadingRoute(true);
-      handleCloseModal();
-      const coords = await fetchOsrmRoute(userPosition, [destLat, destLng]);
-      setRouteCoords(coords);
-    } catch {
-      setError("No se pudo calcular la ruta.");
-    } finally {
-      setLoadingRoute(false);
-    }
-  }, [userPosition]);
+  const handleRequestRoute = useCallback(
+    async (destLat: number, destLng: number) => {
+      if (!userPosition) {
+        setError("Activa tu ubicación para calcular la ruta.");
+        return;
+      }
+      try {
+        setLoadingRoute(true);
+        handleCloseModal();
+        const coords = await fetchOsrmRoute(userPosition, [destLat, destLng]);
+        setRouteCoords(coords);
+      } catch {
+        setError("No se pudo calcular la ruta.");
+      } finally {
+        setLoadingRoute(false);
+      }
+    },
+    [userPosition],
+  );
 
   function handleClearRoute() {
     setRouteCoords(null);
@@ -318,7 +339,12 @@ export default function MapPage() {
       const odsMatch = selectedOds === null || p.odsNumber === selectedOds;
       const distanceMatch =
         userPosition === null ||
-        getDistanceKm(userPosition[0], userPosition[1], p.latitude, p.longitude) <= debouncedRadius;
+        getDistanceKm(
+          userPosition[0],
+          userPosition[1],
+          p.latitude,
+          p.longitude,
+        ) <= debouncedRadius;
       return odsMatch && distanceMatch;
     });
   }, [points, selectedOds, debouncedRadius, userPosition]);
@@ -327,34 +353,30 @@ export default function MapPage() {
     <div className="flex flex-col h-screen">
       <Filter selected={selectedOds} onSelect={setSelectedOds} />
 
-      <div className="flex items-center gap-4 px-4 py-2 bg-white border-b border-gray-200 text-sm">
-        <div className="flex items-center gap-2 flex-1">
-          <span className="text-gray-600 whitespace-nowrap">Radio:</span>
-          <input
-            type="range"
-            min={0.5}
-            max={30}
-            step={0.5}
-            value={radiusKm}
-            onChange={(e) => setRadiusKm(Number(e.target.value))}
-            className="flex-1 accent-blue-500"
-          />
-          <span className="text-gray-800 font-medium whitespace-nowrap w-12">
-            {radiusKm} km
+      {userPosition && (
+        <div className="flex items-center gap-4 px-4 py-2 bg-white border-b border-gray-200 text-sm">
+          <div className="flex items-center gap-2 flex-1">
+            <span className="text-gray-600 whitespace-nowrap">Radio:</span>
+            <input
+              type="range"
+              min={0.5}
+              max={30}
+              step={0.5}
+              value={radiusKm}
+              onChange={(e) => setRadiusKm(Number(e.target.value))}
+              className="flex-1 accent-blue-500"
+            />
+            <span className="text-gray-800 font-medium whitespace-nowrap w-12">
+              {radiusKm} km
+            </span>
+          </div>
+          <span className="font-semibold text-gray-800 whitespace-nowrap">
+            {visiblePoints.length}
           </span>
         </div>
-        <div className="text-gray-500 whitespace-nowrap">
-          {userPosition ? (
-            <span>
-              <span className="font-semibold text-gray-800">{visiblePoints.length}</span>
-            </span>
-          ) : (
-            <span className="italic">Activa ubicación para filtrar por distancia</span>
-          )}
-        </div>
-      </div>
+      )}
 
-      <div className="relative flex-1">
+      <div className="relative flex-1 min-h-0 overflow-hidden">
         {geoError && (
           <div className="bg-red-50 border border-red-200 text-red-700 text-sm px-3 py-2">
             ⚠️ {geoError}
@@ -412,7 +434,10 @@ export default function MapPage() {
             attribution='&copy; <a href="https://carto.com/">CARTO</a>'
           />
 
-          <ClusteredMarkers points={visiblePoints} onPointClick={handlePointClick} />
+          <ClusteredMarkers
+            points={visiblePoints}
+            onPointClick={handlePointClick}
+          />
 
           {userPosition && (
             <>
