@@ -2,6 +2,8 @@ package com.esplai.backendgogomap.controllers;
 
 import com.esplai.backendgogomap.models.dtos.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserResponseDTO;
+import com.esplai.backendgogomap.models.dtos.response.WheelSpinResponseDTO;
+import com.esplai.backendgogomap.models.dtos.response.WheelSpinStatusResponseDTO;
 import com.esplai.backendgogomap.services.UserService;
 import com.esplai.backendgogomap.exceptions.dto.ApiErrorResponse;
 import lombok.RequiredArgsConstructor;
@@ -89,5 +91,34 @@ public class UserController {
     public ResponseEntity<List<MapPointResponseDTO>> getMyFavorites(@Parameter(hidden = true) @AuthenticationPrincipal Jwt jwt) {
         String email = jwt.getSubject();
         return ResponseEntity.ok(userService.getFavorites(email));
+    }
+
+    @GetMapping("/me/wheel-spin/status")
+    @Operation(
+            summary = "Comprobar estado de la ruleta diaria",
+            description = "Devuelve si el usuario autenticado ya ha girado la ruleta hoy."
+    )
+    @ApiResponse(responseCode = "200", description = "Estado de la ruleta obtenido correctamente", content = @Content(schema = @Schema(implementation = WheelSpinStatusResponseDTO.class)))
+    @ApiResponse(responseCode = "401", description = "Falta el token JWT o no es válido", content = @Content(schema = @Schema(implementation = ApiErrorResponse.class)))
+    @ApiResponse(responseCode = "404", description = "El usuario autenticado no existe", content = @Content(schema = @Schema(implementation = ApiErrorResponse.class)))
+    public ResponseEntity<WheelSpinStatusResponseDTO> getWheelSpinStatus(@Parameter(hidden = true) @AuthenticationPrincipal Jwt jwt) {
+        String email = jwt.getSubject();
+        boolean spunToday = userService.hasSpunDailyWheel(email);
+        return ResponseEntity.ok(WheelSpinStatusResponseDTO.builder().hasSpunToday(spunToday).build());
+    }
+
+    @PostMapping("/me/wheel-spin")
+    @Operation(
+            summary = "Girar la ruleta diaria",
+            description = "Genera un valor aleatorio entre 1 y 16 para el usuario autenticado y añade ese valor a su karma. Solo puede usarse una vez por día."
+    )
+    @ApiResponse(responseCode = "200", description = "Ruleta girada correctamente", content = @Content(schema = @Schema(implementation = WheelSpinResponseDTO.class)))
+    @ApiResponse(responseCode = "401", description = "Falta el token JWT o no es válido", content = @Content(schema = @Schema(implementation = ApiErrorResponse.class)))
+    @ApiResponse(responseCode = "429", description = "La ruleta ya se ha utilizado hoy", content = @Content(schema = @Schema(implementation = ApiErrorResponse.class)))
+    @ApiResponse(responseCode = "404", description = "El usuario autenticado no existe", content = @Content(schema = @Schema(implementation = ApiErrorResponse.class)))
+    public ResponseEntity<WheelSpinResponseDTO> spinDailyWheel(@Parameter(hidden = true) @AuthenticationPrincipal Jwt jwt) {
+        String email = jwt.getSubject();
+        WheelSpinResponseDTO response = userService.spinDailyWheel(email);
+        return ResponseEntity.ok(response);
     }
 }
