@@ -71,14 +71,14 @@ export default function Login() {
 
             {/* USER */}
             <div className="flex flex-col gap-2">
-              <Label className="text-gray-600">Usuario</Label>
+              <Label className="text-gray-600">Email</Label>
               <Input
                 type="text"
-                placeholder="Usuario"
+                placeholder="Email"
                 value={usuario}
                 onChange={(e) => setUsuario(e.target.value)}
                 className={`
-                  h-14 rounded-xl bg-white
+                  h-14 rounded-xl bg-white text-gray-700 placeholder:text-gray-300
                   ${errors.usuario ? "border-red-500" : "border-gray-300"}
                 `}
               />
@@ -96,7 +96,7 @@ export default function Login() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className={`
-                  h-14 rounded-xl bg-white
+                  h-14 rounded-xl bg-white text-gray-700 placeholder:text-gray-300
                   ${errors.password ? "border-red-500" : "border-gray-300"}
                 `}
               />
