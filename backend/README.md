@@ -62,6 +62,24 @@ La API estará disponible en `http://localhost:8080`.
 
 ---
 
+## 📘 Swagger / OpenAPI
+
+Para consultar y probar la API de forma interactiva, tienes disponible la documentación de **Swagger**.
+
+### Botón de acceso rápido
+
+[![Swagger](https://img.shields.io/badge/Swagger-UI-85EA2D?style=for-the-badge&logo=swagger&logoColor=000000)](http://localhost:8080/swagger-ui/index.html)
+
+### ¿Cómo se usa?
+
+- Abre Swagger en tu navegador desde `http://localhost:8080/swagger-ui/index.html`.
+- Revisa los endpoints disponibles, sus parámetros y las respuestas documentadas.
+- Si quieres probar rutas protegidas, primero haz login en `/api/auth/login` para obtener el token JWT.
+- Después pulsa en **Authorize** y pega el token con el formato `Bearer <tu_token>` para ejecutar peticiones autenticadas.
+- Swagger también te permite ver los códigos de error y el modelo de respuesta `ApiErrorResponse` cuando algo falla.
+
+---
+
 ## 🏗️ Arquitectura y Entidades Principales
 
 El dominio de la aplicación se divide principalmente en dos grandes bloques:
