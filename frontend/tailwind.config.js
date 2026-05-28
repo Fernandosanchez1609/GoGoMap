@@ -22,14 +22,9 @@ export default {
         'sdg-11':                '#FD9D24',
         'sdg-13':                '#3F7E44',
         'sdg-15':                '#56C02B',
-        'sdg-17':                '#d64040'
-                                  #7a9a7e
-                                  #2d6a35
-                                  #2d6a35
-                                  #f5a623
-                                  #d64040
-                                  #d64040
-                                  
+        'sdg-17':                '#d64040',
+        'sdg-15-mid':            '#6DBD6A',  // ← nuevo
+        'sdg-15-light':          '#A3F69C',  // ← nuevo                                                   
     
 
       }
