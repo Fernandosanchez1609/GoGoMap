@@ -1,0 +1,6539 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_626e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.38005585,
+          36.72179487,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3279,
+        "NOMBRE": "Contenedor ropa Av Juan Sebastian Elcano 4",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE JUAN SEBASTIÁN ELCANO, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_626f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43583324,
+          36.71992314,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3375,
+        "NOMBRE": "Contenedor ropa Cl Honduras",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE HONDURAS, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6270",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.38151036,
+          36.72542541,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3472,
+        "NOMBRE": "Contenedor ropa Pso Cerrado De Calderon",
+        "DESCRIPCION": null,
+        "DIRECCION": "PASEO CERRADO DE CALDERÓN, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6271",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41728241,
+          36.74940547,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3313,
+        "NOMBRE": "Contenedor ropa Cl Alcalde Nicolás Maroto",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ALCALDE NICOLÁS MAROTO, 15 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6272",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41997113,
+          36.74958857,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3311,
+        "NOMBRE": "Contenedor ropa Cl Alcalde Joaquín Quiles",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ALCALDE JOAQUÍN QUILES, 13 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6273",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.36104007,
+          36.72122906,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3278,
+        "NOMBRE": "Contenedor ropa Av Juan Sebastian Elcano 195",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE JUAN SEBASTIÁN ELCANO, 195 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6274",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42880621,
+          36.75233533,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3463,
+        "NOMBRE": "Contenedor ropa Pl Jacques Cousteau",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA DE JACQUES COUSTEAU, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6275",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42567181,
+          36.74927126,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3381,
+        "NOMBRE": "Contenedor ropa Cl Joaquín Gaztambide",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE JOAQUÍN GAZTAMBIDE, 11 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6276",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.48983268,
+          36.74298818,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3392,
+        "NOMBRE": "Contenedor ropa Cl Junco",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE JUNCO, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6277",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43292476,
+          36.70851135,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3322,
+        "NOMBRE": "Contenedor ropa Cl Ayala",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE AYALA, 33 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6278",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43041793,
+          36.70975431,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3362,
+        "NOMBRE": "Contenedor ropa Cl Góngora",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE GÓNGORA, 22 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6279",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45760732,
+          36.6924965,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3387,
+        "NOMBRE": "Contenedor ropa Cl Juan Martínez Montañés",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE JUAN MARTÍNEZ MONTAÑÉS, 7 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_627a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42986862,
+          36.71732749,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3318,
+        "NOMBRE": "Contenedor ropa Cl Armengual De La Mota 1",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ARMENGUAL DE LA MOTA, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_627b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43871815,
+          36.72673949,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3406,
+        "NOMBRE": "Contenedor ropa Cl Moraima",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE MORAIMA, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_627c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43550732,
+          36.72460736,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3347,
+        "NOMBRE": "Contenedor ropa Cl Eugenio Gross 26",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE EUGENIO GROSS, 36 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_627d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46712094,
+          36.73035948,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3391,
+        "NOMBRE": "Contenedor ropa Cl Julio Verne",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE JULIO VERNE, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_627e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41678522,
+          36.72239396,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3464,
+        "NOMBRE": "Contenedor ropa Pl Jesus \"El Rico\"",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA DE JESÚS \"EL RICO\", 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_627f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44022939,
+          36.73055251,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3283,
+        "NOMBRE": "Contenedor ropa Av Miraflores De Los Ángeles",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE MIRAFLORES DE LOS ÁNGELES, 17 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6280",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4292596,
+          36.72025829,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3319,
+        "NOMBRE": "Contenedor ropa Cl Armengual De La Mota 29",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ARMENGUAL DE LA MOTA, 29 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6281",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42080854,
+          36.74584391,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3380,
+        "NOMBRE": "Contenedor ropa Cl Jerez Perchet",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE JEREZ PERCHET, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6282",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43477912,
+          36.72663656,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3348,
+        "NOMBRE": "Contenedor ropa Cl Eugenio Gross 60",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE EUGENIO GROSS, 60 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6283",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4478816,
+          36.69914707,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3316,
+        "NOMBRE": "Contenedor ropa Cl Antonio Chacón",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ANTONIO CHACÓN, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6284",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45514333,
+          36.69507618,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3254,
+        "NOMBRE": "Contenedor ropa Av Bonaire",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE BONAIRE, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6285",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.56557324,
+          36.73338186,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3298,
+        "NOMBRE": "Contenedor ropa Av Profesor Garcia Rodeja",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA PROFESOR GARCÍA RODEJA, 62 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6286",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41353282,
+          36.72734762,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3330,
+        "NOMBRE": "Contenedor ropa Cl Compás De La Victoria",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE COMPÁS DE LA VICTORIA, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6287",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42454975,
+          36.75433221,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3276,
+        "NOMBRE": "Contenedor ropa Av Juan Grande De",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE JUAN GRANDE, 12 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6288",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42680065,
+          36.74308151,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3461,
+        "NOMBRE": "Contenedor ropa Pl Herbert Von Karajan",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA DE HERBERT VON KARAJAN, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6289",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43798982,
+          36.72464328,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3354,
+        "NOMBRE": "Contenedor ropa Cl Francisco Ferrer",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE FRANCISCO FERRER, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_628a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4353341,
+          36.71219933,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3341,
+        "NOMBRE": "Contenedor ropa Cl Edison",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE EDISON, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_628b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41474936,
+          36.72916996,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3334,
+        "NOMBRE": "Contenedor ropa Cl Cristo De La Epidemia",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CRISTO DE LA EPIDEMIA, 47 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_628c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.39868174,
+          36.72628153,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3473,
+        "NOMBRE": "Contenedor ropa Pso Limonar",
+        "DESCRIPCION": null,
+        "DIRECCION": "PASEO DEL LIMONAR, 23 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_628d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42618386,
+          36.74654503,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3272,
+        "NOMBRE": "Contenedor ropa Av Jane Bowles",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE JANE BOWLES, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_628e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41734035,
+          36.73671569,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3282,
+        "NOMBRE": "Contenedor ropa Av Manuel Gorría",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE MANUEL GORRÍA, 67 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_628f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.36458261,
+          36.72209393,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3277,
+        "NOMBRE": "Contenedor ropa Av Juan Sebastián Elcano 147",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE JUAN SEBASTIÁN ELCANO, 147 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6290",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.54459245,
+          36.72767787,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3382,
+        "NOMBRE": "Contenedor ropa Cl José Calderón",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE JOSÉ CALDERÓN, 161 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6291",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.53387284,
+          36.72666141,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3454,
+        "NOMBRE": "Contenedor ropa Ctra Campanillas A Colmenarejo",
+        "DESCRIPCION": null,
+        "DIRECCION": "CARRETERA DE CAMPANILLAS A COLMENAREJO, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6292",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44771557,
+          36.69138327,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3356,
+        "NOMBRE": "Contenedor ropa Cl Francisco Pacheco",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE FRANCISCO PACHECO, 11 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6293",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42961204,
+          36.71216943,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3335,
+        "NOMBRE": "Contenedor ropa Cl Cuarteles",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CUARTELES, 49 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6294",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45444017,
+          36.68866862,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3285,
+        "NOMBRE": "Contenedor ropa Av Moliere 13",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE MOLIÈRE, 13 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6295",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45637249,
+          36.69060123,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3284,
+        "NOMBRE": "Contenedor ropa Av Moliere 1",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE MOLIÈRE, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6296",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42679692,
+          36.71430568,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3424,
+        "NOMBRE": "Contenedor ropa Cl Salitre",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE SALITRE, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6297",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44329273,
+          36.7163017,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3439,
+        "NOMBRE": "Contenedor ropa Cl Virgen De La Estrella",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE VIRGEN DE LA ESTRELLA, 10 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6298",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45058477,
+          36.6954743,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3388,
+        "NOMBRE": "Contenedor ropa Cl Juan Sebastian Bach",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE JUAN SEBASTIÁN BACH, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6299",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44479715,
+          36.70181856,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3292,
+        "NOMBRE": "Contenedor ropa Av Paloma 39",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE LA PALOMA, 39 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_629a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44944148,
+          36.71220653,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3332,
+        "NOMBRE": "Contenedor ropa Cl Corregidor Antonio De Bobadilla",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CORREGIDOR ANTONIO DE BOBADILLA, 11 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_629b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42306313,
+          36.74483114,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3303,
+        "NOMBRE": "Contenedor ropa Av Santiago Ramon Y Cajal",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE SANTIAGO RAMÓN Y CAJAL, 65 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_629c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44263529,
+          36.70085631,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3291,
+        "NOMBRE": "Contenedor ropa Av Paloma 23",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE LA PALOMA, 23 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_629d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4400422,
+          36.71347104,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3376,
+        "NOMBRE": "Contenedor ropa Cl Horacio Lengo",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE HORACIO LENGO, 13 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_629e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.36297558,
+          36.7201197,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3320,
+        "NOMBRE": "Contenedor ropa Cl Arquitecto Eduardo Esteve",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ARQUITECTO EDUARDO ESTEVE, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_629f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44946562,
+          36.71944475,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3302,
+        "NOMBRE": "Contenedor ropa Av Santa Rosa De Lima 24",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE SANTA ROSA DE LIMA, 24 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62a0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44998185,
+          36.6969225,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3310,
+        "NOMBRE": "Contenedor ropa Cl Alcalde Joaquín Alonso",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ALCALDE JOAQUÍN ALONSO, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62a1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45266189,
+          36.72009997,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3386,
+        "NOMBRE": "Contenedor ropa Cl Juan De Valdés",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE JUAN DE VALDÉS, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62a2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44907942,
+          36.7223009,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3301,
+        "NOMBRE": "Contenedor ropa Av Santa Rosa De Lima 2",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE SANTA ROSA DE LIMA, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62a3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4374935,
+          36.73178619,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3410,
+        "NOMBRE": "Contenedor ropa Cl Nuestra Señora De Los Clarines 25",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE NUESTRA SEÑORA DE LOS CLARINES, 25 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62a4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43946219,
+          36.7297983,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3411,
+        "NOMBRE": "Contenedor ropa Cl Nuestra Señora De Los Clarines 8",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE NUESTRA SEÑORA DE LOS CLARINES, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62a5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44646455,
+          36.69721053,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3378,
+        "NOMBRE": "Contenedor ropa Cl Ildefonso Marzo",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ILDEFONSO MARZO, 15 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62a6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47298915,
+          36.73079069,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3385,
+        "NOMBRE": "Contenedor ropa Cl Juan De Ortega",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DE JUAN DE ORTEGA, 22 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62a7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44827929,
+          36.72317754,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3328,
+        "NOMBRE": "Contenedor ropa Cl Ciprés",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DEL CIPRÉS, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62a8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43097009,
+          36.71284375,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3349,
+        "NOMBRE": "Contenedor ropa Cl Explanada De La Estación",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE EXPLANADA DE LA ESTACIÓN, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62a9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44621445,
+          36.69986863,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3306,
+        "NOMBRE": "Contenedor ropa Av Velázquez",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE VELÁZQUEZ, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62aa",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46453211,
+          36.71602229,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3357,
+        "NOMBRE": "Contenedor ropa Cl Franz Kafka 13",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE FRANZ KAFKA, 13 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62ab",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46217438,
+          36.71697083,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3358,
+        "NOMBRE": "Contenedor ropa Cl Franz Kafka 4",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE FRANZ KAFKA, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62ac",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45610879,
+          36.69751441,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3246,
+        "NOMBRE": "Contenedor ropa Av Antonio Gaudí",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE ANTONIO GAUDÍ, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62ad",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45800616,
+          36.68414117,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3270,
+        "NOMBRE": "Contenedor ropa Av Imperio Argentina",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA IMPERIO ARGENTINA, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62ae",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45670746,
+          36.71011606,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3413,
+        "NOMBRE": "Contenedor ropa Cl Obsidiana",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE OBSIDIANA, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62af",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43926464,
+          36.73053532,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3412,
+        "NOMBRE": "Contenedor ropa Cl Nuestra Señora De Los Clarines 9",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE NUESTRA SEÑORA DE LOS CLARINES, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62b0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43160269,
+          36.72160482,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3253,
+        "NOMBRE": "Contenedor ropa Av Barcelona",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE BARCELONA, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62b1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43267981,
+          36.73713259,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3340,
+        "NOMBRE": "Contenedor ropa Cl Duero",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DUERO, 11 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62b2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42190621,
+          36.71572883,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3331,
+        "NOMBRE": "Contenedor ropa Cl Córdoba",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CÓRDOBA, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62b3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43248493,
+          36.72296146,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3418,
+        "NOMBRE": "Contenedor ropa Cl Pelayo",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE PELAYO, 13 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62b4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42162948,
+          36.74715857,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3342,
+        "NOMBRE": "Contenedor ropa Cl Emilio Thuillier 108",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE EMILIO THUILLIER, 108 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62b5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50126324,
+          36.66659458,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3317,
+        "NOMBRE": "Contenedor ropa Cl Arbol Blanco",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ÁRBOL BLANCO, 43 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62b6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50719589,
+          36.67359622,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3443,
+        "NOMBRE": "Contenedor ropa Cmno Huertecilla",
+        "DESCRIPCION": null,
+        "DIRECCION": "CAMINO HUERTECILLA, 45 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62b7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42196566,
+          36.74424314,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3343,
+        "NOMBRE": "Contenedor ropa Cl Emilio Thuillier 44",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE EMILIO THUILLIER, 44 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62b8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42402087,
+          36.75266396,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3441,
+        "NOMBRE": "Contenedor ropa Cmno Casabermeja",
+        "DESCRIPCION": null,
+        "DIRECCION": "CAMINO DE CASABERMEJA, 15 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62b9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41473678,
+          36.74526163,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3281,
+        "NOMBRE": "Contenedor ropa Av Malaga Oloroso",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA MÁLAGA OLOROSO, 36 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62ba",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.54362164,
+          36.72250505,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3324,
+        "NOMBRE": "Contenedor ropa Cl Bratislava",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE BRATISLAVA, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62bb",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.51020054,
+          36.67438679,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3337,
+        "NOMBRE": "Contenedor ropa Cl Decano Manuel Torriglia",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DECANO MANUEL TORRIGLIA, 26 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62bc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47467338,
+          36.6675545,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3442,
+        "NOMBRE": "Contenedor ropa Cmno Guadalmar A La Loma",
+        "DESCRIPCION": null,
+        "DIRECCION": "CAMINO GUADALMAR A LA LOMA, 7 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62bd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47371267,
+          36.69906347,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3446,
+        "NOMBRE": "Contenedor ropa Cmno Prados De Los",
+        "DESCRIPCION": null,
+        "DIRECCION": "CAMINO DE LOS PRADOS, 12 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62be",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43616823,
+          36.70456446,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3434,
+        "NOMBRE": "Contenedor ropa Cl Tomas Echeverria",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE TOMÁS ECHEVERRÍA, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62bf",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.48032962,
+          36.73759771,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3393,
+        "NOMBRE": "Contenedor ropa Cl Lope De Rueda 61",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE LOPE DE RUEDA, 61 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62c0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4785649,
+          36.73528262,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3394,
+        "NOMBRE": "Contenedor ropa Cl Lope De Rueda 66",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE LOPE DE RUEDA, 66 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62c1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44248304,
+          36.72274206,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3423,
+        "NOMBRE": "Contenedor ropa Cl Rosa",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ROSA, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62c2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47067838,
+          36.72132809,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3293,
+        "NOMBRE": "Contenedor ropa Av Pepita Durán",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE PEPITA DURÁN, 32 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62c3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44062634,
+          36.72270263,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3431,
+        "NOMBRE": "Contenedor ropa Cl Sondalezas",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE SONDALEZAS, 10 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62c4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43440588,
+          36.70624915,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3468,
+        "NOMBRE": "Contenedor ropa Pl Moreno Villa",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA DE MORENO VILLA, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62c5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42252162,
+          36.727541,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3425,
+        "NOMBRE": "Contenedor ropa Cl San Bartolome",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE SAN BARTOLOMÉ, 15 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62c6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43814019,
+          36.71273468,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3475,
+        "NOMBRE": "Contenedor ropa Pso Tilos Los",
+        "DESCRIPCION": null,
+        "DIRECCION": "PASEO DE LOS TILOS, 55 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62c7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.48380565,
+          36.72207142,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3433,
+        "NOMBRE": "Contenedor ropa Cl Tácito",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE TÁCITO, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62c8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41997498,
+          36.74670611,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3428,
+        "NOMBRE": "Contenedor ropa Cl Sánchez Albarrán",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE SÁNCHEZ ALBARRÁN, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62c9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44019994,
+          36.70791147,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3453,
+        "NOMBRE": "Contenedor ropa Cril Cordobesa",
+        "DESCRIPCION": null,
+        "DIRECCION": "CARRIL DE LA CORDOBESA, 14 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62ca",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43460979,
+          36.7286783,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3323,
+        "NOMBRE": "Contenedor ropa Cl Blas De Lezo",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE BLAS DE LEZO, 19 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62cb",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42136155,
+          36.73812077,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3287,
+        "NOMBRE": "Contenedor ropa Av Nuestra Señora De Las Guias",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE NUESTRA SEÑORA DE LAS GUÍAS, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62cc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.34751387,
+          36.7224675,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3455,
+        "NOMBRE": "Contenedor ropa Ctra Olias",
+        "DESCRIPCION": null,
+        "DIRECCION": "CARRETERA DE OLÍAS, 111 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62cd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.36538436,
+          36.72612783,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3300,
+        "NOMBRE": "Contenedor ropa Av San Isidro",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE SAN ISIDRO, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62ce",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50382737,
+          36.66981365,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3444,
+        "NOMBRE": "Contenedor ropa Cmno Nuevo",
+        "DESCRIPCION": null,
+        "DIRECCION": "CAMINO NUEVO, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62cf",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44073185,
+          36.71770924,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3417,
+        "NOMBRE": "Contenedor ropa Cl Pedro Gómez Chaix",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE PEDRO GÓMEZ CHAIX, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62d0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44034908,
+          36.71566349,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3405,
+        "NOMBRE": "Contenedor ropa Cl Monseñor Oscar Romero",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE MONSEÑOR ÓSCAR ROMERO, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62d1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.39657748,
+          36.72320671,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3377,
+        "NOMBRE": "Contenedor ropa Cl Idris",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE IDRIS, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62d2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.38070395,
+          36.73749213,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3384,
+        "NOMBRE": "Contenedor ropa Cl Juan Cabanilles",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE JUAN CABANILLES, 13 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62d3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4096778,
+          36.73570202,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3336,
+        "NOMBRE": "Contenedor ropa Cl Decano Ignacio Alaminos",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DECANO IGNACIO ALAMINOS, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62d4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.49289609,
+          36.72317446,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3263,
+        "NOMBRE": "Contenedor ropa Av Escritor Antonio Soler",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA ESCRITOR ANTONIO SOLER, 17 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62d5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.48238558,
+          36.73726713,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3245,
+        "NOMBRE": "Contenedor ropa Av Andersen",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE ANDERSEN, 22 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62d6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43776907,
+          36.72303709,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3456,
+        "NOMBRE": "Contenedor ropa Pje Begoña",
+        "DESCRIPCION": null,
+        "DIRECCION": "PASAJE BEGOÑA, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62d7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42889366,
+          36.72787803,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3247,
+        "NOMBRE": "Contenedor ropa Av Arroyo De Los Angeles 28",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DEL ARROYO DE LOS ÁNGELES, 28 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62d8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42726768,
+          36.72175127,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3397,
+        "NOMBRE": "Contenedor ropa Cl Mármoles",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE MÁRMOLES, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62d9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42636496,
+          36.72401087,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3268,
+        "NOMBRE": "Contenedor ropa Av Fátima",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE FÁTIMA, 10 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62da",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44089,
+          36.71243059,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3459,
+        "NOMBRE": "Contenedor ropa Pl Cruz De Humilladero",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA CRUZ DE HUMILLADERO, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62db",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43761325,
+          36.72862462,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3399,
+        "NOMBRE": "Contenedor ropa Cl Marqués De Ovieco",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE MARQUÉS DE OVIECO, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62dc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4520421,
+          36.69530717,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3452,
+        "NOMBRE": "Contenedor ropa Cril Conde",
+        "DESCRIPCION": null,
+        "DIRECCION": "CARRIL DEL CONDE, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62dd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43997601,
+          36.72104368,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3457,
+        "NOMBRE": "Contenedor ropa Pl Aparejador Federico Bermúdez",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA APAREJADOR FEDERICO BERMÚDEZ, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62de",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45285662,
+          36.68313791,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3419,
+        "NOMBRE": "Contenedor ropa Cl Pilar Lorengar",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE PILAR LORENGAR, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62df",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4288256,
+          36.72749376,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3248,
+        "NOMBRE": "Contenedor ropa Av Arroyo De Los Ángeles 5",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DEL ARROYO DE LOS ÁNGELES, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62e0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41254953,
+          36.72712322,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3352,
+        "NOMBRE": "Contenedor ropa Cl Ferrandiz 18",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE FERRÁNDIZ, 18 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62e1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44764426,
+          36.73088565,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3312,
+        "NOMBRE": "Contenedor ropa Cl Alcalde José Luis Estrada",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ALCALDE JOSÉ LUIS ESTRADA, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62e2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43572297,
+          36.73054539,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3249,
+        "NOMBRE": "Contenedor ropa Av Arroyo De Los Ángeles 83",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DEL ARROYO DE LOS ÁNGELES, 83 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62e3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.40648917,
+          36.72734195,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3353,
+        "NOMBRE": "Contenedor ropa Cl Ferrandiz 74",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE FERRÁNDIZ, 74 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62e4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.36174521,
+          36.72018864,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3294,
+        "NOMBRE": "Contenedor ropa Av Pío Baroja 24",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE PÍO BAROJA, 24 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62e5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.35537524,
+          36.72053841,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3314,
+        "NOMBRE": "Contenedor ropa Cl Almeria",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ALMERÍA, 65 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62e6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41988491,
+          36.73884918,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3261,
+        "NOMBRE": "Contenedor ropa Av Cibeles",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE LA CIBELES, 10 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62e7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.36935261,
+          36.72554573,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3315,
+        "NOMBRE": "Contenedor ropa Cl Amador De Los Rios",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE AMADOR DE LOS RÍOS, 23 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62e8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.36485355,
+          36.72054384,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3295,
+        "NOMBRE": "Contenedor ropa Av Pio Baroja 5",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE PÍO BAROJA, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62e9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47429962,
+          36.72467785,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3407,
+        "NOMBRE": "Contenedor ropa Cl Navarro Ledesma 148",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE NAVARRO LEDESMA, 148 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62ea",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46473214,
+          36.66932648,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3364,
+        "NOMBRE": "Contenedor ropa Cl Guadalhorce",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE GUADALHORCE, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62eb",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42498133,
+          36.71565209,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3244,
+        "NOMBRE": "Contenedor ropa Almd Colón",
+        "DESCRIPCION": null,
+        "DIRECCION": "ALAMEDA DE COLÓN, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62ec",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43869445,
+          36.70550167,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3367,
+        "NOMBRE": "Contenedor ropa Cl Héroe De Sostoa 128",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE HÉROE DE SOSTOA, 128 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62ed",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44223376,
+          36.7026508,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3369,
+        "NOMBRE": "Contenedor ropa Cl Héroe De Sostoa 170",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE HÉROE DE SOSTOA, 170 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62ee",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44380135,
+          36.72505029,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3395,
+        "NOMBRE": "Contenedor ropa Cl Maestro Pablo Luna",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE MAESTRO PABLO LUNA, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62ef",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47969731,
+          36.72479284,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3408,
+        "NOMBRE": "Contenedor ropa Cl Navarro Ledesma 166",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE NAVARRO LEDESMA, 166 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62f0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47912416,
+          36.72168067,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3297,
+        "NOMBRE": "Contenedor ropa Av Plutarco 59",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE PLUTARCO, 59 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62f1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45179556,
+          36.71004764,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3274,
+        "NOMBRE": "Contenedor ropa Av José Ortega Y Gasset 115",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE JOSÉ ORTEGA Y GASSET, 115 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62f2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4690366,
+          36.72185779,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3414,
+        "NOMBRE": "Contenedor ropa Cl Pablo Gargallo",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE PABLO GARGALLO, 8 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62f3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47611952,
+          36.72095933,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3296,
+        "NOMBRE": "Contenedor ropa Av Plutarco 26",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE PLUTARCO, 26 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62f4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44290647,
+          36.72572783,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3383,
+        "NOMBRE": "Contenedor ropa Cl Jose Iturbi",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DE JOSÉ ITURBI, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62f5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46878292,
+          36.72495957,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3390,
+        "NOMBRE": "Contenedor ropa Cl Juana Castro",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE JUANA CASTRO, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62f6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4627232,
+          36.69432092,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3363,
+        "NOMBRE": "Contenedor ropa Cl Gonzalo Torrente Ballester",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE GONZALO TORRENTE BALLESTER, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62f7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45755914,
+          36.69412759,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3271,
+        "NOMBRE": "Contenedor ropa Av Isaac Peral",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE ISAAC PERAL, 27 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62f8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45421872,
+          36.71971386,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3466,
+        "NOMBRE": "Contenedor ropa Pl José Bergamín",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA JOSÉ BERGAMÍN, 12 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62f9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4504712,
+          36.71320157,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3333,
+        "NOMBRE": "Contenedor ropa Cl Corregidor Francisco De Molina",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CORREGIDOR FRANCISCO DE MOLINA, 10 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62fa",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46295287,
+          36.73171349,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3329,
+        "NOMBRE": "Contenedor ropa Cl Cirilo Salinas",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CIRILO SALINAS, 26 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62fb",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46046255,
+          36.72556198,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3409,
+        "NOMBRE": "Contenedor ropa Cl Navarro Ledesma 3",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE NAVARRO LEDESMA, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62fc",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45732041,
+          36.72533297,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3257,
+        "NOMBRE": "Contenedor ropa Av Carlos De Haya 202",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA CARLOS DE HAYA, 202 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62fd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44600102,
+          36.72205582,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3258,
+        "NOMBRE": "Contenedor ropa Av Carlos De Haya 58",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA CARLOS DE HAYA, 58 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62fe",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45289088,
+          36.72304274,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3256,
+        "NOMBRE": "Contenedor ropa Av Carlos De Haya 105",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA CARLOS DE HAYA, 105 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_62ff",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44793648,
+          36.72243321,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3259,
+        "NOMBRE": "Contenedor ropa Av Carlos De Haya 76",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA CARLOS DE HAYA, 76 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6300",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46245269,
+          36.71967983,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3273,
+        "NOMBRE": "Contenedor ropa Av Jorge Luis Borges",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE JORGE LUIS BORGES, 17 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6301",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44672717,
+          36.7109859,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3275,
+        "NOMBRE": "Contenedor ropa Av Jose Ortega Y Gasset 43",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE JOSÉ ORTEGA Y GASSET, 43 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6302",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41821961,
+          36.74808423,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3429,
+        "NOMBRE": "Contenedor ropa Cl Sancho Miranda",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE SANCHO MIRANDA, 22 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6303",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41596539,
+          36.73339802,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3470,
+        "NOMBRE": "Contenedor ropa Pl Olletas",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA DE OLLETAS, 7 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6304",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.34891162,
+          36.71729509,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3299,
+        "NOMBRE": "Contenedor ropa Av Salvador Allende",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE SALVADOR ALLENDE, 338 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6305",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44565844,
+          36.69435122,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3355,
+        "NOMBRE": "Contenedor ropa Cl Francisco Jimenez Lomas",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE FRANCISCO JIMÉNEZ LOMAS, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6306",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44528373,
+          36.69897871,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3365,
+        "NOMBRE": "Contenedor ropa Cl Guadiaro",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE GUADIARO, 14 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6307",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.40311397,
+          36.73236194,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3430,
+        "NOMBRE": "Contenedor ropa Cl Sierra De Grazalema",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE SIERRA DE GRAZALEMA, 34 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6308",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.35904128,
+          36.72426803,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3437,
+        "NOMBRE": "Contenedor ropa Cl Villafuerte",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE VILLAFUERTE, 44 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6309",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50562136,
+          36.65936642,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3403,
+        "NOMBRE": "Contenedor ropa Cl Mercedes Formica",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE MERCEDES FÓRMICA, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_630a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42450325,
+          36.71800641,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3321,
+        "NOMBRE": "Contenedor ropa Cl Atarazanas",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ATARAZANAS, 10 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_630b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43306709,
+          36.70992787,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3368,
+        "NOMBRE": "Contenedor ropa Cl Héroe De Sostoa 14",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE HÉROE DE SOSTOA, 14 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_630c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45000905,
+          36.7225724,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3260,
+        "NOMBRE": "Contenedor ropa Av Carlos De Haya 79",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA CARLOS DE HAYA, 79 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_630d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50141069,
+          36.66216202,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3396,
+        "NOMBRE": "Contenedor ropa Cl Maestro Serrano",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE MAESTRO SERRANO, 83 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_630e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.51234315,
+          36.66741698,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3346,
+        "NOMBRE": "Contenedor ropa Cl Escritora Carmen Bravo-Villasante",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ESCRITORA CARMEN BRAVO-VILLASANTE, 12 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_630f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4359457,
+          36.71880915,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3373,
+        "NOMBRE": "Contenedor ropa Cl Hilera 26",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE HILERA, 26 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6310",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45460383,
+          36.69851063,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3264,
+        "NOMBRE": "Contenedor ropa Av Europa 117",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE EUROPA, 117 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6311",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45179238,
+          36.70051125,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3266,
+        "NOMBRE": "Contenedor ropa Av Europa 68",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE EUROPA, 60 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6312",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45292554,
+          36.69955091,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3267,
+        "NOMBRE": "Contenedor ropa Av Europa 99",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE EUROPA, 99 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6313",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43396298,
+          36.73390843,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3304,
+        "NOMBRE": "Contenedor ropa Av Simón Bolívar",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE SIMÓN BOLÍVAR, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6314",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45206351,
+          36.68882554,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3445,
+        "NOMBRE": "Contenedor ropa Cmno Pato Del",
+        "DESCRIPCION": null,
+        "DIRECCION": "CAMINO DEL PATO, 32 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6315",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42524531,
+          36.72328843,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3427,
+        "NOMBRE": "Contenedor ropa Cl San Rafael",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE SAN RAFAEL, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6316",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42816409,
+          36.71796331,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3374,
+        "NOMBRE": "Contenedor ropa Cl Hilera 6",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE HILERA, 6 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6317",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4343257,
+          36.71930592,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3371,
+        "NOMBRE": "Contenedor ropa Cl Hilera 13",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE HILERA, 13 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6318",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44713062,
+          36.71404131,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3440,
+        "NOMBRE": "Contenedor ropa Cl Virgen De La Fuensanta",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE VIRGEN DE LA FUENSANTA, 48 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6319",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43551923,
+          36.70185389,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3325,
+        "NOMBRE": "Contenedor ropa Cl Cañizares",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CAÑIZARES, 7 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_631a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44035166,
+          36.69376016,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3415,
+        "NOMBRE": "Contenedor ropa Cl Pacífico 35",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE PACÍFICO, 35 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_631b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44976743,
+          36.70142389,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3265,
+        "NOMBRE": "Contenedor ropa Av Europa 52",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE EUROPA, 52 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_631c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44282225,
+          36.68966601,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3416,
+        "NOMBRE": "Contenedor ropa Cl Pacífico 57",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE PACÍFICO, 57 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_631d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41110335,
+          36.71775208,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3422,
+        "NOMBRE": "Contenedor ropa Cl Reding",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE REDING, 17 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_631e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43109706,
+          36.71882244,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3370,
+        "NOMBRE": "Contenedor ropa Cl Hilera 10",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE HILERA, 10 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_631f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44089326,
+          36.70937197,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3421,
+        "NOMBRE": "Contenedor ropa Cl Reboul",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE REBOUL, 34 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6320",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.40776245,
+          36.72084402,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3474,
+        "NOMBRE": "Contenedor ropa Pso Reding",
+        "DESCRIPCION": null,
+        "DIRECCION": "PASEO DE REDING, 24 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6321",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.49881842,
+          36.66234803,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3345,
+        "NOMBRE": "Contenedor ropa Cl Escritor Julio Balbas",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DEL ESCRITOR JULIO BALBAS, 24 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6322",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50315797,
+          36.66936818,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3462,
+        "NOMBRE": "Contenedor ropa Pl Inmaculada",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA DE LA INMACULADA, 14 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6323",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42107672,
+          36.74085162,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3460,
+        "NOMBRE": "Contenedor ropa Pl Francisco López López",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA FRANCISCO LÓPEZ LÓPEZ, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6324",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42374282,
+          36.75005841,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3465,
+        "NOMBRE": "Contenedor ropa Pl John F. Kennedy",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA DE JOHN F. KENNEDY, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6325",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41010658,
+          36.71886885,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3326,
+        "NOMBRE": "Contenedor ropa Cl Cervantes",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE CERVANTES, 14 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6326",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41680932,
+          36.75090863,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3398,
+        "NOMBRE": "Contenedor ropa Cl Marqués De Mantua",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DEL MARQUÉS DE MANTUA, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6327",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.39735283,
+          36.73239918,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3255,
+        "NOMBRE": "Contenedor ropa Av Caballerizas Las",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE LAS CABALLERIZAS, 31 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6328",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.38580747,
+          36.72714859,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3351,
+        "NOMBRE": "Contenedor ropa Cl Federico Fellini 85",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE FEDERICO FELLINI, 85 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6329",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.37905421,
+          36.7359275,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3389,
+        "NOMBRE": "Contenedor ropa Cl Juan Vázquez",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE JUAN VÁZQUEZ, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_632a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.38954483,
+          36.72747476,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3350,
+        "NOMBRE": "Contenedor ropa Cl Federico Fellini 34",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE FEDERICO FELLINI, 34 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_632b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42927432,
+          36.73097246,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3360,
+        "NOMBRE": "Contenedor ropa Cl Godino  4",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE GODINO, 4 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_632c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42982926,
+          36.73304164,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3361,
+        "NOMBRE": "Contenedor ropa Cl Godino 20",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE GODINO, 30 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_632d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43283949,
+          36.71967489,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3372,
+        "NOMBRE": "Contenedor ropa Cl Hilera 14",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE HILERA, 14 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_632e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44246783,
+          36.72765634,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3400,
+        "NOMBRE": "Contenedor ropa Cl Martinez De La Rosa",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE MARTÍNEZ DE LA ROSA, 167 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_632f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46053275,
+          36.72014252,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3471,
+        "NOMBRE": "Contenedor ropa Pl Pintor Sandro Botticelli",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA DEL PINTOR SANDRO BOTTICELLI, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6330",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46378778,
+          36.71031639,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3366,
+        "NOMBRE": "Contenedor ropa Cl Hamlet",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE HAMLET, 24 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6331",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43146056,
+          36.72427866,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3458,
+        "NOMBRE": "Contenedor ropa Pl Bailén",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA BAILÉN, 11 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6332",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5493521,
+          36.72760631,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3379,
+        "NOMBRE": "Contenedor ropa Cl Jacob",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE JACOB, 32 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6333",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44966832,
+          36.69431745,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3469,
+        "NOMBRE": "Contenedor ropa Pl Mozart",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA DE MOZART, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6334",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42877735,
+          36.72668035,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3339,
+        "NOMBRE": "Contenedor ropa Cl Don Juan De Austria",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DON JUAN DE AUSTRIA, 43 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6335",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45028565,
+          36.6989639,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3359,
+        "NOMBRE": "Contenedor ropa Cl Gaucín",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE GAUCÍN, 24 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6336",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4524683,
+          36.69661266,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3280,
+        "NOMBRE": "Contenedor ropa Av Luz De La",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE LA LUZ, 14 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6337",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43861627,
+          36.7135396,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3404,
+        "NOMBRE": "Contenedor ropa Cl Merlo",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE MERLO, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6338",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47603786,
+          36.71913974,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3344,
+        "NOMBRE": "Contenedor ropa Cl Eolo",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DE EOLO, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6339",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43537977,
+          36.72136137,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3401,
+        "NOMBRE": "Contenedor ropa Cl Martínez Maldonado",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE MARTÍNEZ MALDONADO, 45 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_633a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44102576,
+          36.69859177,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3436,
+        "NOMBRE": "Contenedor ropa Cl Vicente Aleixandre",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE VICENTE ALEIXANDRE, 50 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_633b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42856632,
+          36.73013199,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3262,
+        "NOMBRE": "Contenedor ropa Av Doctor Marañón",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DEL DOCTOR MARAÑÓN, 23 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_633c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45496618,
+          36.70491018,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3286,
+        "NOMBRE": "Contenedor ropa Av Nehemías",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE NEHEMÍAS, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_633d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.53832836,
+          36.72308698,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3402,
+        "NOMBRE": "Contenedor ropa Cl Matisse",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DE MATISSE, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_633e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44032516,
+          36.7035392,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3308,
+        "NOMBRE": "Contenedor ropa Cl Abogado Federico Orellana Toledano",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ABOGADO FEDERICO ORELLANA TOLEDANO, 20 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_633f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.50248662,
+          36.66336091,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3338,
+        "NOMBRE": "Contenedor ropa Cl Doctor Ramos Acosta",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DOCTOR RAMOS ACOSTA, 20 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6340",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44378981,
+          36.72891439,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3309,
+        "NOMBRE": "Contenedor ropa Cl Albacete",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE ALBACETE, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6341",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42814911,
+          36.71574413,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3251,
+        "NOMBRE": "Contenedor ropa Av Aurora 5",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE LA AURORA, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6342",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43797762,
+          36.71830079,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3288,
+        "NOMBRE": "Contenedor ropa Av Obispo Ángel Herrera Oria",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DEL OBISPO ÁNGEL HERRERA ORIA, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6343",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43912396,
+          36.71529449,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3252,
+        "NOMBRE": "Contenedor ropa Av Aurora 61",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE LA AURORA, 61 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6344",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.47015881,
+          36.73113542,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3250,
+        "NOMBRE": "Contenedor ropa Av Atabal",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DEL ATABAL, 3 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6345",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44395465,
+          36.70989944,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3447,
+        "NOMBRE": "Contenedor ropa Cmno San Rafael 23",
+        "DESCRIPCION": null,
+        "DIRECCION": "CAMINO DE SAN RAFAEL, 23 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6346",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.56871281,
+          36.73286244,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3435,
+        "NOMBRE": "Contenedor ropa Cl Travesía De Maqueda",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE TRAVESÍA DE MAQUEDA, 60 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6347",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.48190628,
+          36.71994932,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3420,
+        "NOMBRE": "Contenedor ropa Cl Píndaro",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE PÍNDARO, 10 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6348",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46446705,
+          36.72356956,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3327,
+        "NOMBRE": "Contenedor ropa Cl Charles Dickens",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE DE CHARLES DICKENS, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6349",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.46375779,
+          36.7268685,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3467,
+        "NOMBRE": "Contenedor ropa Pl Manos Unidas",
+        "DESCRIPCION": null,
+        "DIRECCION": "PLAZA MANOS UNIDAS, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_634a",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.53385187,
+          36.72087338,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3449,
+        "NOMBRE": "Contenedor ropa Cmno Santa Inés",
+        "DESCRIPCION": null,
+        "DIRECCION": "CAMINO SANTA INÉS, 12 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_634b",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43830008,
+          36.72751623,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3451,
+        "NOMBRE": "Contenedor ropa Cmno Suárez 22",
+        "DESCRIPCION": null,
+        "DIRECCION": "CAMINO DE SUÁREZ, 22 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_634c",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44307707,
+          36.69492315,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3305,
+        "NOMBRE": "Contenedor ropa Av Sor Teresa Prat",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE SOR TERESA PRAT, 63 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_634d",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43688408,
+          36.72733526,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3450,
+        "NOMBRE": "Contenedor ropa Cmno Suárez 10",
+        "DESCRIPCION": null,
+        "DIRECCION": "CAMINO DE SUÁREZ, 10 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_634e",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.44753855,
+          36.70818092,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3448,
+        "NOMBRE": "Contenedor ropa Cmno San Rafael 52",
+        "DESCRIPCION": null,
+        "DIRECCION": "CAMINO DE SAN RAFAEL, 52 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_634f",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.41858743,
+          36.75262532,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3432,
+        "NOMBRE": "Contenedor ropa Cl Sor Juana Inés De La Cruz",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE SOR JUANA INÉS DE LA CRUZ, 2 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6350",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42672246,
+          36.73792705,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3289,
+        "NOMBRE": "Contenedor ropa Av Palmilla 15",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE LA PALMILLA, 16 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6351",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42237412,
+          36.73410696,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3426,
+        "NOMBRE": "Contenedor ropa Cl San Juan Bosco",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE SAN JUAN BOSCO, 49 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6352",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42018905,
+          36.72974102,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3243,
+        "NOMBRE": "Contenedor ropa Almd Capuchinos",
+        "DESCRIPCION": null,
+        "DIRECCION": "ALAMEDA DE CAPUCHINOS, 12 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6353",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4552255,
+          36.69375939,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3307,
+        "NOMBRE": "Contenedor ropa Av Virgen De Belén",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE LA VIRGEN DE BELÉN, 5 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6354",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.42747301,
+          36.73565955,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3290,
+        "NOMBRE": "Contenedor ropa Av Palmilla 8",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE LA PALMILLA, 9 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6355",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4490112,
+          36.68827314,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3269,
+        "NOMBRE": "Contenedor ropa Av Gregorio Diego",
+        "DESCRIPCION": null,
+        "DIRECCION": "AVENIDA DE GREGORIO DIEGO, 46 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "da_medioAmbiente_contenedoresRopa.fid--3b3f458b_19e52aca7b5_6356",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.45357645,
+          36.69181075,
+          0
+        ]
+      },
+      "geometry_name": "SDOGEOMETRIA",
+      "properties": {
+        "ID": 3438,
+        "NOMBRE": "Contenedor ropa Cl Viña Del Mar",
+        "DESCRIPCION": null,
+        "DIRECCION": "CALLE VIÑA DEL MAR, 1 ",
+        "URL": null,
+        "EMAIL": null,
+        "CONTACTO": null,
+        "HORARIOS": null,
+        "PRECIOS": null,
+        "TITULARIDAD": "MUNICIPAL",
+        "TARJETAJOVEN": "No",
+        "ACCESOPMR": "No",
+        "INFOESP": null
+      }
+    }
+  ],
+  "totalFeatures": 233,
+  "numberMatched": 233,
+  "numberReturned": 233,
+  "timeStamp": "2026-05-23T02:53:47.717Z",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::4326"
+    }
+  }
+}

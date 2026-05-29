@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Montes de Málaga",
+        "ods": 15,
+        "type": "parque natural"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.3899, 36.7486]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jardín Botánico La Concepción",
+        "ods": 15,
+        "type": "jardín botánico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4198, 36.7480]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parque de Málaga",
+        "ods": 15,
+        "type": "parque urbano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4213, 36.7190]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parque Forestal Laguna de la Barrera",
+        "ods": 15,
+        "type": "parque forestal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.4630, 36.7235]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parque del Morlaco",
+        "ods": 15,
+        "type": "parque forestal urbano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.3905, 36.7162]
+      }
+    }
+  ]
+}

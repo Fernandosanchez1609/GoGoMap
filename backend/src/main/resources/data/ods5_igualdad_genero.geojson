@@ -1,0 +1,122 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Centro Provincial Instituto Andaluz de la Mujer",
+        "address": "CALLE SAN JACINTO",
+        "description": "Recurso de igualdad y apoyo a mujeres",
+        "odsId": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.42725122, 36.71878375]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Deméter por la igualdad",
+        "address": "CALLE BOLIVIA",
+        "description": "Asociación de igualdad",
+        "odsId": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.37789758, 36.72165962]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Violencia cero",
+        "address": "CALLE SAN JUAN BOSCO",
+        "description": "Apoyo y sensibilización contra la violencia de género",
+        "odsId": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.42200913, 36.73358087]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Asociacion Circulo de mujeres",
+        "address": "CALLE HERRERA",
+        "description": "Asociación de mujeres",
+        "odsId": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.36679116, 36.72160373]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Asociacion cultural de mujeres ciudad del paraiso",
+        "address": "CALLE SALESIANOS",
+        "description": "Asociación cultural femenina",
+        "odsId": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.42354551, 36.73478716]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Aosciacion cultural de mujeres de Portada",
+        "address": "CALLE LUIS F PALLARDO PEINADO",
+        "description": "Asociación de mujeres",
+        "odsId": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.44993905, 36.71603402]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Asociacion Cultural de Mujeres El Embrujo",
+        "address": "CALLE FEDERICO GARCIA LORCA",
+        "description": "Asociación cultural femenina",
+        "odsId": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.44245961, 36.70176265]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Asociacion cultural de mujeres Flores del Monte",
+        "address": "CALLE PITAS",
+        "description": "Asociación cultural femenina",
+        "odsId": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.41825531, 36.74254956]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Asociación Mujer Emancipada",
+        "address": "CALLE TRINIDAD GRUND",
+        "description": "Asociación de apoyo e igualdad",
+        "odsId": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-4.42287324, 36.71684758]
+      }
+    }
+  ]
+}

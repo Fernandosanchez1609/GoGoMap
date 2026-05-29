@@ -1,0 +1,43 @@
+# =========================
+# 1. Secretos y Entornos (CRÍTICO)
+# =========================
+.env
+backend/.env
+frontend/.env
+
+# =========================
+# 2. Frontend (Node / React)
+# =========================
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-error.log*
+
+# =========================
+# 3. Backend (Java / Spring Boot)
+# =========================
+backend/target/
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# =========================
+# 4. Archivos Comprimidos
+# =========================
+*.zip
+*.tar.gz
+*.rar
+
+# =========================
+# 5. IDEs y Sistema Operativo
+# =========================
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
