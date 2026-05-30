@@ -352,13 +352,14 @@ export default function MapPage() {
   }, [points, selectedOds, debouncedRadius, userPosition]);
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen ">
       <Header />
       <Filter selected={selectedOds} onSelect={setSelectedOds} />
 
       {userPosition && (
-        <div className="flex items-center gap-4 px-4 py-2 bg-white border-b border-gray-200 text-sm">
-          <div className="flex items-center gap-2 flex-1">
+        //<div className="flex items-center gap-4 px-4 py-2 bg-white border-b border-gray-200 text-sm">
+        <div className="flex items-center gap-4 px-4 py-2 bg-app-bg border-b border-gray-200 text-sm">
+          <div className="flex items-center gap-2 flex-1 ">
             <span className="text-gray-600 whitespace-nowrap">Radio:</span>
             <input
               type="range"
