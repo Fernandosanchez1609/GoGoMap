@@ -15,7 +15,7 @@ import { fetchOsrmRoute } from "@/utils/map";
 
 export default function MapPage() {
   const [userPosition, setUserPosition] = useState<[number, number] | null>(null);
-  const [selectedOds, setSelectedOds] = useState<number | null>(null);
+  const [selectedOds, setSelectedOds] = useState<number | null>(1);
   const [radiusKm, setRadiusKm] = useState<number>(5);
   const [debouncedRadius] = useDebounce(radiusKm, 150);
   const [geoError, setGeoError] = useState<string | null>(null);
