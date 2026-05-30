@@ -9,7 +9,7 @@ import { useState } from 'react'
 
 
 // Fondo
-const bgBase = "fixed inset-0 -z-10 bg-gradient-to-tr from-sdg-13 via-sdg-15 to-text-muted]"
+const bgBase = "fixed inset-0 -z-10 bg-gradient-to-tr from-[#050f06] via-[#0f2e10] to-[#1a4d1c]"
 
 // Blobs
 const blobBase = "absolute rounded-full blur-[55px] animate-pulse"
@@ -79,7 +79,7 @@ export default function GoGomapOnboarding() {
                 <Features />
                 <OdsShowcase />
                 <HowItWorks />
-                <KarmaCallout />
+                {/* <KarmaCallout /> */}
             </main>
             <Footer />
         </div>

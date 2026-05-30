@@ -1,6 +1,5 @@
 import Button from './Button'
 import { Globe } from 'lucide-react'
-import HowItWorks from './HowItWorks'
 
 // Sección
 const section = "relative px-6 pt-20 pb-4 flex flex-col items-center text-center gap-8"
@@ -49,7 +48,7 @@ export default function Hero() {
       {/* Botones */}
       <div className={buttons}>
         <Button label="Entrar a la App" href="/login" variant="primary" />
-        <Button label="¿Cómo funciona?" href="#how-it-works" variant="primary" onClick={HowItWorks} />
+        <Button label="¿Cómo funciona?" href="#how-it-works" variant="primary" />
       </div>
 
       {/* Imagen */}

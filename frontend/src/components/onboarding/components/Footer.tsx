@@ -1,14 +1,16 @@
 
 
 // Footer
-const footer = "relative px-6 py-10 border-t border-white/10 bg-black/10 backdrop-blur-md"
+const footer = "relative px-6 py-10 border-t border-white/10 bg-black/10 backdrop-blur-xl"
 
 // Inner
 const inner = "flex flex-col items-center gap-6 max-w-sm mx-auto text-center"
 
-// Logo
-const logoBase = "flex items-center gap-2 text-primary font-bold text-xl"
-const logoImg = "h-15 w-auto"
+// Logo wrapper
+const logoWrapper = "flex flex-col items-center"
+const logoContainer = "relative flex items-center justify-center"
+const logoGlow = "absolute w-32 h-32 rounded-full bg-white/30 blur-2xl"
+const logoImg = "relative h-16 w-auto drop-shadow-lg"
 
 // Links
 const links = "flex flex-wrap justify-center gap-6"
@@ -23,8 +25,11 @@ export default function Footer() {
       <div className={inner}>
 
         {/* Logo */}
-        <div className={logoBase}>
-          <img src="assets/Logo.svg" alt="Logo GoGoMap" className={logoImg} />
+        <div className={logoWrapper}>
+          <div className={logoContainer}>
+            <div className={logoGlow} />
+              <img src="assets/Logo.svg" alt="Logo GoGoMap" className={logoImg} />
+          </div>
         </div>
 
         {/* Links */}
@@ -32,7 +37,6 @@ export default function Footer() {
           <a href="#features" className={link}>Funciones</a>
           <a href="#ods" className={link}>ODS</a>
           <a href="#how-it-works" className={link}>Cómo funciona</a>
-          <a href="#karma" className={link}>Karma</a>
         </nav>
 
         {/* Copy */}

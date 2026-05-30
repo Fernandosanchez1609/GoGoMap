@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const header = "bg-white px-4 pt-5 pb-3 flex items-center w-full"
+const header = "bg-app-bg px-4 pt-5 pb-3 flex items-center w-full"
 const logoBase = "flex items-center gap-2 text-primary font-bold text-xl mx-auto"
 const logoImg = "h-15"
 const texto = "h-5"

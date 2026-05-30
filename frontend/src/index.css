@@ -5,6 +5,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -20,6 +24,7 @@
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
+  --ruleta: oklch(61.834% 0.14008 49.168);
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -225,7 +230,6 @@
 
 body {
   margin: 0;
-  background-color: transparent;
   color: #dee4d9;
   overflow-x: hidden;
 }
@@ -248,8 +252,10 @@ body {
   --color-chart-1: var(--chart-1);
   --color-ring: var(--ring);
   --color-input: var(--input);
+  --color-text-h: var(--text-h);
   --color-border: var(--border);
   --color-destructive: var(--destructive);
+  --color-ruleta: var(--ruleta);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
   --color-muted-foreground: var(--muted-foreground);
@@ -271,6 +277,9 @@ body {
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  
+  --color-app-bg:              #F5F0E8;
+
 }
 
 .dark {
@@ -305,6 +314,7 @@ body {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --ruleta: oklch(61.834% 0.14008 49.168);
 }
 
 @layer base {
@@ -313,9 +323,7 @@ body {
   }
 
   body {
-    @apply bg-background text-foreground;
-  }
-
+    @apply text-foreground;}
   html {
     @apply font-sans;
   }
