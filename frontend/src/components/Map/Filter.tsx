@@ -7,7 +7,7 @@ export default function Filter({ selected, onSelect }: FilterProps) {
   const ods = Array.from({ length: 17 }, (_, i) => i + 1);
 
   return (
-    <section className="bg-white px-4 pt-4 pb-6 shadow-lg z-10">
+    <section className="bg-app-bg px-4 pt-4 pb-6 shadow-lg z-10">
       
       <div className="flex gap-4 overflow-x-auto overflow-y-visible pb-2 pt-2 px-1">
         {ods.map((n) => (

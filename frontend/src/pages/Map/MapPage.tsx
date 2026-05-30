@@ -12,6 +12,7 @@ import MapAlerts from "@/components/Map/MapAlerts";
 import MapView from "@/components/Map/MapView";
 import PointDetailModal from "@/components/Map/PointDetailModal";
 import { fetchOsrmRoute } from "@/utils/map";
+import Filter from "@/components/Map/Filter";
 
 export default function MapPage() {
   const [userPosition, setUserPosition] = useState<[number, number] | null>(null);
@@ -131,17 +132,33 @@ export default function MapPage() {
   }, [points, selectedOds, debouncedRadius, userPosition]);
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen ">
       <Header />
-      <MapControls
-        selectedOds={selectedOds}
-        onSelect={setSelectedOds}
-        radiusKm={radiusKm}
-        onRadiusChange={setRadiusKm}
-        visibleCount={visiblePoints.length}
-        onCenterClick={centerOnUser}
-        hasUserPosition={Boolean(userPosition)}
-      />
+      <Filter selected={selectedOds} onSelect={setSelectedOds} />
+
+      {userPosition && (
+        //<div className="flex items-center gap-4 px-4 py-2 bg-white border-b border-gray-200 text-sm">
+        <div className="flex items-center gap-4 px-4 py-2 bg-app-bg border-b border-gray-200 text-sm">
+          <div className="flex items-center gap-2 flex-1 ">
+            <span className="text-gray-600 whitespace-nowrap">Radio:</span>
+            <input
+              type="range"
+              min={0.5}
+              max={30}
+              step={0.5}
+              value={radiusKm}
+              onChange={(e) => setRadiusKm(Number(e.target.value))}
+              className="flex-1 accent-blue-500"
+            />
+            <span className="text-gray-800 font-medium whitespace-nowrap w-12">
+              {radiusKm} km
+            </span>
+          </div>
+          <span className="font-semibold text-gray-800 whitespace-nowrap">
+            {visiblePoints.length}
+          </span>
+        </div>
+      )}
 
       <div className="relative flex-1 min-h-0 overflow-hidden">
         <MapAlerts

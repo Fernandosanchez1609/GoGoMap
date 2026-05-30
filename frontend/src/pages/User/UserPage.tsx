@@ -54,10 +54,10 @@ export default function UserPage() {
 
         {/* Nombre */}
         <div className="w-full bg-white rounded-2xl px-5 py-4 shadow-sm">
-          <p className="text-xs font-semibold text-primary-container uppercase tracking-widest mb-2">
+          <p className="text-xs font-semibold text-text-h uppercase tracking-widest mb-2">
             Nombre De usuario
           </p>
-          <div className="flex items-center gap-3 text-app-text-dark font-medium">
+          <div className="flex items-center gap-3 text-text-h font-medium">
             <User size={18} className="text-sdg-13 opacity-60" />
             {userData.name}
           </div>
@@ -65,19 +65,18 @@ export default function UserPage() {
 
         {/* Email */}
         <div className="w-full bg-white rounded-2xl px-5 py-4 shadow-sm">
-          <p className="text-xs font-semibold text-sdg-13 uppercase tracking-widest mb-2">
+          <p className="text-xs font-semibold text-text-h uppercase tracking-widest mb-2">
             Correo Electrónico
           </p>
-          <div className="flex items-center gap-3 text-app-text-dark font-medium">
-            <Mail size={18} className="text-sdg-13 opacity-60" />
+          <div className="flex items-center gap-3 text-[#1a2e1c] font-medium">
+            <Mail size={18} className="text-text-h opacity-60" />
             {userData.email}
           </div>
         </div>
 
         <button
           onClick={() => setShowWeal(true)}
-          className="w-full flex items-center justify-center gap-2 py-4 rounded-full text-white font-semibold text-base shadow-lg transition-all duration-200 active:scale-95"
-          style={{ backgroundColor: "var(--app-orange)" }}
+          className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-destructive text-white font-semibold text-base shadow-lg shadow-orange-400/25 hover:bg-[#e09510] active:scale-95 transition-all duration-200"
         >
           <Gift size={18} />
           Girar la ruleta
@@ -89,7 +88,7 @@ export default function UserPage() {
             logout();
             navigate("/login", { replace: true });
           }}
-          className="w-full flex items-center justify-center gap-2 py-4 rounded-full border-2 border-red-500 text-red-500 font-semibold text-base hover:bg-red-500 hover:text-white transition-all duration-200 mt-1"
+          className="w-full flex items-center justify-center gap-2 py-4 rounded-full border-2 border-sdg-17 bg-ruleta text-sdg-17 font-semibold text-base hover:bg-sdg-17 hover:text-white transition-all duration-200 mt-1"
         >
           <LogOut size={16} />
           Cerrar Sesión
