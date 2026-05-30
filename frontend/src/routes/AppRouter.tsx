@@ -45,8 +45,7 @@ export default function AppRouter() {
           </RedirectIfAuthenticated>
         }
       />
-      <Route path="/errorpage" element={<ErrorPage />} />
-      <Route path="/errorpage404" element={<ErrorPage404 />} />
+      <Route path="/error" element={<ErrorPage />} />
       <Route
         path="/favorites"
         element={
@@ -63,6 +62,7 @@ export default function AppRouter() {
           </ProtectedRoute>
         }
       />
+      <Route path="*" element={<ErrorPage404 />} />
     </Routes>
   )
 }
