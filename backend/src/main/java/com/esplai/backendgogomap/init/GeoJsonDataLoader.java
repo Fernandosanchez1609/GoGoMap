@@ -92,6 +92,8 @@ public class GeoJsonDataLoader implements CommandLineRunner {
                         String titulo = rawFeature.getProperties().getNombre();
                         if (titulo == null || titulo.trim().isEmpty()) {
                             titulo = "Punto de interés (ODS " + odsEnum.getOdsNumber() + ")";
+                        } else {
+                            titulo = sanitizePointName(titulo);
                         }
 
                         point.setTitle(titulo);
@@ -131,5 +133,64 @@ public class GeoJsonDataLoader implements CommandLineRunner {
             return Integer.parseInt(matcher.group(1));
         }
         return null;
+    }
+
+    /**
+     * Sanitiza nombres técnicos provenientes de GeoJSON del Ayuntamiento.
+     * Elimina códigos alfanuméricos, guiones bajos, números de serie y convierte a Title Case.
+     * 
+     * @param rawName Nombre técnico original (ej. "APARCABICIS_044", "DEA_817")
+     * @return Nombre limpio y legible (ej. "Aparcabicicletas", "Desfibrilador")
+     */
+    private String sanitizePointName(String rawName) {
+        if (rawName == null || rawName.trim().isEmpty()) {
+            return rawName;
+        }
+
+        String cleaned = rawName;
+
+        // Mapeo de abreviaturas técnicas conocidas
+        cleaned = cleaned.replaceAll("(?i)\\bAPARCABICIS\\b", "Aparcabicicletas");
+        cleaned = cleaned.replaceAll("(?i)\\bDEA\\b", "Desfibrilador");
+        cleaned = cleaned.replaceAll("(?i)\\bCVE\\b", "");
+
+        // Eliminar códigos alfanuméricos con guión bajo y números de serie (ej. _044, _817, _06)
+        cleaned = cleaned.replaceAll("_\\d+", "");
+        
+        // Eliminar múltiples espacios y guiones bajos restantes
+        cleaned = cleaned.replaceAll("[_]+", " ");
+        cleaned = cleaned.replaceAll("\\s+", " ");
+
+        // Convertir a Title Case si está todo en mayúsculas
+        if (cleaned.equals(cleaned.toUpperCase())) {
+            cleaned = toTitleCase(cleaned);
+        }
+
+        return cleaned.trim();
+    }
+
+    /**
+     * Convierte un string a formato Title Case (primera letra de cada palabra en mayúscula).
+     * 
+     * @param input String en cualquier formato
+     * @return String en Title Case
+     */
+    private String toTitleCase(String input) {
+        if (input == null || input.isEmpty()) {
+            return input;
+        }
+
+        String[] words = input.toLowerCase().split("\\s+");
+        StringBuilder titleCase = new StringBuilder();
+
+        for (String word : words) {
+            if (!word.isEmpty()) {
+                titleCase.append(Character.toUpperCase(word.charAt(0)))
+                         .append(word.substring(1))
+                         .append(" ");
+            }
+        }
+
+        return titleCase.toString().trim();
     }
 }
