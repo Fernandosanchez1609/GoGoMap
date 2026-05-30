@@ -61,7 +61,9 @@ export default function Login() {
       <Card className="w-full max-w-sm bg-transparent border-none shadow-none">
         <CardContent className="flex flex-col gap-6 pt-10">
           <div className="flex flex-col items-center">
-            <img src="/assets/Logo.png" alt="GoGoMap" className="w-64" />
+            <Link to="/">
+              <img src="/assets/Logo.png" alt="GoGoMap" className="w-64 cursor-pointer" />            
+            </Link>
             <p className="text-sm text-gray-500 mt-6 text-center">
               No. 1 en España para mejorar tu karma :)
             </p>
