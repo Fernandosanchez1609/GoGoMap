@@ -250,7 +250,7 @@ const handlerEnter = () => {
       {/* ── Logo ── */}
       <div className="flex-shrink-0 flex flex-col items-center pb-2 animate-[fadeDown_3.7s_cubic-bezier(.22,1,.36,1)_both]">
 
-        <div className="rounded-3xl bg-[#A8ADA3]/0 backdrop-blur-md px-6 py-4">
+        <div className="rounded-3xl backdrop-blur-md px-6 py-4" style={{ backgroundColor: 'var(--app-surface-1)', opacity: 0 }}>
           <img
             src="/assets/Logo.png"
             alt="GoGoMap"

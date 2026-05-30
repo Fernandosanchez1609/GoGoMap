@@ -8,7 +8,7 @@ import userService from "@/api/services/userService"
 import type { PointDetail } from "@/api/types/index"
 
 // Estilos
-const page = "min-h-screen bg-[#F5F5EE] flex flex-col items-center"
+const page = "min-h-screen bg-app-surface-1 flex flex-col items-center"
 const content = "w-full flex-1 flex flex-col pb-24"
 
 const filterWrapper = "w-full overflow-hidden"

@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import type { PointDetail } from '../../api/types/index.ts';
 import { ODS_COLORS } from '@/utils/OdsColors';
 import userService from '@/api/services/userService';
+import pointService from '@/api/services/pointService';
+import { isWithinMeters } from '@/utils/Distance';
 
 
 interface Props {
@@ -10,13 +12,18 @@ interface Props {
   longitude: number;
   onRequestRoute: (lat: number, lng: number) => void;
   canRoute: boolean;
+  userPosition?: [number, number] | null;
 }
 
-export default function PointModel({ point, latitude, longitude, onRequestRoute, canRoute }: Props) {
-  const odsColor = point.odsNumber ? ODS_COLORS[point.odsNumber] ?? '#2d6a2d' : '#2d6a2d';
+export default function PointModel({ point, latitude, longitude, onRequestRoute, canRoute, userPosition }: Props) {
+  const odsColor = point.odsNumber ? ODS_COLORS[point.odsNumber] ?? 'var(--app-green)' : 'var(--app-green)';
 
   const [isFavorite, setIsFavorite] = useState(false);
   const [isLoadingFav, setIsLoadingFav] = useState(false);
+  const [isInteracting, setIsInteracting] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
+  const [actionMessage, setActionMessage] = useState<string | null>(null);
+  const [actionIsError, setActionIsError] = useState(false);
 
   useEffect(() => {
     const checkFavoriteStatus = async () => {
@@ -32,6 +39,26 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
     };
 
     checkFavoriteStatus();
+  }, [point.id]);
+
+  // Check if user already performed the VISIT action for this point
+  useEffect(() => {
+    let mounted = true;
+    const checkAction = async () => {
+      if (!point.id) return;
+      try {
+        const resp = await pointService.getActionStatus(String(point.id), 'VISIT');
+        if (!mounted) return;
+        if (resp.data?.hasPerformed) {
+          setHasInteracted(true);
+        }
+      } catch (err) {
+        // ignore errors here; failing to check means button stays available
+        console.warn('Could not fetch action status', err);
+      }
+    };
+    void checkAction();
+    return () => { mounted = false; };
   }, [point.id]);
 
   const handleToggleFavorite = async () => {
@@ -53,9 +80,39 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
     }
   };
 
+  const computeWithinRange = (userPos?: [number, number] | null) => {
+    if (!userPos) return false;
+    return isWithinMeters(userPos[0], userPos[1], latitude, longitude, 50);
+  };
+
+  const withinRange = computeWithinRange(userPosition);
+
+  const handleInteract = async () => {
+    if (!point.id) return;
+    try {
+      setIsInteracting(true);
+      const resp = await pointService.performAction(String(point.id), 'VISIT');
+      setActionMessage(resp.data?.message ?? 'Interacción realizada');
+      setActionIsError(false);
+      setHasInteracted(true);
+    } catch (err: any) {
+      const msg = err?.response?.data?.message || err?.message || 'Error realizando la interacción';
+      setActionMessage(msg);
+      setActionIsError(true);
+    } finally {
+      setIsInteracting(false);
+    }
+  };
+
+  // Clear action messages after a short delay
+  useEffect(() => {
+    if (!actionMessage) return;
+    const id = setTimeout(() => setActionMessage(null), 5000);
+    return () => clearTimeout(id);
+  }, [actionMessage]);
+
   return (
     <div className="flex flex-col gap-4">
-
       {/* Header: badge ODS + título */}
       <div className="flex items-center gap-3 pb-3 border-b border-gray-100">
         {point.odsNumber && (
@@ -67,7 +124,7 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
           </span>
         )}
         <span className="text-base font-semibold text-gray-700 tracking-wide uppercase">
-          ODS {point.odsNumber}
+         {point.ods}
         </span>
       </div>
 
@@ -127,15 +184,15 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
           </span>
           <span
             className={`flex items-center gap-1.5 font-semibold ${
-              point.status === 'active' ? 'text-green-600' : 'text-gray-400'
+              point.status === "active" ? "text-green-600" : "text-gray-400"
             }`}
           >
             <span
               className={`w-2 h-2 rounded-full ${
-                point.status === 'active' ? 'bg-green-500' : 'bg-gray-300'
+                point.status === "active" ? "bg-green-500" : "bg-gray-300"
               }`}
             />
-            {point.status === 'active' ? 'Funcionando' : point.status}
+            {point.status === "active" ? "Funcionando" : point.status}
           </span>
         </div>
 
@@ -144,7 +201,9 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
             <span className="text-gray-400 font-semibold uppercase tracking-widest text-xs shrink-0 pt-0.5">
               Descripción
             </span>
-            <span className="text-gray-700 text-right">{point.description}</span>
+            <span className="text-gray-700 text-right max-h-24 sm:max-h-32 md:max-h-40 overflow-y-auto leading-relaxed">
+              {point.description}
+            </span>
           </div>
         )}
       </div>
@@ -169,8 +228,27 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
             d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13V7m0 13 6-3m-6-10 6-3m0 0 5.447 2.724A1 1 0 0 1 21 7.618v10.764a1 1 0 0 1-1.447.894L15 17m0-13v13"
           />
         </svg>
-        {canRoute ? 'Ruta' : 'Activa ubicación para la ruta'}
+        {canRoute ? "Ruta" : "Activa ubicación para la ruta"}
       </button>
+      {/* Interact button: enabled only if userPosition within 50m. */}
+      {actionMessage && (
+        <div className={`px-3 py-2 rounded text-sm ${actionIsError ? 'bg-red-50 text-red-700' : 'bg-green-50 text-green-700'}`}>
+          {actionMessage}
+        </div>
+      )}
+
+      {!hasInteracted && (
+        <div className="mt-2">
+          <button
+            onClick={handleInteract}
+            disabled={isInteracting || !withinRange}
+            className="flex items-center justify-center gap-2 w-full py-3 rounded-full text-white font-semibold text-base transition-opacity hover:opacity-90 active:opacity-75 disabled:opacity-40 disabled:cursor-not-allowed"
+            style={{ backgroundColor: 'var(--app-green)' }}
+          >
+            {isInteracting ? 'Interactuando...' : 'Interactuar'}
+          </button>
+        </div>
+      )}
     </div>
   );
 }

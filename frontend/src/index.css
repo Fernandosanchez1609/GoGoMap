@@ -101,6 +101,100 @@ html {
   --sidebar-ring: oklch(0.708 0 0)
 }
 
+/* App color tokens */
+:root {
+  --app-surface-1: #F5F5EE;
+  --app-surface-2: #f0f4ec;
+  --app-green: #2d6a35;
+  --app-text-dark: #1a2e1c;
+  --app-muted: #7a9a7e;
+  --weal-x1-bg: #a8d5a2;
+  --weal-x1-text: #1a2e1c;
+  --weal-x2-bg: #2d6a35;
+  --weal-x2-text: #ffffff;
+  --weal-x5-bg: #f5a623;
+  --weal-x5-text: #ffffff;
+  --weal-x10-bg: #d64040;
+  --weal-x10-text: #ffffff;
+  --app-orange: #e09510;
+
+
+}
+
+.bg-app-orange {
+  background-color: var(--app-orange) !important;
+}
+
+.text-app-orange {
+  color: var(--app-orange) !important;
+}
+
+.border-app-orange {
+  border-color: var(--app-orange) !important;
+}
+
+/* Utility classes to bridge existing markup */
+.bg-app-surface-1 {
+  background-color: var(--app-surface-1) !important;
+}
+
+.bg-app-surface-2 {
+  background-color: var(--app-surface-2) !important;
+}
+
+.bg-app-green {
+  background-color: var(--app-green) !important;
+}
+
+.text-app-text-dark {
+  color: var(--app-text-dark) !important;
+}
+
+.text-app-muted {
+  color: var(--app-muted) !important;
+}
+
+.bg-weal-x1 {
+  background-color: var(--weal-x1-bg) !important;
+}
+
+.text-weal-x1 {
+  color: var(--weal-x1-text) !important;
+}
+
+.bg-weal-x2 {
+  background-color: var(--weal-x2-bg) !important;
+}
+
+.text-weal-x2 {
+  color: var(--weal-x2-text) !important;
+}
+
+.bg-weal-x5 {
+  background-color: var(--weal-x5-bg) !important;
+}
+
+.text-weal-x5 {
+  color: var(--weal-x5-text) !important;
+}
+
+.bg-weal-x10 {
+  background-color: var(--weal-x10-bg) !important;
+}
+
+.text-weal-x10 {
+  color: var(--weal-x10-text) !important;
+}
+
+.hover-bg-app-green:hover {
+  background-color: var(--app-green) !important;
+}
+
+.hover-bg-app-orange:hover {
+  background-color: var(--app-orange) !important;
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
@@ -225,22 +319,60 @@ body {
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;}
+    @apply border-border outline-ring/50;
+  }
+
   body {
+<<<<<<< HEAD
     @apply text-foreground;}
+=======
+    @apply bg-background text-foreground;
+  }
+
+>>>>>>> develop
   html {
-    @apply font-sans;}}
+    @apply font-sans;
+  }
+}
 
 @keyframes particleFromLeft {
-  0%   { opacity: 0; transform: translate(0, 0) scale(0); }
-  10%  { opacity: 0.45; transform: translate(10px, -6px) scale(1); }
-  90%  { opacity: 0.2; }
-  100% { opacity: 0; transform: translate(120px, -80px) scale(0.4); }
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0);
+  }
+
+  10% {
+    opacity: 0.45;
+    transform: translate(10px, -6px) scale(1);
+  }
+
+  90% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(120px, -80px) scale(0.4);
+  }
 }
 
 @keyframes particleFromRight {
-  0%   { opacity: 0; transform: translate(0, 0) scale(0); }
-  10%  { opacity: 0.45; transform: translate(-10px, -6px) scale(1); }
-  90%  { opacity: 0.2; }
-  100% { opacity: 0; transform: translate(-120px, -80px) scale(0.4); }
-}    
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0);
+  }
+
+  10% {
+    opacity: 0.45;
+    transform: translate(-10px, -6px) scale(1);
+  }
+
+  90% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-120px, -80px) scale(0.4);
+  }
+}

@@ -1,4 +1,3 @@
-// Weal.tsx
 import { useState } from "react";
 import { Wheel } from "react-custom-roulette";
 import { X } from "lucide-react";
@@ -14,30 +13,33 @@ interface Prize {
   style: { backgroundColor: string; textColor: string };
 }
 
+const getCssVar = (name: string) =>
+  getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+
 const data: Prize[] = [
-  { option: "X1",  multiplier: "X1",  style: { backgroundColor: "#a8d5a2", textColor: "#1a2e1c" } },
-  { option: "X1",  multiplier: "X1",  style: { backgroundColor: "#a8d5a2", textColor: "#1a2e1c" } },
-  { option: "X2",  multiplier: "X2",  style: { backgroundColor: "#2d6a35", textColor: "#ffffff" } },
-  { option: "X2",  multiplier: "X2",  style: { backgroundColor: "#2d6a35", textColor: "#ffffff" } },
-  { option: "X1",  multiplier: "X1",  style: { backgroundColor: "#a8d5a2", textColor: "#1a2e1c" } },
-  { option: "X5",  multiplier: "X5",  style: { backgroundColor: "#f5a623", textColor: "#ffffff" } },
-  { option: "X1",  multiplier: "X1",  style: { backgroundColor: "#a8d5a2", textColor: "#1a2e1c" } },
-  { option: "X2",  multiplier: "X2",  style: { backgroundColor: "#2d6a35", textColor: "#ffffff" } },
-  { option: "X1",  multiplier: "X1",  style: { backgroundColor: "#a8d5a2", textColor: "#1a2e1c" } },
-  { option: "X5",  multiplier: "X5",  style: { backgroundColor: "#f5a623", textColor: "#ffffff" } },
-  { option: "X1",  multiplier: "X1",  style: { backgroundColor: "#a8d5a2", textColor: "#1a2e1c" } },
-  { option: "X2",  multiplier: "X2",  style: { backgroundColor: "#2d6a35", textColor: "#ffffff" } },
-  { option: "X1",  multiplier: "X1",  style: { backgroundColor: "#a8d5a2", textColor: "#1a2e1c" } },
-  { option: "X5",  multiplier: "X5",  style: { backgroundColor: "#f5a623", textColor: "#ffffff" } },
-  { option: "X1",  multiplier: "X1",  style: { backgroundColor: "#a8d5a2", textColor: "#1a2e1c" } },
-  { option: "X10", multiplier: "X10", style: { backgroundColor: "#d64040", textColor: "#ffffff" } },
+  { option: "X1",  multiplier: "X1",  style: { backgroundColor: getCssVar("--weal-x1-bg"),  textColor: getCssVar("--weal-x1-text") } },
+  { option: "X1",  multiplier: "X1",  style: { backgroundColor: getCssVar("--weal-x1-bg"),  textColor: getCssVar("--weal-x1-text") } },
+  { option: "X2",  multiplier: "X2",  style: { backgroundColor: getCssVar("--weal-x2-bg"),  textColor: getCssVar("--weal-x2-text") } },
+  { option: "X2",  multiplier: "X2",  style: { backgroundColor: getCssVar("--weal-x2-bg"),  textColor: getCssVar("--weal-x2-text") } },
+  { option: "X1",  multiplier: "X1",  style: { backgroundColor: getCssVar("--weal-x1-bg"),  textColor: getCssVar("--weal-x1-text") } },
+  { option: "X5",  multiplier: "X5",  style: { backgroundColor: getCssVar("--weal-x5-bg"),  textColor: getCssVar("--weal-x5-text") } },
+  { option: "X1",  multiplier: "X1",  style: { backgroundColor: getCssVar("--weal-x1-bg"),  textColor: getCssVar("--weal-x1-text") } },
+  { option: "X2",  multiplier: "X2",  style: { backgroundColor: getCssVar("--weal-x2-bg"),  textColor: getCssVar("--weal-x2-text") } },
+  { option: "X1",  multiplier: "X1",  style: { backgroundColor: getCssVar("--weal-x1-bg"),  textColor: getCssVar("--weal-x1-text") } },
+  { option: "X5",  multiplier: "X5",  style: { backgroundColor: getCssVar("--weal-x5-bg"),  textColor: getCssVar("--weal-x5-text") } },
+  { option: "X1",  multiplier: "X1",  style: { backgroundColor: getCssVar("--weal-x1-bg"),  textColor: getCssVar("--weal-x1-text") } },
+  { option: "X2",  multiplier: "X2",  style: { backgroundColor: getCssVar("--weal-x2-bg"),  textColor: getCssVar("--weal-x2-text") } },
+  { option: "X1",  multiplier: "X1",  style: { backgroundColor: getCssVar("--weal-x1-bg"),  textColor: getCssVar("--weal-x1-text") } },
+  { option: "X5",  multiplier: "X5",  style: { backgroundColor: getCssVar("--weal-x5-bg"),  textColor: getCssVar("--weal-x5-text") } },
+  { option: "X1",  multiplier: "X1",  style: { backgroundColor: getCssVar("--weal-x1-bg"),  textColor: getCssVar("--weal-x1-text") } },
+  { option: "X10", multiplier: "X10", style: { backgroundColor: getCssVar("--weal-x10-bg"), textColor: getCssVar("--weal-x10-text") } },
 ];
 
 const multiplierStyles: Record<Multiplier, { label: string; color: string }> = {
-  X1:  { label: "Sin multiplicador", color: "#1a2e1c" },
-  X2:  { label: "¡Doble puntuación!", color: "#2d6a35" },
-  X5:  { label: "¡Cinco veces!",      color: "#f5a623" },
-  X10: { label: "¡JACKPOT!",          color: "#d64040" },
+  X1:  { label: "Sin multiplicador",  color: getCssVar("--weal-x1-text")  },
+  X2:  { label: "¡Doble puntuación!", color: getCssVar("--weal-x2-text")  },
+  X5:  { label: "¡Cinco veces!",      color: getCssVar("--weal-x5-text")  },
+  X10: { label: "¡JACKPOT!",          color: getCssVar("--weal-x10-text") },
 };
 
 interface WealProps {
@@ -45,7 +47,7 @@ interface WealProps {
 }
 
 export default function Weal({ onClose }: WealProps) {
-  const { hasSpunWheelToday, markWheelSpinDone } = useAuth();
+  const { hasSpunWheelToday, markWheelSpinDone, refreshProfile } = useAuth();
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
   const [prizeResult, setPrizeResult] = useState<Multiplier | null>(null);
@@ -88,24 +90,21 @@ export default function Weal({ onClose }: WealProps) {
   };
 
   const handleClose = () => {
-    if (mustSpin) return; // no cerrar mientras gira
+    if (mustSpin) return;
     onClose();
   };
 
   const result = prizeResult ? multiplierStyles[prizeResult] : null;
 
   return (
-    // Backdrop
     <div
       className="fixed inset-0 z-50 flex items-end justify-center bg-black/50 p-4 sm:items-center"
       onClick={handleClose}
     >
-      {/* Modal — bottom sheet */}
       <div
-        className="w-full max-w-md max-h-[92vh] overflow-y-auto bg-[#f0f4ec] rounded-t-3xl px-6 pt-5 pb-10 flex flex-col items-center gap-5"
+        className="w-full max-w-md max-h-[92vh] overflow-y-auto bg-app-surface-2 rounded-t-3xl px-6 pt-5 pb-10 flex flex-col items-center gap-5"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Handle + close */}
         <div className="w-full flex items-center justify-between">
           <div className="w-10 h-1 rounded-full bg-gray-300 mx-auto absolute left-1/2 -translate-x-1/2" />
           <div className="flex-1" />
@@ -114,11 +113,11 @@ export default function Weal({ onClose }: WealProps) {
             disabled={mustSpin}
             className="p-2 rounded-full hover:bg-gray-200 transition-colors disabled:opacity-30"
           >
-            <X size={20} className="text-[#1a2e1c]" />
+            <X size={20} className="text-app-text-dark" />
           </button>
         </div>
 
-        <h2 className="text-2xl font-bold text-[#1a2e1c] tracking-tight">
+        <h2 className="text-2xl font-bold text-app-text-dark tracking-tight">
           Gira la ruleta
         </h2>
 
@@ -134,6 +133,8 @@ export default function Weal({ onClose }: WealProps) {
                 setSpinMessage(queuedSpinMessage);
                 setQueuedSpinMessage(null);
               }
+              // Refresh user profile so karmaPoints are updated in the UI
+              void refreshProfile();
             }}
           />
         </div>
@@ -141,7 +142,7 @@ export default function Weal({ onClose }: WealProps) {
         <button
           onClick={handleSpin}
           disabled={mustSpin || loading || hasSpunWheelToday}
-          className="w-full py-4 rounded-full bg-[#2d6a35] text-white font-semibold text-base shadow-lg shadow-green-900/25 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 hover:bg-[#245a2b] active:scale-95"
+          className="w-full py-4 rounded-full bg-app-green text-white font-semibold text-base shadow-lg shadow-green-900/25 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 hover-bg-app-green active:scale-95"
         >
           {loading
             ? "Consultando..."
@@ -154,19 +155,19 @@ export default function Weal({ onClose }: WealProps) {
 
         {spinMessage && (
           <div className="w-full bg-white rounded-2xl px-6 py-4 shadow-sm text-center">
-            <p className="text-sm font-medium text-[#1a2e1c]">{spinMessage}</p>
+            <p className="text-sm font-medium text-app-text-dark">{spinMessage}</p>
           </div>
         )}
 
         {result && (
           <div className="w-full bg-white rounded-2xl px-6 py-4 shadow-sm text-center">
-            <p className="text-xs font-semibold text-[#7a9a7e] uppercase tracking-widest mb-1">
+            <p className="text-xs font-semibold text-app-muted uppercase tracking-widest mb-1">
               Premio obtenido
             </p>
             <p className="text-3xl font-bold" style={{ color: result.color }}>
               {prizeResult}
             </p>
-            <p className="text-sm font-medium text-[#7a9a7e] mt-1">{result.label}</p>
+            <p className="text-sm font-medium text-app-muted mt-1">{result.label}</p>
           </div>
         )}
       </div>

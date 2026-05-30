@@ -1,5 +1,5 @@
 // Estilos
-const wrapper = "bg-[#F5F5EE] px-4 pb-4 w-full"
+const wrapper = "bg-app-surface-1 px-4 pb-4 w-full"
 const title = "text-2x1 font-bold text-green-700"
 
 // Componente

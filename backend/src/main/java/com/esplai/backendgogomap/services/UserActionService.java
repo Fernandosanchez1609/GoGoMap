@@ -78,4 +78,14 @@ public class UserActionService {
                 .message("¡Genial! Has ganado " + karmaEarned + " puntos por tu aportación.")
                                 .build();
     }
+
+        public boolean hasPerformedAction(String email, Long pointId, com.esplai.backendgogomap.models.enums.ActionType actionType) {
+                User user = userRepository.findByEmailIgnoreCase(email)
+                                .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
+
+                MapPoint point = mapPointRepository.findById(pointId)
+                                .orElseThrow(() -> new RuntimeException("Punto no encontrado"));
+
+                return userPointActionRepository.existsByUserAndMapPointAndActionType(user, point, actionType);
+        }
 }

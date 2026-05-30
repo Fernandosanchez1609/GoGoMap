@@ -6,7 +6,7 @@ import ErrorFooter from "./ErrorFooter"
 
 export default function ErrorPage() {
     return (
-        <div className="min-h-screen bg-[#F5F5EE] flex flex-col items-center px-6">
+        <div className="min-h-screen bg-app-surface-1 flex flex-col items-center px-6">
             <ErrorHeader />
             <ErrorImage />
             <ErrorText />

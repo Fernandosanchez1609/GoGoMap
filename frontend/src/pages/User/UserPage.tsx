@@ -24,24 +24,24 @@ export default function UserPage() {
   const initial = userData.name.charAt(0).toUpperCase();
 
   return (
-    <div className="flex flex-col h-screen bg-[#f0f4ec]">
+    <div className="flex flex-col h-screen bg-app-surface-2">
       <div className="flex-1 flex flex-col items-center px-6 pt-8 pb-4 gap-5 overflow-y-auto">
 
         {/* Avatar + Name */}
         <div className="flex flex-col items-center gap-2">
-          <div className="w-24 h-24 rounded-full bg-[#2d6a35] flex items-center justify-center text-white text-4xl font-bold shadow-lg shadow-green-900/30">
+          <div className="w-24 h-24 rounded-full bg-app-green flex items-center justify-center text-white text-4xl font-bold shadow-lg shadow-green-900/30">
             {initial}
           </div>
-          <h1 className="text-2xl font-bold text-[#1a2e1c] tracking-tight">
+          <h1 className="text-2xl font-bold text-app-text-dark tracking-tight">
             {userData.name}
           </h1>
-          <p className="text-sm text-[#7a9a7e]">
+          <p className="text-sm text-app-muted">
             Miembro desde {memberSince}
           </p>
         </div>
 
         {/* Eco Points Card */}
-        <div className="w-full bg-[#2d6a35] rounded-2xl p-5 flex justify-between items-center shadow-lg shadow-green-900/25">
+        <div className="w-full bg-app-green rounded-2xl p-5 flex justify-between items-center shadow-lg shadow-green-900/25">
           <div>
             <p className="text-xs font-semibold text-white/60 uppercase tracking-widest mb-1">
               Total Impacto
