@@ -5,6 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import type { Point, PointDetail } from "@/api/types/index";
 import pointService from "@/api/services/pointService";
+import userService from "@/api/services/userService";
 import { getDistanceKm } from "@/utils/Distance";
 import { useDebounce } from "use-debounce";
 import MapControls from "@/components/Map/MapControls";
@@ -13,6 +14,7 @@ import MapView from "@/components/Map/MapView";
 import PointDetailModal from "@/components/Map/PointDetailModal";
 import { fetchOsrmRoute } from "@/utils/map";
 import Filter from "@/components/Map/Filter";
+import { toast } from "sonner";
 
 export default function MapPage() {
   const [userPosition, setUserPosition] = useState<[number, number] | null>(null);
@@ -44,6 +46,23 @@ export default function MapPage() {
     };
 
     void fetchPoints();
+  }, []);
+
+  useEffect(() => {
+    const checkWheelSpinStatus = async () => {
+      try {
+        const response = await userService.getWheelSpinStatus();
+        if (!response.data.hasSpunToday) {
+          toast.success("🎡 ¡Tienes una tirada diaria disponible en la Ruleta Karma! Pon a prueba tu suerte.", {
+            duration: 5000,
+          });
+        }
+      } catch (err) {
+        console.error("Error al verificar el estado de la ruleta:", err);
+      }
+    };
+
+    void checkWheelSpinStatus();
   }, []);
 
   useEffect(() => {
