@@ -41,3 +41,9 @@ replay_pid*
 *.iml
 .DS_Store
 Thumbs.db
+.env.*
+*.env
+credentials.json
+*.pem
+*.key
+.credentials
