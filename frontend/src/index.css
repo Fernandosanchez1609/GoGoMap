@@ -323,13 +323,7 @@ body {
   }
 
   body {
-<<<<<<< HEAD
     @apply text-foreground;}
-=======
-    @apply bg-background text-foreground;
-  }
-
->>>>>>> develop
   html {
     @apply font-sans;
   }
