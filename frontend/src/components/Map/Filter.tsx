@@ -1,3 +1,5 @@
+import { ODS_MAP } from '@/utils/odsMapping';
+
 interface FilterProps {
   selected: number | null;
   onSelect: (ods: number | null) => void;
@@ -8,25 +10,30 @@ export default function Filter({ selected, onSelect }: FilterProps) {
 
   return (
     <section className="bg-app-bg px-4 pt-4 pb-6 shadow-lg z-10">
-      
-      <div className="flex gap-4 overflow-x-auto overflow-y-visible pb-2 pt-2 px-1">
-        {ods.map((n) => (
-          <button
-            key={n}
-            onClick={() => onSelect(selected === n ? null : n)}
-            className={`shrink-0 rounded-xl transition-all duration-200 p-1
-              ${selected === n
-                ? "bg-green-500 shadow-lg scale-110"
-                : "bg-gray-100 hover:bg-gray-200 hover:scale-105 opacity-80 hover:opacity-100"
-              }`}
-          >
-            <img
-              src={`/assets/ods/S-WEB-Goal-${String(n).padStart(2, "0")}.png`}
-              alt={`ODS ${n}`}
-              className="h-14 w-14 rounded-lg object-cover"
-            />
-          </button>
-        ))}
+      <div className="flex gap-3 overflow-x-auto snap-x snap-mandatory overflow-y-visible pb-2 pt-2 px-1 scrollbar-hide">
+        {ods.map((n) => {
+          const odsInfo = ODS_MAP[n as keyof typeof ODS_MAP];
+          return (
+            <button
+              key={n}
+              onClick={() => onSelect(selected === n ? null : n)}
+              className={`shrink-0 snap-center flex items-center gap-2 px-3 py-2 rounded-full transition-all duration-200 border-2
+                ${selected === n
+                  ? "bg-green-500 border-green-600 shadow-lg scale-105 text-white"
+                  : "bg-white border-gray-200 hover:border-green-300 hover:bg-gray-50 text-gray-700"
+                }`}
+            >
+              <img
+                src={odsInfo.imagePath}
+                alt={`ODS ${n}`}
+                className="w-6 h-6 object-contain shrink-0"
+              />
+              <span className="text-sm font-semibold whitespace-nowrap">
+                {odsInfo.localLabel}
+              </span>
+            </button>
+          );
+        })}
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import type { PointDetail } from '../../api/types/index.ts';
 import { ODS_COLORS } from '@/utils/OdsColors';
+import { getOdsInfo } from '@/utils/odsMapping';
 import userService from '@/api/services/userService';
 import pointService from '@/api/services/pointService';
 import { isWithinMeters } from '@/utils/Distance';
@@ -18,6 +19,7 @@ interface Props {
 
 export default function PointModel({ point, latitude, longitude, onRequestRoute, canRoute, userPosition }: Props) {
   const odsColor = point.odsNumber ? ODS_COLORS[point.odsNumber] ?? 'var(--app-green)' : 'var(--app-green)';
+  const odsInfo = point.odsNumber ? getOdsInfo(point.odsNumber) : undefined;
 
   const [isFavorite, setIsFavorite] = useState(false);
   const [isLoadingFav, setIsLoadingFav] = useState(false);
@@ -153,8 +155,18 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
 
       {/* Título y dirección */}
       <div className="flex justify-between items-start gap-4">
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-bold text-gray-900">{point.title}</h2>
+          {odsInfo && (
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-semibold w-fit">
+              <img
+                src={odsInfo.imagePath}
+                alt={`ODS ${odsInfo.id}`}
+                className="w-4 h-4 object-contain"
+              />
+              {odsInfo.localLabel}
+            </span>
+          )}
           {point.address && (
             <p className="flex items-center gap-1 text-gray-500 text-sm">
               <svg
