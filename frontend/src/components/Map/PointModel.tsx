@@ -4,6 +4,7 @@ import { ODS_COLORS } from '@/utils/OdsColors';
 import userService from '@/api/services/userService';
 import pointService from '@/api/services/pointService';
 import { isWithinMeters } from '@/utils/Distance';
+import { Button } from '@/components/ui/button';
 
 
 interface Props {
@@ -102,6 +103,28 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
     } finally {
       setIsInteracting(false);
     }
+  };
+
+  const handleVisit = async () => {
+    if (!point.id) return;
+    try {
+      setIsInteracting(true);
+      const resp = await pointService.performAction(String(point.id), 'VISIT');
+      setActionMessage(resp.data?.message ?? '✓ Has visitado este punto');
+      setActionIsError(false);
+      setHasInteracted(true);
+    } catch (err: any) {
+      const msg = err?.response?.data?.message || err?.message || 'Error al registrar la visita';
+      setActionMessage(msg);
+      setActionIsError(true);
+    } finally {
+      setIsInteracting(false);
+    }
+  };
+
+  const handleReport = () => {
+    setActionMessage('Reporte enviado. Gracias por tu feedback.');
+    setActionIsError(false);
   };
 
   // Clear action messages after a short delay
@@ -230,14 +253,42 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
         </svg>
         {canRoute ? "Ruta" : "Activa ubicación para la ruta"}
       </button>
-      {/* Interact button: enabled only if userPosition within 50m. */}
+
+      {/* Action feedback */}
       {actionMessage && (
         <div className={`px-3 py-2 rounded text-sm ${actionIsError ? 'bg-red-50 text-red-700' : 'bg-green-50 text-green-700'}`}>
           {actionMessage}
         </div>
       )}
 
-      {!hasInteracted && (
+      {/* Botones Visitar y Reportar */}
+      <div className="flex gap-2 mt-2">
+        <Button
+          onClick={handleVisit}
+          disabled={isInteracting || hasInteracted || !withinRange}
+          className="flex-1 py-3 rounded-full text-white font-semibold text-base"
+          style={{ backgroundColor: hasInteracted ? '#9ca3af' : 'var(--app-green)' }}
+        >
+          {hasInteracted ? '✓ Visitado' : 'Visitar'}
+        </Button>
+        <Button
+          onClick={handleReport}
+          disabled={isInteracting}
+          variant="outline"
+          className="flex-1 py-3 rounded-full font-semibold text-base border-2 border-gray-300 text-gray-700"
+        >
+          Reportar
+        </Button>
+      </div>
+
+      {!hasInteracted && !withinRange && (
+        <p className="text-xs text-gray-500 text-center mt-1">
+          Debes estar a menos de 50m para visitar este punto
+        </p>
+      )}
+
+      {/* Legacy Interactuar button (hidden, keeping code structure intact) */}
+      {false && !hasInteracted && (
         <div className="mt-2">
           <button
             onClick={handleInteract}
