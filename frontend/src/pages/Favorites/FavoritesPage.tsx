@@ -17,7 +17,7 @@ const footerWrapper = "fixed bottom-0 left-0 w-full z-50"
 
 // Componente
 export default function FavoritesPage() {
-    const [selectedOds, setSelectedOds] = useState<number | null>(null)
+    const [selectedOds, setSelectedOds] = useState<number[]>([])
     const [favorites, setFavorites] = useState<PointDetail[]>([])
     const [isLoading, setIsLoading] = useState(true)
 
