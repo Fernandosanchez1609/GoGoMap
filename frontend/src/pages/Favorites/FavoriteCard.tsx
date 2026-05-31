@@ -9,8 +9,9 @@ const odsChip     = "w-20 h-20 shrink-0 rounded-xl overflow-hidden"
 const odsImg      = "w-full h-full object-cover"
 const body        = "flex-1 min-w-0"
 const topRow      = "flex items-start justify-between gap-2"
-const name        = "font-bold text-gray-900 text-base leading-tight"
+const name        = "font-bold text-gray-900 text-base leading-tight line-clamp-2"
 const odsName     = "text-green-600 font-semibold text-sm mt-0.5"
+const address     = "text-gray-500 text-sm mt-1 line-clamp-2 break-words"
 const bottomRow   = "flex items-center gap-2 mt-2"
 const statusOpen  = "text-xs font-semibold px-3 py-1 rounded-full bg-green-100 text-green-700"
 const statusClose = "text-xs font-semibold px-3 py-1 rounded-full bg-gray-200 text-gray-500"
@@ -95,7 +96,7 @@ export default function FavoriteCard({ place, onFavoriteRemoved }: { place: Poin
                 </div>
 
                 <p className={odsName}>ODS {place.odsNumber}</p>
-                <p className="text-gray-500 text-sm mt-1">{place.address}</p>
+                <p className={address}>{place.address}</p>
 
                 <div className={bottomRow}>
                     <span className={getStatusStyle(place.status || "")}>
