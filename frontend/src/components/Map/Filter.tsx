@@ -9,20 +9,23 @@ export default function Filter({ selected, onSelect }: FilterProps) {
   const ods = Array.from({ length: 17 }, (_, i) => i + 1);
 
   const handleToggle = (n: number) => {
-    if (selected.includes(n)) {
-      onSelect(selected.filter((id) => id !== n));
+  
+    const safeSelected = selected || []; 
+    
+    if (safeSelected.includes(n)) {
+      onSelect(safeSelected.filter((id) => id !== n));
     } else {
-      onSelect([...selected, n]);
+      onSelect([...safeSelected, n]);
     }
   };
-
   return (
-    <section className="bg-white px-4 pt-4 pb-6 shadow-lg z-10">
+    <section className="bg-app-bg px-4 pt-4 pb-6 shadow-lg z-10">
       <div className="max-w-screen-md mx-auto">
-        <div className="flex gap-3 overflow-x-auto snap-x snap-mandatory pb-2 pt-2 px-1 scrollbar-hide touch-pan-x">
+        <div className="flex gap-3 overflow-x-auto snap-x snap-mandatory overflow-y-visible pb-2 pt-2 px-1 scrollbar-hide touch-pan-x">
           {ods.map((n) => {
-            const odsInfo = ODS_MAP[n];
-            const isSelected = selected.includes(n);
+            const odsInfo = ODS_MAP[n as keyof typeof ODS_MAP];
+            const isSelected = (selected || []).includes(n);
+            
             return (
               <button
                 key={n}

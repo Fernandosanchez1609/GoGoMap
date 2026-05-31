@@ -3,14 +3,14 @@ import Button from "./Button"
 
 // Header
 const headerBase = "fixed top-0 left-0 w-full z-50 transition-all duration-300"
-const headerScrolled = `${headerBase} bg-white/10 backdrop-blur-xl border-b border-white/10`
+const headerScrolled = `${headerBase} bg-white/30 backdrop-blur-xl border-b border-white/10`
 const headerTop = `${headerBase} bg-transparent`
 
 // Inner
 const innerBase = "flex justify-between items-center px-6 py-1 max-w-[1440px] mx-auto"
 
 // Logo
-const logoBase = "flex items-center gap-2 text-primary font-bold text-xl"
+const logoBase = "flex items-center gap-1 text-primary font-bold text-xl"
 const logoImg = "h-15"
 const texto = "h-5"
 

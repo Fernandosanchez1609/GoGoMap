@@ -14,10 +14,11 @@ import MapAlerts from "@/components/Map/MapAlerts";
 import MapView from "@/components/Map/MapView";
 import PointDetailModal from "@/components/Map/PointDetailModal";
 import { fetchOsrmRoute } from "@/utils/map";
+import Filter from "@/components/Map/Filter";
 import { toast } from "sonner";
 
 export default function MapPage() {
-  const location = useLocation();
+const location = useLocation();
   const [userPosition, setUserPosition] = useState<[number, number] | null>(null);
   const [selectedOds, setSelectedOds] = useState<number[]>([1]);
   const [radiusKm, setRadiusKm] = useState<number>(5);
@@ -27,9 +28,13 @@ export default function MapPage() {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [selectedPoint, setSelectedPoint] = useState<PointDetail | null>(null);
-  const [selectedPointCoords, setSelectedPointCoords] = useState<[number, number] | null>(null);
+  const [selectedPointCoords, setSelectedPointCoords] = useState<
+    [number, number] | null
+  >(null);
   const [loadingDetail, setLoadingDetail] = useState(false);
-  const [routeCoords, setRouteCoords] = useState<[number, number][] | null>(null);
+  const [routeCoords, setRouteCoords] = useState<[number, number][] | null>(
+    null,
+  );
   const [loadingRoute, setLoadingRoute] = useState(false);
   const mapRef = useRef<LeafletMap | null>(null);
 
@@ -54,9 +59,12 @@ export default function MapPage() {
       try {
         const response = await userService.getWheelSpinStatus();
         if (!response.data.hasSpunToday) {
-          toast.success("🎡 ¡Tienes una tirada diaria disponible en la Ruleta Karma! Pon a prueba tu suerte.", {
-            duration: 5000,
-          });
+          toast.success(
+            "🎡 ¡Tienes una tirada diaria disponible en la Ruleta Karma! Pon a prueba tu suerte.",
+            {
+              duration: 5000,
+            },
+          );
         }
       } catch (err) {
         console.error("Error al verificar el estado de la ruleta:", err);
@@ -148,7 +156,8 @@ export default function MapPage() {
 
   const visiblePoints = useMemo(() => {
     return points.filter((p) => {
-      const odsMatch = selectedOds.length === 0 || selectedOds.includes(p.odsNumber);
+      const odsMatch =
+        selectedOds.length === 0 || selectedOds.includes(p.odsNumber);
       const distanceMatch =
         userPosition === null ||
         getDistanceKm(
@@ -162,17 +171,33 @@ export default function MapPage() {
   }, [points, selectedOds, debouncedRadius, userPosition]);
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen ">
       <Header />
-      <MapControls
-        selectedOds={selectedOds}
-        onSelect={setSelectedOds}
-        radiusKm={radiusKm}
-        onRadiusChange={setRadiusKm}
-        visibleCount={visiblePoints.length}
-        onCenterClick={centerOnUser}
-        hasUserPosition={Boolean(userPosition)}
-      />
+      <Filter selected={selectedOds} onSelect={setSelectedOds} />
+
+      {userPosition && (
+        //<div className="flex items-center gap-4 px-4 py-2 bg-white border-b border-gray-200 text-sm">
+        <div className="flex items-center gap-4 px-4 py-2 bg-app-bg border-b border-gray-200 text-sm">
+          <div className="flex items-center gap-2 flex-1 ">
+            <span className="text-gray-600 whitespace-nowrap">Radio:</span>
+            <input
+              type="range"
+              min={0.5}
+              max={30}
+              step={0.5}
+              value={radiusKm}
+              onChange={(e) => setRadiusKm(Number(e.target.value))}
+              className="flex-1 accent-blue-500"
+            />
+            <span className="text-gray-800 font-medium whitespace-nowrap w-12">
+              {radiusKm} km
+            </span>
+          </div>
+          <span className="font-semibold text-gray-800 whitespace-nowrap">
+            {visiblePoints.length}
+          </span>
+        </div>
+      )}
 
       <div className="relative flex-1 min-h-0 overflow-hidden">
         <MapAlerts
@@ -190,7 +215,30 @@ export default function MapPage() {
             <span>✕</span> Eliminar ruta
           </button>
         )}
+        {userPosition && (
+          <button
+            onClick={centerOnUser}
+            className="absolute bottom-6 right-4 z-[1000] flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.2)] border border-gray-200 hover:bg-gray-50 transition-all active:scale-95"
+            title="Centrar en mi ubicación"
+          >
+            {/* Si tienes un SVG de ubicación úsalo aquí. Si no, este SVG genérico queda genial: */}
+            <svg
+              xmlns="http://w3.org"
+              viewBox="0 0 24 24"
+              width="48"
+              height="48"
+              fill="none"
+              stroke="#5e8cee"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22C12 22 4 15.56 4 10C4 5.58 7.58 2 12 2C16.42 2 20 5.58 20 10C20 15.56 12 22 12 22Z" />
 
+              <circle cx="12" cy="10" r="3" fill="#FF5722" />
+            </svg>
+          </button>
+        )}
         <MapView
           points={visiblePoints}
           userPosition={userPosition}

@@ -12,10 +12,10 @@ const title = "text-3xl font-extrabold text-white leading-tight tracking-tight"
 const grid = "w-full max-w-sm flex flex-col gap-4"
 
 // Tarjeta
-const card = "flex flex-col gap-4 p-6 rounded-2xl border border-white/10 bg-primary/50 backdrop-blur-md"
 const cardIcon = "w-10 h-10 rounded-xl flex items-center justify-center self-center"
 const cardTitle = "text-white font-bold text-lg"
 const cardDesc = "text-white/70 text-sm leading-relaxed"
+const featureItem = "flex flex-col items-center text-center gap-3"
 
 // Datos
 const features = [
@@ -60,7 +60,7 @@ export default function Features() {
       {/* Grid */}
       <div className={grid}>
         {features.map((f) => (
-          <div key={f.title} className={card}>
+          <div key={f.title} className={featureItem}>
             <div className={`${cardIcon} ${f.iconBg}`}>
               {f.icon}
             </div>

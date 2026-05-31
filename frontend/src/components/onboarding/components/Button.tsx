@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import type { ReactNode } from "react"
 
 // Props
 interface ButtonProps {
@@ -6,6 +6,7 @@ interface ButtonProps {
     href?: string
     onClick?: () => void
     variant?: 'primary' | 'secondary'
+    icon?: ReactNode
 }
 
 // Primart - glow green
@@ -29,19 +30,36 @@ const secondaryBase = [
     "transition-all duration-300",
 ].join(" ")
 
-export default function Button({ label, href, onClick, variant = 'primary'}: ButtonProps) {
+function handleAnchorClick(href: string) {
+    const id = href.replace('#', '')
+    const el = document.getElementById(id)
+    if(el) el.scrollIntoView({ behavior: 'smooth' })
+}
+
+export default function Button({ label, href, onClick, variant = 'primary', icon}: ButtonProps) {
     const styles = variant === 'primary' ? primaryBase : secondaryBase
+
+    if(href?.startsWith('#')) {
+        return (
+            <button className={styles} onClick={() => handleAnchorClick(href)}>
+                {icon && icon}
+                {label}
+            </button>
+        )
+    }
 
     if(href) {
         return (
-            <Link to={href} className={styles}>
+            <a href={href} className={styles}>
+                {icon && icon}
                 {label}
-            </Link>
+            </a>
         )
     }
 
     return (
         <button onClick={onClick} className={styles}>
+            {icon && icon}
             {label}
         </button>
     )

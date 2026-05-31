@@ -9,7 +9,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-white border-t">
+    <footer className="bg-app-bg border-t">
       <div className="max-w-screen-xl mx-auto flex justify-around p-4">
         <NavLink to="/map">
           {({ isActive }) => (
@@ -22,7 +22,7 @@ export default function Footer() {
                 className={`h-8 transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-40"}`}
               />
               <span
-                className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-sdg-13" : "text-gray-400"}`}
+                className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-black" : "text-gray-400"}`}
               >
                 Mapa
               </span>
@@ -41,7 +41,7 @@ export default function Footer() {
                 className={`h-8 transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-40"}`}
               />
               <span
-                className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-sdg-13" : "text-gray-400"}`}
+                className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-black" : "text-gray-400"}`}
               >
                 Favoritos
               </span>
@@ -60,7 +60,7 @@ export default function Footer() {
                 className={`h-8 transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-40"}`}
               />
               <span
-                className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-sdg-13" : "text-gray-400"}`}
+                className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-black" : "text-gray-400"}`}
               >
                 Perfil
               </span>
