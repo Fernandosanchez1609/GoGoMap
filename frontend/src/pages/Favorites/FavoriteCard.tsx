@@ -5,7 +5,7 @@ import type { PointDetail } from "@/api/types/index"
 import userService from "@/api/services/userService"
 
 // Estilos (hemos añadido cursor-pointer y hover a la tarjeta)
-const card        = "bg-white rounded-2xl shadow-sm p-4 flex gap-4 items-start w-full cursor-pointer hover:bg-gray-50 transition-colors"
+const card        = "bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] p-4 flex gap-4 items-start w-full cursor-pointer hover:bg-gray-50 transition-colors border border-gray-50"
 const odsChip     = "w-20 h-20 shrink-0 rounded-xl overflow-hidden"
 const odsImg      = "w-full h-full object-cover"
 const body        = "flex-1 min-w-0"

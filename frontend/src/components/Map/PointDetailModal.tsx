@@ -28,7 +28,7 @@ export default function PointDetailModal({
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-xl shadow-xl p-6 w-[90%] max-h-[85vh] overflow-y-auto md:max-w-lg md:w-[28rem] relative"
+        className="bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-50 p-6 w-[90%] max-h-[85vh] overflow-y-auto md:max-w-lg md:w-[28rem] relative"
         onClick={(e) => e.stopPropagation()}
       >
         <button
