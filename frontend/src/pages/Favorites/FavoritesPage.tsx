@@ -9,11 +9,11 @@ import type { PointDetail } from "@/api/types/index"
 
 // Estilos
 const page = "min-h-screen bg-app-surface-1 flex flex-col items-center"
-const content = "w-full flex-1 flex flex-col pb-24"
+const content = "w-full flex-1 flex flex-col pb-24 md:pb-8"
 
 const filterWrapper = "w-full overflow-hidden"
 
-const footerWrapper = "fixed bottom-0 left-0 w-full z-50"
+const footerWrapper = "fixed bottom-0 left-0 right-0 z-50 md:static md:w-full"
 
 // Componente
 export default function FavoritesPage() {
