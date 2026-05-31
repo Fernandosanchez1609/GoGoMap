@@ -2,7 +2,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 export default function Footer() {
   const location = useLocation();
-  const publicRoutes = ["/", "/login", "/register", "/error"];
+  const publicRoutes = ["/", "/login", "/register", "/error", "/about"];
   
   if (publicRoutes.includes(location.pathname) || location.pathname.startsWith("/error")) {
     return null;

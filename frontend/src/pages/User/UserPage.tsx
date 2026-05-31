@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer/Footer";
-import { Gift, LogOut, Mail, User } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Gift, LogOut, Mail, User, Info } from "lucide-react";
+import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
 import Weal from "@/components/Points/Weal";
 import { useAuth } from "@/context/AuthContext";
@@ -81,6 +81,15 @@ export default function UserPage() {
           <Gift size={18} />
           Girar la ruleta
         </button>
+
+        {/* Acerca de GoGoMap */}
+        <Link
+          to="/about"
+          className="w-full flex items-center justify-center gap-2 py-4 rounded-full border-2 border-gray-300 text-gray-700 font-semibold text-base hover:bg-gray-50 transition-all duration-200"
+        >
+          <Info size={18} />
+          Acerca de GoGoMap
+        </Link>
 
         {/* Logout */}
         <button

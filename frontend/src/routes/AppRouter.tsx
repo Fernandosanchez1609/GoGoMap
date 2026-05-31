@@ -21,6 +21,7 @@ export default function AppRouter() {
           </RedirectIfAuthenticated>
         }
       />
+      <Route path="/about" element={<GoGomapOnboarding />} />
       <Route
         path="/map"
         element={
