@@ -4,18 +4,19 @@ import type { PointDetail } from "@/api/types/index"
 // Estilos
 const list = "flex flex-col gap-4 px-4 pt-4 w-full"
 const empty = "flex flex-col items-center justify-center py-20 px-6 text-center"
-const emptyIcon = "text-6xl mb-4" // Corregido de 6x1 a 6xl por si acaso
+const emptyIcon = "text-6xl mb-4"
 const emptyText = "text-gray-700 font-semibold text-lg mb-1"
 const emptyDesc = "text-gray-400 text-sm"
 
 interface Props {
   favorites: PointDetail[];
-  selectedOds: number[]; // <-- CAMBIO 1: Ahora es un array de números
+  selectedOds: number[]; 
+  onFavoriteRemoved: (id: number) => void; // Añadimos la función de Emergent
 }
 
 // Componente
-export default function FavoritesList({ favorites, selectedOds }: Props) {
-    // <-- CAMBIO 2: Lógica de array (si está vacío muestra todos, si no, busca si está incluido)
+export default function FavoritesList({ favorites, selectedOds, onFavoriteRemoved }: Props) {
+    // Mantenemos tu lógica de filtrado múltiple
     const filtered = selectedOds.length === 0 
         ? favorites 
         : favorites.filter((p) => selectedOds.includes(p.odsNumber))
@@ -33,7 +34,11 @@ export default function FavoritesList({ favorites, selectedOds }: Props) {
     return (
         <div className={list}>
             {filtered.map((place) => (
-                <FavoriteCard key={place.id} place={place} />
+                <FavoriteCard 
+                    key={place.id} 
+                    place={place} 
+                    onFavoriteRemoved={onFavoriteRemoved} // Le pasamos la función a la tarjeta
+                />
             ))}
         </div>
     )

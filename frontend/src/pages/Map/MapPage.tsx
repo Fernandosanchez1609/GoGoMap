@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef, useMemo, useCallback } from "react";
+import { useLocation } from "react-router-dom";
 import type { Map as LeafletMap } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Footer from "@/components/Footer/Footer";
@@ -17,9 +18,14 @@ import Filter from "@/components/Map/Filter";
 import { toast } from "sonner";
 
 export default function MapPage() {
+<<<<<<< HEAD
   const [userPosition, setUserPosition] = useState<[number, number] | null>(
     null,
   );
+=======
+  const location = useLocation();
+  const [userPosition, setUserPosition] = useState<[number, number] | null>(null);
+>>>>>>> 6104dc1d63f89e77930c2eff574e6ac00e7e3410
   const [selectedOds, setSelectedOds] = useState<number[]>([1]);
   const [radiusKm, setRadiusKm] = useState<number>(5);
   const [debouncedRadius] = useDebounce(radiusKm, 150);
@@ -93,6 +99,16 @@ export default function MapPage() {
 
     return () => navigator.geolocation.clearWatch(watchId);
   }, []);
+
+  useEffect(() => {
+    const state = location.state as { selectedPointId?: number } | null;
+    if (state?.selectedPointId && points.length > 0) {
+      const point = points.find((p) => p.id === state.selectedPointId);
+      if (point) {
+        handlePointClick(String(point.id), point.latitude, point.longitude);
+      }
+    }
+  }, [location.state, points]);
 
   const centerOnUser = () => {
     if (mapRef.current && userPosition) {
