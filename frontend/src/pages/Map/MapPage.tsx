@@ -18,14 +18,8 @@ import Filter from "@/components/Map/Filter";
 import { toast } from "sonner";
 
 export default function MapPage() {
-<<<<<<< HEAD
-  const [userPosition, setUserPosition] = useState<[number, number] | null>(
-    null,
-  );
-=======
-  const location = useLocation();
+const location = useLocation();
   const [userPosition, setUserPosition] = useState<[number, number] | null>(null);
->>>>>>> 6104dc1d63f89e77930c2eff574e6ac00e7e3410
   const [selectedOds, setSelectedOds] = useState<number[]>([1]);
   const [radiusKm, setRadiusKm] = useState<number>(5);
   const [debouncedRadius] = useDebounce(radiusKm, 150);
