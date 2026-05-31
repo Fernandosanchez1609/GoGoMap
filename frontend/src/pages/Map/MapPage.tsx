@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef, useMemo, useCallback } from "react";
+import { useLocation } from "react-router-dom";
 import type { Map as LeafletMap } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Footer from "@/components/Footer/Footer";
@@ -16,6 +17,7 @@ import { fetchOsrmRoute } from "@/utils/map";
 import { toast } from "sonner";
 
 export default function MapPage() {
+  const location = useLocation();
   const [userPosition, setUserPosition] = useState<[number, number] | null>(null);
   const [selectedOds, setSelectedOds] = useState<number[]>([1]);
   const [radiusKm, setRadiusKm] = useState<number>(5);
@@ -83,6 +85,16 @@ export default function MapPage() {
 
     return () => navigator.geolocation.clearWatch(watchId);
   }, []);
+
+  useEffect(() => {
+    const state = location.state as { selectedPointId?: number } | null;
+    if (state?.selectedPointId && points.length > 0) {
+      const point = points.find((p) => p.id === state.selectedPointId);
+      if (point) {
+        handlePointClick(String(point.id), point.latitude, point.longitude);
+      }
+    }
+  }, [location.state, points]);
 
   const centerOnUser = () => {
     if (mapRef.current && userPosition) {

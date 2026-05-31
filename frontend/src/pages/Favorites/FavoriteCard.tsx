@@ -28,7 +28,7 @@ function translateStatus(status: string) {
     return status
 }
 
-export default function FavoriteCard({ place }: { place: PointDetail }) {
+export default function FavoriteCard({ place, onFavoriteRemoved }: { place: PointDetail; onFavoriteRemoved: (id: number) => void }) {
     const navigate = useNavigate();
     
     // Inicia en true porque si está en esta lista, sabemos que es favorito
@@ -47,6 +47,7 @@ export default function FavoriteCard({ place }: { place: PointDetail }) {
             if (isFavorite) {
                 await userService.removeFavorite(place.id);
                 setIsFavorite(false); // Cambia la estrella a gris
+                onFavoriteRemoved(place.id); // Notifica al padre para actualizar la lista
             } else {
                 await userService.addFavorite(place.id);
                 setIsFavorite(true); // Cambia la estrella a amarilla

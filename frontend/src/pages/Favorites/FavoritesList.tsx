@@ -11,10 +11,11 @@ const emptyDesc = "text-gray-400 text-sm"
 interface Props {
   favorites: PointDetail[];
   selectedOds: number | null;
+  onFavoriteRemoved: (id: number) => void;
 }
 
 // Componente
-export default function FavoritesList({ favorites, selectedOds }: Props) {
+export default function FavoritesList({ favorites, selectedOds, onFavoriteRemoved }: Props) {
     const filtered = selectedOds === null ? favorites : favorites.filter((p) => p.odsNumber === selectedOds)
 
     if(filtered.length === 0) {
@@ -30,7 +31,7 @@ export default function FavoritesList({ favorites, selectedOds }: Props) {
     return (
         <div className={list}>
             {filtered.map((place) => (
-                <FavoriteCard key={place.id} place={place} />
+                <FavoriteCard key={place.id} place={place} onFavoriteRemoved={onFavoriteRemoved} />
             ))}
         </div>
     )

@@ -35,6 +35,10 @@ export default function FavoritesPage() {
         loadFavorites()
     }, [])
 
+    const handleFavoriteRemoved = (id: number) => {
+        setFavorites((prevFavorites) => prevFavorites.filter((fav) => fav.id !== id))
+    }
+
     return (
         <div className={page}>
             <Header />
@@ -52,7 +56,11 @@ export default function FavoritesPage() {
                         Cargando tus favoritos...
                     </div>
                 ) : (
-                    <FavoritesList favorites={favorites} selectedOds={selectedOds} />
+                    <FavoritesList 
+                        favorites={favorites} 
+                        selectedOds={selectedOds} 
+                        onFavoriteRemoved={handleFavoriteRemoved}
+                    />
                 )}
 
             </div>
