@@ -4,18 +4,21 @@ import type { PointDetail } from "@/api/types/index"
 // Estilos
 const list = "flex flex-col gap-4 px-4 pt-4 w-full"
 const empty = "flex flex-col items-center justify-center py-20 px-6 text-center"
-const emptyIcon = "text-6x1 mb-4"
+const emptyIcon = "text-6xl mb-4" // Corregido de 6x1 a 6xl por si acaso
 const emptyText = "text-gray-700 font-semibold text-lg mb-1"
 const emptyDesc = "text-gray-400 text-sm"
 
 interface Props {
   favorites: PointDetail[];
-  selectedOds: number | null;
+  selectedOds: number[]; // <-- CAMBIO 1: Ahora es un array de números
 }
 
 // Componente
 export default function FavoritesList({ favorites, selectedOds }: Props) {
-    const filtered = selectedOds === null ? favorites : favorites.filter((p) => p.odsNumber === selectedOds)
+    // <-- CAMBIO 2: Lógica de array (si está vacío muestra todos, si no, busca si está incluido)
+    const filtered = selectedOds.length === 0 
+        ? favorites 
+        : favorites.filter((p) => selectedOds.includes(p.odsNumber))
 
     if(filtered.length === 0) {
         return (
