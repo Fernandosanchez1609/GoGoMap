@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef, useMemo, useCallback } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import type { Map as LeafletMap } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Footer from "@/components/Footer/Footer";
@@ -16,6 +16,7 @@ import PointDetailModal from "@/components/Map/PointDetailModal";
 import { fetchOsrmRoute } from "@/utils/map";
 import Filter from "@/components/Map/Filter";
 import { toast } from "sonner";
+
 
 export default function MapPage() {
 const location = useLocation();
@@ -37,6 +38,7 @@ const location = useLocation();
   );
   const [loadingRoute, setLoadingRoute] = useState(false);
   const mapRef = useRef<LeafletMap | null>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchPoints = async () => {
@@ -60,10 +62,15 @@ const location = useLocation();
         const response = await userService.getWheelSpinStatus();
         if (!response.data.hasSpunToday) {
           toast.success(
-            "🎡 ¡Tienes una tirada diaria disponible en la Ruleta Karma! Pon a prueba tu suerte.",
+            "🎡 ¡Tienes una tirada diaria disponible en la Ruleta Karma!",
             {
-              duration: 5000,
-            },
+              id: "ruleta-toast", // 3. Esto evita que salga doble
+              duration: 6000,
+              action: {
+                label: "Ir a la ruleta",
+                onClick: () => navigate("/user"), // 4. Navega al perfil
+              },
+            }
           );
         }
       } catch (err) {
@@ -72,7 +79,7 @@ const location = useLocation();
     };
 
     void checkWheelSpinStatus();
-  }, []);
+  }, [ navigate]);
 
   useEffect(() => {
     if (!navigator.geolocation) {
@@ -103,6 +110,7 @@ const location = useLocation();
       }
     }
   }, [location.state, points]);
+  
 
   const centerOnUser = () => {
     if (mapRef.current && userPosition) {

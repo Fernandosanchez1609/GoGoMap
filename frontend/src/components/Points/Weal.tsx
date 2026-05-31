@@ -38,9 +38,9 @@ const data: Prize[] = [
 
 const multiplierStyles: Record<Multiplier, { label: string; color: string }> = {
   X1:  { label: "Sin multiplicador",  color: getCssVar("--weal-x1-text")  },
-  X2:  { label: "¡Doble puntuación!", color: getCssVar("--weal-x2-text")  },
-  X5:  { label: "¡Cinco veces!",      color: getCssVar("--weal-x5-text")  },
-  X10: { label: "¡JACKPOT!",          color: getCssVar("--weal-x10-text") },
+  X2:  { label: "¡Doble puntuación!", color: getCssVar("--weal-x2-bg")  },
+  X5:  { label: "¡Cinco veces!",      color: getCssVar("--weal-x5-bg")  },
+  X10: { label: "¡JACKPOT!",          color: getCssVar("--weal-x10-bg") },
 };
 
 interface WealProps {
