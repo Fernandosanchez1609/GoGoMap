@@ -1,6 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function Footer() {
+  const location = useLocation();
+  const publicRoutes = ["/", "/login", "/register", "/error"];
+  
+  if (publicRoutes.includes(location.pathname) || location.pathname.startsWith("/error")) {
+    return null;
+  }
+
   return (
     <footer className="flex justify-around p-4 bg-white border-t">
       <NavLink to="/">
