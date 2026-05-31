@@ -17,7 +17,7 @@ import { toast } from "sonner";
 
 export default function MapPage() {
   const [userPosition, setUserPosition] = useState<[number, number] | null>(null);
-  const [selectedOds, setSelectedOds] = useState<number | null>(1);
+  const [selectedOds, setSelectedOds] = useState<number[]>([1]);
   const [radiusKm, setRadiusKm] = useState<number>(5);
   const [debouncedRadius] = useDebounce(radiusKm, 150);
   const [geoError, setGeoError] = useState<string | null>(null);
@@ -136,7 +136,7 @@ export default function MapPage() {
 
   const visiblePoints = useMemo(() => {
     return points.filter((p) => {
-      const odsMatch = selectedOds === null || p.odsNumber === selectedOds;
+      const odsMatch = selectedOds.length === 0 || selectedOds.includes(p.odsNumber);
       const distanceMatch =
         userPosition === null ||
         getDistanceKm(

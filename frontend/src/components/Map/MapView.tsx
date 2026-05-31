@@ -36,7 +36,7 @@ interface MapViewProps {
   points: Point[];
   userPosition: [number, number] | null;
   routeCoords: [number, number][] | null;
-  selectedOds: number | null;
+  selectedOds: number[];
   radiusKm: number;
   onPointClick: (id: string, lat: number, lng: number) => void;
   mapRef: RefObject<LeafletMap | null>;

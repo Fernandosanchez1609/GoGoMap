@@ -1,8 +1,8 @@
 import Filter from "@/components/Map/Filter";
 
 interface MapControlsProps {
-  selectedOds: number | null;
-  onSelect: (ods: number | null) => void;
+  selectedOds: number[];
+  onSelect: (ods: number[]) => void;
   radiusKm: number;
   onRadiusChange: (value: number) => void;
   visibleCount: number;
