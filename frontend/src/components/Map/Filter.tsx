@@ -30,10 +30,10 @@ export default function Filter({ selected, onSelect }: FilterProps) {
               <button
                 key={n}
                 onClick={() => handleToggle(n)}
-                className={`shrink-0 snap-center flex items-center gap-2 px-3 py-2 rounded-full transition-all duration-200 border-2
+                className={`shrink-0 snap-center flex items-center gap-2 px-3 py-2 rounded-2xl transition-all duration-200
                   ${isSelected
-                    ? "bg-green-500 border-green-600 shadow-lg scale-105 text-white"
-                    : "bg-white border-gray-200 hover:border-green-300 hover:bg-gray-50 text-gray-700"
+                    ? "bg-green-100 text-green-800 shadow-sm scale-105 font-bold"
+                    : "bg-white text-gray-600 shadow-sm hover:bg-gray-50"
                   }`}
               >
                 <img

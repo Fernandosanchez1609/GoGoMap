@@ -13,16 +13,14 @@ export default function Footer() {
       <div className="max-w-screen-xl mx-auto flex justify-around p-4">
         <NavLink to="/map">
           {({ isActive }) => (
-            <div
-              className={`flex flex-col items-center gap-1 px-5 py-2 rounded-2xl transition-all duration-200 ${isActive ? "bg-gray-100" : ""}`}
-            >
+            <div className="flex flex-col items-center gap-1 px-5 py-2 rounded-2xl transition-all duration-200">
               <img
                 src="/assets/icons/mapa.svg"
                 alt="Mapa"
                 className={`h-8 transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-40"}`}
               />
               <span
-                className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-black" : "text-gray-400"}`}
+                className={`text-xs transition-all duration-200 ${isActive ? "text-green-600 font-bold" : "text-gray-400 font-medium"}`}
               >
                 Mapa
               </span>
@@ -32,16 +30,14 @@ export default function Footer() {
 
         <NavLink to="/favorites">
           {({ isActive }) => (
-            <div
-              className={`flex flex-col items-center gap-1 px-5 py-2 rounded-2xl transition-all duration-200 ${isActive ? "bg-gray-100" : ""}`}
-            >
+            <div className="flex flex-col items-center gap-1 px-5 py-2 rounded-2xl transition-all duration-200">
               <img
                 src="/assets/icons/favoritos.svg"
                 alt="Favoritos"
                 className={`h-8 transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-40"}`}
               />
               <span
-                className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-black" : "text-gray-400"}`}
+                className={`text-xs transition-all duration-200 ${isActive ? "text-green-600 font-bold" : "text-gray-400 font-medium"}`}
               >
                 Favoritos
               </span>
@@ -51,16 +47,14 @@ export default function Footer() {
 
         <NavLink to="/user">
           {({ isActive }) => (
-            <div
-              className={`flex flex-col items-center gap-1 px-5 py-2 rounded-2xl transition-all duration-200 ${isActive ? "bg-gray-100" : ""}`}
-            >
+            <div className="flex flex-col items-center gap-1 px-5 py-2 rounded-2xl transition-all duration-200">
               <img
                 src="/assets/icons/perfil.svg"
                 alt="Perfil"
                 className={`h-8 transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-40"}`}
               />
               <span
-                className={`text-xs font-medium transition-all duration-200 ${isActive ? "text-black" : "text-gray-400"}`}
+                className={`text-xs transition-all duration-200 ${isActive ? "text-green-600 font-bold" : "text-gray-400 font-medium"}`}
               >
                 Perfil
               </span>
