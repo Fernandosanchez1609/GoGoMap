@@ -52,8 +52,13 @@ export default function FavoritesPage() {
                 <FavoritesTitle />
                 
                 {isLoading ? (
-                    <div className="text-center py-10 text-gray-500 font-medium">
-                        Cargando tus favoritos...
+                    <div className="flex flex-col gap-4 px-4 pt-4 w-full md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 max-w-screen-xl mx-auto">
+                        {[1, 2, 3, 4, 5].map((i) => (
+                            <div
+                                key={i}
+                                className="animate-pulse bg-gray-200 rounded-2xl h-32 w-full"
+                            />
+                        ))}
                     </div>
                 ) : (
                     <FavoritesList 

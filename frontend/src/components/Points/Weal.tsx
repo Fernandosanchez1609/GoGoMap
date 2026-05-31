@@ -142,7 +142,7 @@ export default function Weal({ onClose }: WealProps) {
         <button
           onClick={handleSpin}
           disabled={mustSpin || loading || hasSpunWheelToday}
-          className="w-full py-4 rounded-full bg-app-green text-white font-semibold text-base shadow-lg shadow-green-900/25 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 hover-bg-app-green active:scale-95"
+          className="w-full py-4 rounded-full bg-app-green text-white font-semibold text-base shadow-lg shadow-green-900/25 disabled:opacity-50 disabled:cursor-not-allowed transition-transform duration-200 hover:scale-105 active:scale-95"
         >
           {loading
             ? "Consultando..."

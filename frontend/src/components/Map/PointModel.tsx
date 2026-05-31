@@ -191,7 +191,7 @@ export default function PointModel({ point, latitude, longitude, onRequestRoute,
         <button
           onClick={handleToggleFavorite}
           disabled={isLoadingFav}
-          className="p-2 rounded-full hover:bg-gray-100 transition-colors disabled:opacity-50 shrink-0"
+          className="p-2 rounded-full hover:bg-gray-100 transition-all duration-200 active:scale-90 hover:scale-110 disabled:opacity-50 shrink-0"
           title={isFavorite ? "Quitar de favoritos" : "Añadir a favoritos"}
         >
           <svg

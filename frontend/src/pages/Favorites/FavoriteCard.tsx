@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import { Heart } from "lucide-react"
 import type { PointDetail } from "@/api/types/index"
 import userService from "@/api/services/userService"
 
@@ -82,16 +83,20 @@ export default function FavoriteCard({ place, onFavoriteRemoved }: { place: Poin
                 <div className={topRow}>
                     <h3 className={name}>{place.title}</h3>
                     
-                    {/* Botón de la Estrella */}
+                    {/* Botón del Corazón */}
                     <button 
                         onClick={handleToggleFavorite}
                         disabled={isLoading}
-                        className={`text-2xl shrink-0 transition-colors ${
-                            isFavorite ? "text-yellow-400 hover:text-yellow-500" : "text-gray-300 hover:text-yellow-400"
-                        } disabled:opacity-50`}
+                        className={`shrink-0 transition-all duration-200 active:scale-90 hover:scale-110 disabled:opacity-50 ${
+                            isFavorite ? "text-red-500" : "text-gray-300"
+                        }`}
                         title={isFavorite ? "Quitar de favoritos" : "Añadir a favoritos"}
                     >
-                        ★
+                        <Heart 
+                            size={24} 
+                            fill={isFavorite ? "currentColor" : "none"} 
+                            strokeWidth={2}
+                        />
                     </button>
                 </div>
 
