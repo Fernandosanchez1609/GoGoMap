@@ -1,5 +1,5 @@
 import api from "../axiosConfig";
-import type { PointDetail, UserRanking, Achievement } from "../types/index";
+import type { PointDetail, UserRanking, Achievement, Reward } from "../types/index";
 
 export interface User {
   id: number;
@@ -44,6 +44,10 @@ const userService = {
   
   // Función de logros
   getAchievements: () => api.get<Achievement[]>("/v1/users/me/achievements"),
+  
+  // Funciones de tienda
+  getRewards: () => api.get<Reward[]>("/v1/users/me/rewards"),
+  buyReward: (rewardId: number) => api.post<User>(`/v1/users/me/rewards/${rewardId}/buy`),
 };
 
 export default userService;

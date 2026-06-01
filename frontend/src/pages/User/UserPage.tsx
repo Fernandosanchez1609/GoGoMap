@@ -1,11 +1,12 @@
 import { useAuth } from "@/context/AuthContext"
 import { useNavigate } from "react-router-dom"
-import { LogOut, Loader2, Pencil, Gift, Trophy } from "lucide-react" // Importamos Trophy
+import { LogOut, Loader2, Pencil, Gift, Trophy, ShoppingBag } from "lucide-react"
 import Header from "../../components/Header/Header"
 import Footer from "@/components/Footer/Footer"
 import Leaderboard from "@/components/Profile/Leaderboard"
 import EditProfileModal from "@/components/Profile/EditProfileModal"
 import AchievementsModal from "@/components/Profile/AchievementsModal"
+import KarmaShopModal from "@/components/Profile/KarmaShopModal"
 import Weal from "@/components/Points/Weal"
 import { useState } from "react"
 
@@ -15,6 +16,7 @@ export default function UserPage() {
     const [isEditModalOpen, setIsEditModalOpen] = useState(false)
     const [isAchievementsOpen, setIsAchievementsOpen] = useState(false)
     const [showWeal, setShowWeal] = useState(false)
+    const [showShop, setShowShop] = useState(false)
 
     const handleLogout = () => {
         logout()
@@ -66,12 +68,11 @@ export default function UserPage() {
                                 </div>
                                 <div className="w-px bg-gray-200"></div>
                                 
-                                {/* BOTÓN DE LOGROS/TROFEOS ACTUALIZADO */}
+                                {/* BOTÓN DE LOGROS/TROFEOS */}
                                 <button 
                                     onClick={() => setIsAchievementsOpen(true)}
                                     className="text-center hover:bg-gray-100 rounded-xl p-2 cursor-pointer transition-colors"
                                 >
-                                    {/* Icono cambiado a Trophy y color a dorado (amber) */}
                                     <div className="text-2xl font-bold text-amber-500 flex items-center justify-center gap-1">
                                         <Trophy size={20} />
                                     </div>
@@ -93,19 +94,34 @@ export default function UserPage() {
                     {/* Columnas Derecha: Gamificación */}
                     <div className="md:col-span-2 space-y-6 flex flex-col">
                         
-                        {/* Ruleta Compacta */}
-                        <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-3xl p-6 shadow-lg text-white flex flex-col md:flex-row items-center justify-between gap-6">
-                            <div className="flex-1 text-center md:text-left">
-                                <h3 className="text-xl font-bold mb-2">¡Prueba tu suerte!</h3>
-                                <p className="text-green-100 text-sm">Gira la Ruleta Karma todos los días para ganar premios y puntos extra.</p>
-                            </div>
-                            <div className="w-full md:w-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            {/* Ruleta Compacta */}
+                            <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-3xl p-6 shadow-lg text-white flex flex-col justify-between gap-4">
+                                <div>
+                                    <h3 className="text-xl font-bold mb-1">Ruleta Diaria</h3>
+                                    <p className="text-green-100 text-sm">Gira para ganar puntos extra cada día.</p>
+                                </div>
                                 <button
                                     onClick={() => setShowWeal(true)}
-                                    className="w-full md:w-auto flex items-center justify-center gap-2 py-3 px-6 rounded-full bg-white text-green-600 font-bold text-base shadow-lg hover:bg-green-50 hover:scale-105 active:scale-95 transition-all duration-200"
+                                    className="w-full flex items-center justify-center gap-2 py-3 px-6 rounded-xl bg-white text-green-600 font-bold text-base shadow hover:bg-green-50 hover:scale-105 active:scale-95 transition-all duration-200"
                                 >
                                     <Gift size={20} />
-                                    Girar Ruleta
+                                    Jugar
+                                </button>
+                            </div>
+
+                            {/* NUEVO: Tienda de Karma */}
+                            <div className="bg-white border border-gray-100 rounded-3xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.06)] flex flex-col justify-between gap-4">
+                                <div>
+                                    <h3 className="text-xl font-bold text-gray-900 mb-1">Tienda Karma</h3>
+                                    <p className="text-gray-500 text-sm">Canjea tus puntos por recompensas.</p>
+                                </div>
+                                <button
+                                    onClick={() => setShowShop(true)}
+                                    className="w-full flex items-center justify-center gap-2 py-3 px-6 rounded-xl bg-green-50 border-2 border-green-100 text-green-700 font-bold text-base shadow-sm hover:bg-green-100 hover:border-green-200 hover:scale-105 active:scale-95 transition-all duration-200"
+                                >
+                                    <ShoppingBag size={20} />
+                                    Ver Tienda
                                 </button>
                             </div>
                         </div>
@@ -130,6 +146,14 @@ export default function UserPage() {
             <AchievementsModal 
                 isOpen={isAchievementsOpen} 
                 onClose={() => setIsAchievementsOpen(false)} 
+            />
+
+            {/* Modal de la Tienda de Karma */}
+            <KarmaShopModal 
+                isOpen={showShop} 
+                onClose={() => setShowShop(false)} 
+                userKarma={user.karmaPoints}
+                onPurchaseSuccess={() => { if (refreshProfile) refreshProfile() }} 
             />
 
             {/* Modal de la Ruleta (Weal) */}

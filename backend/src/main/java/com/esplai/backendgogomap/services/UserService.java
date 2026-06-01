@@ -9,14 +9,17 @@ import com.esplai.backendgogomap.models.dtos.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserRankingDTO;
 import com.esplai.backendgogomap.models.dtos.response.AchievementResponseDTO;
+import com.esplai.backendgogomap.models.dtos.response.RewardResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.WheelSpinResponseDTO;
 import com.esplai.backendgogomap.models.entities.KarmaEvent;
 import com.esplai.backendgogomap.models.entities.MapPoint;
 import com.esplai.backendgogomap.models.entities.Achievement;
+import com.esplai.backendgogomap.models.entities.Reward;
 import com.esplai.backendgogomap.models.entities.User;
 import com.esplai.backendgogomap.repositories.KarmaEventRepository;
 import com.esplai.backendgogomap.repositories.MapPointRepository;
 import com.esplai.backendgogomap.repositories.AchievementRepository;
+import com.esplai.backendgogomap.repositories.RewardRepository;
 import com.esplai.backendgogomap.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -43,6 +46,7 @@ public class UserService {
     private final MapPointRepository mapPointRepository;
     private final KarmaEventRepository karmaEventRepository;
     private final AchievementRepository achievementRepository;
+    private final RewardRepository rewardRepository;
     private final UserMapper userMapper;
     private final MapPointMapper mapPointMapper;
 
@@ -173,5 +177,56 @@ public class UserService {
                         .unlocked(userKarma >= achievement.getRequiredKarma())
                         .build())
                 .collect(Collectors.toList());
+    }
+
+    public List<RewardResponseDTO> getUserRewards(String email) {
+        User user = userRepository.findByEmailIgnoreCase(email)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuario no encontrado"));
+
+        List<Reward> allRewards = rewardRepository.findAll();
+        Set<Long> ownedIds = user.getUnlockedRewards().stream()
+                .map(Reward::getId)
+                .collect(Collectors.toSet());
+
+        return allRewards.stream()
+                .map(r -> RewardResponseDTO.builder()
+                        .id(r.getId())
+                        .name(r.getName())
+                        .description(r.getDescription())
+                        .cost(r.getCost())
+                        .iconName(r.getIconName())
+                        .isOwned(ownedIds.contains(r.getId()))
+                        .build())
+                .collect(Collectors.toList());
+    }
+
+    @Transactional
+    public UserResponseDTO buyReward(String email, Long rewardId) {
+        User user = userRepository.findByEmailIgnoreCase(email)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuario no encontrado"));
+
+        Reward reward = rewardRepository.findById(rewardId)
+                .orElseThrow(() -> new ResourceNotFoundException("Reward", "id", rewardId));
+
+        if (user.getUnlockedRewards().contains(reward)) {
+            throw new IllegalArgumentException("Ya posees esta recompensa");
+        }
+
+        if (user.getKarmaPoints() < reward.getCost()) {
+            throw new IllegalArgumentException("Karma insuficiente");
+        }
+
+        user.setKarmaPoints(user.getKarmaPoints() - reward.getCost());
+        user.getUnlockedRewards().add(reward);
+
+        KarmaEvent event = KarmaEvent.builder()
+                .user(user)
+                .pointsChange(-reward.getCost())
+                .reason("Compra: " + reward.getName())
+                .build();
+        karmaEventRepository.save(event);
+
+        User updated = userRepository.save(user);
+        return userMapper.toResponseDTO(updated);
     }
 }

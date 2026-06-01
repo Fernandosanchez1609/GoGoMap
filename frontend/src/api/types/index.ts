@@ -38,3 +38,12 @@ export interface Achievement {
   requiredKarma: number;
   unlocked: boolean;
 }
+
+export interface Reward {
+  id: number;
+  name: string;
+  description: string;
+  cost: number;
+  iconName: string;
+  isOwned: boolean;
+}
