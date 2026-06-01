@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef, useMemo, useCallback } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { SlidersHorizontal } from "lucide-react";
 import type { Map as LeafletMap } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Footer from "@/components/Footer/Footer";
@@ -9,17 +10,17 @@ import pointService from "@/api/services/pointService";
 import userService from "@/api/services/userService";
 import { getDistanceKm } from "@/utils/Distance";
 import { useDebounce } from "use-debounce";
-import MapControls from "@/components/Map/MapControls";
 import MapAlerts from "@/components/Map/MapAlerts";
 import MapView from "@/components/Map/MapView";
 import PointDetailModal from "@/components/Map/PointDetailModal";
+import FilterDrawer from "@/components/Map/FilterDrawer";
 import { fetchOsrmRoute } from "@/utils/map";
-import Filter from "@/components/Map/Filter";
 import { toast } from "sonner";
-
+import { useAuth } from "@/context/AuthContext";
 
 export default function MapPage() {
-const location = useLocation();
+  const location = useLocation();
+  const { isAuthenticated } = useAuth();
   const [userPosition, setUserPosition] = useState<[number, number] | null>(null);
   const [selectedOds, setSelectedOds] = useState<number[]>([1]);
   const [radiusKm, setRadiusKm] = useState<number>(5);
@@ -37,6 +38,9 @@ const location = useLocation();
     null,
   );
   const [loadingRoute, setLoadingRoute] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+  const [favoriteIds, setFavoriteIds] = useState<number[]>([]);
   const mapRef = useRef<LeafletMap | null>(null);
   const navigate = useNavigate();
 
@@ -64,11 +68,11 @@ const location = useLocation();
           toast.success(
             "🎡 ¡Tienes una tirada diaria disponible en la Ruleta Karma!",
             {
-              id: "ruleta-toast", // 3. Esto evita que salga doble
+              id: "ruleta-toast", 
               duration: 6000,
               action: {
                 label: "Ir a la ruleta",
-                onClick: () => navigate("/user"), // 4. Navega al perfil
+                onClick: () => navigate("/user"),
               },
             }
           );
@@ -79,7 +83,26 @@ const location = useLocation();
     };
 
     void checkWheelSpinStatus();
-  }, [ navigate]);
+  }, [navigate]);
+
+  useEffect(() => {
+    const loadFavorites = async () => {
+      if (!isAuthenticated) {
+        setFavoriteIds([]);
+        return;
+      }
+
+      try {
+        const response = await userService.getFavorites();
+        const ids = response.data.map((fav: PointDetail) => fav.id);
+        setFavoriteIds(ids);
+      } catch (err) {
+        console.error("Error al cargar favoritos:", err);
+      }
+    };
+
+    void loadFavorites();
+  }, [isAuthenticated]);
 
   useEffect(() => {
     if (!navigator.geolocation) {
@@ -174,38 +197,38 @@ const location = useLocation();
           p.latitude,
           p.longitude,
         ) <= debouncedRadius;
-      return odsMatch && distanceMatch;
+      const favoritesMatch = !showFavoritesOnly || favoriteIds.includes(p.id);
+      return odsMatch && distanceMatch && favoritesMatch;
     });
-  }, [points, selectedOds, debouncedRadius, userPosition]);
+  }, [points, selectedOds, debouncedRadius, userPosition, showFavoritesOnly, favoriteIds]);
 
   return (
     <div className="flex flex-col h-screen ">
       <Header />
-      <Filter selected={selectedOds} onSelect={setSelectedOds} />
 
-      {userPosition && (
-        //<div className="flex items-center gap-4 px-4 py-2 bg-white border-b border-gray-200 text-sm">
-        <div className="flex items-center gap-4 px-4 py-2 bg-app-bg border-b border-gray-200 text-sm">
-          <div className="flex items-center gap-2 flex-1 ">
-            <span className="text-gray-600 whitespace-nowrap">Radio:</span>
-            <input
-              type="range"
-              min={0.5}
-              max={30}
-              step={0.5}
-              value={radiusKm}
-              onChange={(e) => setRadiusKm(Number(e.target.value))}
-              className="flex-1 accent-blue-500"
-            />
-            <span className="text-gray-800 font-medium whitespace-nowrap w-12">
-              {radiusKm} km
-            </span>
-          </div>
-          <span className="font-semibold text-gray-800 whitespace-nowrap">
-            {visiblePoints.length}
-          </span>
-        </div>
-      )}
+      {/* Botón flotante para abrir filtros */}
+      <button
+        onClick={() => setIsDrawerOpen(true)}
+        className="fixed top-20 left-4 z-[1000] bg-white rounded-2xl p-3 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.18)] transition-all duration-200 border border-gray-100"
+        title="Abrir filtros"
+      >
+        <SlidersHorizontal size={24} className="text-gray-700" />
+      </button>
+
+      {/* Drawer de filtros */}
+      <FilterDrawer
+        isOpen={isDrawerOpen}
+        onClose={() => setIsDrawerOpen(false)}
+        selectedOds={selectedOds}
+        onSelectOds={setSelectedOds}
+        radiusKm={radiusKm}
+        onRadiusChange={setRadiusKm}
+        visibleCount={visiblePoints.length}
+        hasUserPosition={Boolean(userPosition)}
+        showFavoritesOnly={showFavoritesOnly}
+        onToggleFavorites={setShowFavoritesOnly}
+        isAuthenticated={isAuthenticated}
+      />
 
       <div className="relative flex-1 min-h-0 overflow-hidden">
         <MapAlerts
@@ -229,7 +252,6 @@ const location = useLocation();
             className="absolute bottom-6 right-4 z-[1000] flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.2)] border border-gray-200 hover:bg-gray-50 transition-all active:scale-95"
             title="Centrar en mi ubicación"
           >
-            {/* Si tienes un SVG de ubicación úsalo aquí. Si no, este SVG genérico queda genial: */}
             <svg
               xmlns="http://w3.org"
               viewBox="0 0 24 24"
@@ -242,7 +264,6 @@ const location = useLocation();
               stroke-linejoin="round"
             >
               <path d="M12 22C12 22 4 15.56 4 10C4 5.58 7.58 2 12 2C16.42 2 20 5.58 20 10C20 15.56 12 22 12 22Z" />
-
               <circle cx="12" cy="10" r="3" fill="#FF5722" />
             </svg>
           </button>
