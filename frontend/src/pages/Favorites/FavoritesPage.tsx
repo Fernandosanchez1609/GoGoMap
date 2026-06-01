@@ -1,17 +1,16 @@
 import Header from "../../components/Header/Header"
 import FavoritesTitle from "./FavoritesTitle"
 import { useState, useEffect } from "react"
-import Filter from "@/components/Map/Filter"
 import FavoritesList from "./FavoritesList"
 import Footer from "@/components/Footer/Footer"
+import FilterDrawer from "@/components/Map/FilterDrawer"
+import { SlidersHorizontal } from "lucide-react"
 import userService from "@/api/services/userService"
 import type { PointDetail } from "@/api/types/index"
 
 // Estilos
 const page = "min-h-screen bg-app-surface-1 flex flex-col items-center"
 const content = "w-full flex-1 flex flex-col pb-24"
-
-const filterWrapper = "w-full overflow-hidden"
 
 const footerWrapper = "fixed bottom-0 left-0 w-full z-50"
 
@@ -20,6 +19,7 @@ export default function FavoritesPage() {
     const [selectedOds, setSelectedOds] = useState<number | null>(null)
     const [favorites, setFavorites] = useState<PointDetail[]>([])
     const [isLoading, setIsLoading] = useState(true)
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false)
 
     useEffect(() => {
         const loadFavorites = async () => {
@@ -39,16 +39,47 @@ export default function FavoritesPage() {
         setFavorites((prevFavorites) => prevFavorites.filter((fav) => fav.id !== id))
     }
 
+    const handleSelectOds = (ods: number | null) => {
+        setSelectedOds(ods)
+    }
+
     return (
         <div className={page}>
             <Header />
-            <div className={content}>
-                
-                <div className={filterWrapper}>
-                    <div >
-                        <Filter selected={selectedOds} onSelect={setSelectedOds} />
-                    </div>
+
+            {/* Botón flotante para abrir filtros */}
+            <button
+                onClick={() => setIsDrawerOpen(true)}
+                className="fixed top-24 left-4 z-[1000] flex flex-col items-center gap-1"
+                title="Abrir filtros"
+            >
+                <div className="relative p-2 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100 hover:bg-gray-50 transition-colors">
+                    <SlidersHorizontal size={24} className="text-gray-700" />
+                    {selectedOds !== null && (
+                        <span className="absolute -top-1 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-red-500 shadow-sm animate-pulse" />
+                    )}
                 </div>
+                <span className="text-[10px] font-bold text-gray-700 bg-white/80 px-2 py-0.5 rounded-full backdrop-blur-sm shadow-sm">
+                    Filtros
+                </span>
+            </button>
+
+            {/* Drawer de filtros */}
+            <FilterDrawer
+                isOpen={isDrawerOpen}
+                onClose={() => setIsDrawerOpen(false)}
+                selectedOds={selectedOds !== null ? [selectedOds] : []}
+                onSelectOds={(ods) => handleSelectOds(ods.length > 0 ? ods[0] : null)}
+                radiusKm={0}
+                onRadiusChange={() => {}}
+                visibleCount={favorites.length}
+                hasUserPosition={false}
+                showFavoritesOnly={false}
+                onToggleFavorites={() => {}}
+                isAuthenticated={true}
+            />
+
+            <div className={content}>
                 <FavoritesTitle />
                 
                 {isLoading ? (
