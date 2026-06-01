@@ -1,4 +1,5 @@
 import { MapPin, Compass, Zap } from 'lucide-react'
+import Button from './Button'
 
 // Sección
 const section = "relative px-6 py-8 flex flex-col items-center gap-10 scroll-mt-24"
@@ -35,6 +36,9 @@ const stepsData = [
   },
 ]
 
+// Botón
+const buttonWrapper = "w-full max-w-sm flex flex-col sm:flex-row gap-4"
+
 export default function HowItWorks() {
   return (
     <section id="how-it-works" className={section}>
@@ -59,6 +63,11 @@ export default function HowItWorks() {
           </div>
         ))}
       </div>
+
+      {/* Botón */}
+          <div className={buttonWrapper}>
+              <Button label="Entrar a la App" href="/login" variant="primary" />
+          </div>
 
     </section>
   )

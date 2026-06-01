@@ -10,13 +10,13 @@ import type { PointDetail } from "@/api/types/index"
 
 // Estilos
 const page = "min-h-screen bg-app-surface-1 flex flex-col items-center"
-const content = "w-full flex-1 flex flex-col pb-24"
+const content = "w-full flex-1 flex flex-col pb-24 md:pb-8"
 
-const footerWrapper = "fixed bottom-0 left-0 w-full z-50"
+const footerWrapper = "fixed bottom-0 left-0 right-0 z-50 md:static md:w-full"
 
 // Componente
 export default function FavoritesPage() {
-    const [selectedOds, setSelectedOds] = useState<number | null>(null)
+    const [selectedOds, setSelectedOds] = useState<number[]>([]) // ¡Vuelve a ser un array!
     const [favorites, setFavorites] = useState<PointDetail[]>([])
     const [isLoading, setIsLoading] = useState(true)
     const [isDrawerOpen, setIsDrawerOpen] = useState(false)
@@ -39,15 +39,11 @@ export default function FavoritesPage() {
         setFavorites((prevFavorites) => prevFavorites.filter((fav) => fav.id !== id))
     }
 
-    const handleSelectOds = (ods: number | null) => {
-        setSelectedOds(ods)
-    }
-
     return (
         <div className={page}>
             <Header />
 
-            {/* Botón flotante para abrir filtros */}
+            {/* Botón flotante para abrir filtros  */}
             <button
                 onClick={() => setIsDrawerOpen(true)}
                 className="fixed top-24 left-4 z-[1000] flex flex-col items-center gap-1"
@@ -55,7 +51,7 @@ export default function FavoritesPage() {
             >
                 <div className="relative p-2 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100 hover:bg-gray-50 transition-colors">
                     <SlidersHorizontal size={24} className="text-gray-700" />
-                    {selectedOds !== null && (
+                    {selectedOds.length > 0 && (
                         <span className="absolute -top-1 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-red-500 shadow-sm animate-pulse" />
                     )}
                 </div>
@@ -64,19 +60,19 @@ export default function FavoritesPage() {
                 </span>
             </button>
 
-            {/* Drawer de filtros */}
+            {/* Drawer de filtros reutilizado */}
             <FilterDrawer
                 isOpen={isDrawerOpen}
                 onClose={() => setIsDrawerOpen(false)}
-                selectedOds={selectedOds !== null ? [selectedOds] : []}
-                onSelectOds={(ods) => handleSelectOds(ods.length > 0 ? ods[0] : null)}
-                radiusKm={0}
-                onRadiusChange={() => {}}
+                selectedOds={selectedOds}
+                onSelectOds={setSelectedOds}
+                radiusKm={0} // No se usa en Favoritos
+                onRadiusChange={() => {}} // No se usa en Favoritos
                 visibleCount={favorites.length}
-                hasUserPosition={false}
-                showFavoritesOnly={false}
-                onToggleFavorites={() => {}}
-                isAuthenticated={true}
+                hasUserPosition={false} 
+                showFavoritesOnly={true} 
+                onToggleFavorites={() => {}} 
+                isAuthenticated={false}
             />
 
             <div className={content}>

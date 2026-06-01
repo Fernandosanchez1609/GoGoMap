@@ -9,7 +9,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-white border-t">
+    <footer className="bg-app-bg border-t">
       <div className="max-w-screen-xl mx-auto flex justify-around p-4">
         <NavLink to="/map">
           {({ isActive }) => (
