@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef, useMemo, useCallback } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { SlidersHorizontal } from "lucide-react";
 import type { Map as LeafletMap } from "leaflet";
 import "leaflet/dist/leaflet.css";
@@ -30,14 +30,19 @@ export default function MapPage() {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [selectedPoint, setSelectedPoint] = useState<PointDetail | null>(null);
-  const [selectedPointCoords, setSelectedPointCoords] = useState<[number, number] | null>(null);
+  const [selectedPointCoords, setSelectedPointCoords] = useState<
+    [number, number] | null
+  >(null);
   const [loadingDetail, setLoadingDetail] = useState(false);
-  const [routeCoords, setRouteCoords] = useState<[number, number][] | null>(null);
+  const [routeCoords, setRouteCoords] = useState<[number, number][] | null>(
+    null,
+  );
   const [loadingRoute, setLoadingRoute] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   const [favoriteIds, setFavoriteIds] = useState<number[]>([]);
   const mapRef = useRef<LeafletMap | null>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchPoints = async () => {
@@ -60,9 +65,17 @@ export default function MapPage() {
       try {
         const response = await userService.getWheelSpinStatus();
         if (!response.data.hasSpunToday) {
-          toast.success("🎡 ¡Tienes una tirada diaria disponible en la Ruleta Karma! Pon a prueba tu suerte.", {
-            duration: 5000,
-          });
+          toast.success(
+            "🎡 ¡Tienes una tirada diaria disponible en la Ruleta Karma!",
+            {
+              id: "ruleta-toast", 
+              duration: 6000,
+              action: {
+                label: "Ir a la ruleta",
+                onClick: () => navigate("/user"),
+              },
+            }
+          );
         }
       } catch (err) {
         console.error("Error al verificar el estado de la ruleta:", err);
@@ -70,7 +83,7 @@ export default function MapPage() {
     };
 
     void checkWheelSpinStatus();
-  }, []);
+  }, [navigate]);
 
   useEffect(() => {
     const loadFavorites = async () => {
@@ -120,6 +133,7 @@ export default function MapPage() {
       }
     }
   }, [location.state, points]);
+  
 
   const centerOnUser = () => {
     if (mapRef.current && userPosition) {
@@ -173,7 +187,8 @@ export default function MapPage() {
 
   const visiblePoints = useMemo(() => {
     return points.filter((p) => {
-      const odsMatch = selectedOds.length === 0 || selectedOds.includes(p.odsNumber);
+      const odsMatch =
+        selectedOds.length === 0 || selectedOds.includes(p.odsNumber);
       const distanceMatch =
         userPosition === null ||
         getDistanceKm(
@@ -188,7 +203,7 @@ export default function MapPage() {
   }, [points, selectedOds, debouncedRadius, userPosition, showFavoritesOnly, favoriteIds]);
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen ">
       <Header />
 
       {/* Botón flotante para abrir filtros */}
@@ -239,7 +254,22 @@ export default function MapPage() {
             <span>✕</span> Eliminar ruta
           </button>
         )}
-
+        {userPosition && (
+          <button
+            onClick={centerOnUser}
+            className="absolute bottom-28 right-4 z-[1000] flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.2)] border border-gray-200 hover:bg-gray-50 transition-all active:scale-95"
+            title="Centrar en mi ubicación"
+          >
+            <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="3" fill="#2563eb"/>
+              <line x1="12" y1="2" x2="12" y2="4"/>
+              <line x1="12" y1="20" x2="12" y2="22"/>
+              <line x1="2" y1="12" x2="4" y2="12"/>
+              <line x1="20" y1="12" x2="22" y2="12"/>
+            </svg>
+          </button>
+        )}
         <MapView
           points={visiblePoints}
           userPosition={userPosition}

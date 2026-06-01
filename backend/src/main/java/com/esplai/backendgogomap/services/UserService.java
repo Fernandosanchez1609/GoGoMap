@@ -50,7 +50,7 @@ public class UserService {
         User user = userRepository.findByEmailIgnoreCase(email)
                 .orElseThrow(() -> new ResourceNotFoundException("Usuario", "email", email));
 
-        return userMapper.toResponse(user);
+        return userMapper.toResponseDTO(user);
     }
 
     @Transactional
@@ -158,7 +158,7 @@ public class UserService {
 
     public List<AchievementResponseDTO> getUserAchievements(String email) {
         User user = userRepository.findByEmailIgnoreCase(email)
-                .orElseThrow(() -> new ResourceNotFoundException("Usuario no encontrado"));
+                .orElseThrow(() -> new ResourceNotFoundException("Usuario", "email", email));
 
         List<Achievement> allAchievements = achievementRepository.findAll();
         int userKarma = user.getKarmaPoints();
