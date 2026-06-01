@@ -5,6 +5,7 @@ import com.esplai.backendgogomap.models.dtos.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserRankingDTO;
 import com.esplai.backendgogomap.models.dtos.response.AchievementResponseDTO;
+import com.esplai.backendgogomap.models.dtos.response.RewardResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.WheelSpinResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.WheelSpinStatusResponseDTO;
 import com.esplai.backendgogomap.services.UserService;
@@ -163,5 +164,33 @@ public class UserController {
         String email = jwt.getSubject();
         List<AchievementResponseDTO> achievements = userService.getUserAchievements(email);
         return ResponseEntity.ok(achievements);
+    }
+
+    @GetMapping("/me/rewards")
+    @Operation(
+            summary = "Obtener recompensas disponibles",
+            description = "Devuelve todas las recompensas de la tienda indicando cuáles posee el usuario."
+    )
+    @ApiResponse(responseCode = "200", description = "Recompensas obtenidas correctamente", content = @Content(array = @ArraySchema(schema = @Schema(implementation = RewardResponseDTO.class))))
+    public ResponseEntity<List<RewardResponseDTO>> getUserRewards(@AuthenticationPrincipal Jwt jwt) {
+        String email = jwt.getSubject();
+        List<RewardResponseDTO> rewards = userService.getUserRewards(email);
+        return ResponseEntity.ok(rewards);
+    }
+
+    @PostMapping("/me/rewards/{rewardId}/buy")
+    @Operation(
+            summary = "Comprar recompensa",
+            description = "Permite al usuario comprar una recompensa gastando puntos Karma."
+    )
+    @ApiResponse(responseCode = "200", description = "Recompensa comprada correctamente", content = @Content(schema = @Schema(implementation = UserResponseDTO.class)))
+    @ApiResponse(responseCode = "400", description = "Karma insuficiente o recompensa ya adquirida", content = @Content(schema = @Schema(implementation = ApiErrorResponse.class)))
+    public ResponseEntity<UserResponseDTO> buyReward(
+            @AuthenticationPrincipal Jwt jwt,
+            @PathVariable Long rewardId
+    ) {
+        String email = jwt.getSubject();
+        UserResponseDTO updatedUser = userService.buyReward(email, rewardId);
+        return ResponseEntity.ok(updatedUser);
     }
 }

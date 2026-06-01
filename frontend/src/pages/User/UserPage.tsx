@@ -1,15 +1,17 @@
 import Footer from "@/components/Footer/Footer";
-import { Gift, LogOut, Mail, User, Info } from "lucide-react";
+import { Gift, LogOut, Mail, User, Info, ShoppingBag } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
 import Weal from "@/components/Points/Weal";
 import Leaderboard from "@/components/Profile/Leaderboard";
+import KarmaShopModal from "@/components/Profile/KarmaShopModal";
 import { useAuth } from "@/context/AuthContext";
 
 export default function UserPage() {
   const navigate = useNavigate();
-  const { logout, profile } = useAuth();
+  const { logout, profile, refreshProfile } = useAuth();
   const [showWeal, setShowWeal] = useState(false);
+  const [showShop, setShowShop] = useState(false);
   const userData = {
     name: profile ? `${profile.nombre} ${profile.apellidos}` : "Cargando...",
     email: profile ? profile.email : "",
@@ -87,6 +89,15 @@ export default function UserPage() {
           Girar la ruleta
         </button>
 
+        {/* Tienda de Karma */}
+        <button
+          onClick={() => setShowShop(true)}
+          className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-green-600 text-white font-semibold text-base hover:bg-green-700 shadow-lg transition-all duration-200 active:scale-95"
+        >
+          <ShoppingBag size={18} />
+          Tienda de Karma
+        </button>
+
         {/* Acerca de GoGoMap */}
         <Link
           to="/about"
@@ -113,6 +124,12 @@ export default function UserPage() {
       <Footer />
 
       {showWeal && <Weal onClose={() => setShowWeal(false)} />}
+      <KarmaShopModal 
+        isOpen={showShop} 
+        onClose={() => setShowShop(false)} 
+        userKarma={userData.karmaPoints}
+        onPurchaseSuccess={refreshProfile}
+      />
     </div>
   );
 }
