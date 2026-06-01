@@ -46,7 +46,7 @@ public class UserService {
         User user = userRepository.findByEmailIgnoreCase(email)
                 .orElseThrow(() -> new ResourceNotFoundException("Usuario", "email", email));
 
-        return userMapper.toResponse(user);
+        return userMapper.toResponseDTO(user);
     }
 
     @Transactional
@@ -134,7 +134,7 @@ public class UserService {
     @Transactional
     public UserResponseDTO updateUserProfile(String email, UpdateProfileRequestDTO request) {
         User user = userRepository.findByEmailIgnoreCase(email)
-                .orElseThrow(() -> new ResourceNotFoundException("Usuario no encontrado"));
+                .orElseThrow(() -> new ResourceNotFoundException("Usuario", "email", email ));
 
         // Verificar si el nuevo email ya está en uso por otro usuario
         if (!user.getEmail().equalsIgnoreCase(request.getEmail())) {
