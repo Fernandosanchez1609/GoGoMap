@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef, useMemo, useCallback } from "react";
 import { useLocation } from "react-router-dom";
+import { SlidersHorizontal } from "lucide-react";
 import type { Map as LeafletMap } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Footer from "@/components/Footer/Footer";
@@ -9,10 +10,10 @@ import pointService from "@/api/services/pointService";
 import userService from "@/api/services/userService";
 import { getDistanceKm } from "@/utils/Distance";
 import { useDebounce } from "use-debounce";
-import MapControls from "@/components/Map/MapControls";
 import MapAlerts from "@/components/Map/MapAlerts";
 import MapView from "@/components/Map/MapView";
 import PointDetailModal from "@/components/Map/PointDetailModal";
+import FilterDrawer from "@/components/Map/FilterDrawer";
 import { fetchOsrmRoute } from "@/utils/map";
 import { toast } from "sonner";
 
@@ -31,6 +32,7 @@ export default function MapPage() {
   const [loadingDetail, setLoadingDetail] = useState(false);
   const [routeCoords, setRouteCoords] = useState<[number, number][] | null>(null);
   const [loadingRoute, setLoadingRoute] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const mapRef = useRef<LeafletMap | null>(null);
 
   useEffect(() => {
@@ -164,13 +166,25 @@ export default function MapPage() {
   return (
     <div className="flex flex-col h-screen">
       <Header />
-      <MapControls
+
+      {/* Botón flotante para abrir filtros */}
+      <button
+        onClick={() => setIsDrawerOpen(true)}
+        className="fixed top-20 left-4 z-[1000] bg-white rounded-2xl p-3 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.18)] transition-all duration-200 border border-gray-100"
+        title="Abrir filtros"
+      >
+        <SlidersHorizontal size={24} className="text-gray-700" />
+      </button>
+
+      {/* Drawer de filtros */}
+      <FilterDrawer
+        isOpen={isDrawerOpen}
+        onClose={() => setIsDrawerOpen(false)}
         selectedOds={selectedOds}
-        onSelect={setSelectedOds}
+        onSelectOds={setSelectedOds}
         radiusKm={radiusKm}
         onRadiusChange={setRadiusKm}
         visibleCount={visiblePoints.length}
-        onCenterClick={centerOnUser}
         hasUserPosition={Boolean(userPosition)}
       />
 
