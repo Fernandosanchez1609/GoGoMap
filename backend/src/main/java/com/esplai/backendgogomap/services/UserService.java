@@ -8,12 +8,15 @@ import com.esplai.backendgogomap.models.dtos.request.UpdateProfileRequestDTO;
 import com.esplai.backendgogomap.models.dtos.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserRankingDTO;
+import com.esplai.backendgogomap.models.dtos.response.AchievementResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.WheelSpinResponseDTO;
 import com.esplai.backendgogomap.models.entities.KarmaEvent;
 import com.esplai.backendgogomap.models.entities.MapPoint;
+import com.esplai.backendgogomap.models.entities.Achievement;
 import com.esplai.backendgogomap.models.entities.User;
 import com.esplai.backendgogomap.repositories.KarmaEventRepository;
 import com.esplai.backendgogomap.repositories.MapPointRepository;
+import com.esplai.backendgogomap.repositories.AchievementRepository;
 import com.esplai.backendgogomap.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -39,6 +42,7 @@ public class UserService {
     private final UserRepository userRepository;
     private final MapPointRepository mapPointRepository;
     private final KarmaEventRepository karmaEventRepository;
+    private final AchievementRepository achievementRepository;
     private final UserMapper userMapper;
     private final MapPointMapper mapPointMapper;
 
@@ -150,5 +154,24 @@ public class UserService {
 
         User updatedUser = userRepository.save(user);
         return userMapper.toResponseDTO(updatedUser);
+    }
+
+    public List<AchievementResponseDTO> getUserAchievements(String email) {
+        User user = userRepository.findByEmailIgnoreCase(email)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuario no encontrado"));
+
+        List<Achievement> allAchievements = achievementRepository.findAll();
+        int userKarma = user.getKarmaPoints();
+
+        return allAchievements.stream()
+                .map(achievement -> AchievementResponseDTO.builder()
+                        .id(achievement.getId())
+                        .title(achievement.getTitle())
+                        .description(achievement.getDescription())
+                        .iconName(achievement.getIconName())
+                        .requiredKarma(achievement.getRequiredKarma())
+                        .unlocked(userKarma >= achievement.getRequiredKarma())
+                        .build())
+                .collect(Collectors.toList());
     }
 }

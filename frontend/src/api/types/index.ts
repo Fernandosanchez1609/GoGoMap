@@ -29,3 +29,12 @@ export interface UserRanking {
   username: string;
   karmaPoints: number;
 }
+
+export interface Achievement {
+  id: number;
+  title: string;
+  description: string;
+  iconName: string;
+  requiredKarma: number;
+  unlocked: boolean;
+}

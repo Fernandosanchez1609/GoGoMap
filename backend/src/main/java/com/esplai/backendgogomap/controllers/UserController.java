@@ -4,6 +4,7 @@ import com.esplai.backendgogomap.models.dtos.request.UpdateProfileRequestDTO;
 import com.esplai.backendgogomap.models.dtos.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserRankingDTO;
+import com.esplai.backendgogomap.models.dtos.response.AchievementResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.WheelSpinResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.WheelSpinStatusResponseDTO;
 import com.esplai.backendgogomap.services.UserService;
@@ -150,5 +151,17 @@ public class UserController {
         String email = jwt.getSubject();
         UserResponseDTO updatedUser = userService.updateUserProfile(email, request);
         return ResponseEntity.ok(updatedUser);
+    }
+
+    @GetMapping("/me/achievements")
+    @Operation(
+            summary = "Obtener logros del usuario",
+            description = "Devuelve todos los logros disponibles indicando cuáles ha desbloqueado el usuario."
+    )
+    @ApiResponse(responseCode = "200", description = "Logros obtenidos correctamente", content = @Content(array = @ArraySchema(schema = @Schema(implementation = AchievementResponseDTO.class))))
+    public ResponseEntity<List<AchievementResponseDTO>> getUserAchievements(@AuthenticationPrincipal Jwt jwt) {
+        String email = jwt.getSubject();
+        List<AchievementResponseDTO> achievements = userService.getUserAchievements(email);
+        return ResponseEntity.ok(achievements);
     }
 }
