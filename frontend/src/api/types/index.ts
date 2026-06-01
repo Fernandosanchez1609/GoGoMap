@@ -24,3 +24,8 @@ export interface UserActionResponse {
   newTotalKarma: number;
   message: string;
 }
+
+export interface UserRanking {
+  username: string;
+  karmaPoints: number;
+}

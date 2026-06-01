@@ -2,6 +2,7 @@ package com.esplai.backendgogomap.controllers;
 
 import com.esplai.backendgogomap.models.dtos.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserResponseDTO;
+import com.esplai.backendgogomap.models.dtos.response.UserRankingDTO;
 import com.esplai.backendgogomap.models.dtos.response.WheelSpinResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.WheelSpinStatusResponseDTO;
 import com.esplai.backendgogomap.services.UserService;
@@ -120,5 +121,16 @@ public class UserController {
         String email = jwt.getSubject();
         WheelSpinResponseDTO response = userService.spinDailyWheel(email);
         return ResponseEntity.ok(response);
+    }
+
+    @GetMapping("/ranking")
+    @Operation(
+            summary = "Obtener clasificación de karma",
+            description = "Devuelve el Top 10 de usuarios con más puntos de karma."
+    )
+    @ApiResponse(responseCode = "200", description = "Clasificación obtenida correctamente", content = @Content(array = @ArraySchema(schema = @Schema(implementation = UserRankingDTO.class))))
+    public ResponseEntity<List<UserRankingDTO>> getLeaderboard() {
+        List<UserRankingDTO> ranking = userService.getTopKarmaUsers();
+        return ResponseEntity.ok(ranking);
     }
 }

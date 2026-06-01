@@ -1,5 +1,5 @@
 import api from "../axiosConfig";
-import type { PointDetail } from "../types/index";
+import type { PointDetail, UserRanking } from "../types/index";
 
 export interface User {
   id: number;
@@ -35,6 +35,9 @@ const userService = {
   // Funciones de ruleta (Cambios de tus compañeros)
   getWheelSpinStatus: () => api.get<WheelSpinStatus>("/v1/users/me/wheel-spin/status"),
   spinDailyWheel: () => api.post<WheelSpinResponse>("/v1/users/me/wheel-spin"),
+
+  // Función de ranking
+  getLeaderboard: () => api.get<UserRanking[]>("/v1/users/ranking"),
 };
 
 export default userService;

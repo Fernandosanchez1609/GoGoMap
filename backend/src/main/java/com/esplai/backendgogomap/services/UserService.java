@@ -6,6 +6,7 @@ import com.esplai.backendgogomap.mappers.MapPointMapper;
 import com.esplai.backendgogomap.mappers.UserMapper;
 import com.esplai.backendgogomap.models.dtos.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserResponseDTO;
+import com.esplai.backendgogomap.models.dtos.response.UserRankingDTO;
 import com.esplai.backendgogomap.models.dtos.response.WheelSpinResponseDTO;
 import com.esplai.backendgogomap.models.entities.KarmaEvent;
 import com.esplai.backendgogomap.models.entities.MapPoint;
@@ -21,6 +22,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
 
 
 @Service
@@ -116,5 +118,15 @@ public class UserService {
                 .newTotalKarma(newTotal)
                 .message("Has ganado " + karmaEarned + " puntos de karma en la ruleta diaria.")
                 .build();
+    }
+
+    public List<UserRankingDTO> getTopKarmaUsers() {
+        List<User> topUsers = userRepository.findTop10ByOrderByKarmaPointsDesc();
+        return topUsers.stream()
+                .map(user -> UserRankingDTO.builder()
+                        .username(user.getNombre() + " " + user.getApellidos().charAt(0) + ".")
+                        .karmaPoints(user.getKarmaPoints())
+                        .build())
+                .collect(Collectors.toList());
     }
 }

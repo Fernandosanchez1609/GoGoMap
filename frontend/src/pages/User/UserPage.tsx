@@ -3,6 +3,7 @@ import { Gift, LogOut, Mail, User, Info } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
 import Weal from "@/components/Points/Weal";
+import Leaderboard from "@/components/Profile/Leaderboard";
 import { useAuth } from "@/context/AuthContext";
 
 export default function UserPage() {
@@ -73,6 +74,9 @@ export default function UserPage() {
             {userData.email}
           </div>
         </div>
+
+        {/* Leaderboard */}
+        <Leaderboard />
 
         <button
           onClick={() => setShowWeal(true)}
