@@ -1,18 +1,19 @@
 import { useAuth } from "@/context/AuthContext"
 import { useNavigate } from "react-router-dom"
-import { LogOut, Loader2, MapPin, Pencil, Gift } from "lucide-react"
+import { LogOut, Loader2, Pencil, Gift, Trophy } from "lucide-react" // Importamos Trophy
 import Header from "../../components/Header/Header"
 import Footer from "@/components/Footer/Footer"
 import Leaderboard from "@/components/Profile/Leaderboard"
 import EditProfileModal from "@/components/Profile/EditProfileModal"
+import AchievementsModal from "@/components/Profile/AchievementsModal"
 import Weal from "@/components/Points/Weal"
 import { useState } from "react"
 
 export default function UserPage() {
-    // Usamos profile como en tu código original, y lo renombramos a user para este componente
     const { profile: user, logout, isLoading, refreshProfile } = useAuth()
     const navigate = useNavigate()
     const [isEditModalOpen, setIsEditModalOpen] = useState(false)
+    const [isAchievementsOpen, setIsAchievementsOpen] = useState(false)
     const [showWeal, setShowWeal] = useState(false)
 
     const handleLogout = () => {
@@ -64,12 +65,18 @@ export default function UserPage() {
                                     <div className="text-xs text-gray-500 uppercase font-bold tracking-wider">Karma</div>
                                 </div>
                                 <div className="w-px bg-gray-200"></div>
-                                <div className="text-center">
-                                    <div className="text-2xl font-bold text-blue-600 flex items-center justify-center gap-1">
-                                        <MapPin size={20} />
+                                
+                                {/* BOTÓN DE LOGROS/TROFEOS ACTUALIZADO */}
+                                <button 
+                                    onClick={() => setIsAchievementsOpen(true)}
+                                    className="text-center hover:bg-gray-100 rounded-xl p-2 cursor-pointer transition-colors"
+                                >
+                                    {/* Icono cambiado a Trophy y color a dorado (amber) */}
+                                    <div className="text-2xl font-bold text-amber-500 flex items-center justify-center gap-1">
+                                        <Trophy size={20} />
                                     </div>
-                                    <div className="text-xs text-gray-500 uppercase font-bold tracking-wider">Pionero</div>
-                                </div>
+                                    <div className="text-xs text-gray-500 uppercase font-bold tracking-wider mt-1">Trofeos</div>
+                                </button>
                             </div>
                         </div>
 
@@ -117,6 +124,12 @@ export default function UserPage() {
                 onClose={() => setIsEditModalOpen(false)} 
                 currentUser={user} 
                 onSuccess={() => { if (refreshProfile) refreshProfile() }} 
+            />
+
+            {/* Modal de Vitrina de Trofeos */}
+            <AchievementsModal 
+                isOpen={isAchievementsOpen} 
+                onClose={() => setIsAchievementsOpen(false)} 
             />
 
             {/* Modal de la Ruleta (Weal) */}
