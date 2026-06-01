@@ -1,5 +1,6 @@
 package com.esplai.backendgogomap.controllers;
 
+import com.esplai.backendgogomap.models.dtos.request.UpdateProfileRequestDTO;
 import com.esplai.backendgogomap.models.dtos.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserRankingDTO;
@@ -7,6 +8,7 @@ import com.esplai.backendgogomap.models.dtos.response.WheelSpinResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.WheelSpinStatusResponseDTO;
 import com.esplai.backendgogomap.services.UserService;
 import com.esplai.backendgogomap.exceptions.dto.ApiErrorResponse;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -132,5 +134,21 @@ public class UserController {
     public ResponseEntity<List<UserRankingDTO>> getLeaderboard() {
         List<UserRankingDTO> ranking = userService.getTopKarmaUsers();
         return ResponseEntity.ok(ranking);
+    }
+
+    @PutMapping("/me")
+    @Operation(
+            summary = "Actualizar perfil de usuario",
+            description = "Permite al usuario actualizar su nombre y email."
+    )
+    @ApiResponse(responseCode = "200", description = "Perfil actualizado correctamente", content = @Content(schema = @Schema(implementation = UserResponseDTO.class)))
+    @ApiResponse(responseCode = "400", description = "Datos inválidos o email duplicado", content = @Content(schema = @Schema(implementation = ApiErrorResponse.class)))
+    public ResponseEntity<UserResponseDTO> updateProfile(
+            @AuthenticationPrincipal Jwt jwt,
+            @Valid @RequestBody UpdateProfileRequestDTO request
+    ) {
+        String email = jwt.getSubject();
+        UserResponseDTO updatedUser = userService.updateUserProfile(email, request);
+        return ResponseEntity.ok(updatedUser);
     }
 }

@@ -4,6 +4,7 @@ import com.esplai.backendgogomap.exceptions.DailyWheelSpinLimitExceededException
 import com.esplai.backendgogomap.exceptions.ResourceNotFoundException;
 import com.esplai.backendgogomap.mappers.MapPointMapper;
 import com.esplai.backendgogomap.mappers.UserMapper;
+import com.esplai.backendgogomap.models.dtos.request.UpdateProfileRequestDTO;
 import com.esplai.backendgogomap.models.dtos.response.MapPointResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserResponseDTO;
 import com.esplai.backendgogomap.models.dtos.response.UserRankingDTO;
@@ -128,5 +129,26 @@ public class UserService {
                         .karmaPoints(user.getKarmaPoints())
                         .build())
                 .collect(Collectors.toList());
+    }
+
+    @Transactional
+    public UserResponseDTO updateUserProfile(String email, UpdateProfileRequestDTO request) {
+        User user = userRepository.findByEmailIgnoreCase(email)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuario no encontrado"));
+
+        // Verificar si el nuevo email ya está en uso por otro usuario
+        if (!user.getEmail().equalsIgnoreCase(request.getEmail())) {
+            if (userRepository.existsByEmailIgnoreCase(request.getEmail())) {
+                throw new IllegalArgumentException("El email ya está en uso por otro usuario");
+            }
+        }
+
+        // Actualizar campos
+        user.setNombre(request.getNombre());
+        user.setApellidos(request.getApellidos());
+        user.setEmail(request.getEmail());
+
+        User updatedUser = userRepository.save(user);
+        return userMapper.toResponseDTO(updatedUser);
     }
 }

@@ -27,6 +27,9 @@ export interface WheelSpinStatus {
 const userService = {
   getProfile: () => api.get<User>("/v1/users/me"),
   
+  updateProfile: (data: { nombre: string; apellidos: string; email: string }) => 
+    api.put<User>("/v1/users/me", data),
+  
   // Funciones de favoritos (Tus cambios)
   addFavorite: (pointId: number) => api.post(`/v1/users/me/favorites/${pointId}`),
   removeFavorite: (pointId: number) => api.delete(`/v1/users/me/favorites/${pointId}`),
