@@ -10,6 +10,9 @@ interface FilterDrawerProps {
   onRadiusChange: (value: number) => void;
   visibleCount: number;
   hasUserPosition: boolean;
+  showFavoritesOnly: boolean;
+  onToggleFavorites: (val: boolean) => void;
+  isAuthenticated: boolean;
 }
 
 export default function FilterDrawer({
@@ -21,6 +24,9 @@ export default function FilterDrawer({
   onRadiusChange,
   visibleCount,
   hasUserPosition,
+  showFavoritesOnly,
+  onToggleFavorites,
+  isAuthenticated,
 }: FilterDrawerProps) {
   const ods = Array.from({ length: 17 }, (_, i) => i + 1);
 
@@ -85,6 +91,35 @@ export default function FilterDrawer({
                 {visibleCount} puntos visibles
               </p>
             </div>
+          )}
+
+          {/* Toggle de favoritos */}
+          {isAuthenticated && (
+            <>
+              <div className="p-4 border-b border-gray-100">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="text-lg">❤️</span>
+                    <span className="text-sm font-semibold text-gray-700">
+                      Solo mis favoritos
+                    </span>
+                  </div>
+                  <button
+                    onClick={() => onToggleFavorites(!showFavoritesOnly)}
+                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                      showFavoritesOnly ? "bg-green-600" : "bg-gray-200"
+                    }`}
+                  >
+                    <span
+                      className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                        showFavoritesOnly ? "translate-x-6" : "translate-x-1"
+                      }`}
+                    />
+                  </button>
+                </div>
+              </div>
+              <hr className="border-gray-100" />
+            </>
           )}
 
           {/* Lista de ODS con checkboxes */}

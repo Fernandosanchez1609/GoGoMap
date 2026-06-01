@@ -16,9 +16,11 @@ import PointDetailModal from "@/components/Map/PointDetailModal";
 import FilterDrawer from "@/components/Map/FilterDrawer";
 import { fetchOsrmRoute } from "@/utils/map";
 import { toast } from "sonner";
+import { useAuth } from "@/context/AuthContext";
 
 export default function MapPage() {
   const location = useLocation();
+  const { isAuthenticated } = useAuth();
   const [userPosition, setUserPosition] = useState<[number, number] | null>(null);
   const [selectedOds, setSelectedOds] = useState<number[]>([1]);
   const [radiusKm, setRadiusKm] = useState<number>(5);
@@ -33,6 +35,8 @@ export default function MapPage() {
   const [routeCoords, setRouteCoords] = useState<[number, number][] | null>(null);
   const [loadingRoute, setLoadingRoute] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+  const [favoriteIds, setFavoriteIds] = useState<number[]>([]);
   const mapRef = useRef<LeafletMap | null>(null);
 
   useEffect(() => {
@@ -67,6 +71,25 @@ export default function MapPage() {
 
     void checkWheelSpinStatus();
   }, []);
+
+  useEffect(() => {
+    const loadFavorites = async () => {
+      if (!isAuthenticated) {
+        setFavoriteIds([]);
+        return;
+      }
+
+      try {
+        const response = await userService.getFavorites();
+        const ids = response.data.map((fav: PointDetail) => fav.id);
+        setFavoriteIds(ids);
+      } catch (err) {
+        console.error("Error al cargar favoritos:", err);
+      }
+    };
+
+    void loadFavorites();
+  }, [isAuthenticated]);
 
   useEffect(() => {
     if (!navigator.geolocation) {
@@ -159,9 +182,10 @@ export default function MapPage() {
           p.latitude,
           p.longitude,
         ) <= debouncedRadius;
-      return odsMatch && distanceMatch;
+      const favoritesMatch = !showFavoritesOnly || favoriteIds.includes(p.id);
+      return odsMatch && distanceMatch && favoritesMatch;
     });
-  }, [points, selectedOds, debouncedRadius, userPosition]);
+  }, [points, selectedOds, debouncedRadius, userPosition, showFavoritesOnly, favoriteIds]);
 
   return (
     <div className="flex flex-col h-screen">
@@ -186,6 +210,9 @@ export default function MapPage() {
         onRadiusChange={setRadiusKm}
         visibleCount={visiblePoints.length}
         hasUserPosition={Boolean(userPosition)}
+        showFavoritesOnly={showFavoritesOnly}
+        onToggleFavorites={setShowFavoritesOnly}
+        isAuthenticated={isAuthenticated}
       />
 
       <div className="relative flex-1 min-h-0 overflow-hidden">
