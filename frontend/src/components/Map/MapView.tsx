@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { MapContainer, TileLayer, Marker, Popup, Polyline, Circle, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, Polyline, Circle, ZoomControl, useMap } from "react-leaflet";
 import type { RefObject } from "react";
 import type { Map as LeafletMap } from "leaflet";
 import L from "leaflet";
@@ -123,12 +123,15 @@ export default function MapView({
       maxZoom={18}
       maxBounds={MALAGA_BOUNDS}
       maxBoundsViscosity={1.0}
+      zoomControl={false}
       className="w-full h-full"
     >
       <TileLayer
         url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
         attribution='&copy; <a href="https://carto.com/">CARTO</a>'
       />
+
+      <ZoomControl position="bottomright" />
 
       <ClusteredMarkers points={points} onPointClick={onPointClick} />
 

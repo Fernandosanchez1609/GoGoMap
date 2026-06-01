@@ -209,10 +209,18 @@ export default function MapPage() {
       {/* Botón flotante para abrir filtros */}
       <button
         onClick={() => setIsDrawerOpen(true)}
-        className="fixed top-20 left-4 z-[1000] bg-white rounded-2xl p-3 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.18)] transition-all duration-200 border border-gray-100"
+        className="fixed top-24 left-4 z-[1000] flex flex-col items-center gap-1"
         title="Abrir filtros"
       >
-        <SlidersHorizontal size={24} className="text-gray-700" />
+        <div className="relative p-2 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100 hover:bg-gray-50 transition-colors">
+          <SlidersHorizontal size={24} className="text-gray-700" />
+          {(selectedOds.length > 0 || showFavoritesOnly) && (
+            <span className="absolute -top-1 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-red-500 shadow-sm animate-pulse" />
+          )}
+        </div>
+        <span className="text-[10px] font-bold text-gray-700 bg-white/80 px-2 py-0.5 rounded-full backdrop-blur-sm shadow-sm">
+          Filtros
+        </span>
       </button>
 
       {/* Drawer de filtros */}
@@ -249,22 +257,16 @@ export default function MapPage() {
         {userPosition && (
           <button
             onClick={centerOnUser}
-            className="absolute bottom-6 right-4 z-[1000] flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.2)] border border-gray-200 hover:bg-gray-50 transition-all active:scale-95"
+            className="absolute bottom-28 right-4 z-[1000] flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.2)] border border-gray-200 hover:bg-gray-50 transition-all active:scale-95"
             title="Centrar en mi ubicación"
           >
-            <svg
-              xmlns="http://w3.org"
-              viewBox="0 0 24 24"
-              width="48"
-              height="48"
-              fill="none"
-              stroke="#5e8cee"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M12 22C12 22 4 15.56 4 10C4 5.58 7.58 2 12 2C16.42 2 20 5.58 20 10C20 15.56 12 22 12 22Z" />
-              <circle cx="12" cy="10" r="3" fill="#FF5722" />
+            <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="3" fill="#2563eb"/>
+              <line x1="12" y1="2" x2="12" y2="4"/>
+              <line x1="12" y1="20" x2="12" y2="22"/>
+              <line x1="2" y1="12" x2="4" y2="12"/>
+              <line x1="20" y1="12" x2="22" y2="12"/>
             </svg>
           </button>
         )}
