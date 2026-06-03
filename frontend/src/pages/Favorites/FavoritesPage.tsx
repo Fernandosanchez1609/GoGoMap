@@ -46,7 +46,7 @@ export default function FavoritesPage() {
             {/* Botón flotante para abrir filtros  */}
             <button
                 onClick={() => setIsDrawerOpen(true)}
-                className="fixed top-24 left-4 z-[1000] flex flex-col items-center gap-1"
+                className="fixed top-24 left-4 z-[1000] flex flex-row items-center gap-1"
                 title="Abrir filtros"
             >
                 <div className="relative p-2 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100 hover:bg-gray-50 transition-colors">
