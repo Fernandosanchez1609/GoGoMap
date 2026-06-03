@@ -249,7 +249,7 @@ export default function MapPage() {
         {routeCoords && (
           <button
             onClick={handleClearRoute}
-            className="absolute top-2 left-1/2 -translate-x-1/2 z-[1000] bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm shadow-md hover:bg-gray-50 flex items-center gap-2"
+            className="absolute top-2 left-1/2 -translate-x-1/2 z-[1000] bg-white border border-gray-300 rounded-lg px-4 py-2 text-black shadow-md hover:bg-gray-50 flex items-center gap-2"
           >
             <span>✕</span> Eliminar ruta
           </button>
