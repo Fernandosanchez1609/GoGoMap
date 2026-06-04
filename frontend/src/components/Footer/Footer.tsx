@@ -33,7 +33,7 @@ export default function Footer() {
           {({ isActive }) => (
             <div className="flex flex-col items-center gap-1 px-5 py-2 rounded-2xl transition-all duration-200">
 
-              <Heart className={`h-8 w-8 transition-opacity duration-200 ${isActive ? "opacity-100 text-black" : "opacity-40 text-gray-400"}`} />
+              <Heart className={`h-8 w-8 transition-opacity duration-200 ${isActive ? "opacity-100 text-black" : "opacity-40 text-black"}`} />
 
               <span
                 className={`text-xs transition-all duration-200 ${isActive ? "text-green-600 font-bold" : "text-gray-400 font-medium"}`}
