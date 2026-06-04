@@ -45,7 +45,7 @@ export default function UserPage() {
       <Header />
 
       {/* Dashboard Container */}
-      <div className="w-full flex-1 max-w-6xl mx-auto px-4 pt-6 pb-24 md:pb-8">
+      <div className="w-full flex-1 max-w-6xl mx-auto px-4 pt-6 pb-32 md:pb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Columna Izquierda: Perfil y Stats */}
           <div className="space-y-6">
@@ -137,7 +137,8 @@ export default function UserPage() {
             </div>
 
             {/* Clasificación */}
-            <div className="flex-1 min-h-[400px]">
+            {/* <div className="flex-1 min-h-[400px]"> */}
+            <div>
               <Leaderboard />
             </div>
             {/* Botón Logout */}
