@@ -48,7 +48,7 @@ export default function EditProfileModal({ isOpen, onClose, currentUser, onSucce
 
   return (
     <div
-      className="fixed inset-0 z-[2000] flex items-center justify-center bg-black/40 backdrop-blur-sm p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4"
       onClick={onClose}
     >
       <div
@@ -67,10 +67,12 @@ export default function EditProfileModal({ isOpen, onClose, currentUser, onSucce
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="edit-nombre" className="block text-sm font-medium text-gray-700 mb-1">
               Nombre
             </label>
             <input
+              id="edit-nombre"
+              name="nombre"
               type="text"
               value={nombre}
               onChange={(e) => setNombre(e.target.value)}
@@ -80,10 +82,12 @@ export default function EditProfileModal({ isOpen, onClose, currentUser, onSucce
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="edit-apellidos" className="block text-sm font-medium text-gray-700 mb-1">
               Apellidos
             </label>
             <input
+              id="edit-apellidos"
+              name="apellidos"
               type="text"
               value={apellidos}
               onChange={(e) => setApellidos(e.target.value)}
@@ -93,10 +97,12 @@ export default function EditProfileModal({ isOpen, onClose, currentUser, onSucce
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="edit-email" className="block text-sm font-medium text-gray-700 mb-1">
               Email
             </label>
             <input
+              id="edit-email"
+              name="email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}

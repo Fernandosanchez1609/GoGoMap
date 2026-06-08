@@ -182,7 +182,7 @@ export default function UserPage() {
       {/* Modal de la Ruleta (Weal) */}
       {showWeal && <Weal onClose={() => setShowWeal(false)} />}
 
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:static md:w-full">
+      <div className="fixed bottom-0 left-0 right-0 z-40 md:static md:w-full">
         <Footer />
       </div>
     </div>

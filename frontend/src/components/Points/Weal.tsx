@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Wheel } from "react-custom-roulette";
 import { X } from "lucide-react";
 import Confetti from "react-confetti";
@@ -56,9 +56,22 @@ export default function Weal({ onClose }: WealProps) {
   const [spinMessage, setSpinMessage] = useState<string | null>(null);
   const [queuedSpinMessage, setQueuedSpinMessage] = useState<string | null>(null);
 
+  useEffect(() => {
+    console.debug("Weal: mounted");
+    return () => console.debug("Weal: unmounted");
+  }, []);
+
+  const hasMarkedRef = useRef(false);
+
+  useEffect(() => {
+    console.debug("Weal: prizeResult changed ->", prizeResult);
+  }, [prizeResult]);
+
   const fetchPrizeFromBackend = async (): Promise<{ slotIndex: number; message: string }> => {
+    console.debug("Weal: fetchPrizeFromBackend - requesting spin from backend...");
     const response = await userService.spinDailyWheel();
     const slotIndex = Math.max(0, Math.min(data.length - 1, response.data.slotIndex));
+    console.debug("Weal: fetchPrizeFromBackend - backend returned slotIndex=", response.data.slotIndex, "normalized->", slotIndex, "message=", response.data.message);
     setQueuedSpinMessage(response.data.message);
     return { slotIndex, message: response.data.message };
   };
@@ -71,16 +84,23 @@ export default function Weal({ onClose }: WealProps) {
     setLoading(true);
 
     try {
+      console.debug("Weal: handleSpin - initiating spin...");
       const prize = await fetchPrizeFromBackend();
+      console.debug("Weal: handleSpin - setting prizeNumber=", prize.slotIndex);
       setPrizeNumber(prize.slotIndex);
+      // ensure prizeNumber is set before starting the wheel
       setMustSpin(true);
-      markWheelSpinDone();
     } catch (error) {
       const status = axios.isAxiosError(error) ? error.response?.status : undefined;
 
       if (status === 429) {
         setSpinMessage("Ya has girado hoy. Vuelve mañana a las 0:00.");
-        markWheelSpinDone();
+        try {
+          markWheelSpinDone();
+          hasMarkedRef.current = true;
+        } catch (e) {
+          console.debug("Weal: markWheelSpinDone failed", e);
+        }
       } else {
         setSpinMessage("No se pudo girar la ruleta. Intenta de nuevo más tarde.");
         console.error(error);
@@ -92,6 +112,16 @@ export default function Weal({ onClose }: WealProps) {
 
   const handleClose = () => {
     if (mustSpin) return;
+    // mark the wheel as spun only when the user explicitly closes the modal
+    if (prizeResult && !hasMarkedRef.current) {
+      try {
+        markWheelSpinDone();
+      } catch (e) {
+        console.debug("Weal: markWheelSpinDone failed", e);
+      }
+      void refreshProfile();
+      hasMarkedRef.current = true;
+    }
     onClose();
   };
 
@@ -100,10 +130,17 @@ export default function Weal({ onClose }: WealProps) {
 
   return (
     <div
-      className="fixed inset-0 z-[99999] flex items-end justify-center bg-black/50 p-4 sm:items-center"
+      className="fixed inset-0 z-50 flex items-end justify-center bg-black/50 p-4 sm:items-center"
       onClick={handleClose}
     >
-      {prizeResult && <Confetti recycle={false} numberOfPieces={400} />}
+      {prizeResult && (
+        <Confetti
+          recycle={false}
+          numberOfPieces={400}
+          width={typeof window !== "undefined" ? window.innerWidth : 0}
+          height={typeof window !== "undefined" ? window.innerHeight : 0}
+        />
+      )}
       
       <div
         className="w-full max-w-md max-h-[92vh] overflow-y-auto bg-app-surface-2 rounded-t-3xl px-6 pt-5 pb-10 flex flex-col items-center gap-5"
@@ -141,13 +178,18 @@ export default function Weal({ onClose }: WealProps) {
                 fontSize={20}
                 textDistance={60}
                 onStopSpinning={() => {
+                  console.debug("Weal: onStopSpinning - prizeNumber (state) =", prizeNumber);
                   setMustSpin(false);
-                  setPrizeResult(data[prizeNumber].multiplier);
+                  const multiplier = data[prizeNumber]?.multiplier ?? null;
+                  console.debug("Weal: onStopSpinning - resolved multiplier=", multiplier);
+                  setPrizeResult(multiplier);
                   if (queuedSpinMessage) {
                     setSpinMessage(queuedSpinMessage);
                     setQueuedSpinMessage(null);
                   }
-                  void refreshProfile();
+                  // do NOT mark the wheel as spun here to avoid parent effects
+                  // that might close the modal. The wheel will be marked when
+                  // the user explicitly closes the modal.
                 }}
               />
             </div>

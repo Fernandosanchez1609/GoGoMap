@@ -75,8 +75,10 @@ export default function Login() {
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-5">
             <div className="flex flex-col gap-2">
-              <Label className="text-gray-600">Email</Label>
+              <Label htmlFor="login-usuario" className="text-gray-600">Email</Label>
               <Input
+                id="login-usuario"
+                name="usuario"
                 type="text"
                 placeholder="Email"
                 value={usuario}
@@ -87,8 +89,10 @@ export default function Login() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <Label className="text-gray-600">Contraseña</Label>
+              <Label htmlFor="login-password" className="text-gray-600">Contraseña</Label>
               <Input
+                id="login-password"
+                name="password"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}

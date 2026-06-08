@@ -135,20 +135,24 @@ export default function Register() {
           <form onSubmit={handleRegister} className="flex flex-col gap-5">
             <div className="grid grid-cols-2 gap-3">
               <div className="flex flex-col gap-2">
-                <Label className="text-gray-600">Nombre</Label>
-                <Input
-                  type="text"
-                  value={form.nombre}
-                  onChange={(e) => handleChange("nombre", e.target.value)}
-                  placeholder="Nombre"
-                  className={`h-14 rounded-xl bg-white text-gray-700 placeholder:text-gray-300 ${errors.nombre ? "border-red-500" : "border-gray-300"}`}
-                />
+                  <Label htmlFor="register-nombre" className="text-gray-600">Nombre</Label>
+                  <Input
+                    id="register-nombre"
+                    name="nombre"
+                    type="text"
+                    value={form.nombre}
+                    onChange={(e) => handleChange("nombre", e.target.value)}
+                    placeholder="Nombre"
+                    className={`h-14 rounded-xl bg-white text-gray-700 placeholder:text-gray-300 ${errors.nombre ? "border-red-500" : "border-gray-300"}`}
+                  />
                 {errors.nombre && <p className="text-red-500 text-xs">{errors.nombre}</p>}
               </div>
 
               <div className="flex flex-col gap-2">
-                <Label className="text-gray-600">Apellido</Label>
+                <Label htmlFor="register-apellido" className="text-gray-600">Apellido</Label>
                 <Input
+                  id="register-apellido"
+                  name="apellido"
                   type="text"
                   value={form.apellido}
                   onChange={(e) => handleChange("apellido", e.target.value)}
@@ -160,8 +164,10 @@ export default function Register() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <Label className="text-gray-600">Correo</Label>
+              <Label htmlFor="register-email" className="text-gray-600">Correo</Label>
               <Input
+                id="register-email"
+                name="email"
                 type="email"
                 value={form.email}
                 onChange={(e) => handleChange("email", e.target.value)}
@@ -172,8 +178,10 @@ export default function Register() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <Label className="text-gray-600">Escribir otra vez el correo</Label>
+              <Label htmlFor="register-repeatEmail" className="text-gray-600">Escribir otra vez el correo</Label>
               <Input
+                id="register-repeatEmail"
+                name="repeatEmail"
                 type="email"
                 value={form.repeatEmail}
                 onChange={(e) => handleChange("repeatEmail", e.target.value)}
@@ -184,8 +192,10 @@ export default function Register() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <Label className="text-gray-600">Contraseña</Label>
+              <Label htmlFor="register-password" className="text-gray-600">Contraseña</Label>
               <Input
+                id="register-password"
+                name="password"
                 type="password"
                 value={form.password}
                 onChange={(e) => handleChange("password", e.target.value)}
@@ -196,8 +206,10 @@ export default function Register() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <Label className="text-gray-600">Escribir otra vez la contraseña</Label>
+              <Label htmlFor="register-repeatPassword" className="text-gray-600">Escribir otra vez la contraseña</Label>
               <Input
+                id="register-repeatPassword"
+                name="repeatPassword"
                 type="password"
                 value={form.repeatPassword}
                 onChange={(e) => handleChange("repeatPassword", e.target.value)}

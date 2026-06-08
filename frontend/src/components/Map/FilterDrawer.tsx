@@ -43,14 +43,14 @@ export default function FilterDrawer({
       {/* Fondo oscuro */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-[1999]"
+          className="fixed inset-0 bg-black/50 z-40"
           onClick={onClose}
         />
       )}
 
       {/* Panel lateral */}
       <div
-        className={`fixed inset-y-0 left-0 z-[2000] w-80 bg-white shadow-2xl transform transition-transform duration-300 ${
+        className={`fixed inset-y-0 left-0 z-50 w-80 bg-white shadow-2xl transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -74,7 +74,10 @@ export default function FilterDrawer({
                 Radio de búsqueda
               </h3>
               <div className="flex items-center gap-4 mb-2">
+                <label htmlFor="filter-radius" className="sr-only">Radio de búsqueda</label>
                 <input
+                  id="filter-radius"
+                  name="radiusKm"
                   type="range"
                   min={0.5}
                   max={30}
