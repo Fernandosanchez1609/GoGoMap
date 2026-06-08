@@ -43,14 +43,14 @@ export default function FilterDrawer({
       {/* Fondo oscuro */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-40"
+          className="fixed inset-0 bg-black/50 z-2000"
           onClick={onClose}
         />
       )}
 
       {/* Panel lateral */}
       <div
-        className={`fixed inset-y-0 left-0 z-50 w-80 bg-white shadow-2xl transform transition-transform duration-300 ${
+        className={`fixed inset-y-0 left-0 z-2001 w-80 bg-white shadow-2xl transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
