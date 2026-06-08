@@ -4,7 +4,7 @@ import { SlidersHorizontal } from "lucide-react";
 import type { Map as LeafletMap } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
+import Header from "@/components/header/Header";
 import type { Point, PointDetail } from "@/api/types/index";
 import pointService from "@/api/services/pointService";
 import userService from "@/api/services/userService";
@@ -25,7 +25,9 @@ export default function MapPage() {
   const [selectedOds, setSelectedOds] = useState<number[]>([1]);
   const [radiusKm, setRadiusKm] = useState<number>(5);
   const [debouncedRadius] = useDebounce(radiusKm, 150);
-  const [geoError, setGeoError] = useState<string | null>(null);
+  const [geoError, setGeoError] = useState<string | null>(() =>
+    !navigator.geolocation ? "Tu navegador no soporta geolocalización." : null,
+  );
   const [points, setPoints] = useState<Point[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
@@ -43,6 +45,23 @@ export default function MapPage() {
   const [favoriteIds, setFavoriteIds] = useState<number[]>([]);
   const mapRef = useRef<LeafletMap | null>(null);
   const navigate = useNavigate();
+
+  const handlePointClick = useCallback(
+    async (id: string, lat: number, lng: number) => {
+      try {
+        setLoadingDetail(true);
+        setSelectedPointCoords([lat, lng]);
+        setRouteCoords(null);
+        const response = await pointService.getById(id);
+        setSelectedPoint(response.data);
+      } catch {
+        setError("Error al cargar el detalle del punto");
+      } finally {
+        setLoadingDetail(false);
+      }
+    },
+    [],
+  );
 
   useEffect(() => {
     const fetchPoints = async () => {
@@ -105,10 +124,7 @@ export default function MapPage() {
   }, [isAuthenticated]);
 
   useEffect(() => {
-    if (!navigator.geolocation) {
-      setGeoError("Tu navegador no soporta geolocalización.");
-      return;
-    }
+    if (!navigator.geolocation) return;
 
     const watchId = navigator.geolocation.watchPosition(
       (pos) => {
@@ -129,29 +145,17 @@ export default function MapPage() {
     if (state?.selectedPointId && points.length > 0) {
       const point = points.find((p) => p.id === state.selectedPointId);
       if (point) {
-        handlePointClick(String(point.id), point.latitude, point.longitude);
+        void Promise.resolve().then(() =>
+          handlePointClick(String(point.id), point.latitude, point.longitude),
+        );
       }
     }
-  }, [location.state, points]);
+  }, [location.state, points, handlePointClick]);
   
 
   const centerOnUser = () => {
     if (mapRef.current && userPosition) {
       mapRef.current.flyTo(userPosition, 16, { duration: 1.2 });
-    }
-  };
-
-  const handlePointClick = async (id: string, lat: number, lng: number) => {
-    try {
-      setLoadingDetail(true);
-      setSelectedPointCoords([lat, lng]);
-      setRouteCoords(null);
-      const response = await pointService.getById(id);
-      setSelectedPoint(response.data);
-    } catch {
-      setError("Error al cargar el detalle del punto");
-    } finally {
-      setLoadingDetail(false);
     }
   };
 
@@ -209,7 +213,7 @@ export default function MapPage() {
       {/* Botón flotante para abrir filtros */}
       <button
         onClick={() => setIsDrawerOpen(true)}
-        className="fixed top-24 left-4 z-[1000] flex flex-col items-center gap-1"
+        className="fixed top-24 left-4 z-1000 flex flex-col items-center gap-1"
         title="Abrir filtros"
       >
         <div className="relative p-2 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100 hover:bg-gray-50 transition-colors">
@@ -249,7 +253,7 @@ export default function MapPage() {
         {routeCoords && (
           <button
             onClick={handleClearRoute}
-            className="absolute top-2 left-1/2 -translate-x-1/2 z-[1000] bg-white border border-gray-300 rounded-lg px-4 py-2 text-black shadow-md hover:bg-gray-50 flex items-center gap-2"
+            className="absolute top-2 left-1/2 -translate-x-1/2 z-1000 bg-white border border-gray-300 rounded-lg px-4 py-2 text-black shadow-md hover:bg-gray-50 flex items-center gap-2"
           >
             <span>✕</span> Eliminar ruta
           </button>
@@ -257,7 +261,7 @@ export default function MapPage() {
         {userPosition && (
           <button
             onClick={centerOnUser}
-            className="absolute bottom-28 right-4 z-[1000] flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.2)] border border-gray-200 hover:bg-gray-50 transition-all active:scale-95"
+            className="absolute bottom-28 right-4 z-1000 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.2)] border border-gray-200 hover:bg-gray-50 transition-all active:scale-95"
             title="Centrar en mi ubicación"
           >
             <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#2563eb" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

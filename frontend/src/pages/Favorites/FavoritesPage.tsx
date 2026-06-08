@@ -1,4 +1,4 @@
-import Header from "../../components/Header/Header"
+import Header from "../../components/header/Header"
 import FavoritesTitle from "./FavoritesTitle"
 import { useState, useEffect } from "react"
 import FavoritesList from "./FavoritesList"

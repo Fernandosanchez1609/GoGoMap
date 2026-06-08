@@ -15,6 +15,8 @@ interface AuthContextType {
   user: UserProfile | null;
   profile: User | null;
   isAuth: boolean;
+  isAuthenticated: boolean;
+  isLoading: boolean;
   hasSpunWheelToday: boolean;
   login: (token: string, refreshToken?: string) => Promise<void>;
   logout: () => void;
@@ -81,15 +83,19 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [token, setToken] = useState<string | null>(initialAuth.token);
   const [user, setUser] = useState<UserProfile | null>(initialAuth.user);
   const [profile, setProfile] = useState<User | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
   const [hasSpunWheelToday, setHasSpunWheelToday] = useState(false);
 
   const loadProfile = async () => {
+    setIsLoading(true);
     try {
       const response = await userService.getProfile();
       setProfile(response.data);
     } catch (error) {
       console.error("No se pudo cargar el perfil del usuario", error);
       setProfile(null);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -114,7 +120,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, [token]);
 
   useEffect(() => {
-    if (!token || profile) return;
+    if (!token) {
+      setIsLoading(false);
+      return;
+    }
+    if (profile) return;
     void loadProfile();
   }, [token, profile]);
 
@@ -160,6 +170,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       user,
       profile,
       isAuth: Boolean(token && user),
+      isAuthenticated: Boolean(token && user),
+      isLoading,
       hasSpunWheelToday,
       login,
       logout,
@@ -167,7 +179,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       refreshProfile,
       markWheelSpinDone,
     }),
-    [token, user, profile, hasSpunWheelToday]
+    [token, user, profile, isLoading, hasSpunWheelToday]
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

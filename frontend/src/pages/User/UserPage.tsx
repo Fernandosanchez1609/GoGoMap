@@ -8,7 +8,7 @@ import {
   Trophy,
   ShoppingBag,
 } from "lucide-react";
-import Header from "../../components/Header/Header";
+import Header from "../../components/header/Header";
 import Footer from "@/components/Footer/Footer";
 import Leaderboard from "@/components/Profile/Leaderboard";
 import EditProfileModal from "@/components/Profile/EditProfileModal";
