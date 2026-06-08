@@ -1,52 +1,272 @@
-# 🌿 GoGoMap — Frontend
+# GoGoMap
 
-> **No. 1 in Spain for passing karma** 🌍  
-> Aplicación web y móvil para localizar puntos relacionados con los Objetivos de Desarrollo Sostenible (ODS) en la ciudad de Málaga.
+<div align="center">
 
----
+**Plataforma de Localización de Puntos de Interés Sostenibles en Málaga**
 
-## 📋 Índice
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Version](https://img.shields.io/badge/Version-1.0.0-blue)
 
-- [Descripción](#descripción)
-- [Landing Page](#landing-page)
-- [Páginas de error](#páginas-de-error)
-- [Pantallas](#pantallas)
-- [Design System](#design-system)
-- [API Endpoints](#api-endpoints)
-- [Estructura del proyecto](#estructura-del-proyecto)
-- [Instalación](#instalación)
-- [Tecnologías](#tecnologías)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
+[Descripción](#-descripción) • [Características](#-características) • [Stack Tecnológico](#-stack-tecnológico) • [Instalación](#-instalación-y-configuración) • [Documentación](#-documentación) • [Contribución](#-contribución)
+
+</div>
 
 ---
 
-## Descripción
+## 📋 Tabla de Contenidos
 
-GoGoMap permite a los ciudadanos de Málaga descubrir puntos de interés vinculados a los 17 ODS de Naciones Unidas. A partir de la geolocalización del usuario, la app muestra los puntos más cercanos según el ODS seleccionado y genera una ruta para llegar a ellos.
-
-**Funcionalidades principales:**
-
-- Geolocalización del usuario en tiempo real
-- Mapa interactivo con puntos ODS categorizados
-- Filtrado por tipo de ODS
-- Detalle de cada punto con distancia y estado
-- Generación de ruta hasta el punto seleccionado
-- Sistema de favoritos
-- Perfil de usuario con Karma Points (gamificación)
-- Registro e inicio de sesión
+- [Descripción](#-descripción)
+- [Características](#-características)
+- [Stack Tecnológico](#-stack-tecnológico)
+- [Arquitectura del Proyecto](#-arquitectura-del-proyecto)
+- [Instalación y Configuración](#-instalación-y-configuración)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Documentación](#-documentación)
+- [Contribución](#-contribución)
+- [Licencia](#-licencia)
 
 ---
 
-## Landing Page
+## 📖 Descripción
 
-La landing page es la pantalla de presentación de GoGoMap. Es lo primero que ve el usuario al acceder a la aplicación (`/landing`) y tiene como objetivo explicar las funcionalidades de la app y dirigir al usuario hacia el acceso.
+GoGoMap es una aplicación web y móvil responsiva que facilita a los ciudadanos de Málaga localizar puntos de interés vinculados con los **17 Objetivos de Desarrollo Sostenible (ODS)** de Naciones Unidas. Mediante geolocalización en tiempo real, la plataforma identifica automáticamente los servicios públicos y espacios sostenibles más cercanos, permitiendo a los usuarios planificar rutas e interactuar con elementos gamificados para fomentar el compromiso cívico.
 
-### Ruta
+### Misión
+
+Promover el conocimiento y acceso a iniciativas sostenibles en Málaga, generando consciencia ciudadana sobre los ODS mediante una experiencia interactiva e intuitiva.
+
+---
+
+## ✨ Características
+
+### Funcionalidades Principales
+
+- **🌍 Geolocalización en Tiempo Real**: Seguimiento preciso de la ubicación del usuario mediante GPS o red
+- **🗺️ Mapa Interactivo**: Visualización dinámica de puntos ODS en tiempo real con clustering inteligente
+- **🎯 Filtrado Avanzado**: Búsqueda por ODS, rango de distancia y estado de favoritos
+- **📍 Detalle de Puntos**: Información completa con distancia, categorización y estado
+- **🛣️ Generación de Rutas**: Cálculo automático de rutas mediante OSRM (Open Source Routing Machine)
+- **❤️ Sistema de Favoritos**: Gestión personalizada de puntos de interés
+- **🎮 Gamificación**: Sistema de Karma Points, logros y ruleta diaria
+- **👤 Perfil de Usuario**: Dashboard con estadísticas, rankings y recompensas
+- **🔐 Autenticación Segura**: Registro, login y gestión de sesiones con JWT
+
+### Estándares Implementados
+
+- Diseño responsive para escritorio, tablet y dispositivos móviles
+- Interfaz accesible y conforme a WCAG 2.1 Level AA
+- Performance optimizado con lazy loading y code splitting
+- Progressive Web App (PWA) ready
+
+---
+
+## 🛠️ Stack Tecnológico
+
+### Backend
+| Componente | Tecnología |
+|:-----------|:-----------|
+| **Lenguaje** | Java 21 |
+| **Framework** | Spring Boot 3.5.14 |
+| **Base de Datos** | MySQL 8.0+ |
+| **ORM** | Hibernate (Spring Data JPA) |
+| **Seguridad** | Spring Security + OAuth2 + JWT |
+| **Mapeo de Objetos** | MapStruct |
+| **Build Tool** | Maven 3.8+ |
+
+### Frontend
+| Componente | Tecnología |
+|:-----------|:-----------|
+| **Lenguaje** | TypeScript 6.0 |
+| **Framework** | React 19.2 |
+| **Bundler** | Vite 5.0 |
+| **Estilos** | Tailwind CSS 4.3 |
+| **Componentes UI** | shadcn/ui + Radix UI |
+| **Mapas** | Leaflet + React-Leaflet |
+| **HTTP Client** | Axios |
+| **Router** | React Router v7 |
+| **Validación** | Zod (implícito) |
+
+### Herramientas Comunes
+- Linting: ESLint
+- Type Checking: TypeScript
+- Formateo: Prettier (recomendado)
+- Testing: (Configuración disponible)
+
+---
+
+## 🏗️ Arquitectura del Proyecto
 
 ```
-/landing → GoGomapOnboarding
+GoGoMap/
+├── backend/                    # API RESTful (Java Spring Boot)
+│   ├── src/main/java/
+│   │   └── com/esplai/backendgogomap/
+│   │       ├── auth/          # Autenticación y autorización
+│   │       ├── controllers/   # Endpoints REST
+│   │       ├── services/      # Lógica de negocio
+│   │       ├── repositories/  # Acceso a datos
+│   │       ├── models/        # Entidades JPA
+│   │       ├── mappers/       # DTO mapping
+│   │       ├── exceptions/    # Manejo de errores
+│   │       └── config/        # Configuración
+│   ├── src/main/resources/
+│   │   ├── application.properties
+│   │   └── data/              # Datasets GeoJSON (17 ODS)
+│   ├── pom.xml
+│   ├── mvnw / mvnw.cmd
+│   └── README.md
+│
+├── frontend/                   # Aplicación React + TypeScript
+│   ├── src/
+│   │   ├── components/        # Componentes reutilizables
+│   │   ├── pages/             # Páginas principales
+│   │   ├── routes/            # Enrutamiento
+│   │   ├── context/           # Context API (Auth, etc)
+│   │   ├── api/
+│   │   │   ├── services/      # Servicios API
+│   │   │   ├── types/         # Tipos TypeScript
+│   │   │   └── axiosConfig.ts # Configuración HTTP
+│   │   ├── utils/             # Funciones auxiliares
+│   │   ├── hooks/             # Custom React hooks
+│   │   ├── App.tsx
+│   │   └── main.tsx
+│   ├── public/                # Assets estáticos
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── vite.config.ts
+│   ├── tailwind.config.js
+│   └── README.md
+│
+└── README.md                  # Este archivo
 ```
+
+---
+
+## 🚀 Instalación y Configuración
+
+### Requisitos Globales
+
+- **Node.js** 18+ (para frontend)
+- **Java** 21 (para backend)
+- **Maven** 3.8+ (para backend)
+- **MySQL** 8.0+ (base de datos)
+- **Git** (control de versiones)
+
+### Paso 1: Clonar el Repositorio
+
+```bash
+git clone https://github.com/tu-organizacion/gogomaps.git
+cd gogomaps
+```
+
+### Paso 2: Configurar Backend
+
+Véase [backend/README.md](./backend/README.md#-instalación-y-configuración) para:
+- Instalación de dependencias Maven
+- Configuración de base de datos MySQL
+- Variables de entorno (JWT, DB credentials)
+- Ejecución del servidor
+
+### Paso 3: Configurar Frontend
+
+Véase [frontend/README.md](./frontend/README.md#-instalación-y-configuración) para:
+- Instalación de dependencias Node
+- Configuración de variables de entorno (.env)
+- Servidor de desarrollo
+- Build de producción
+
+### Ejecución Combinada (Desarrollo)
+
+```bash
+# Terminal 1: Backend
+cd backend
+./mvnw spring-boot:run
+
+# Terminal 2: Frontend
+cd frontend
+pnpm dev
+```
+
+La aplicación estará disponible en `http://localhost:5173` (Vite)  
+API disponible en `http://localhost:8080` (Spring Boot)
+
+---
+
+## 📁 Estructura del Proyecto
+
+Cada módulo cuenta con su propia documentación:
+
+- **[Backend Documentation](./backend/README.md)**: API, endpoints, guías de desarrollo
+- **[Frontend Documentation](./frontend/README.md)**: Componentes, páginas, configuración
+
+---
+
+## 📚 Documentación
+
+### Backend
+- Endpoints de API
+- Modelos de datos
+- Manejo de errores
+- Seguridad y autenticación
+- Guía de desarrollo
+
+Ver: [backend/README.md](./backend/README.md)
+
+### Frontend
+- Estructura de componentes
+- Páginas y rutas
+- Gestión de estado
+- Integración con API
+- Build y deployment
+
+Ver: [frontend/README.md](./frontend/README.md)
+
+---
+
+## 🤝 Contribución
+
+Las contribuciones son bienvenidas. Para contribuir:
+
+1. Fork el repositorio
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+### Estándares de Código
+
+- Código limpio y legible
+- Tipos TypeScript completos
+- JavaDoc en métodos públicos
+- Commits semánticos
+- Tests unitarios (cuando sea aplicable)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
+
+---
+
+## 📞 Contacto y Soporte
+
+Para preguntas, sugerencias o reportar problemas:
+
+- **Issues**: [Crear un issue](https://github.com/tu-organizacion/gogomaps/issues)
+- **Email**: contacto@gogomaps.dev
+- **Documentación**: [Wiki](https://github.com/tu-organizacion/gogomaps/wiki)
+
+---
+
+<div align="center">
+
+**Desarrollado con ❤️ por el equipo de GoGoMap**
+
+*Promoviendo ciudadanía sostenible en Málaga*
+
+</div>
 
 ### Estructura de componentes
 
