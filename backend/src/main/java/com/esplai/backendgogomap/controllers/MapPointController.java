@@ -93,3 +93,4 @@ public class MapPointController {
                 return ResponseEntity.ok(new com.esplai.backendgogomap.models.dtos.response.UserActionStatusResponseDTO(has));
         }
 }
+// add comentario de Nayla para hacer un commit para poder aparecer el proyecto de GoGoMap en mi perfil
